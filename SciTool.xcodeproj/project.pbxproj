@@ -11,6 +11,8 @@
 		58D9049227B17A5C0051C600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9049127B17A5C0051C600 /* ViewController.swift */; };
 		58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049327B17A5D0051C600 /* Assets.xcassets */; };
 		58D9049727B17A5D0051C600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049527B17A5D0051C600 /* Main.storyboard */; };
+		58D904A027B17BAA0051C600 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58D9049F27B17BAA0051C600 /* PythonKit */; };
+		58D904A427B17FB80051C600 /* voltage.py in Resources */ = {isa = PBXBuildFile; fileRef = 58D904A327B17FB80051C600 /* voltage.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		58D9049327B17A5D0051C600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D9049627B17A5D0051C600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D9049827B17A5D0051C600 /* SciTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SciTool.entitlements; sourceTree = "<group>"; };
+		58D904A327B17FB80051C600 /* voltage.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voltage.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D904A027B17BAA0051C600 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
+				58D904A327B17FB80051C600 /* voltage.py */,
 			);
 			path = SciTool;
 			sourceTree = "<group>";
@@ -77,6 +82,9 @@
 			dependencies = (
 			);
 			name = SciTool;
+			packageProductDependencies = (
+				58D9049F27B17BAA0051C600 /* PythonKit */,
+			);
 			productName = SciTool;
 			productReference = 58D9048C27B17A5C0051C600 /* SciTool.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 58D9048327B17A5C0051C600;
+			packageReferences = (
+				58D9049E27B17BAA0051C600 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 58D9048D27B17A5C0051C600 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +132,7 @@
 			files = (
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				58D9049727B17A5D0051C600 /* Main.storyboard in Resources */,
+				58D904A427B17FB80051C600 /* voltage.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58D9049E27B17BAA0051C600 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58D9049F27B17BAA0051C600 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58D9049E27B17BAA0051C600 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58D9048427B17A5C0051C600 /* Project object */;
 }
