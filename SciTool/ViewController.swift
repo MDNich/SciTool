@@ -20,7 +20,6 @@ class ViewController: NSViewController {
     
     
     @IBAction func exec(_ sender: Any) {
-        img.image = 
         var dirPath = FileManager.default.temporaryDirectory.absoluteString
         print(dirPath)
         dirPath.removeFirst(6)
