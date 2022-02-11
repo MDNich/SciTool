@@ -1,8 +1,9 @@
 import matplotlib.pyplot as plt
 import math
 import numpy as np
+import os
 
-
+coulombCt1 = 9E9
 
 
 
@@ -23,14 +24,17 @@ def potential(charges,point):
 	for i in range(len(chargesx)):
 		if(calculateDist(chargesx[i],pointx,chargesy[i],pointy) == 0):
 			continue
-		tempv = 9*10**(-1)*chargesQ[i]/calculateDist(chargesx[i],pointx,chargesy[i],pointy)
+		tempv = coulombCt1*chargesQ[i]*1E-9/calculateDist(chargesx[i],pointx,chargesy[i],pointy)
 		v+=tempv
 	return v;
 
 
-def drawGraph(pathToSave):
-    charges = [[0,.5],[0,.5],[5,-5]]
-
+def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec,coulombCt,dpiInp):
+    #plt.ion()
+    charges = [chargeXarr,chargeYarr,chargeQarr]
+    print(charges)
+    fig, ax = plt.subplots()
+    coulombCt1 = coulombCt
     #ax = plt.axes(projection='3d')
 
     volt = []
@@ -40,12 +44,12 @@ def drawGraph(pathToSave):
     y2s = []
     volt2d = [[]]
 
-    xlist = np.linspace(-.5,1.5,60)
-    ylist = np.linspace(-.5,1.5,60)
+    xlist = np.linspace(windowLBoundX,windowUBoundX,steps)
+    ylist = np.linspace(windowLBoundY,windowUBoundY,steps)
 
     for j in xlist:
         for k in ylist:
-            print("x: " + str(j) + " y: " + str(k) + " d: " + str(calculateDist(charges[0][0],j,charges[1][0],k)))
+            #print("x: " + str(j) + " y: " + str(k) + " d: " + str(calculateDist(charges[0][0],j,charges[1][0],k)))
             thisVolt = potential(charges,[j,k])
             if(thisVolt == 0):
                 continue
@@ -56,11 +60,22 @@ def drawGraph(pathToSave):
             #print("x: " + str(j) + " y: " + str(k) + " v: " + str(volt))
         volt2d.append([])
     volt2d.remove(volt2d[len(volt2d)-1])
-    print(volt2d)
+    #print(volt2d)
     #ax.scatter3D(xs,ys,volt,c=volt)
-    plt.scatter(xs,ys,c=volt)
-    cs = plt.contour(ylist,xlist,volt2d,levels=200,cmap="hsv")
-    plt.clabel(cs,inline=1,fontsize=8,inline_spacing=2)
+    ax.scatter(ys,xs,c=volt)
+    cs = ax.contour(ylist,xlist,volt2d,levels=countourprec,cmap="hsv")
+    ax.clabel(cs,inline=1,fontsize=8,inline_spacing=2)
     #ax.scatter3D(charges[0],charges[1],0,c=charges[2],marker="X")
-    plt.savefig(str(pathToSave) + "result.png")
+    if os.path.isfile(str(pathToSave) + "result.png"):
+        print("removing")
+        os.remove(str(pathToSave) + "result.png")   # Opt.: os.system("rm "+strFile)
+    fig.savefig(str(pathToSave) + "result.png",dpi=dpiInp)
+    #plt.close(fig)
+    
+    volt = []
+    xs = []
+    x2s = []
+    ys = []
+    y2s = []
+    volt2d = [[]]
 
