@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
+		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
+		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
 		58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9048F27B17A5C0051C600 /* AppDelegate.swift */; };
 		58D9049227B17A5C0051C600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9049127B17A5C0051C600 /* ViewController.swift */; };
 		58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049327B17A5D0051C600 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
 		58D9048C27B17A5C0051C600 /* SciTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9048F27B17A5C0051C600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D9049127B17A5C0051C600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,12 +62,15 @@
 		58D9048E27B17A5C0051C600 /* SciTool */ = {
 			isa = PBXGroup;
 			children = (
+				589EE55E27BDA78900D38DF2 /* MasterViewController.swift */,
+				589EE55F27BDA78900D38DF2 /* SideBarController.swift */,
 				58D9048F27B17A5C0051C600 /* AppDelegate.swift */,
 				58D9049127B17A5C0051C600 /* ViewController.swift */,
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
 				58D904A327B17FB80051C600 /* voltage.py */,
+				589EE55C27BD316300D38DF2 /* blank.png */,
 			);
 			path = SciTool;
 			sourceTree = "<group>";
@@ -76,6 +85,7 @@
 				58D9048827B17A5C0051C600 /* Sources */,
 				58D9048927B17A5C0051C600 /* Frameworks */,
 				58D9048A27B17A5C0051C600 /* Resources */,
+				58850B0E27CD852300EB1BC8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,17 +143,40 @@
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				58D9049727B17A5D0051C600 /* Main.storyboard in Resources */,
 				58D904A427B17FB80051C600 /* voltage.py in Resources */,
+				589EE55D27BD316300D38DF2 /* blank.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58850B0E27CD852300EB1BC8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxattr -cr ~/Library/Developer/Xcode/DerivedData || echo Clear\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D9048827B17A5C0051C600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */,
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
+				589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */,
 				58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +316,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SciTool/SciTool.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H336QJQ279;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -299,6 +333,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiTouchFX.SciTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -310,10 +345,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SciTool/SciTool.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H336QJQ279;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -326,6 +362,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiTouchFX.SciTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

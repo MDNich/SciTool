@@ -41,17 +41,18 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var DPI: NSTextField!
     
+    @IBOutlet weak var ErrorLabel: NSTextField!
     
     //pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec
     @IBOutlet weak var ProgressBar: NSProgressIndicator!
     
+
     
-    
-    
-    
+    @IBOutlet weak var helpButton: NSButton!
     
     func doImgRender()
     {
+        ErrorLabel.isHidden = true
         var dirPath = FileManager.default.temporaryDirectory.absoluteString
         print(dirPath)
         dirPath.removeFirst(6)
@@ -59,6 +60,9 @@ class ViewController: NSViewController {
             try runPythonCode(dirPathSave: dirPath) }
         catch {
             print("FAILED")
+            dirPath = Bundle.main.resourcePath!
+            img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
+            ErrorLabel.isHidden = false
         }
         img.image = NSImage(contentsOfFile: "\(dirPath)/result.png")
         self.imgIsReset = false
