@@ -1198,6 +1198,14 @@
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="33U-Ua-z94">
                                     <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <connections>
+                                        <binding destination="OyW-Yd-7mm" name="value" keyPath="self.representedObject" id="6Pz-Rh-cOd">
+                                            <dictionary key="options">
+                                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                                <bool key="NSValidatesImmediately" value="YES"/>
+                                            </dictionary>
+                                        </binding>
+                                    </connections>
                                 </scroller>
                             </scrollView>
                         </subviews>

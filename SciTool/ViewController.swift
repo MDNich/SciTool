@@ -87,6 +87,7 @@ class EquipotViewController: NSViewController {
         print("ok cool we're in business")
         if let _ = scrollViewHelp {
             print("ok cool we really are in business")
+            print(representedObject)
         }
         // Do any additional setup after loading the view.
     }
@@ -123,6 +124,8 @@ class EquipotViewController: NSViewController {
     
     
     @IBOutlet weak var helpButton: NSButton!
+    
+    
     
     @IBAction func saveImgAs(sender: Any?)
     {
