@@ -9,12 +9,85 @@ import PythonKit
 import os
 import Cocoa
 
-class ViewController: NSViewController {
 
-    var imgIsReset: Bool = false
+class SplashViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Do any additional setup after loading the view.
+    }
+    
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
+        }
+    }
+    
+    
+    
+    
+    @IBAction func openEquipotentialGrapher(sender: Any?)
+    {
+        print(" yo ")
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    @IBAction func viewListOfCalculators(sender: Any?)
+    {
+        self.view.window?.close()
+        let alert: NSAlert = NSAlert()
+        alert.messageText = "Not Available Yet"
+        alert.informativeText = "This feature is not available yet. Please check back on the webpage for a new version that may include this feature."
+        alert.alertStyle = NSAlert.Style.informational
+        alert.addButton(withTitle: "OK")
+        _ = alert.runModal()
+        // TODO
+    }
+    @IBAction func openPrefs(sender: Any?)
+    {
+        // self.view.window?.close()
+        // TODO
+    }
+}
+
+
+class NewViewController: NSViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
+        }
+    }
+    
+    
+}
+
+class EquipotViewController: NSViewController {
+
+    @IBAction func openGithub(sender: Any?)
+    {
+        let url = URL(string: "https://github.com/MDNich/SciTool")!
+        if NSWorkspace.shared.open(url) {
+            print("Browser Successfully opened")
+        }
+    }
+    
+    @IBOutlet weak var scrollViewHelp: NSScrollView!
+    
+    var imgIsReset: Bool = false
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("ok cool we're in business")
+        if let _ = scrollViewHelp {
+            print("ok cool we really are in business")
+        }
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var img: NSImageView!
@@ -46,9 +119,38 @@ class ViewController: NSViewController {
     //pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec
     @IBOutlet weak var ProgressBar: NSProgressIndicator!
     
-
+    @IBOutlet weak var savebutton: NSButton!
+    
     
     @IBOutlet weak var helpButton: NSButton!
+    
+    @IBAction func saveImgAs(sender: Any?)
+    {
+        
+        let savePanel = NSSavePanel()
+        savePanel.allowedFileTypes = ["png"]
+        savePanel.canCreateDirectories = true
+        savePanel.isExtensionHidden = false
+        savePanel.title = "Save generated image"
+        savePanel.message = "Choose a folder and a name to store the image."
+        savePanel.prompt = "Save"
+        savePanel.nameFieldLabel = "File name:"
+        savePanel.nameFieldStringValue = "EquipotentialLines"
+        guard let window = self.view.window else { return }
+        let response = savePanel.runModal()
+        guard response == .OK, let saveURL = savePanel.url else { return }
+        print("response: \(response)")
+        print("saveURL: \(saveURL)")
+        var dirPath = FileManager.default.temporaryDirectory.absoluteString
+        let img = img.image
+        print(img)
+        if ((img?.pngWrite(to: saveURL)) != nil) {
+                    print("File saved")
+                }
+               
+        
+    }
+    
     
     func doImgRender()
     {
@@ -63,9 +165,12 @@ class ViewController: NSViewController {
             dirPath = Bundle.main.resourcePath!
             img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
             ErrorLabel.isHidden = false
+            savebutton.isEnabled = false
         }
         img.image = NSImage(contentsOfFile: "\(dirPath)/result.png")
         self.imgIsReset = false
+        savebutton.isEnabled = true
+
     }
     
     @IBAction func exec(_ sender: Any) {
@@ -121,3 +226,18 @@ class ViewController: NSViewController {
 
 }
 
+extension NSImage {
+    var pngData: Data? {
+        guard let tiffRepresentation = tiffRepresentation, let bitmapImage = NSBitmapImageRep(data: tiffRepresentation) else { return nil }
+        return bitmapImage.representation(using: .png, properties: [:])
+    }
+    func pngWrite(to url: URL, options: Data.WritingOptions = .atomic) -> Bool {
+        do {
+            try pngData?.write(to: url, options: options)
+            return true
+        } catch {
+            print(error)
+            return false
+        }
+    }
+}

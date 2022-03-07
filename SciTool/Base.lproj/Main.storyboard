@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="jIH-4q-BtF">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,24 +61,13 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="File" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
-                                            <connections>
-                                                <action selector="newDocument:" target="Ady-hI-5gd" id="4Si-XN-c54"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
-                                            <connections>
-                                                <action selector="openDocument:" target="Ady-hI-5gd" id="bVn-NM-KNZ"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Open Recent" id="tXI-mr-wws">
+                                        <menuItem title="New" id="W7L-1i-0rw">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Open Recent" systemMenu="recentDocuments" id="oas-Oc-fiZ">
+                                            <menu key="submenu" title="New" id="hcx-1P-M5W">
                                                 <items>
-                                                    <menuItem title="Clear Menu" id="vNY-rz-j42">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    <menuItem title="Equipotential Lines Grapher" keyEquivalent="1" id="gdk-e4-3yx">
                                                         <connections>
-                                                            <action selector="clearRecentDocuments:" target="Ady-hI-5gd" id="Daa-9d-B3U"/>
+                                                            <segue destination="B8D-0N-5wS" kind="show" id="bar-4M-mJT"/>
                                                         </connections>
                                                     </menuItem>
                                                 </items>
@@ -87,21 +77,6 @@
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
                                                 <action selector="performClose:" target="Ady-hI-5gd" id="HmO-Ls-i7Q"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
-                                            <connections>
-                                                <action selector="saveDocument:" target="Ady-hI-5gd" id="teZ-XB-qJY"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Save As…" keyEquivalent="S" id="Bw7-FT-i3A">
-                                            <connections>
-                                                <action selector="saveDocumentAs:" target="Ady-hI-5gd" id="mDf-zr-I0C"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Revert to Saved" keyEquivalent="r" id="KaW-ft-85H">
-                                            <connections>
-                                                <action selector="revertDocumentToSaved:" target="Ady-hI-5gd" id="iJ3-Pv-kwq"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
@@ -679,12 +654,12 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-127" y="-196"/>
         </scene>
-        <!--Window Controller-->
+        <!--EquipotGrapher-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="EquipotGrapher" id="B8D-0N-5wS" userLabel="EquipotGrapher" sceneMemberID="viewController">
                     <window key="window" title="Equipotential Lines Grapher" allowsToolTipsWhenApplicationIsInactive="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -701,18 +676,18 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="48" y="253"/>
         </scene>
-        <!--View Controller-->
+        <!--Equipot View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="EquipotViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="571" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJO-7Y-ctR">
-                                <rect key="frame" x="218" y="-3" width="356" height="386"/>
+                                <rect key="frame" x="218" y="26" width="356" height="357"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="groove" id="rC3-Lf-fJV"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VZi-IP-nNK">
@@ -955,19 +930,30 @@
                                     <segue destination="rul-oc-HmG" kind="modal" id="0m9-tW-NIe"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSh-Bg-4cE">
+                                <rect key="frame" x="328" y="-3" width="134" height="32"/>
+                                <buttonCell key="cell" type="push" title="Save Image As..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uk7-Sd-iWh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="saveImgAsSender:" target="XfG-lQ-9wD" id="Hr9-69-uS3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="JSh-Bg-4cE" firstAttribute="top" secondItem="cJO-7Y-ctR" secondAttribute="bottom" constant="5" id="2eG-y0-1aq"/>
                             <constraint firstAttribute="trailing" secondItem="20G-mH-mOi" secondAttribute="trailing" constant="2" id="AwL-Sv-AAb"/>
                             <constraint firstItem="20G-mH-mOi" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="221" id="BJn-9A-flZ"/>
-                            <constraint firstAttribute="bottom" secondItem="cJO-7Y-ctR" secondAttribute="bottom" id="Jzv-XR-OCd"/>
                             <constraint firstItem="cJO-7Y-ctR" firstAttribute="leading" secondItem="VZi-IP-nNK" secondAttribute="trailing" id="LvM-It-giH"/>
                             <constraint firstItem="cJO-7Y-ctR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="221" id="RRA-Cv-a8p"/>
                             <constraint firstAttribute="trailing" secondItem="cJO-7Y-ctR" secondAttribute="trailing" id="V66-2D-ERm"/>
                             <constraint firstItem="20G-mH-mOi" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="WCm-A2-Xpp"/>
                             <constraint firstItem="cJO-7Y-ctR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="ZSv-fV-iQc"/>
                             <constraint firstItem="VZi-IP-nNK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="bZY-z7-vaS"/>
-                            <constraint firstAttribute="bottom" secondItem="cJO-7Y-ctR" secondAttribute="bottom" id="bkt-kk-gmU"/>
+                            <constraint firstAttribute="bottom" secondItem="cJO-7Y-ctR" secondAttribute="bottom" constant="29" id="f69-ga-tGA"/>
                             <constraint firstItem="VZi-IP-nNK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="feg-5V-L36"/>
+                            <constraint firstAttribute="bottom" secondItem="JSh-Bg-4cE" secondAttribute="bottom" constant="4" id="pk1-YD-dRi"/>
                             <constraint firstAttribute="trailing" secondItem="cJO-7Y-ctR" secondAttribute="trailing" id="qCW-a9-uPm"/>
                             <constraint firstItem="VZi-IP-nNK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="vsk-xB-eOC"/>
                         </constraints>
@@ -988,11 +974,12 @@
                         <outlet property="WindowUpperY" destination="C3z-YS-OqA" id="XQt-0N-hUE"/>
                         <outlet property="helpButton" destination="mvx-1N-To0" id="ndy-Hh-eE9"/>
                         <outlet property="img" destination="cJO-7Y-ctR" id="bIq-CE-pHF"/>
+                        <outlet property="savebutton" destination="JSh-Bg-4cE" id="7eR-Yv-LkG"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29.5" y="683"/>
+            <point key="canvasLocation" x="48.5" y="924"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="YC0-8k-CTo">
@@ -1017,12 +1004,12 @@
                 </windowController>
                 <customObject id="BTa-Eb-dVG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="144"/>
+            <point key="canvasLocation" x="578" y="662"/>
         </scene>
-        <!--View Controller-->
+        <!--Equipot View Controller-->
         <scene sceneID="2mb-3c-jfY">
             <objects>
-                <viewController id="OyW-Yd-7mm" customClass="ViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OyW-Yd-7mm" customClass="EquipotViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="uDO-qn-6eb">
                         <rect key="frame" x="0.0" y="0.0" width="293" height="377"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1036,12 +1023,192 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="0.0" horizontalPageScroll="0.0" verticalLineScroll="10" verticalPageScroll="10" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-9p-b9V">
+                                <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kM8-Xl-Iw6">
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view id="WDp-b9-Qjt">
+                                            <rect key="frame" x="0.0" y="-42603" width="278" height="796"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-xM-7cr">
+                                                    <rect key="frame" x="8" y="748" width="262" height="48"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="This graphing calculator can draw equipotential lines for custom discrete charge distributions. " id="Gqi-3l-xG4">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EiS-mq-pIF">
+                                                    <rect key="frame" x="8" y="676" width="262" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="oUW-qZ-Hfb">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-ik-eZN">
+                                                    <rect key="frame" x="8" y="539" width="272" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="The third field requires an array of charge amounts of the form" id="1fd-Hf-BCX">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QP4-Ue-h5z">
+                                                    <rect key="frame" x="8" y="460" width="272" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail." id="IQp-IN-np4">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7e0-pL-LvN">
+                                                    <rect key="frame" x="8" y="388" width="272" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="nfP-0K-OVi">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number.</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="15n-cZ-A8Q">
+                                                    <rect key="frame" x="8" y="300" width="272" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="Yhi-Ic-Hre">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates.</string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hR-mv-a1b">
+                                                    <rect key="frame" x="8" y="244" width="272" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="The number of contours is a parameter that indirectly specifies the potential difference between each line." id="PVY-5H-8kJ">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PjT-76-d8W">
+                                                    <rect key="frame" x="8" y="188" width="268" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" id="BGh-Mr-DVx">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. </string>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYB-aK-coB">
+                                                    <rect key="frame" x="8" y="132" width="268" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="Use the &quot;Draw 2D Equipotential Lines&quot; button to calculate and draw the position of the lines on the image well to the right." id="bk2-xK-ZMd">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39O-Xn-bcg">
+                                                    <rect key="frame" x="8" y="76" width="260" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="Use the &quot;Save Image As...&quot; button to save the displayed image to a location of your choosing on a disk or cloud location. " id="FLV-LC-vUA">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Mu-Nv-Qoo">
+                                                    <rect key="frame" x="84" y="9" width="110" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="©  2022 MDNich" id="tBd-Zq-dWh">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-rv-5YT">
+                                                    <rect key="frame" x="-2" y="653" width="282" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" alignment="center" title="X1,X2,X3..." id="mcu-SX-VLg">
+                                                        <font key="font" size="13" name="Menlo-Regular"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vu-Dd-TON">
+                                                    <rect key="frame" x="8" y="597" width="262" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="The second field requires an array of Y coordinates for the charges, of the (same) form" id="Y34-15-4J4">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-mh-4Pr">
+                                                    <rect key="frame" x="-2" y="579" width="282" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" alignment="center" title="Y1,Y2,Y3..." id="MB1-ys-29l">
+                                                        <font key="font" size="13" name="Menlo-Regular"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFl-Nc-pyI">
+                                                    <rect key="frame" x="-2" y="516" width="282" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" selectable="YES" alignment="center" title="Q1,Q2,Q3..." id="21h-Qz-Gql">
+                                                        <font key="font" size="13" name="Menlo-Regular"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VkU-W8-vAE">
+                                                    <rect key="frame" x="13" y="26" width="261" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Open Github Repository for More Info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tEJ-bo-g2e">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="openGithubWithSender:" target="OyW-Yd-7mm" id="rp9-JG-fue"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5fh-xM-7cr" firstAttribute="leading" secondItem="WDp-b9-Qjt" secondAttribute="leading" constant="10" id="Y5b-PI-THN"/>
+                                                <constraint firstAttribute="trailing" secondItem="5fh-xM-7cr" secondAttribute="trailing" constant="10" id="yM0-OO-ft1"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="74m-Sj-WZm">
+                                    <rect key="frame" x="-100" y="-100" width="278" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="33U-Ua-z94">
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="scrollViewHelp" destination="SCr-9p-b9V" id="Cs2-Vh-Nfp"/>
+                    </connections>
                 </viewController>
                 <customObject id="XMs-28-fFU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722.5" y="653.5"/>
+            <point key="canvasLocation" x="577.5" y="1171.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="8Mm-1w-nhp">
@@ -1079,7 +1246,245 @@
                 </windowController>
                 <customObject id="phS-mb-LJ5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-644" y="-442"/>
+            <point key="canvasLocation" x="-348" y="-2025"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="H0t-X3-Q1P">
+            <objects>
+                <windowController id="LgQ-mN-jD8" sceneMemberID="viewController">
+                    <window key="window" title="Welcome to SciTool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="gQD-eg-wl6" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="270" y="342" width="406" height="420"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1125"/>
+                        <value key="minFullScreenContentSize" type="size" width="406" height="420"/>
+                        <value key="maxFullScreenContentSize" type="size" width="406" height="420"/>
+                        <view key="contentView" id="J17-Gh-CT2">
+                            <rect key="frame" x="0.0" y="0.0" width="406" height="420"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="LgQ-mN-jD8" id="Kgy-bw-LjR"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Qk8-7u-fva" kind="relationship" relationship="window.shadowedContentViewController" id="nUF-oz-ofP"/>
+                    </connections>
+                </windowController>
+                <customObject id="IKR-d0-L9j" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="-104"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="GIW-ow-x4X">
+            <objects>
+                <viewController id="Qk8-7u-fva" customClass="SplashViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="dl2-R8-mUf">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="492"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uy2-Mg-Cig">
+                                <rect key="frame" x="-2" y="309" width="410" height="24"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to SciTool!" id="eP1-CJ-yff">
+                                    <font key="font" metaFont="systemHeavy" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WV1-fS-Ykk">
+                                <rect key="frame" x="87" y="245" width="207" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="AwR-R0-Nio">
+                                        <connections>
+                                            <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="pk9-es-2dt"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Equipotential Lines Grapher" id="9N1-IW-RO1">
+                                    <font key="font" size="15" textStyle="headline" name=".SFNS-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="GZt-nZ-DEB"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAx-34-zM8">
+                                <rect key="frame" x="87" y="165" width="257" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="UZA-u4-bVs">
+                                        <connections>
+                                            <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="zIh-Xs-YPW"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="View Other Simulators/Calculators" id="LZz-i5-Yz1">
+                                    <font key="font" size="15" textStyle="headline" name=".SFNS-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="Fod-Qx-SHm"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rE-db-XT2">
+                                <rect key="frame" x="87" y="87" width="186" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="0uq-Ja-bZ6">
+                                        <connections>
+                                            <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="sOu-Vg-rI6"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="Change App Preferences" id="JXI-nh-Gdz">
+                                    <font key="font" size="15" textStyle="headline" name=".SFNS-Bold"/>
+                                    <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="EAX-d4-fJe"/>
+                                </connections>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-eu-nkx">
+                                <rect key="frame" x="108" y="330" width="191.5" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="ub2-VZ-j79"/>
+                                    <constraint firstAttribute="width" constant="191" id="ySA-BE-v59"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="6uW-4f-HWR">
+                                    <imageReference key="image" image="atom" catalog="system" symbolScale="default" renderingMode="hierarchical-single">
+                                        <hierarchicalColors>
+                                            <color name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                            <color name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </imageCell>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-v5-Bku">
+                                <rect key="frame" x="153" y="285" width="101" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Version 1.0 Beta" id="RB9-ae-Isv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-uA-1qP">
+                                <rect key="frame" x="87" y="212" width="333" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="VO8-2R-krH">
+                                        <connections>
+                                            <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="6ZM-O1-X8l"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" title="Graph Equipotential lines formed from specified charges" id="32N-BX-gWI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="p1E-p4-L4I"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQv-jk-nir">
+                                <rect key="frame" x="87" y="131" width="257" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Dgi-e2-I1J">
+                                        <connections>
+                                            <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="xRl-rt-nNT"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" title="See the full list of all SciTool's available Simulators and Calculators" id="79o-Lq-7az">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="ZHN-KF-RID"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrK-Ub-Qfo">
+                                <rect key="frame" x="87" y="53" width="282" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Tsi-QT-LMO">
+                                        <connections>
+                                            <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="ArC-84-UKX"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" title="Change settings governing SciTool behaviors and simulators'/calculators' behavior" id="WOp-tg-egs">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="Jrp-yi-aOO"/>
+                                    </connections>
+                                </textFieldCell>
+                            </textField>
+                            <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-up-ADB">
+                                <rect key="frame" x="20" y="128" width="62" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ellipsis.circle" catalog="system" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="D4O-DW-Agm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="1BL-nf-mkn"/>
+                                </connections>
+                            </button>
+                            <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYY-ae-pSG">
+                                <rect key="frame" x="19" y="47.5" width="62.5" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="gear" catalog="system" imagePosition="only" alignment="center" enabled="NO" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="OuY-B5-IrB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="74z-PM-9dK"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEh-og-y1Z">
+                                <rect key="frame" x="25" y="202" width="53" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <gestureRecognizers>
+                                    <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="k4R-l4-qCk">
+                                        <connections>
+                                            <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="I12-wa-bQC"/>
+                                        </connections>
+                                    </clickGestureRecognizer>
+                                </gestureRecognizers>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="V " id="Vkg-gN-wfn">
+                                    <font key="font" size="65" name="TimesNewRomanPS-ItalicMT"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="2Ce-9X-cNn"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Zbl-eu-nkx" firstAttribute="top" secondItem="dl2-R8-mUf" secondAttribute="top" id="AaO-pv-W4E"/>
+                            <constraint firstAttribute="trailing" secondItem="uy2-Mg-Cig" secondAttribute="trailing" id="GSW-G6-oSc"/>
+                            <constraint firstItem="uy2-Mg-Cig" firstAttribute="leading" secondItem="dl2-R8-mUf" secondAttribute="leading" id="H61-fA-nM0"/>
+                            <constraint firstItem="Zbl-eu-nkx" firstAttribute="leading" secondItem="dl2-R8-mUf" secondAttribute="leading" constant="108" id="Jy1-37-Iym"/>
+                            <constraint firstItem="uy2-Mg-Cig" firstAttribute="top" secondItem="Zbl-eu-nkx" secondAttribute="bottom" constant="1" id="Zoi-CE-zro"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbl-eu-nkx" secondAttribute="trailing" constant="107" id="yDj-As-Ybe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="wjI-Lc-Mbt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="522"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="tCQ-O1-OM3">
@@ -1100,7 +1505,7 @@
                 </splitViewController>
                 <customObject id="j33-WX-AL3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-442"/>
+            <point key="canvasLocation" x="-347" y="-1554"/>
         </scene>
         <!--Master View Controller-->
         <scene sceneID="cNK-b2-eSN">
@@ -1183,7 +1588,7 @@
                 </viewController>
                 <customObject id="BEV-37-sjD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="-371"/>
+            <point key="canvasLocation" x="282" y="-1484"/>
         </scene>
         <!--Side Bar Controller-->
         <scene sceneID="fJJ-RY-UOp">
@@ -1333,10 +1738,13 @@
                 </viewController>
                 <customObject id="dFE-82-u5l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-810"/>
+            <point key="canvasLocation" x="63" y="-1923"/>
         </scene>
     </scenes>
     <resources>
+        <image name="atom" catalog="system" width="17" height="18"/>
+        <image name="ellipsis.circle" catalog="system" width="15" height="15"/>
+        <image name="gear" catalog="system" width="17" height="17"/>
         <image name="sidebar.left" catalog="system" width="18" height="14"/>
     </resources>
 </document>
