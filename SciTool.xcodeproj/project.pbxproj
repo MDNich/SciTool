@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5804211327D799BE00126EC3 /* voltage3D.py in Resources */ = {isa = PBXBuildFile; fileRef = 5804211227D799BE00126EC3 /* voltage3D.py */; };
 		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5804211227D799BE00126EC3 /* voltage3D.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = voltage3D.py; sourceTree = "<group>"; };
 		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
 				58D904A327B17FB80051C600 /* voltage.py */,
 				589EE55C27BD316300D38DF2 /* blank.png */,
+				5804211227D799BE00126EC3 /* voltage3D.py */,
 			);
 			path = SciTool;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
+				5804211327D799BE00126EC3 /* voltage3D.py in Resources */,
 				58D9049727B17A5D0051C600 /* Main.storyboard in Resources */,
 				58D904A427B17FB80051C600 /* voltage.py in Resources */,
 				589EE55D27BD316300D38DF2 /* blank.png in Resources */,
