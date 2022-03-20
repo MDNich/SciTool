@@ -25,7 +25,37 @@ class SplashViewController: NSViewController {
     }
     
     
+    @IBAction func open3DEquipotentialGrapherPanel(sender: Any?)
+    {
+        print(" yo2 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher3D") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    @IBAction func openCircuitSimPanel(sender: Any?)
+    {
+        print(" yo2 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "CircuitSim") as! NSWindowController
+        windowController.showWindow(self)
+    }
     
+    @IBAction func openEquipotentialGrapherPanel(sender: Any?)
+    {
+        print(" yo4 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher") as! NSWindowController
+        windowController.showWindow(self)
+    }
     
     @IBAction func openEquipotentialGrapher(sender: Any?)
     {
@@ -33,17 +63,26 @@ class SplashViewController: NSViewController {
         self.view.window?.close()
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher") as! NSWindowController
-        windowControllegr.showWindow(self)
+        windowController.showWindow(self)
     }
     @IBAction func viewListOfCalculators(sender: Any?)
     {
-        self.view.window?.close()
+        /*self.view.window?.close()
         let alert: NSAlert = NSAlert()
         alert.messageText = "Not Available Yet"
         alert.informativeText = "This feature is not available yet. Please check back on the webpage for a new version that may include this feature."
         alert.alertStyle = NSAlert.Style.informational
         alert.addButton(withTitle: "OK")
-        _ = alert.runModal()
+        _ = alert.runModal()*/
+        print(" yo3 ")
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "list") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+    //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+        
+        
         // TODO
     }
     @IBAction func openPrefs(sender: Any?)
