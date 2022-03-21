@@ -8,10 +8,13 @@ with a Swift 5 or Python 3 program that has a simulation or calculator. Be sure 
 
 Current SciTools: 
 1. Equipotential Lines Grapher
+2. 3D Potential Graph
+3. Circuit Simulator
 
 Current Dependencies: Must have Python3 installed and must have the following packages:
 1. numpy
 2. matplotlib
+3. plotly
 
 Thanks!
 Releases with new SciTools are posted regularly.
