@@ -85,8 +85,17 @@ class SplashViewController: NSViewController {
         
         // TODO
     }
-    @IBAction func openPrefs(sender: Any?)
+    @IBAction func checkPackages(sender: Any?)
     {
+        print(" yo5 ")
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "checker") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+    //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+        
+        
         // self.view.window?.close()
         // TODO
     }

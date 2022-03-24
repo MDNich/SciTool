@@ -1274,10 +1274,10 @@
                     <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="xLa-C0-JOB" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="270" y="345" width="480" height="270"/>
+                        <rect key="contentRect" x="392" y="530" width="286" height="85"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1131"/>
                         <view key="contentView" id="iJ2-fe-Uxi">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <rect key="frame" x="0.0" y="0.0" width="286" height="85"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
                         <connections>
@@ -1290,7 +1290,7 @@
                 </windowController>
                 <customObject id="Qoz-th-npF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1440" y="-567"/>
+            <point key="canvasLocation" x="-1065" y="-701"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="tlG-Ee-BdQ">
@@ -1374,7 +1374,7 @@
                 </viewController>
                 <customObject id="o23-5b-zrh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1545.5" y="-227.5"/>
+            <point key="canvasLocation" x="-1065" y="-463"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="H0t-X3-Q1P">
@@ -1458,7 +1458,7 @@
                                 </connections>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4rE-db-XT2">
-                                <rect key="frame" x="87" y="87" width="186" height="19"/>
+                                <rect key="frame" x="87" y="87" width="273" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <gestureRecognizers>
                                     <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="0uq-Ja-bZ6">
@@ -1467,13 +1467,13 @@
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
-                                <textFieldCell key="cell" lineBreakMode="clipping" enabled="NO" title="Change App Preferences" id="JXI-nh-Gdz">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Check for Dependencies (Recommended)" id="JXI-nh-Gdz">
                                     <font key="font" textStyle="headline" name=".SFNS-Bold"/>
-                                    <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
-                                    <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="EAX-d4-fJe"/>
+                                    <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="ktZ-at-4qz"/>
                                 </connections>
                             </textField>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-eu-nkx">
@@ -1549,14 +1549,14 @@
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
-                                <textFieldCell key="cell" title="Change settings governing SciTool behaviors and simulators'/calculators' behavior" id="WOp-tg-egs">
+                                <textFieldCell key="cell" title="Check that Python 3 and all packages required are installed" id="WOp-tg-egs">
                                     <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <connections>
-                                        <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="Jrp-yi-aOO"/>
-                                    </connections>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="WyI-mf-54F"/>
+                                </connections>
                             </textField>
                             <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-up-ADB">
                                 <rect key="frame" x="20" y="128" width="62" height="59"/>
@@ -1567,17 +1567,6 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="1BL-nf-mkn"/>
-                                </connections>
-                            </button>
-                            <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYY-ae-pSG">
-                                <rect key="frame" x="19" y="47.5" width="62.5" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="gear" catalog="system" imagePosition="only" alignment="center" enabled="NO" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="OuY-B5-IrB">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="74z-PM-9dK"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEh-og-y1Z">
@@ -1599,6 +1588,17 @@
                                     <action selector="openEquipotentialGrapherWithSender:" target="Qk8-7u-fva" id="2Ce-9X-cNn"/>
                                 </connections>
                             </textField>
+                            <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYY-ae-pSG">
+                                <rect key="frame" x="20" y="53" width="62" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Python" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="OuY-B5-IrB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="EoS-zw-qt4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Zbl-eu-nkx" firstAttribute="top" secondItem="dl2-R8-mUf" secondAttribute="top" id="AaO-pv-W4E"/>
@@ -2603,6 +2603,123 @@
             </objects>
             <point key="canvasLocation" x="-1046" y="1073"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="vkM-C0-Flo">
+            <objects>
+                <windowController storyboardIdentifier="checker" id="fpv-gT-xv7" sceneMemberID="viewController">
+                    <window key="window" title="Install Dependencies" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="aNt-uh-D3H">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="270" y="345" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1131"/>
+                        <view key="contentView" id="SQk-NT-NI7">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="fpv-gT-xv7" id="p2c-Ei-bjK"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="EqX-Em-s4q" kind="relationship" relationship="window.shadowedContentViewController" id="Cde-xD-I7x"/>
+                    </connections>
+                </windowController>
+                <customObject id="lZW-l5-eHE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2389" y="-76"/>
+        </scene>
+        <!--Dependencies View Controller-->
+        <scene sceneID="7kN-nR-7Ff">
+            <objects>
+                <viewController storyboardIdentifier="checker1" id="EqX-Em-s4q" customClass="DependenciesViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="K6S-MS-RlD">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQp-CT-uTg">
+                                <rect key="frame" x="170" y="234" width="140" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Install Dependencies" id="slZ-R2-ZyQ">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4b-14-FrS">
+                                <rect key="frame" x="218" y="192" width="173" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="1: Check for python install" id="ekf-5i-a2m">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifC-I3-2Ek">
+                                <rect key="frame" x="20" y="61" width="165" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Python" id="vLF-WR-fvf"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-kP-jjx">
+                                <rect key="frame" x="213" y="157" width="168" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Check Python Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="brq-Bq-FlW">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-wg-aem">
+                                <rect key="frame" x="213" y="105" width="169" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Install Python 3 Latest" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UvQ-1q-G7g">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z2L-YO-84r">
+                                <rect key="frame" x="213" y="48" width="136" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Install Package..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xhA-sz-KPA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBE-WE-PGz">
+                                <rect key="frame" x="220" y="140" width="50" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="5Km-pq-eQs">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-j0-kya">
+                                <rect key="frame" x="266" y="140" width="196" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="yon-7Z-n2U">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" doubleValue="50" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="60a-wt-Z9z">
+                                <rect key="frame" x="222" y="85" width="238" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKD-F2-ikY">
+                                <rect key="frame" x="378" y="13" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k7k-ue-679">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="rbu-IV-Pic" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2695" y="355"/>
+        </scene>
         <!--EquipotGrapher-->
         <scene sceneID="Boz-Pu-Ew9">
             <objects>
@@ -2705,13 +2822,97 @@
             </objects>
             <point key="canvasLocation" x="422.5" y="-463"/>
         </scene>
+        <!--Dependencies View Controller-->
+        <scene sceneID="9GY-oQ-ROO">
+            <objects>
+                <viewController storyboardIdentifier="checker2" id="KtS-Wu-XBZ" customClass="DependenciesViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="7ln-pI-mYs">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-i5-z3c">
+                                <rect key="frame" x="170" y="234" width="140" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Install Dependencies" id="cPR-WG-UME">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQ7-GO-Wy4">
+                                <rect key="frame" x="209" y="192" width="214" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="2: Check for package MatPlotLib" id="mtO-Yo-1dF">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0uO-gX-nTl">
+                                <rect key="frame" x="20" y="61" width="165" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Python" id="jVV-rT-IB5"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRk-QL-vwi">
+                                <rect key="frame" x="204" y="157" width="186" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Check Matplotlib Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KOi-Jt-Plj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ykf-9F-gjO">
+                                <rect key="frame" x="209" y="140" width="50" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="n8t-Ue-4Q2">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTp-1Q-8lN">
+                                <rect key="frame" x="255" y="140" width="196" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="gpl-hx-Oax">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-qp-eqr">
+                                <rect key="frame" x="204" y="105" width="176" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Install Matplotlib Latest" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="F1s-yP-iLA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <progressIndicator fixedFrame="YES" maxValue="100" doubleValue="50" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="NGF-W8-Zm3">
+                                <rect key="frame" x="211" y="82" width="238" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jy6-u9-YkP">
+                                <rect key="frame" x="378" y="13" width="89" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="di6-Fe-ek8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="RZu-Et-Ggb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2176" y="355"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NSRefreshTemplate" width="14" height="16"/>
+        <image name="Python" width="1419" height="1419"/>
         <image name="arrow.up.forward.app" catalog="system" width="15" height="14"/>
         <image name="atom" catalog="system" width="17" height="18"/>
         <image name="ellipsis.circle" catalog="system" width="15" height="15"/>
-        <image name="gear" catalog="system" width="17" height="17"/>
         <image name="sidebar.left" catalog="system" width="18" height="14"/>
     </resources>
 </document>

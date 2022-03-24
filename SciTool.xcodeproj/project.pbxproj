@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5804211327D799BE00126EC3 /* voltage3D.py in Resources */ = {isa = PBXBuildFile; fileRef = 5804211227D799BE00126EC3 /* voltage3D.py */; };
+		581FF3FE27E8F53600EC1D62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581FF3FD27E8F53600EC1D62 /* README.md */; };
+		581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */; };
 		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		5804211227D799BE00126EC3 /* voltage3D.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = voltage3D.py; sourceTree = "<group>"; };
+		581FF3FD27E8F53600EC1D62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesViewController.swift; sourceTree = "<group>"; };
 		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		58D9048327B17A5C0051C600 = {
 			isa = PBXGroup;
 			children = (
+				581FF3FD27E8F53600EC1D62 /* README.md */,
 				58D9048E27B17A5C0051C600 /* SciTool */,
 				58D9048D27B17A5C0051C600 /* Products */,
 			);
@@ -68,6 +73,7 @@
 				589EE55F27BDA78900D38DF2 /* SideBarController.swift */,
 				58D9048F27B17A5C0051C600 /* AppDelegate.swift */,
 				58D9049127B17A5C0051C600 /* ViewController.swift */,
+				581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */,
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
@@ -143,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581FF3FE27E8F53600EC1D62 /* README.md in Resources */,
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				5804211327D799BE00126EC3 /* voltage3D.py in Resources */,
 				58D9049727B17A5D0051C600 /* Main.storyboard in Resources */,
@@ -180,6 +187,7 @@
 			files = (
 				589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */,
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
+				581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */,
 				589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */,
 				58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */,
 			);
