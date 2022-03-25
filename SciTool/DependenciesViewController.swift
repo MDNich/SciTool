@@ -18,25 +18,44 @@ class DependenciesViewController: NSViewController
     var downloadTask: URLSessionTask? = nil
     
     override func viewDidLoad() {
-        
-    }    
+        if let _ = tabView {
+            if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == 0)
+            {
+                prevPage.isHidden = true
+            }
+            else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
+            {
+                nextpage.stringValue = "Finish"
+            }
+        }
+    }
+    
+    func updateButtons()
+    {
+        if let _ = tabView {
+            if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == 0)
+            {
+                prevPage.isHidden = true
+            }
+            else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
+            {
+                nextpage.stringValue = "Finish"
+            }
+        }
+    }
+    @IBOutlet weak var tabView: NSTabView!
     @IBOutlet weak var installbutton: NSButton!
     @IBOutlet weak var versionPrint: NSTextField!
     @IBOutlet weak var nextpage: NSButton!
+    @IBOutlet weak var prevPage: NSButton!
+    @IBOutlet weak var mplversion: NSTextField!
+    @IBOutlet weak var mplProgress: NSProgressIndicator!
+    @IBOutlet weak var mplInstall: NSButton!
     
-    @IBAction func goBack1(_ sender: Any) {
-       
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        self.view.window?.windowController?.contentViewController =  storyboard.instantiateController(withIdentifier: "checker1") as! NSViewController
-        print("new window")
-
-        
-    }
-
     @IBAction func checkIfPythonExist(_ sender: Any) {
         var version: String = ""
         do {
-            try version = safeShell("python3 --version")
+            try version = safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 --version")
             versionPrint.stringValue = version
             nextpage.isEnabled = true
         }
@@ -46,38 +65,65 @@ class DependenciesViewController: NSViewController
             installbutton.isEnabled = true
         }
     }
+    @IBAction func installMPL(_ sender: Any) {
+        mplProgress.isIndeterminate = true
+        mplProgress.isHidden = false
+        mplProgress.isDisplayedWhenStopped = true
+        mplProgress.startAnimation(sender)
+        DispatchQueue.main.async {
+            do {
+                try self.safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip install matplotlib --disable-pip-version")
+            }
+            catch {
+                print(error)
+            }
+            self.mplProgress.stopAnimation(sender)
+            self.mplProgress.isIndeterminate = false
+            self.mplProgress.doubleValue = 100
+            self.nextpage.isEnabled = true
+
+        }
+    }
+    @IBAction func checkIfMPLexist(_ sender: Any) {
+        // pip3 list | grep matplotlib | cut -c 20-
+        var version: String = ""
+        do {
+            nextpage.isEnabled = true
+            try version = safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip list --disable-pip-version-check | grep matplotlib | cut -c 20-")
+            print(version)
+            if(version == "") {
+                version = "Matplotlib is not installed."
+                mplInstall.isEnabled = true
+                nextpage.isEnabled = false
+            }
+            mplversion.stringValue = version
+        }
+        catch {
+            //print("\(error)") //handle or silence the error here
+            mplversion.stringValue = "pip3 is not installed. Please reinstall Python 3."
+            nextpage.isEnabled = false
+            
+        }
+    }
     
+    @IBAction func nextPage(_ sender: Any) {
+        tabView.selectNextTabViewItem(sender)
+        prevPage.isHidden = false
+        updateButtons()
+    }
+    @IBAction func prevPage(_ sender: Any) {
+        tabView.selectPreviousTabViewItem(sender)
+        updateButtons()
+    }
     @IBAction func reqDownloadPY(_ sender: Any) {
         let url = URL(string: "https://www.python.org/downloads/")!
         if NSWorkspace.shared.open(url) {
             print("Browser Successfully opened")
         }
         nextpage.isEnabled = true
-        
     }
     
-    @IBAction func changePage(_ sender: Any) {
-        let storyboard = NSStoryboard(name: "Main", bundle: nil)
-        var newCtrl: DependenciesViewController? = DependenciesViewController()
-        do {
-            newCtrl = try storyboard.instantiateController(withIdentifier: "checker2") as! DependenciesViewController
-            
-        }
-        catch {
-            print("nope.")
-        }
-        print("is nil: \(newCtrl == nil)")
-        do {
-            try self.view.window?.windowController?.contentViewController = newCtrl
-            
-        }
-        catch {
-            print("nope2.")
-        }
-        self.view.window?.close()
-        self.view.window?.windowController?.showWindow(self)
-        print("new window")
-    }
+    
     
     func safeShell(_ command: String) throws -> String {
         let task = Process()
