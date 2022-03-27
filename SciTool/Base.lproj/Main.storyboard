@@ -2717,22 +2717,40 @@
                                     <action selector="reload:" target="2zw-0e-OdV" id="gAO-If-vhK"/>
                                 </connections>
                             </button>
-                            <progressIndicator ambiguous="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-7h-kzF">
-                                <rect key="frame" x="46" y="374" width="302" height="20"/>
+                            <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-7h-kzF">
+                                <rect key="frame" x="46" y="374" width="390" height="20"/>
                             </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oQA-9z-ddy">
+                                <rect key="frame" x="442" y="376" width="119" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="(Internet Required)" id="S3B-cI-QmU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-3a-CiK">
+                                <rect key="frame" x="0.0" y="0.0" width="571" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NotConnect" id="tr5-n7-U95"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="kef-tc-uaT" firstAttribute="leading" secondItem="cq5-NH-AVn" secondAttribute="leading" id="05a-Uh-nUR"/>
+                            <constraint firstItem="oQA-9z-ddy" firstAttribute="leading" secondItem="1N0-7h-kzF" secondAttribute="trailing" constant="8" symbolic="YES" id="OdT-VQ-caC"/>
                             <constraint firstItem="QjO-Rn-4a0" firstAttribute="top" secondItem="cq5-NH-AVn" secondAttribute="top" constant="6" id="Rc6-6a-7YH"/>
                             <constraint firstAttribute="trailing" secondItem="kef-tc-uaT" secondAttribute="trailing" id="WiD-ch-dc4"/>
                             <constraint firstAttribute="bottom" secondItem="kef-tc-uaT" secondAttribute="bottom" id="X7a-Q3-C2F"/>
+                            <constraint firstItem="kef-tc-uaT" firstAttribute="top" secondItem="oQA-9z-ddy" secondAttribute="bottom" constant="9" id="jlF-tu-wtw"/>
                             <constraint firstItem="1N0-7h-kzF" firstAttribute="top" secondItem="cq5-NH-AVn" secondAttribute="top" constant="7" id="kzW-9B-trF"/>
+                            <constraint firstItem="oQA-9z-ddy" firstAttribute="top" secondItem="cq5-NH-AVn" secondAttribute="top" constant="8" id="mKk-39-TyI"/>
                             <constraint firstItem="QjO-Rn-4a0" firstAttribute="leading" secondItem="cq5-NH-AVn" secondAttribute="leading" constant="6" id="pFc-pD-1tW"/>
                             <constraint firstItem="kef-tc-uaT" firstAttribute="top" secondItem="QjO-Rn-4a0" secondAttribute="bottom" constant="7" id="syj-Rh-eYc"/>
+                            <constraint firstAttribute="trailing" secondItem="oQA-9z-ddy" secondAttribute="trailing" constant="12" id="xRb-Q3-Dat"/>
                             <constraint firstItem="1N0-7h-kzF" firstAttribute="leading" secondItem="QjO-Rn-4a0" secondAttribute="trailing" constant="10" id="xZQ-Aa-KdW"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="noInternetImg" destination="csZ-3a-CiK" id="FF5-dn-blD"/>
                         <outlet property="progbar" destination="1N0-7h-kzF" id="moW-eM-Fav"/>
                         <outlet property="webview" destination="kef-tc-uaT" id="piJ-fg-p4t"/>
                     </connections>
@@ -3115,6 +3133,7 @@
     <resources>
         <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSRefreshTemplate" width="14" height="16"/>
+        <image name="NotConnect" width="1920" height="1080"/>
         <image name="Python" width="473" height="473"/>
         <image name="PythonYellow" width="473" height="473"/>
         <image name="arrow.up.forward.app" catalog="system" width="15" height="14"/>

@@ -99,10 +99,7 @@ class SplashViewController: NSViewController {
         // self.view.window?.close()
         // TODO
     }
-    func getWifiStrength() -> Int
-    {
-        ((CWWiFiClient.shared().interfaces()?[0].rssiValue() ?? -40)+50)/20
-    }
+    
     
     
 }
@@ -455,23 +452,35 @@ class EquipotViewController: NSViewController {
 }
 
 
-class CircuitSimViewController: NSViewController, WKUIDelegate
+class CircuitSimViewController: NSViewController, WKUIDelegate,CWEventDelegate
 {
+    @IBOutlet weak var wifiStrength: NSLevelIndicator!
     // https://www.falstad.com/circuit/circuitjs.html
     override func viewDidLoad() {
         // loaeded
+        checkInternet()
         webview.load(URLRequest(url: URL(string:  "https://www.falstad.com/circuit/circuitjs.html")!))
         webview.uiDelegate = self
         //ConnectButton
+        CWWiFiClient.shared().delegate = self
+        do { try CWWiFiClient.shared().startMonitoringEvent(with: CWEventType.linkQualityDidChange)}
+        catch {print("eh well sry")}
         webview.addObserver(self, forKeyPath:
                         #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
-        
+    
     }
     override func viewDidDisappear() {
         webview.removeObserver(self, forKeyPath:
                                 #keyPath(WKWebView.estimatedProgress))
         progbar.doubleValue = 0
+        do { try         CWWiFiClient.shared().stopMonitoringAllEvents()
+}
+        catch {print("eh well sry")}
         self.view.window?.close()
+    }
+    override func viewDidAppear() {
+        do { try CWWiFiClient.shared().startMonitoringEvent(with: CWEventType.linkQualityDidChange)}
+        catch {print("eh well sry")}
     }
     
     @IBOutlet weak var progbar: NSProgressIndicator!
@@ -479,6 +488,7 @@ class CircuitSimViewController: NSViewController, WKUIDelegate
     @IBOutlet weak var webview: WKWebView!
     
     @IBAction func reload(_ sender: Any) {
+        checkInternet()
         webview.reload()
     }
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -487,7 +497,40 @@ class CircuitSimViewController: NSViewController, WKUIDelegate
                print("estimatedProgress")
                progbar.doubleValue = Double(webview.estimatedProgress)*100
         }
+    }
+   
+    @IBOutlet weak var noInternetImg: NSImageView!
+    func checkInternet()
+    {
+        if Reachability.isConnectedToNetwork(){
+            webview.isHidden = false
+            noInternetImg.isHidden  = true
+        }else {
+            webview.isHidden = true
+            webview.stopLoading()
+            noInternetImg.isHidden  = false
+        }
         
+        
+    }
+    
+    
+    // MARK: Misc Helper Methods
+    func safeShell(_ command: String) throws -> String {
+        let task = Process()
+        let pipe = Pipe()
+        
+        task.standardOutput = pipe
+        task.standardError = pipe
+        task.arguments = ["-c", command]
+        task.executableURL = URL(fileURLWithPath: "/bin/zsh") //<--updated
+
+        try task.run() //<--updated
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8)!
+        
+        return output
     }
 }
 
