@@ -2702,8 +2702,8 @@
                         <subviews>
                             <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kef-tc-uaT">
                                 <rect key="frame" x="0.0" y="0.0" width="571" height="367"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkWebViewConfiguration key="configuration" applicationNameForUserAgent="">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
@@ -2717,13 +2717,12 @@
                                     <action selector="reload:" target="2zw-0e-OdV" id="gAO-If-vhK"/>
                                 </connections>
                             </button>
-                            <progressIndicator maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-7h-kzF">
-                                <rect key="frame" x="46" y="374" width="523" height="20"/>
+                            <progressIndicator ambiguous="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1N0-7h-kzF">
+                                <rect key="frame" x="46" y="374" width="302" height="20"/>
                             </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstItem="kef-tc-uaT" firstAttribute="leading" secondItem="cq5-NH-AVn" secondAttribute="leading" id="05a-Uh-nUR"/>
-                            <constraint firstAttribute="trailing" secondItem="1N0-7h-kzF" secondAttribute="trailing" constant="2" id="Att-lb-bb9"/>
                             <constraint firstItem="QjO-Rn-4a0" firstAttribute="top" secondItem="cq5-NH-AVn" secondAttribute="top" constant="6" id="Rc6-6a-7YH"/>
                             <constraint firstAttribute="trailing" secondItem="kef-tc-uaT" secondAttribute="trailing" id="WiD-ch-dc4"/>
                             <constraint firstAttribute="bottom" secondItem="kef-tc-uaT" secondAttribute="bottom" id="X7a-Q3-C2F"/>
@@ -2762,7 +2761,7 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXO-5c-iDx">
                                 <rect key="frame" x="20" y="61" width="165" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Python" id="StD-ea-PiT"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="PythonYellow" id="StD-ea-PiT"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-JT-liF">
                                 <rect key="frame" x="255" y="140" width="196" height="16"/>
@@ -2795,6 +2794,14 @@
                                     <action selector="prevPage:" target="cIF-fk-bMD" id="IqM-a8-Ic7"/>
                                 </connections>
                             </button>
+                            <box fixedFrame="YES" boxType="secondary" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="2dP-8z-Rrw">
+                                <rect key="frame" x="191" y="47" width="291" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="Ll0-9A-2dG">
+                                    <rect key="frame" x="3" y="3" width="285" height="167"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </box>
                             <tabView wantsLayer="YES" fixedFrame="YES" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-5V-SQg">
                                 <rect key="frame" x="206" y="61" width="261" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -2837,7 +2844,7 @@
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-8Q-9Bi">
                                                     <rect key="frame" x="46" y="80" width="196" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" id="9o1-Kv-vvC">
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="9o1-Kv-vvC">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2883,14 +2890,14 @@
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Vw-Pb-ggY">
                                                     <rect key="frame" x="47" y="79" width="196" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" id="g2D-jb-6sE">
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="g2D-jb-6sE">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6Y-5M-wta">
-                                                    <rect key="frame" x="-7" y="26" width="168" height="32"/>
+                                                    <rect key="frame" x="-7" y="44" width="168" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Install Matplotlib" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lq2-IL-XBK">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2900,10 +2907,6 @@
                                                         </connections>
                                                     </buttonCell>
                                                 </button>
-                                                <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-PB-gmD">
-                                                    <rect key="frame" x="0.0" y="58" width="261" height="20"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                </progressIndicator>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8J-DU-PCM">
                                                     <rect key="frame" x="-7" y="96" width="186" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -2915,6 +2918,10 @@
                                                         <action selector="checkIfMPLexist:" target="cIF-fk-bMD" id="l7l-qf-leZ"/>
                                                     </connections>
                                                 </button>
+                                                <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="1zT-PB-gmD">
+                                                    <rect key="frame" x="0.0" y="25" width="261" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </progressIndicator>
                                             </subviews>
                                         </view>
                                     </tabViewItem>
@@ -2944,14 +2951,14 @@
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tU5-Ki-JVJ">
                                                     <rect key="frame" x="47" y="79" width="196" height="16"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" id="59g-ur-D8p">
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="59g-ur-D8p">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei3-Go-Q9h">
-                                                    <rect key="frame" x="-7" y="26" width="168" height="32"/>
+                                                    <rect key="frame" x="-7" y="44" width="168" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Install Numpy" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FRM-Nv-DXb">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2962,11 +2969,11 @@
                                                     </connections>
                                                 </button>
                                                 <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="66h-68-BxP">
-                                                    <rect key="frame" x="0.0" y="58" width="261" height="20"/>
+                                                    <rect key="frame" x="0.0" y="25" width="261" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 </progressIndicator>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWN-zz-Uon">
-                                                    <rect key="frame" x="2" y="96" width="168" height="32"/>
+                                                    <rect key="frame" x="-7" y="96" width="168" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Check Numpy Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Oot-il-Snh">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2979,19 +2986,95 @@
                                             </subviews>
                                         </view>
                                     </tabViewItem>
+                                    <tabViewItem label="View" identifier="" id="hhD-CI-4FG" userLabel="CheckForPlotly">
+                                        <view key="view" id="zk9-Nk-UtE">
+                                            <rect key="frame" x="0.0" y="0.0" width="261" height="147"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izL-VK-fCy">
+                                                    <rect key="frame" x="-2" y="131" width="182" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="4: Check for Package Plotly" id="6Ac-CI-AWP">
+                                                        <font key="font" metaFont="systemBold"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvI-uJ-byj">
+                                                    <rect key="frame" x="-2" y="79" width="50" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="H0Y-df-jKE">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-n0-XfZ">
+                                                    <rect key="frame" x="47" y="79" width="196" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="vIy-be-tXR">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqH-qM-4qM">
+                                                    <rect key="frame" x="-7" y="44" width="168" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Install Plotly" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dal-eM-PtM">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="installPlotly:" target="cIF-fk-bMD" id="IVV-BY-BjS"/>
+                                                    </connections>
+                                                </button>
+                                                <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-7N-Vvr">
+                                                    <rect key="frame" x="0.0" y="25" width="261" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </progressIndicator>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g1-pj-Y8m">
+                                                    <rect key="frame" x="-7" y="96" width="159" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Check Plotly Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eEI-Te-hR3">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="checkIfPlotlyExist:" target="cIF-fk-bMD" id="OoA-v0-Q2a"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="View" identifier="" id="YZp-NW-amQ" userLabel="Finish">
+                                        <view key="view" id="tNf-H4-Nr5">
+                                            <rect key="frame" x="0.0" y="0.0" width="261" height="147"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sl2-nv-Nlo">
+                                                    <rect key="frame" x="73" y="37" width="115" height="113"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="checkmark.circle" catalog="system" id="7d3-c0-5Tf"/>
+                                                    <color key="contentTintColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                                </imageView>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTE-tc-zUL">
+                                                    <rect key="frame" x="-2" y="-4" width="265" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" alignment="center" title="All Packages Installed! Click Finish to choose a calculator to run." id="HWM-QI-KmO">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
                                 </tabViewItems>
                                 <connections>
                                     <outlet property="delegate" destination="cIF-fk-bMD" id="BTn-1x-8uC"/>
                                 </connections>
                             </tabView>
-                            <box fixedFrame="YES" boxType="secondary" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="2dP-8z-Rrw">
-                                <rect key="frame" x="191" y="47" width="291" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <view key="contentView" id="Ll0-9A-2dG">
-                                    <rect key="frame" x="3" y="3" width="285" height="167"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                            </box>
                         </subviews>
                     </view>
                     <connections>
@@ -3003,6 +3086,9 @@
                         <outlet property="numpyInstall" destination="Ei3-Go-Q9h" id="G5x-Qn-UwA"/>
                         <outlet property="numpyProgress" destination="66h-68-BxP" id="kMa-OU-W7X"/>
                         <outlet property="numpyVersion" destination="tU5-Ki-JVJ" id="fyq-Jz-Gem"/>
+                        <outlet property="plotlyInstall" destination="MqH-qM-4qM" id="Ham-DP-jHR"/>
+                        <outlet property="plotlyProgressBar" destination="7IT-7N-Vvr" id="weS-fK-aUX"/>
+                        <outlet property="plotlyVersion" destination="Dlw-n0-XfZ" id="8m0-dZ-JFz"/>
                         <outlet property="prevPage" destination="GlR-3T-uWR" id="jTe-lj-a0b"/>
                         <outlet property="tabView" destination="3Nm-5V-SQg" id="oRH-6f-wJ6"/>
                         <outlet property="versionPrint" destination="IYK-8Q-9Bi" id="Bn3-QP-w0M"/>
@@ -3030,8 +3116,10 @@
         <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSRefreshTemplate" width="14" height="16"/>
         <image name="Python" width="473" height="473"/>
+        <image name="PythonYellow" width="473" height="473"/>
         <image name="arrow.up.forward.app" catalog="system" width="15" height="14"/>
         <image name="atom" catalog="system" width="17" height="18"/>
+        <image name="checkmark.circle" catalog="system" width="15" height="15"/>
         <image name="ellipsis.circle" catalog="system" width="15" height="15"/>
         <image name="sidebar.left" catalog="system" width="18" height="14"/>
     </resources>

@@ -9,7 +9,7 @@ import PythonKit
 import os
 import Cocoa
 import WebKit
-
+import CoreWLAN
 
 class SplashViewController: NSViewController {
     override func viewDidLoad() {
@@ -99,6 +99,12 @@ class SplashViewController: NSViewController {
         // self.view.window?.close()
         // TODO
     }
+    func getWifiStrength() -> Int
+    {
+        ((CWWiFiClient.shared().interfaces()?[0].rssiValue() ?? -40)+50)/20
+    }
+    
+    
 }
 
 

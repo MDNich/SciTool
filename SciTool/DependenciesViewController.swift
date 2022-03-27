@@ -41,10 +41,17 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == 0)
             {
                 prevPage.isHidden = true
+                nextpage.title = "Continue"
+                nextpage.action = #selector(nextPage)
             }
             else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
             {
                 nextpage.title = "Finish"
+                nextpage.action = #selector(finish)
+            }
+            else {
+                nextpage.title = "Continue"
+                nextpage.action = #selector(nextPage)
             }
         }
     }
@@ -59,6 +66,10 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     @IBOutlet weak var numpyInstall: NSButton!
     @IBOutlet weak var numpyVersion: NSTextField!
     @IBOutlet weak var numpyProgress: NSProgressIndicator!
+    @IBOutlet weak var plotlyVersion: NSTextField!
+    @IBOutlet weak var plotlyInstall: NSButton!
+    @IBOutlet weak var plotlyProgressBar: NSProgressIndicator!
+    
     
     
     
@@ -166,7 +177,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         windowController.showWindow(self)
     }
     
-    @IBAction func nextPage(_ sender: Any) {
+    @IBAction @objc func nextPage(_ sender: Any) {
         updateButtons()
         if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems - 2)
         {
@@ -190,8 +201,50 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         nextpage.isEnabled = true
     }
     
+    @IBAction func checkIfPlotlyExist(_ sender: Any) {
+        // pip3 list | grep matplotlib | cut -c 20-
+        var version: String = ""
+        do {
+            nextpage.isEnabled = true
+            try version = safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip list --disable-pip-version-check | grep plotly | cut -c 20-")
+            print(version)
+            if(version == "") {
+                version = "Plotly is not installed."
+                plotlyInstall.isEnabled = true
+                nextpage.isEnabled = false
+            }
+            plotlyVersion.stringValue = version
+        }
+        catch {
+            //print("\(error)") //handle or silence the error here
+            plotlyVersion.stringValue = "pip3 is not installed. Please reinstall Python 3."
+            nextpage.isEnabled = false
+            
+        }
+    }
+    @IBAction func installPlotly(_ sender: Any) {
+        plotlyProgressBar.isIndeterminate = true
+        plotlyProgressBar.isHidden = false
+        plotlyProgressBar.isDisplayedWhenStopped = true
+        plotlyProgressBar.startAnimation(sender)
+        DispatchQueue.main.async {
+            do {
+                try self.safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip install plotly --disable-pip-version")
+            }
+            catch {
+                print(error)
+            }
+            self.plotlyProgressBar.stopAnimation(sender)
+            self.plotlyProgressBar.isIndeterminate = false
+            self.plotlyProgressBar.doubleValue = 100
+            self.nextpage.isEnabled = true
+
+        }
+    }
     
     
+    
+    // MARK: Misc Helper Methods
     func safeShell(_ command: String) throws -> String {
         let task = Process()
         let pipe = Pipe()
