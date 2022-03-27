@@ -11,21 +11,24 @@ import os
 import Cocoa
 import WebKit
 
-class DependenciesViewController: NSViewController
+class DependenciesViewController: NSViewController, NSTabViewDelegate
 {
     var fileDURL: URL? = URL(string: "")
     var isFileDownloaded: Bool = false
     var downloadTask: URLSessionTask? = nil
     
+    
     override func viewDidLoad() {
         if let _ = tabView {
+            tabView.delegate = self
             if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == 0)
             {
                 prevPage.isHidden = true
             }
             else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
             {
-                nextpage.stringValue = "Finish"
+                nextpage.title = "Finish"
+                
             }
         }
     }
@@ -33,13 +36,15 @@ class DependenciesViewController: NSViewController
     func updateButtons()
     {
         if let _ = tabView {
+            print(tabView.numberOfTabViewItems)
+            print(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!))
             if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == 0)
             {
                 prevPage.isHidden = true
             }
             else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
             {
-                nextpage.stringValue = "Finish"
+                nextpage.title = "Finish"
             }
         }
     }
@@ -51,6 +56,12 @@ class DependenciesViewController: NSViewController
     @IBOutlet weak var mplversion: NSTextField!
     @IBOutlet weak var mplProgress: NSProgressIndicator!
     @IBOutlet weak var mplInstall: NSButton!
+    @IBOutlet weak var numpyInstall: NSButton!
+    @IBOutlet weak var numpyVersion: NSTextField!
+    @IBOutlet weak var numpyProgress: NSProgressIndicator!
+    
+    
+    
     
     @IBAction func checkIfPythonExist(_ sender: Any) {
         var version: String = ""
@@ -105,11 +116,67 @@ class DependenciesViewController: NSViewController
             
         }
     }
+    @IBAction func checkIfNumpyExist(_ sender: Any) {
+        var version: String = ""
+        do {
+            nextpage.isEnabled = true
+            try version = safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip list --disable-pip-version-check | grep numpy | cut -c 20-")
+            print(version)
+            if(version == "") {
+                version = "Numpy is not installed."
+                numpyInstall.isEnabled = true
+                nextpage.isEnabled = false
+            }
+            numpyVersion.stringValue = version
+        }
+        catch {
+            //print("\(error)") //handle or silence the error here
+            numpyVersion.stringValue = "pip3 is not installed. Please reinstall Python 3."
+            nextpage.isEnabled = false
+            
+        }
+    }
+    @IBAction func installNumpy(_ sender: Any) {
+        numpyProgress.isIndeterminate = true
+        numpyProgress.isHidden = false
+        numpyProgress.isDisplayedWhenStopped = true
+        numpyProgress.startAnimation(sender)
+        DispatchQueue.main.async {
+            do {
+                try self.safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip install numpy --disable-pip-version")
+            }
+            catch {
+                print(error)
+            }
+            self.numpyProgress.stopAnimation(sender)
+            self.numpyProgress.isIndeterminate = false
+            self.numpyProgress.doubleValue = 100
+            self.nextpage.isEnabled = true
+
+        }
+    }
+    @objc
+    func finish(_ sender: Any)
+    {
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "list") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+    //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+    }
     
     @IBAction func nextPage(_ sender: Any) {
+        updateButtons()
+        if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems - 2)
+        {
+            nextpage.title = "Finish"
+            nextpage.action = #selector(finish)
+        }
         tabView.selectNextTabViewItem(sender)
         prevPage.isHidden = false
         updateButtons()
+
     }
     @IBAction func prevPage(_ sender: Any) {
         tabView.selectPreviousTabViewItem(sender)

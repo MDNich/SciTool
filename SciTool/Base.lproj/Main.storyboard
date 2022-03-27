@@ -91,6 +91,9 @@
                                                 <segue destination="fpv-gT-xv7" kind="show" id="ll4-iu-8Sm"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Show Splash Welcome Window" id="U6z-EP-oLU">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
                                         <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
                                             <connections>
@@ -1278,7 +1281,7 @@
         <scene sceneID="Mwd-3b-npu">
             <objects>
                 <windowController storyboardIdentifier="list" id="x3d-CX-rod" sceneMemberID="viewController">
-                    <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="xLa-C0-JOB" customClass="NSPanel">
+                    <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="xLa-C0-JOB" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="392" y="530" width="286" height="85"/>
@@ -1470,7 +1473,7 @@
                                 <gestureRecognizers>
                                     <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="0uq-Ja-bZ6">
                                         <connections>
-                                            <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="sOu-Vg-rI6"/>
+                                            <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="Ym8-Iq-nsa"/>
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
@@ -1552,7 +1555,7 @@
                                 <gestureRecognizers>
                                     <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="Tsi-QT-LMO">
                                         <connections>
-                                            <action selector="openPrefsWithSender:" target="Qk8-7u-fva" id="ArC-84-UKX"/>
+                                            <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="OuT-dB-Rdp"/>
                                         </connections>
                                     </clickGestureRecognizer>
                                 </gestureRecognizers>
@@ -1568,10 +1571,11 @@
                             <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m5B-up-ADB">
                                 <rect key="frame" x="20" y="128" width="62" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ellipsis.circle" catalog="system" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="D4O-DW-Agm">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="ellipsis.circle" catalog="system" imagePosition="only" alignment="center" alternateImage="NSAdvanced" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="D4O-DW-Agm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="viewListOfCalculatorsWithSender:" target="Qk8-7u-fva" id="1BL-nf-mkn"/>
                                 </connections>
@@ -1602,6 +1606,7 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
                                     <action selector="checkPackagesWithSender:" target="Qk8-7u-fva" id="EoS-zw-qt4"/>
                                 </connections>
@@ -2742,7 +2747,7 @@
             <objects>
                 <viewController storyboardIdentifier="checkerMain" id="cIF-fk-bMD" customClass="DependenciesViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="fPm-Lh-qWv">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-Pt-hyB">
@@ -2790,7 +2795,7 @@
                                     <action selector="prevPage:" target="cIF-fk-bMD" id="IqM-a8-Ic7"/>
                                 </connections>
                             </button>
-                            <tabView fixedFrame="YES" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-5V-SQg">
+                            <tabView wantsLayer="YES" fixedFrame="YES" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="3Nm-5V-SQg">
                                 <rect key="frame" x="206" y="61" width="261" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -2913,8 +2918,80 @@
                                             </subviews>
                                         </view>
                                     </tabViewItem>
+                                    <tabViewItem label="View" identifier="" id="5AP-8n-Nt3" userLabel="CheckForNumpy">
+                                        <view key="view" id="11w-Om-i0S">
+                                            <rect key="frame" x="0.0" y="0.0" width="261" height="147"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rsp-eE-nIM">
+                                                    <rect key="frame" x="-2" y="131" width="190" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="3: Check for Package Numpy" id="Jit-BA-83L">
+                                                        <font key="font" metaFont="systemBold"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4N-AO-HdM">
+                                                    <rect key="frame" x="-2" y="79" width="50" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="8bU-tj-Hlb">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tU5-Ki-JVJ">
+                                                    <rect key="frame" x="47" y="79" width="196" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" id="59g-ur-D8p">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei3-Go-Q9h">
+                                                    <rect key="frame" x="-7" y="26" width="168" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Install Numpy" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FRM-Nv-DXb">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="installNumpy:" target="cIF-fk-bMD" id="VIM-fq-xnr"/>
+                                                    </connections>
+                                                </button>
+                                                <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="66h-68-BxP">
+                                                    <rect key="frame" x="0.0" y="58" width="261" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </progressIndicator>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWN-zz-Uon">
+                                                    <rect key="frame" x="2" y="96" width="168" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Check Numpy Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Oot-il-Snh">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="checkIfNumpyExist:" target="cIF-fk-bMD" id="x04-C9-u4y"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
                                 </tabViewItems>
+                                <connections>
+                                    <outlet property="delegate" destination="cIF-fk-bMD" id="BTn-1x-8uC"/>
+                                </connections>
                             </tabView>
+                            <box fixedFrame="YES" boxType="secondary" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="2dP-8z-Rrw">
+                                <rect key="frame" x="191" y="47" width="291" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="Ll0-9A-2dG">
+                                    <rect key="frame" x="3" y="3" width="285" height="167"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </box>
                         </subviews>
                     </view>
                     <connections>
@@ -2923,6 +3000,9 @@
                         <outlet property="mplProgress" destination="1zT-PB-gmD" id="ZLQ-bM-R8U"/>
                         <outlet property="mplversion" destination="9Vw-Pb-ggY" id="5Pa-uV-pts"/>
                         <outlet property="nextpage" destination="1pv-6B-fQo" id="Pn4-CE-Ac8"/>
+                        <outlet property="numpyInstall" destination="Ei3-Go-Q9h" id="G5x-Qn-UwA"/>
+                        <outlet property="numpyProgress" destination="66h-68-BxP" id="kMa-OU-W7X"/>
+                        <outlet property="numpyVersion" destination="tU5-Ki-JVJ" id="fyq-Jz-Gem"/>
                         <outlet property="prevPage" destination="GlR-3T-uWR" id="jTe-lj-a0b"/>
                         <outlet property="tabView" destination="3Nm-5V-SQg" id="oRH-6f-wJ6"/>
                         <outlet property="versionPrint" destination="IYK-8Q-9Bi" id="Bn3-QP-w0M"/>
@@ -2930,12 +3010,26 @@
                 </viewController>
                 <customObject id="wR7-8Q-YJp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2389" y="328"/>
+            <point key="canvasLocation" x="-2379" y="328"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gsh-We-bUd">
+            <objects>
+                <viewController id="6ul-Lr-m3w" sceneMemberID="viewController">
+                    <view key="view" id="5KC-mG-jgc">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="T5p-2R-365" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2512" y="-500"/>
         </scene>
     </scenes>
     <resources>
+        <image name="NSAdvanced" width="32" height="32"/>
         <image name="NSRefreshTemplate" width="14" height="16"/>
-        <image name="Python" width="1419" height="1419"/>
+        <image name="Python" width="473" height="473"/>
         <image name="arrow.up.forward.app" catalog="system" width="15" height="14"/>
         <image name="atom" catalog="system" width="17" height="18"/>
         <image name="ellipsis.circle" catalog="system" width="15" height="15"/>
