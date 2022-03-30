@@ -15,6 +15,7 @@ Current Dependencies: Must have Python3 installed and must have the following pa
 1. numpy
 2. matplotlib
 3. plotly
+4. pandas (thanks mchl!)
 
 Thanks!
 Releases with new SciTools are posted regularly.
