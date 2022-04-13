@@ -31,6 +31,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
                 
             }
         }
+        nextpage.isEnabled = false
     }
     
     func updateButtons()
@@ -187,6 +188,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         tabView.selectNextTabViewItem(sender)
         prevPage.isHidden = false
         updateButtons()
+        nextpage.isEnabled = false
 
     }
     @IBAction func prevPage(_ sender: Any) {
