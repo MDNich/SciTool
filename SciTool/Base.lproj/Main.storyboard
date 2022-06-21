@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21179.7"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="21179.7"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1048,15 +1048,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kM8-Xl-Iw6">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="WDp-b9-Qjt">
-                                            <rect key="frame" x="0.0" y="-42603" width="278" height="796"/>
+                                            <rect key="frame" x="0.0" y="-42603" width="293" height="796"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-xM-7cr">
-                                                    <rect key="frame" x="8" y="748" width="262" height="48"/>
+                                                    <rect key="frame" x="8" y="748" width="277" height="48"/>
                                                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="This graphing calculator can draw equipotential lines for custom discrete charge distributions. " id="Gqi-3l-xG4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1217,7 +1217,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="33U-Ua-z94">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="OyW-Yd-7mm" name="value" keyPath="self.representedObject" id="6Pz-Rh-cOd">
@@ -1901,7 +1901,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="nD7-UB-2Bi">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="zxO-dE-0D9">
@@ -2070,7 +2070,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HSt-g3-DVy">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="D0G-gv-3At" name="value" keyPath="self.representedObject" id="Y62-wW-seU">
@@ -2113,7 +2113,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="yVN-un-flx">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="QZC-h3-Dqf">
@@ -2282,7 +2282,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hME-J3-UZ8">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="Md5-gl-NGH" name="value" keyPath="self.representedObject" id="Fnp-3e-6Ij">
