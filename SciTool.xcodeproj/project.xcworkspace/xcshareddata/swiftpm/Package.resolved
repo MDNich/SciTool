@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "PythonKit",
-        "repositoryURL": "https://github.com/pvieito/PythonKit.git",
-        "state": {
-          "branch": "master",
-          "revision": "211d4c877d83c627760e10700677a2ea9b4cdc5e",
-          "version": null
-        }
+  "pins" : [
+    {
+      "identity" : "pythonkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pvieito/PythonKit.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "81f621d094a7c8923207efe5178f50dba1b56c39"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
