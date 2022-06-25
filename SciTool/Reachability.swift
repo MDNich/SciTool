@@ -7,7 +7,6 @@
 
 import Foundation
 import SystemConfiguration
-import SystemConfiguration
 
 public class Reachability {
 
