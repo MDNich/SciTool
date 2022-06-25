@@ -20,6 +20,8 @@
 		58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049327B17A5D0051C600 /* Assets.xcassets */; };
 		58D9049727B17A5D0051C600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049527B17A5D0051C600 /* Main.storyboard */; };
 		58D904A427B17FB80051C600 /* voltage.py in Resources */ = {isa = PBXBuildFile; fileRef = 58D904A327B17FB80051C600 /* voltage.py */; };
+		58E1CD3728675D83008E6CB7 /* Stoichiometry in Resources */ = {isa = PBXBuildFile; fileRef = 58E1CD3628675D83008E6CB7 /* Stoichiometry */; };
+		58E1CD3A28675D9C008E6CB7 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 58E1CD3928675D9C008E6CB7 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		58D9049627B17A5D0051C600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D9049827B17A5D0051C600 /* SciTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SciTool.entitlements; sourceTree = "<group>"; };
 		58D904A327B17FB80051C600 /* voltage.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voltage.py; sourceTree = "<group>"; };
+		58E1CD3628675D83008E6CB7 /* Stoichiometry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Stoichiometry; sourceTree = "<group>"; };
 		7215B092285CDD080089AF0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		7215B093285CDD160089AF0F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E1CD3A28675D9C008E6CB7 /* ArgumentParser in Frameworks */,
 				58134BFE286651CA0008B00D /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +82,7 @@
 				58D9048F27B17A5C0051C600 /* AppDelegate.swift */,
 				58D9049127B17A5C0051C600 /* ViewController.swift */,
 				581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */,
+				58E1CD3628675D83008E6CB7 /* Stoichiometry */,
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
@@ -108,6 +113,7 @@
 			name = SciTool;
 			packageProductDependencies = (
 				58134BFD286651CA0008B00D /* PythonKit */,
+				58E1CD3928675D9C008E6CB7 /* ArgumentParser */,
 			);
 			productName = SciTool;
 			productReference = 58D9048C27B17A5C0051C600 /* SciTool.app */;
@@ -140,6 +146,7 @@
 			mainGroup = 58D9048327B17A5C0051C600;
 			packageReferences = (
 				58134BFC286651CA0008B00D /* XCRemoteSwiftPackageReference "PythonKit" */,
+				58E1CD3828675D9C008E6CB7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			productRefGroup = 58D9048D27B17A5C0051C600 /* Products */;
 			projectDirPath = "";
@@ -155,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E1CD3728675D83008E6CB7 /* Stoichiometry in Resources */,
 				581FF3FE27E8F53600EC1D62 /* README.md in Resources */,
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				5804211327D799BE00126EC3 /* voltage3D.py in Resources */,
@@ -427,6 +435,14 @@
 				kind = branch;
 			};
 		};
+		58E1CD3828675D9C008E6CB7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -434,6 +450,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 58134BFC286651CA0008B00D /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;
+		};
+		58E1CD3928675D9C008E6CB7 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58E1CD3828675D9C008E6CB7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
