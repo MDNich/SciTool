@@ -10,6 +10,7 @@ Current SciTools:
 1. Equipotential Lines Grapher
 2. 3D Potential Graph
 3. Circuit Simulator
+4. *In Progress* Stoichiometry (©thegail 2022)
 
 Current Dependencies: Must have Python3 installed and must have the following packages:
 1. numpy
