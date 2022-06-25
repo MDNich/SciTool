@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="2Xr-yn-TeO">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21179.7"/>
@@ -1282,8 +1282,8 @@
         <scene sceneID="Mwd-3b-npu">
             <objects>
                 <windowController storyboardIdentifier="list" id="x3d-CX-rod" sceneMemberID="viewController">
-                    <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="xLa-C0-JOB" customClass="NSPanel">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+                    <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="xLa-C0-JOB" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" utility="YES" HUD="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="392" y="530" width="286" height="85"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1131"/>
@@ -1301,7 +1301,7 @@
                 </windowController>
                 <customObject id="Qoz-th-npF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1065" y="-701"/>
+            <point key="canvasLocation" x="-2078" y="-827"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="tlG-Ee-BdQ">
@@ -1385,13 +1385,13 @@
                 </viewController>
                 <customObject id="o23-5b-zrh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1065" y="-463"/>
+            <point key="canvasLocation" x="-2079" y="-559"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="H0t-X3-Q1P">
             <objects>
-                <windowController id="LgQ-mN-jD8" sceneMemberID="viewController">
-                    <window key="window" title="Welcome to SciTool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="gQD-eg-wl6" customClass="NSPanel">
+                <windowController storyboardIdentifier="splashController" id="LgQ-mN-jD8" sceneMemberID="viewController">
+                    <window key="window" identifier="splashController" title="Welcome to SciTool" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="gQD-eg-wl6" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="270" y="342" width="406" height="420"/>
@@ -1418,7 +1418,7 @@
         <scene sceneID="GIW-ow-x4X">
             <objects>
                 <viewController id="Qk8-7u-fva" customClass="SplashViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="dl2-R8-mUf">
+                    <view key="view" identifier="splashController" id="dl2-R8-mUf">
                         <rect key="frame" x="0.0" y="0.0" width="406" height="492"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -2650,6 +2650,89 @@
             </objects>
             <point key="canvasLocation" x="-2389" y="-76"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="jHA-lC-G2o">
+            <objects>
+                <windowController id="2Xr-yn-TeO" sceneMemberID="viewController">
+                    <window key="window" title="Splash" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="kIi-fO-hBa" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" utility="YES" HUD="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="-2135" y="462" width="480" height="270"/>
+                        <rect key="screenRect" x="-2560" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="Ltg-9U-3R6">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="2Xr-yn-TeO" id="oRm-hO-hV6"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="IUI-5Q-TOb" kind="relationship" relationship="window.shadowedContentViewController" id="Hev-DQ-Cbk"/>
+                    </connections>
+                </windowController>
+                <customObject id="JJh-ye-WlS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1574" y="-771"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="Sla-4C-VYt">
+            <objects>
+                <viewController id="IUI-5Q-TOb" customClass="LoadingViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="cUP-KP-9tD">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEv-vb-GPY">
+                                <rect key="frame" x="161" y="91" width="159" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="appiconimag" id="SfE-ZI-xjt"/>
+                            </imageView>
+                            <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="iTv-0q-d96">
+                                <rect key="frame" x="38" y="60" width="404" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lo-zj-IT3">
+                                <rect key="frame" x="190" y="7" width="100" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Continue..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="19j-ti-Bj2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="continue:" target="IUI-5Q-TOb" id="Msk-tu-7ZN"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-w0-inV">
+                                <rect key="frame" x="207" y="87" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="SciTool" id="fmc-3N-aMb">
+                                    <font key="font" metaFont="systemBold" size="18"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXT-6q-uN3">
+                                <rect key="frame" x="36" y="78" width="64" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Loading..." id="WDr-Zv-nMt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="continuebutton" destination="5lo-zj-IT3" id="dif-RG-qVx"/>
+                        <outlet property="loadingLabel" destination="PXT-6q-uN3" id="Kbi-b2-Gan"/>
+                        <outlet property="progressbar" destination="iTv-0q-d96" id="1py-DJ-6b3"/>
+                    </connections>
+                </viewController>
+                <customObject id="zqm-ii-Ouj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634" y="-761"/>
+        </scene>
         <!--EquipotGrapher-->
         <scene sceneID="Boz-Pu-Ew9">
             <objects>
@@ -3075,6 +3158,67 @@
                                             </subviews>
                                         </view>
                                     </tabViewItem>
+                                    <tabViewItem label="View" identifier="" id="FPg-ZJ-4eh" userLabel="CheckForPandas">
+                                        <view key="view" id="c0S-CR-tkz">
+                                            <rect key="frame" x="0.0" y="0.0" width="261" height="147"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-VJ-2dl">
+                                                    <rect key="frame" x="-2" y="131" width="192" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="5: Check for Package Pandas" id="FYl-9q-Ajl">
+                                                        <font key="font" metaFont="systemBold"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-Og-mAR">
+                                                    <rect key="frame" x="-2" y="79" width="50" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="XVf-Ux-QW5">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HU1-MO-yLj">
+                                                    <rect key="frame" x="47" y="79" width="196" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="DuU-gg-fKL">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="js0-Ni-m5j">
+                                                    <rect key="frame" x="-7" y="44" width="168" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Install Pandas" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mvX-74-Vyu">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="installPandas:" target="cIF-fk-bMD" id="UdS-A5-6QC"/>
+                                                    </connections>
+                                                </button>
+                                                <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Hkf-IA-kgc">
+                                                    <rect key="frame" x="0.0" y="25" width="261" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                </progressIndicator>
+                                                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rCT-YN-0Uj">
+                                                    <rect key="frame" x="-7" y="96" width="169" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="push" title="Check Pandas Version" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rPe-4Z-nsw">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="checkIfPandasExist:" target="cIF-fk-bMD" id="Jnj-Wi-2fS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
                                     <tabViewItem label="View" identifier="" id="YZp-NW-amQ" userLabel="Finish">
                                         <view key="view" id="tNf-H4-Nr5">
                                             <rect key="frame" x="0.0" y="0.0" width="261" height="147"/>
@@ -3114,6 +3258,9 @@
                         <outlet property="numpyInstall" destination="Ei3-Go-Q9h" id="G5x-Qn-UwA"/>
                         <outlet property="numpyProgress" destination="66h-68-BxP" id="kMa-OU-W7X"/>
                         <outlet property="numpyVersion" destination="tU5-Ki-JVJ" id="fyq-Jz-Gem"/>
+                        <outlet property="pandasInstall" destination="js0-Ni-m5j" id="KvV-Lw-Soa"/>
+                        <outlet property="pandasProgressBar" destination="Hkf-IA-kgc" id="HL7-Bm-s7O"/>
+                        <outlet property="pandasVersion" destination="HU1-MO-yLj" id="Bu5-Lw-CGP"/>
                         <outlet property="plotlyInstall" destination="MqH-qM-4qM" id="Ham-DP-jHR"/>
                         <outlet property="plotlyProgressBar" destination="7IT-7N-Vvr" id="weS-fK-aUX"/>
                         <outlet property="plotlyVersion" destination="Dlw-n0-XfZ" id="8m0-dZ-JFz"/>
@@ -3146,6 +3293,7 @@
         <image name="NotConnect" width="1920" height="1080"/>
         <image name="Python" width="473" height="473"/>
         <image name="PythonYellow" width="473" height="473"/>
+        <image name="appiconimag" width="1024" height="1024"/>
         <image name="arrow.up.forward.app" catalog="system" width="15" height="14"/>
         <image name="atom" catalog="system" width="17" height="18"/>
         <image name="checkmark.circle" catalog="system" width="15" height="15"/>

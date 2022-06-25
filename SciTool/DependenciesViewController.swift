@@ -28,7 +28,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             else if(tabView.indexOfTabViewItem(tabView.selectedTabViewItem!) == tabView.numberOfTabViewItems-1)
             {
                 nextpage.title = "Finish"
-                
+                nextpage.isEnabled = true
             }
         }
         nextpage.isEnabled = false
@@ -49,6 +49,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             {
                 nextpage.title = "Finish"
                 nextpage.action = #selector(finish)
+                nextpage.isEnabled = true
             }
             else {
                 nextpage.title = "Continue"
@@ -70,7 +71,9 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     @IBOutlet weak var plotlyVersion: NSTextField!
     @IBOutlet weak var plotlyInstall: NSButton!
     @IBOutlet weak var plotlyProgressBar: NSProgressIndicator!
-    
+    @IBOutlet weak var pandasVersion: NSTextField!
+    @IBOutlet weak var pandasInstall: NSButton!
+    @IBOutlet weak var pandasProgressBar: NSProgressIndicator!
     
     
     
@@ -184,11 +187,14 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         {
             nextpage.title = "Finish"
             nextpage.action = #selector(finish)
+            nextpage.isEnabled = true
+        }
+        else {
+            nextpage.isEnabled = false
         }
         tabView.selectNextTabViewItem(sender)
         prevPage.isHidden = false
         updateButtons()
-        nextpage.isEnabled = false
 
     }
     @IBAction func prevPage(_ sender: Any) {
@@ -239,6 +245,47 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.plotlyProgressBar.stopAnimation(sender)
             self.plotlyProgressBar.isIndeterminate = false
             self.plotlyProgressBar.doubleValue = 100
+            self.nextpage.isEnabled = true
+
+        }
+    }
+    
+    @IBAction func checkIfPandasExist(_ sender: Any) {
+        // pip3 list | grep matplotlib | cut -c 20-
+        var version: String = ""
+        do {
+            nextpage.isEnabled = true
+            try version = safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip list --disable-pip-version-check | grep pandas | cut -c 20-")
+            print(version)
+            if(version == "") {
+                version = "Pandas is not installed."
+                pandasInstall.isEnabled = true
+                nextpage.isEnabled = false
+            }
+            pandasVersion.stringValue = version
+        }
+        catch {
+            //print("\(error)") //handle or silence the error here
+            pandasVersion.stringValue = "pip3 is not installed. Please reinstall Python 3."
+            nextpage.isEnabled = false
+            
+        }
+    }
+    @IBAction func installPandas(_ sender: Any) {
+        pandasProgressBar.isIndeterminate = true
+        pandasProgressBar.isHidden = false
+        pandasProgressBar.isDisplayedWhenStopped = true
+        pandasProgressBar.startAnimation(sender)
+        DispatchQueue.main.async {
+            do {
+                try self.safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip install pandas --disable-pip-version")
+            }
+            catch {
+                print(error)
+            }
+            self.pandasProgressBar.stopAnimation(sender)
+            self.pandasProgressBar.isIndeterminate = false
+            self.pandasProgressBar.doubleValue = 100
             self.nextpage.isEnabled = true
 
         }
