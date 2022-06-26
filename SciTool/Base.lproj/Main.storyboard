@@ -1049,15 +1049,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kM8-Xl-Iw6">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="WDp-b9-Qjt">
-                                            <rect key="frame" x="0.0" y="-42603" width="293" height="796"/>
+                                            <rect key="frame" x="0.0" y="-42603" width="278" height="796"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-xM-7cr">
-                                                    <rect key="frame" x="8" y="748" width="277" height="48"/>
+                                                    <rect key="frame" x="8" y="748" width="262" height="48"/>
                                                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="This graphing calculator can draw equipotential lines for custom discrete charge distributions. " id="Gqi-3l-xG4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1218,7 +1218,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="33U-Ua-z94">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="OyW-Yd-7mm" name="value" keyPath="self.representedObject" id="6Pz-Rh-cOd">
@@ -1911,7 +1911,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="nD7-UB-2Bi">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="zxO-dE-0D9">
@@ -2080,7 +2080,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HSt-g3-DVy">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="D0G-gv-3At" name="value" keyPath="self.representedObject" id="Y62-wW-seU">
@@ -2123,7 +2123,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="yVN-un-flx">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="QZC-h3-Dqf">
@@ -2292,7 +2292,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hME-J3-UZ8">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="Md5-gl-NGH" name="value" keyPath="self.representedObject" id="Fnp-3e-6Ij">
@@ -2953,16 +2953,16 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-8Q-9Bi">
-                                                    <rect key="frame" x="46" y="80" width="196" height="16"/>
+                                                    <rect key="frame" x="46" y="60" width="217" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="9o1-Kv-vvC">
+                                                    <textFieldCell key="cell" alignment="left" id="9o1-Kv-vvC">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </textField>
                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-Td-hZe">
-                                                    <rect key="frame" x="-7" y="45" width="184" height="32"/>
+                                                    <rect key="frame" x="-7" y="25" width="184" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <buttonCell key="cell" type="push" title="Download Python 3..." bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1FU-cn-5yO">
                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
