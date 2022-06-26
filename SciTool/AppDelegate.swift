@@ -36,7 +36,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         return false
     }
-
+    
+    
+    @IBAction func showSplasher(_ sender: Any) {
+        if(NSApplication.shared.windows.count <= 1) {
+            let storyboard = NSStoryboard(name: "Main", bundle: nil)
+            let windowController = storyboard.instantiateController(withIdentifier: "splashController") as! NSWindowController
+            windowController.showWindow(self)
+        }
+    }
+    
 
 }
 
