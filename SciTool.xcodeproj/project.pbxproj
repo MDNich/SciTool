@@ -12,6 +12,8 @@
 		581FF3FE27E8F53600EC1D62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581FF3FD27E8F53600EC1D62 /* README.md */; };
 		581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */; };
 		585C059428677E5F00153102 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C059328677E5F00153102 /* LoadingViewController.swift */; };
+		586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FA286A1DD5002C4AF6 /* MassCommand.swift */; };
+		586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */; };
 		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
@@ -21,7 +23,15 @@
 		58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049327B17A5D0051C600 /* Assets.xcassets */; };
 		58D9049727B17A5D0051C600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049527B17A5D0051C600 /* Main.storyboard */; };
 		58D904A427B17FB80051C600 /* voltage.py in Resources */ = {isa = PBXBuildFile; fileRef = 58D904A327B17FB80051C600 /* voltage.py */; };
-		58E1CD3728675D83008E6CB7 /* Stoichiometry in Resources */ = {isa = PBXBuildFile; fileRef = 58E1CD3628675D83008E6CB7 /* Stoichiometry */; };
+		58DE30792868F4DA00E55FEA /* MeasuredEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE306E2868F4DA00E55FEA /* MeasuredEquation.swift */; };
+		58DE307A2868F4DA00E55FEA /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE306F2868F4DA00E55FEA /* Equation.swift */; };
+		58DE307B2868F4DA00E55FEA /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30702868F4DA00E55FEA /* Compound.swift */; };
+		58DE307C2868F4DA00E55FEA /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30722868F4DA00E55FEA /* Element.swift */; };
+		58DE307D2868F4DA00E55FEA /* Element+elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30732868F4DA00E55FEA /* Element+elements.swift */; };
+		58DE307E2868F4DA00E55FEA /* React.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30742868F4DA00E55FEA /* React.swift */; };
+		58DE307F2868F4DA00E55FEA /* String+CharacterSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30762868F4DA00E55FEA /* String+CharacterSets.swift */; };
+		58DE30802868F4DA00E55FEA /* EquationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30772868F4DA00E55FEA /* EquationParser.swift */; };
+		58DE30832868FB4100E55FEA /* StoicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30822868FB4100E55FEA /* StoicViewController.swift */; };
 		58E1CD3A28675D9C008E6CB7 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 58E1CD3928675D9C008E6CB7 /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +40,8 @@
 		581FF3FD27E8F53600EC1D62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesViewController.swift; sourceTree = "<group>"; };
 		585C059328677E5F00153102 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		586454FA286A1DD5002C4AF6 /* MassCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassCommand.swift; sourceTree = "<group>"; };
+		586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcentrationCommand.swift; path = SciTool/Stoichiometry/ConcentrationCommand.swift; sourceTree = SOURCE_ROOT; };
 		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
@@ -41,7 +53,15 @@
 		58D9049627B17A5D0051C600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D9049827B17A5D0051C600 /* SciTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SciTool.entitlements; sourceTree = "<group>"; };
 		58D904A327B17FB80051C600 /* voltage.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voltage.py; sourceTree = "<group>"; };
-		58E1CD3628675D83008E6CB7 /* Stoichiometry */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Stoichiometry; sourceTree = "<group>"; };
+		58DE306E2868F4DA00E55FEA /* MeasuredEquation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuredEquation.swift; sourceTree = "<group>"; };
+		58DE306F2868F4DA00E55FEA /* Equation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		58DE30702868F4DA00E55FEA /* Compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
+		58DE30722868F4DA00E55FEA /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		58DE30732868F4DA00E55FEA /* Element+elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element+elements.swift"; sourceTree = "<group>"; };
+		58DE30742868F4DA00E55FEA /* React.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = React.swift; sourceTree = "<group>"; };
+		58DE30762868F4DA00E55FEA /* String+CharacterSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CharacterSets.swift"; sourceTree = "<group>"; };
+		58DE30772868F4DA00E55FEA /* EquationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquationParser.swift; sourceTree = "<group>"; };
+		58DE30822868FB4100E55FEA /* StoicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoicViewController.swift; sourceTree = "<group>"; };
 		7215B092285CDD080089AF0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		7215B093285CDD160089AF0F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,13 +99,13 @@
 		58D9048E27B17A5C0051C600 /* SciTool */ = {
 			isa = PBXGroup;
 			children = (
+				58D9048F27B17A5C0051C600 /* AppDelegate.swift */,
 				585C059328677E5F00153102 /* LoadingViewController.swift */,
 				589EE55E27BDA78900D38DF2 /* MasterViewController.swift */,
 				589EE55F27BDA78900D38DF2 /* SideBarController.swift */,
-				58D9048F27B17A5C0051C600 /* AppDelegate.swift */,
-				58D9049127B17A5C0051C600 /* ViewController.swift */,
 				581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */,
-				58E1CD3628675D83008E6CB7 /* Stoichiometry */,
+				58D9049127B17A5C0051C600 /* ViewController.swift */,
+				58DE306C2868F4DA00E55FEA /* Stoichiometry */,
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
@@ -95,6 +115,48 @@
 				58AB347B27F102F80082AA54 /* Reachability.swift */,
 			);
 			path = SciTool;
+			sourceTree = "<group>";
+		};
+		58DE306C2868F4DA00E55FEA /* Stoichiometry */ = {
+			isa = PBXGroup;
+			children = (
+				58DE306D2868F4DA00E55FEA /* Equations */,
+				58DE30712868F4DA00E55FEA /* Elements */,
+				58DE30742868F4DA00E55FEA /* React.swift */,
+				586454FA286A1DD5002C4AF6 /* MassCommand.swift */,
+				58DE30752868F4DA00E55FEA /* Parsing */,
+				58DE30822868FB4100E55FEA /* StoicViewController.swift */,
+			);
+			path = Stoichiometry;
+			sourceTree = "<group>";
+		};
+		58DE306D2868F4DA00E55FEA /* Equations */ = {
+			isa = PBXGroup;
+			children = (
+				58DE306E2868F4DA00E55FEA /* MeasuredEquation.swift */,
+				58DE306F2868F4DA00E55FEA /* Equation.swift */,
+				58DE30702868F4DA00E55FEA /* Compound.swift */,
+			);
+			path = Equations;
+			sourceTree = "<group>";
+		};
+		58DE30712868F4DA00E55FEA /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				58DE30722868F4DA00E55FEA /* Element.swift */,
+				58DE30732868F4DA00E55FEA /* Element+elements.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		58DE30752868F4DA00E55FEA /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				58DE30762868F4DA00E55FEA /* String+CharacterSets.swift */,
+				586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */,
+				58DE30772868F4DA00E55FEA /* EquationParser.swift */,
+			);
+			path = Parsing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E1CD3728675D83008E6CB7 /* Stoichiometry in Resources */,
 				581FF3FE27E8F53600EC1D62 /* README.md in Resources */,
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				5804211327D799BE00126EC3 /* voltage3D.py in Resources */,
@@ -204,11 +265,22 @@
 			files = (
 				589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */,
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
+				58DE307A2868F4DA00E55FEA /* Equation.swift in Sources */,
 				58AB347C27F102F80082AA54 /* Reachability.swift in Sources */,
 				581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */,
+				58DE30832868FB4100E55FEA /* StoicViewController.swift in Sources */,
 				589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */,
+				58DE307C2868F4DA00E55FEA /* Element.swift in Sources */,
+				58DE307D2868F4DA00E55FEA /* Element+elements.swift in Sources */,
+				58DE30792868F4DA00E55FEA /* MeasuredEquation.swift in Sources */,
 				585C059428677E5F00153102 /* LoadingViewController.swift in Sources */,
+				586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */,
+				58DE307E2868F4DA00E55FEA /* React.swift in Sources */,
+				586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */,
+				58DE307F2868F4DA00E55FEA /* String+CharacterSets.swift in Sources */,
+				58DE307B2868F4DA00E55FEA /* Compound.swift in Sources */,
 				58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */,
+				58DE30802868F4DA00E55FEA /* EquationParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

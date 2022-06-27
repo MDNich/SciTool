@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Adapted from https://github.com/Bowserinator/Periodic-Table-JSON and https://ptable.com
 extension Element {
 	static let elements: Array<Element> = [
 		Self(
