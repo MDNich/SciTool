@@ -1117,8 +1117,9 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-fv-KKL">
                                 <rect key="frame" x="7" y="84" width="336" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" alignment="center" title="Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol):" id="Kkc-GY-mhM">
+                                <textFieldCell key="cell" alignment="center" id="Kkc-GY-mhM">
                                     <font key="font" metaFont="system"/>
+                                    <string key="title">Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol, mL/ml, L/l):</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
