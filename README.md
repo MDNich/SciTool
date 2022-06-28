@@ -10,7 +10,11 @@ Current SciTools:
 1. Equipotential Lines Grapher
 2. 3D Potential Graph
 3. Circuit Simulator
-4. *In Progress* Stoichiometry (©thegail 2022)
+4. Stoichiometry Reaction Solver
+5. Stoichiometry Mass Solver
+
+4,5 are available on latest commit, not release. Next release will include them.
+(credit for 4,5 goes to @thegail for his Swift 5 command line project [Stoichiometry](https://github.com/thegail/Stoichiometry))
 
 Current Dependencies: Must have Python3 installed and must have the following packages:
 1. numpy
