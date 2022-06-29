@@ -20,7 +20,7 @@ class StoicMassViewController: NSViewController {
         resultField.stringValue = ""
         do {
             try verifyInputs()
-            if(knownUnits.indexOfSelectedItem == 0) {
+            if(knownUnits.indexOfSelectedItem == 1) {
                 var tmp = try MassCommand().run(compound: compoundInput.stringValue, moles: Double(amountInput.stringValue), grams: nil)
                 if(tmp == "ERROR") {
                     errorFlash.isHidden = false

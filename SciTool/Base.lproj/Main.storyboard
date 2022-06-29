@@ -1777,15 +1777,6 @@
                                     </imageReference>
                                 </imageCell>
                             </imageView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-v5-Bku">
-                                <rect key="frame" x="153" y="285" width="101" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Version 1.0 Beta" id="RB9-ae-Isv">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTD-uA-1qP">
                                 <rect key="frame" x="87" y="212" width="301" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1892,6 +1883,15 @@
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Made with ❤️ by astroKid" id="i9t-JQ-szr">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-v5-Bku">
+                                <rect key="frame" x="-2" y="285" width="410" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 1.0 (Beta 4)" id="RB9-ae-Isv">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -2353,7 +2353,7 @@
                                     <rect key="frame" x="-100" y="-100" width="278" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HSt-g3-DVy">
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="HSt-g3-DVy">
                                     <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
@@ -2565,7 +2565,7 @@
                                     <rect key="frame" x="-100" y="-100" width="278" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hME-J3-UZ8">
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="hME-J3-UZ8">
                                     <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
@@ -2586,7 +2586,7 @@
                 </viewController>
                 <customObject id="eR3-qI-EyY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1047" y="1538"/>
+            <point key="canvasLocation" x="-1047.5" y="1537.5"/>
         </scene>
         <!--Pot3D View Controller-->
         <scene sceneID="4zi-Os-s3c">
@@ -3652,13 +3652,13 @@ DQ
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Iq-dj-Ifl">
                                 <rect key="frame" x="103" y="88" width="253" height="25"/>
-                                <popUpButtonCell key="cell" type="push" title="moles" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="44E-B2-iTW" id="MZ6-Pr-4vA">
+                                <popUpButtonCell key="cell" type="push" title="grams" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="44E-B2-iTW" id="MZ6-Pr-4vA">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="XbR-Me-4OK">
                                         <items>
-                                            <menuItem title="moles" state="on" id="44E-B2-iTW"/>
-                                            <menuItem title="grams" id="hhH-4J-kgC"/>
+                                            <menuItem title="grams" state="on" id="44E-B2-iTW"/>
+                                            <menuItem title="moles" id="hhH-4J-kgC"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
@@ -3787,7 +3787,7 @@ DQ
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" findStyle="bar" smartInsertDelete="YES" id="qBE-tC-AXP">
-                                            <rect key="frame" x="0.0" y="0.0" width="235" height="560"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="235" height="645"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3796,10 +3796,15 @@ DQ
                                             <attributedString key="textStorage">
                                                 <fragment>
                                                     <mutableString key="content">This calculator allows one to calculate the stoichiometric relationships of a given chemical equation, which is to be inputted in the topmost text input cell.
+
 Since one cannot input subscripts, please write the would-be subscript normally right after the element or compound in parentheses. An example equation is given in the placeholder text.
+
 Next, one should choose wether to solve for the products or reactants.
+
 In the second text field, input the quantities of the products or reactants (as chosen above) given, and if a quantity is not given and should be solved for, input a “?” without the quotes. Again, an example is provided in the placeholder text. Please ensure that the number of terms in the second text field matches the number  of products/reactants, whichever was chosen through the dropdown menu.
+
 The checkbox in the bottom left allows the user to choose whether to see more output or less output, with verbose signifying more output.
+
 To react your elements, click the “React!” button. The results will appear in the scrollable panel on the right hand side of the window.</mutableString>
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3863,18 +3868,29 @@ To react your elements, click the “React!” button. The results will appear i
                                 <rect key="frame" x="20" y="61" width="250" height="272"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="x9B-9j-8YX">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="jQE-8m-9wj">
-                                            <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="235" height="492"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="250" height="272"/>
+                                            <size key="minSize" width="235" height="272"/>
                                             <size key="maxSize" width="275" height="10000000"/>
                                             <attributedString key="textStorage">
-                                                <fragment content="tbd">
+                                                <fragment>
+                                                    <mutableString key="content">This calculator allows one to convert the mass of a compound to the number of moles, and vice versa.
+
+The first text field is where one enters the chemical formula of the compound. Since subscripts are not available, type would-be subscripts normally afterwards, using parentheses as needed for polyatomic ions etc.
+
+The next text field is where one enters a decimal number representing the quantity of the compound, in the units of the drop down menu below. The drop down menu has as choices grams or moles.
+
+Click the “Solve!” Button to calculate the missing quantity, the one not chosen in the drop-down menu.
+
+The result will appear in the space to the right of the “Result:” label.
+
+Click the question mark button to open this popup.</mutableString>
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <font key="NSFont" metaFont="system"/>
@@ -3893,7 +3909,7 @@ To react your elements, click the “React!” button. The results will appear i
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
                                     <rect key="frame" x="235" y="0.0" width="15" height="272"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -3912,7 +3928,7 @@ To react your elements, click the “React!” button. The results will appear i
                 </viewController>
                 <customObject id="cTM-xa-cKd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2443" y="-1193"/>
+            <point key="canvasLocation" x="1703" y="-649"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="DO0-fd-6gZ">
