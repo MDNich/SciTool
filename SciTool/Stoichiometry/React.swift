@@ -25,7 +25,7 @@ class ReactCommand {
 	//@Option(name: .shortAndLong, parsing: .upToNextOption, help: "Known products") var products: Array<Known> = []
 	
     // $ stoic react "Na2(CO3) + CaCl2 -> Ca(CO3) + 2NaCl" -p 2 ?
-    func run(equation: String, reactants: Array<Known>, products: Array<Known>) -> String {
+    func run(equation: String, reactants: Array<Known>, products: Array<Known>) throws -> String {
         self.equation = equation
         self.reactants = reactants
         self.products = products
@@ -70,7 +70,7 @@ class ReactCommand {
                     }
                 }
             } catch let error {
-                fatalError(error.localizedDescription)
+                throw ReactError.CannotParseError
             }
             
             print("Reaction: \(parsedEquation)")
@@ -90,7 +90,7 @@ class ReactCommand {
             resultsPrinting.append("Reactants:")
             for reactant in measuredEquation.reactants {
                 guard let moles = reactant.moles else {
-                    fatalError("unreachable")
+                    throw ReactError.CannotParseError
                 }
                 let massInGrams = moles * reactant.compound.molarMass
                 resultsPrinting.append("\(reactant.compound) required: \(self.outputFormat.format(moles: moles, grams: massInGrams))")
@@ -101,14 +101,14 @@ class ReactCommand {
             print("Products:")
             for product in measuredEquation.products {
                 guard let moles = product.moles else {
-                    fatalError("unreachable")
+                    throw ReactError.CannotParseError
                 }
                 let massInGrams = moles * product.compound.molarMass
                 resultsPrinting.append("\(product.compound) produced: \(self.outputFormat.format(moles: moles, grams: massInGrams))")
                 print("\(product.compound) produced: \(self.outputFormat.format(moles: moles, grams: massInGrams))")
             }
         } catch let error {
-            fatalError(error.localizedDescription)
+            throw ReactError.CannotParseError
         }
         var stringToReturn = ""
         for stringSub in resultsPrinting  {

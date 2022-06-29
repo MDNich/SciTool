@@ -35,6 +35,26 @@ class SplashViewController: NSViewController {
         let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher3D") as! NSWindowController
         windowController.showWindow(self)
     }
+    @IBAction func openStoichReactor(sender: Any?)
+    {
+        print(" yo100 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "stoichReact") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    @IBAction func openStoichMass(sender: Any?)
+    {
+        print(" yo101 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "stoichMass") as! NSWindowController
+        windowController.showWindow(self)
+    }
     @IBAction func openCircuitSimPanel(sender: Any?)
     {
         print(" yo2 ")

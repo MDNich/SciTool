@@ -8,38 +8,37 @@
 import Foundation
 import ArgumentParser
 
-struct MassCommand: ParsableCommand {
-	static var configuration = CommandConfiguration(commandName: "mass")
+class MassCommand {
+	//static var configuration = CommandConfiguration(commandName: "mass")
 	
-	@Argument(help: "The compound to calculate the mass of") var compound: String
-	@Option(name: .shortAndLong, help: "A number of moles of compound to convert to grams")
+	var compound: String = ""
 	var moles: Double?
-	@Option(name: .shortAndLong, help: "A number of grams of compound to convert to moles")
 	var grams: Double?
-	@Flag(name: .shortAndLong, help: "Verbose mode") var verbose = false
 	
-	mutating func run() throws {
+    func run(compound: String, moles: Double?, grams: Double?) throws -> String {
+        self.compound = compound
+        self.moles = moles
+        self.grams = grams
 		let compound: Compound
 		do {
 			compound = try EquationParser.parseCompound(self.compound)
 		} catch let error {
-			fatalError("Invalid compound: \(error)")
+            throw MassError.GeneralError
 		}
 		
-		if self.verbose {
-			print("Molar mass of \(compound) = \(compound.molarMassCalculation) = \(compound.molarMass) g/mol")
-		}
 		
 		guard moles == nil || grams == nil else {
-			fatalError("Moles and grams options are mutually exclusive")
+            throw MassError.GeneralError
 		}
 		
 		if let moles = self.moles {
-			print("\(moles) moles of \(compound) = \(moles * compound.molarMass) g")
+			return "\(moles) moles of \(compound) = \(moles * compound.molarMass) g"
 		} else if let grams = self.grams {
-			print("\(grams) grams of \(compound) = \(grams / compound.molarMass) mol")
-		} else if !self.verbose {
-			print("Molar mass of \(compound) = \(compound.molarMass) g/mol")
+			return "\(grams) grams of \(compound) = \(grams / compound.molarMass) mol"
 		}
+        return "ERROR"
 	}
+    enum MassError: Error {
+        case GeneralError
+    }
 }

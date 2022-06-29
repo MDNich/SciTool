@@ -38,12 +38,13 @@ class StoicViewController: NSViewController {
                 }
                 if(whatIsKnown.indexOfSelectedItem == 1) {
                     // Products
-                    outputTextView.string = reactor.run(equation: equationField.stringValue, reactants: [], products: list)
+                    outputTextView.string = try reactor.run(equation: equationField.stringValue, reactants: [], products: list)
                 }
                 else {
                     // Reactants
-                    outputTextView.string = reactor.run(equation: equationField.stringValue, reactants: list, products: [])
+                    outputTextView.string = try reactor.run(equation: equationField.stringValue, reactants: list, products: [])
                 }
+                outputTextView.font = NSFont(name: "SF Pro", size: CGFloat(13))
             }
             else {
                 

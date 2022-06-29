@@ -1076,11 +1076,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="296" height="184"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="K7Q-rF-7J7">
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="K7Q-rF-7J7">
                                             <rect key="frame" x="0.0" y="0.0" width="296" height="184"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="296" height="184"/>
                                             <size key="maxSize" width="317" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1117,19 +1117,18 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-fv-KKL">
                                 <rect key="frame" x="7" y="84" width="336" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" alignment="center" id="Kkc-GY-mhM">
+                                <textFieldCell key="cell" alignment="center" title="Amounts of products/reactants, separated by commas (use ? to denote what to solve for), units separated with single quotes ('):" id="Kkc-GY-mhM">
                                     <font key="font" metaFont="system"/>
-                                    <string key="title">Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol, mL/ml, L/l):</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-rp-e1H">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-rp-e1H">
                                 <rect key="frame" x="7" y="10" width="336" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" alignment="center" title="ERROR: Please check your inputs!" id="1lk-OT-nHb">
-                                    <font key="font" metaFont="systemBold"/>
-                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -1145,7 +1144,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-03-UVy">
                                 <rect key="frame" x="9" y="55" width="332" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="2g,?" drawsBackground="YES" id="sKn-2Y-kQX">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="2'g,?" drawsBackground="YES" id="sKn-2Y-kQX">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1207,8 +1206,6 @@
                     <connections>
                         <outlet property="amountsField" destination="gVW-03-UVy" id="FEJ-EV-ecB"/>
                         <outlet property="equationField" destination="BeP-mu-xdx" id="e7d-XT-XK0"/>
-                        <outlet property="errorLabel" destination="k2E-rp-e1H" id="Eme-Kn-ucN"/>
-                        <outlet property="outputTextView" destination="K7Q-rF-7J7" id="bLy-8L-NOX"/>
                         <outlet property="outputView" destination="byg-xn-kfO" id="sJQ-rs-WPl"/>
                         <outlet property="verboseOutput" destination="v9u-bT-bDi" id="VWP-du-a7S"/>
                         <outlet property="whatIsKnown" destination="IGu-jh-c3C" id="fta-ZU-2q8"/>
