@@ -12,8 +12,6 @@ Current SciTools:
 3. Circuit Simulator
 4. Stoichiometry Reaction Solver
 5. Stoichiometry Mass Solver
-
-4,5 are available on latest commit, not release. Next release will include them.
 (credit for 4,5 goes to @thegail for his Swift 5 command line project [Stoichiometry](https://github.com/thegail/Stoichiometry))
 
 Current Dependencies: Must have Python3 installed and must have the following packages:
