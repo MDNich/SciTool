@@ -12,6 +12,9 @@
 		581FF3FE27E8F53600EC1D62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581FF3FD27E8F53600EC1D62 /* README.md */; };
 		581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */; };
 		585C059428677E5F00153102 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C059328677E5F00153102 /* LoadingViewController.swift */; };
+		586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FA286A1DD5002C4AF6 /* MassCommand.swift */; };
+		586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */; };
+		58774D21286B547D00E48244 /* StoicMassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58774D20286B547D00E48244 /* StoicMassViewController.swift */; };
 		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
@@ -38,6 +41,9 @@
 		581FF3FD27E8F53600EC1D62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesViewController.swift; sourceTree = "<group>"; };
 		585C059328677E5F00153102 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		586454FA286A1DD5002C4AF6 /* MassCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassCommand.swift; sourceTree = "<group>"; };
+		586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcentrationCommand.swift; path = SciTool/Stoichiometry/ConcentrationCommand.swift; sourceTree = SOURCE_ROOT; };
+		58774D20286B547D00E48244 /* StoicMassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoicMassViewController.swift; sourceTree = "<group>"; };
 		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
@@ -119,8 +125,10 @@
 				58DE306D2868F4DA00E55FEA /* Equations */,
 				58DE30712868F4DA00E55FEA /* Elements */,
 				58DE30742868F4DA00E55FEA /* React.swift */,
+				586454FA286A1DD5002C4AF6 /* MassCommand.swift */,
 				58DE30752868F4DA00E55FEA /* Parsing */,
 				58DE30822868FB4100E55FEA /* StoicViewController.swift */,
+				58774D20286B547D00E48244 /* StoicMassViewController.swift */,
 			);
 			path = Stoichiometry;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				58DE30762868F4DA00E55FEA /* String+CharacterSets.swift */,
+				586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */,
 				58DE30772868F4DA00E55FEA /* EquationParser.swift */,
 			);
 			path = Parsing;
@@ -260,6 +269,7 @@
 				589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */,
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
 				58DE307A2868F4DA00E55FEA /* Equation.swift in Sources */,
+				58774D21286B547D00E48244 /* StoicMassViewController.swift in Sources */,
 				58AB347C27F102F80082AA54 /* Reachability.swift in Sources */,
 				581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */,
 				58DE30832868FB4100E55FEA /* StoicViewController.swift in Sources */,
@@ -268,7 +278,9 @@
 				58DE307D2868F4DA00E55FEA /* Element+elements.swift in Sources */,
 				58DE30792868F4DA00E55FEA /* MeasuredEquation.swift in Sources */,
 				585C059428677E5F00153102 /* LoadingViewController.swift in Sources */,
+				586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */,
 				58DE307E2868F4DA00E55FEA /* React.swift in Sources */,
+				586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */,
 				58DE307F2868F4DA00E55FEA /* String+CharacterSets.swift in Sources */,
 				58DE307B2868F4DA00E55FEA /* Compound.swift in Sources */,
 				58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */,

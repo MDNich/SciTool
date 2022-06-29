@@ -87,6 +87,11 @@
                                                             <segue destination="aw7-0H-fY2" kind="show" id="AGa-4u-VuA"/>
                                                         </connections>
                                                     </menuItem>
+                                                    <menuItem title="Stoichiometry Mass Solver" keyEquivalent="5" id="aM8-7b-sYl" userLabel="Stoich">
+                                                        <connections>
+                                                            <segue destination="i1I-ol-sr2" kind="show" id="1jw-ZJ-her"/>
+                                                        </connections>
+                                                    </menuItem>
                                                 </items>
                                             </menu>
                                         </menuItem>
@@ -1039,8 +1044,8 @@
         <!--Window Controller-->
         <scene sceneID="cOH-56-Ned">
             <objects>
-                <windowController id="aw7-0H-fY2" sceneMemberID="viewController">
-                    <window key="window" title="Stoichiometry Solver" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="8UY-oK-cqv">
+                <windowController storyboardIdentifier="stoichReact" id="aw7-0H-fY2" sceneMemberID="viewController">
+                    <window key="window" identifier="stoichReact" title="Stoichiometry Solver" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="8UY-oK-cqv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="-2135" y="462" width="480" height="270"/>
@@ -1059,7 +1064,7 @@
                 </windowController>
                 <customObject id="C3N-Bg-Uv4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="189"/>
+            <point key="canvasLocation" x="895" y="187"/>
         </scene>
         <!--Stoic View Controller-->
         <scene sceneID="mzX-Xh-Y5e">
@@ -1069,30 +1074,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="680" height="236"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byg-xn-kfO">
+                            <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byg-xn-kfO">
                                 <rect key="frame" x="349" y="10" width="311" height="184"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="oDe-CY-0ZT">
-                                    <rect key="frame" x="0.0" y="0.0" width="296" height="184"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="311" height="184"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="K7Q-rF-7J7">
-                                            <rect key="frame" x="0.0" y="0.0" width="296" height="184"/>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="K7Q-rF-7J7">
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="184"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="296" height="184"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <size key="minSize" width="311" height="184"/>
                                             <size key="maxSize" width="317" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Ke3-2L-fqg">
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="pCR-Es-FOi">
-                                    <rect key="frame" x="296" y="0.0" width="15" height="184"/>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="pCR-Es-FOi">
+                                    <rect key="frame" x="294" y="2" width="15" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -1117,18 +1123,19 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaf-fv-KKL">
                                 <rect key="frame" x="7" y="84" width="336" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" alignment="center" title="Amounts of products/reactants, separated by commas (use ? to denote what to solve for), units separated with single quotes ('):" id="Kkc-GY-mhM">
+                                <textFieldCell key="cell" alignment="center" id="Kkc-GY-mhM">
                                     <font key="font" metaFont="system"/>
+                                    <string key="title">Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol, mL/ml, L/l):</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-rp-e1H">
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2E-rp-e1H">
                                 <rect key="frame" x="7" y="10" width="336" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" alignment="center" title="ERROR: Please check your inputs!" id="1lk-OT-nHb">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -1144,7 +1151,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-03-UVy">
                                 <rect key="frame" x="9" y="55" width="332" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="2'g,?" drawsBackground="YES" id="sKn-2Y-kQX">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="2g,?" drawsBackground="YES" id="sKn-2Y-kQX">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1201,11 +1208,24 @@
                                     <action selector="reactWithSender:" target="kLy-Nk-U5w" id="zX2-1J-HhF"/>
                                 </connections>
                             </button>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="706-yp-san">
+                                <rect key="frame" x="6" y="4" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o9a-C1-XYS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="dzc-GI-jNb" kind="modal" id="WyB-bt-i8Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="amountsField" destination="gVW-03-UVy" id="FEJ-EV-ecB"/>
                         <outlet property="equationField" destination="BeP-mu-xdx" id="e7d-XT-XK0"/>
+                        <outlet property="errorLabel" destination="k2E-rp-e1H" id="Eme-Kn-ucN"/>
+                        <outlet property="outputTextView" destination="K7Q-rF-7J7" id="bLy-8L-NOX"/>
                         <outlet property="outputView" destination="byg-xn-kfO" id="sJQ-rs-WPl"/>
                         <outlet property="verboseOutput" destination="v9u-bT-bDi" id="VWP-du-a7S"/>
                         <outlet property="whatIsKnown" destination="IGu-jh-c3C" id="fta-ZU-2q8"/>
@@ -1213,7 +1233,32 @@
                 </viewController>
                 <customObject id="ix9-Ap-v1l" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="166"/>
+            <point key="canvasLocation" x="1625" y="181"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="GGA-t2-VwH">
+            <objects>
+                <windowController id="dzc-GI-jNb" sceneMemberID="viewController">
+                    <window key="window" title="Help for Stoichiometry React" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Su5-gY-PZR" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="267" height="407"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="aU0-bh-jHC">
+                            <rect key="frame" x="0.0" y="0.0" width="267" height="407"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="dzc-GI-jNb" id="iEc-RD-HN5"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="dVo-xd-k95" kind="relationship" relationship="window.shadowedContentViewController" id="vvY-9O-RnM"/>
+                    </connections>
+                </windowController>
+                <customObject id="hIG-ec-KUc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2131" y="232"/>
         </scene>
         <!--Equipot View Controller-->
         <scene sceneID="2mb-3c-jfY">
@@ -1472,10 +1517,12 @@
                     <window key="window" identifier="list" title="List of SciTools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="xLa-C0-JOB" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" utility="YES" HUD="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="392" y="530" width="286" height="85"/>
+                        <rect key="contentRect" x="392" y="530" width="321" height="100"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1800" height="1131"/>
+                        <value key="minSize" type="size" width="286" height="177"/>
+                        <value key="maxSize" type="size" width="286" height="177"/>
                         <view key="contentView" id="iJ2-fe-Uxi">
-                            <rect key="frame" x="0.0" y="0.0" width="286" height="85"/>
+                            <rect key="frame" x="0.0" y="0.0" width="321" height="100"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </view>
                         <connections>
@@ -1495,11 +1542,11 @@
             <objects>
                 <viewController id="xCu-yo-AsE" customClass="SplashViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="cj1-wJ-65E">
-                        <rect key="frame" x="0.0" y="0.0" width="269" height="129"/>
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="157"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-2b-NLr">
-                                <rect key="frame" x="80" y="92" width="109" height="17"/>
+                                <rect key="frame" x="106" y="140" width="109" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="List of SciTools" id="JOe-KA-8r8">
                                     <font key="font" metaFont="systemBold" size="14"/>
@@ -1508,7 +1555,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FE4-Qh-qRb">
-                                <rect key="frame" x="18" y="68" width="185" height="16"/>
+                                <rect key="frame" x="18" y="116" width="185" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="1: Equipotential Lines Grapher" id="R4f-5A-tYz">
                                     <font key="font" metaFont="system"/>
@@ -1517,7 +1564,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7y-jM-BmN">
-                                <rect key="frame" x="18" y="44" width="134" height="16"/>
+                                <rect key="frame" x="18" y="92" width="134" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="2: 3D Potential Graph" id="WR3-EV-IZp">
                                     <font key="font" metaFont="system"/>
@@ -1526,7 +1573,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XuN-GI-c5h">
-                                <rect key="frame" x="18" y="20" width="120" height="16"/>
+                                <rect key="frame" x="18" y="68" width="120" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="3: Circuit Simulator" id="4IF-a9-dxM">
                                     <font key="font" metaFont="system"/>
@@ -1534,8 +1581,26 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRL-cq-gyH">
+                                <rect key="frame" x="18" y="44" width="226" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="4: Stoichiometry Reaction Calculator" id="Whv-wS-qRe">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKn-pd-ukf">
+                                <rect key="frame" x="18" y="20" width="204" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="5: Stoichiometry Mass Calculator" id="Uf0-dd-nAc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWS-wM-Qp7">
-                                <rect key="frame" x="202" y="59" width="45" height="32"/>
+                                <rect key="frame" x="263" y="107" width="45" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" bezelStyle="rounded" image="arrow.up.forward.app" catalog="system" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lk0-Dd-GS1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1546,7 +1611,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPJ-J2-YRS">
-                                <rect key="frame" x="202" y="35" width="45" height="32"/>
+                                <rect key="frame" x="263" y="83" width="45" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" bezelStyle="rounded" image="arrow.up.forward.app" catalog="system" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="W7t-4n-F11">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1557,7 +1622,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-Uq-xYE">
-                                <rect key="frame" x="202" y="11" width="45" height="32"/>
+                                <rect key="frame" x="263" y="59" width="45" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" bezelStyle="rounded" image="arrow.up.forward.app" catalog="system" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xcG-YW-rbz">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1567,12 +1632,34 @@
                                     <action selector="openCircuitSimPanelWithSender:" target="xCu-yo-AsE" id="RPa-wN-AM3"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F6e-0g-hc0">
+                                <rect key="frame" x="263" y="35" width="45" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="arrow.up.forward.app" catalog="system" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eVo-zK-WT9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openStoichReactorWithSender:" target="xCu-yo-AsE" id="eBY-sH-zWv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXw-OQ-RZj">
+                                <rect key="frame" x="263" y="11" width="45" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="arrow.up.forward.app" catalog="system" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vq8-mz-hoB">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openStoichMassWithSender:" target="xCu-yo-AsE" id="FkY-p5-amh"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="o23-5b-zrh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2079" y="-559"/>
+            <point key="canvasLocation" x="-2053.5" y="-545.5"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="H0t-X3-Q1P">
@@ -2499,7 +2586,7 @@
                 </viewController>
                 <customObject id="eR3-qI-EyY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="1711"/>
+            <point key="canvasLocation" x="-1047" y="1538"/>
         </scene>
         <!--Pot3D View Controller-->
         <scene sceneID="4zi-Os-s3c">
@@ -3461,20 +3548,396 @@ DQ
                 </viewController>
                 <customObject id="wR7-8Q-YJp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2379" y="328"/>
+            <point key="canvasLocation" x="-2389" y="354"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gsh-We-bUd">
+        <!--Window Controller-->
+        <scene sceneID="eEC-7b-ink">
             <objects>
-                <viewController id="6ul-Lr-m3w" sceneMemberID="viewController">
-                    <view key="view" id="5KC-mG-jgc">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <windowController storyboardIdentifier="stoichMass" id="i1I-ol-sr2" sceneMemberID="viewController">
+                    <window key="window" identifier="stoichMass" title="Stoichiometry Mass Solver" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="jQY-ZA-mSe">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="372" height="216"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <value key="minSize" type="size" width="372" height="216"/>
+                        <view key="contentView" id="Ko2-IC-KLx">
+                            <rect key="frame" x="0.0" y="0.0" width="372" height="216"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="i1I-ol-sr2" id="UQ6-Y9-REX"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="H7p-3D-UlH" kind="relationship" relationship="window.shadowedContentViewController" id="n6H-sl-5bi"/>
+                    </connections>
+                </windowController>
+                <customObject id="IK2-ZO-Ssm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-993"/>
+        </scene>
+        <!--Stoic Mass View Controller-->
+        <scene sceneID="Nr4-iZ-7TS">
+            <objects>
+                <viewController id="H7p-3D-UlH" customClass="StoicMassViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="yt6-g9-Ypc">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="216"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-jD-gk5">
+                                <rect key="frame" x="18" y="154" width="75" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Compound:" id="fBu-xq-emF">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KXg-wD-uX2">
+                                <rect key="frame" x="18" y="125" width="139" height="16"/>
+                                <textFieldCell key="cell" alignment="left" title="Amount of compound:" id="cOJ-hH-g5x">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-aO-8Eu">
+                                <rect key="frame" x="23" y="12" width="336" height="16"/>
+                                <textFieldCell key="cell" alignment="center" title="ERROR: Please check your inputs!" id="6zZ-kQ-Cju">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-FD-Q3N">
+                                <rect key="frame" x="99" y="151" width="253" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="C" drawsBackground="YES" id="omb-ZV-yW7">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LnY-TV-tsy">
+                                <rect key="frame" x="159" y="122" width="193" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="12.01" drawsBackground="YES" id="vr3-hj-qy5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mIf-4G-NrV">
+                                <rect key="frame" x="18" y="94" width="82" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Known units:" id="FsH-I5-j3y">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uTv-sZ-q1z">
+                                <rect key="frame" x="13" y="53" width="346" height="32"/>
+                                <buttonCell key="cell" type="push" title="Solve!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="98H-yQ-vrR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="solveWithSender:" target="H7p-3D-UlH" id="Vux-jh-PIO"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-xg-XLu">
+                                <rect key="frame" x="145" y="180" width="82" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Mass Solver" id="kbv-CU-GpT">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Iq-dj-Ifl">
+                                <rect key="frame" x="103" y="88" width="253" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="moles" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="44E-B2-iTW" id="MZ6-Pr-4vA">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="XbR-Me-4OK">
+                                        <items>
+                                            <menuItem title="moles" state="on" id="44E-B2-iTW"/>
+                                            <menuItem title="grams" id="hhH-4J-kgC"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTv-3J-1H4">
+                                <rect key="frame" x="18" y="36" width="50" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Result: " id="l7l-vQ-q5K">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gB0-VN-vwe">
+                                <rect key="frame" x="65" y="36" width="289" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="zM1-an-07O">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GAB-Cj-5ts">
+                                <rect key="frame" x="17" y="6" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2Dg-1q-7X0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="kDc-St-iL6" kind="modal" id="OOl-2m-Mc6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="mIf-4G-NrV" firstAttribute="top" secondItem="KXg-wD-uX2" secondAttribute="bottom" constant="15" id="1aG-zJ-U0R"/>
+                            <constraint firstAttribute="trailing" secondItem="gB0-VN-vwe" secondAttribute="trailing" constant="20" symbolic="YES" id="3Wx-YW-WCA"/>
+                            <constraint firstAttribute="trailing" secondItem="nIU-aO-8Eu" secondAttribute="trailing" constant="15" id="3dq-dG-ins"/>
+                            <constraint firstItem="KXg-wD-uX2" firstAttribute="top" secondItem="hXc-FD-Q3N" secondAttribute="bottom" constant="10" id="AIB-DN-t7R"/>
+                            <constraint firstItem="3Iq-dj-Ifl" firstAttribute="top" secondItem="LnY-TV-tsy" secondAttribute="bottom" constant="10" id="Cte-L6-3IQ"/>
+                            <constraint firstItem="z2q-jD-gk5" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="20" symbolic="YES" id="Dnz-ij-WY7"/>
+                            <constraint firstItem="LTv-3J-1H4" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="20" symbolic="YES" id="FRy-4t-IWl"/>
+                            <constraint firstItem="KXg-wD-uX2" firstAttribute="top" secondItem="z2q-jD-gk5" secondAttribute="bottom" constant="13" id="H02-nx-6i6"/>
+                            <constraint firstItem="mPe-xg-XLu" firstAttribute="centerX" secondItem="yt6-g9-Ypc" secondAttribute="centerX" id="KbT-5w-wBs"/>
+                            <constraint firstItem="3Iq-dj-Ifl" firstAttribute="top" secondItem="LnY-TV-tsy" secondAttribute="bottom" constant="10" id="RNF-sV-SVt"/>
+                            <constraint firstItem="hXc-FD-Q3N" firstAttribute="top" secondItem="mPe-xg-XLu" secondAttribute="bottom" constant="8" symbolic="YES" id="RVI-Cp-WkX"/>
+                            <constraint firstItem="nIU-aO-8Eu" firstAttribute="top" secondItem="LTv-3J-1H4" secondAttribute="bottom" constant="8" symbolic="YES" id="SYb-rt-glH"/>
+                            <constraint firstItem="mPe-xg-XLu" firstAttribute="top" secondItem="yt6-g9-Ypc" secondAttribute="top" constant="20" symbolic="YES" id="TLw-ns-bxI"/>
+                            <constraint firstItem="mIf-4G-NrV" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="20" symbolic="YES" id="U4n-dx-xNF"/>
+                            <constraint firstItem="nIU-aO-8Eu" firstAttribute="top" secondItem="gB0-VN-vwe" secondAttribute="bottom" constant="8" symbolic="YES" id="VsC-gU-Hh1"/>
+                            <constraint firstItem="uTv-sZ-q1z" firstAttribute="top" secondItem="3Iq-dj-Ifl" secondAttribute="bottom" constant="12" id="WoA-Jr-gkM"/>
+                            <constraint firstItem="z2q-jD-gk5" firstAttribute="top" secondItem="yt6-g9-Ypc" secondAttribute="top" constant="46" id="Xou-u7-fkR"/>
+                            <constraint firstItem="KXg-wD-uX2" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="20" symbolic="YES" id="Xq3-GG-cUO"/>
+                            <constraint firstItem="nIU-aO-8Eu" firstAttribute="top" secondItem="LTv-3J-1H4" secondAttribute="bottom" constant="8" symbolic="YES" id="Y3d-CN-eyM"/>
+                            <constraint firstAttribute="trailing" secondItem="uTv-sZ-q1z" secondAttribute="trailing" constant="20" symbolic="YES" id="dfE-Rs-IDc"/>
+                            <constraint firstItem="uTv-sZ-q1z" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="20" symbolic="YES" id="e8m-XP-OW1"/>
+                            <constraint firstItem="gB0-VN-vwe" firstAttribute="leading" secondItem="LTv-3J-1H4" secondAttribute="trailing" constant="1" id="eAA-k2-SCF"/>
+                            <constraint firstItem="LTv-3J-1H4" firstAttribute="top" secondItem="uTv-sZ-q1z" secondAttribute="bottom" constant="8" symbolic="YES" id="gOU-Wt-TcN"/>
+                            <constraint firstItem="LnY-TV-tsy" firstAttribute="top" secondItem="hXc-FD-Q3N" secondAttribute="bottom" constant="8" id="iFB-Va-a3x"/>
+                            <constraint firstItem="uTv-sZ-q1z" firstAttribute="top" secondItem="mIf-4G-NrV" secondAttribute="bottom" constant="14" id="if8-LT-fJI"/>
+                            <constraint firstAttribute="trailing" secondItem="LnY-TV-tsy" secondAttribute="trailing" constant="20" symbolic="YES" id="lOR-Xe-Bew"/>
+                            <constraint firstItem="3Iq-dj-Ifl" firstAttribute="leading" secondItem="mIf-4G-NrV" secondAttribute="trailing" constant="8" symbolic="YES" id="lo9-Ez-6vy"/>
+                            <constraint firstItem="uTv-sZ-q1z" firstAttribute="top" secondItem="3Iq-dj-Ifl" secondAttribute="bottom" constant="12" id="mTy-2N-Udd"/>
+                            <constraint firstItem="gB0-VN-vwe" firstAttribute="top" secondItem="uTv-sZ-q1z" secondAttribute="bottom" constant="8" symbolic="YES" id="ot4-67-elU"/>
+                            <constraint firstItem="LnY-TV-tsy" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="159" id="p1r-vJ-Wln"/>
+                            <constraint firstItem="nIU-aO-8Eu" firstAttribute="leading" secondItem="yt6-g9-Ypc" secondAttribute="leading" constant="25" id="r5B-kK-WKs"/>
+                            <constraint firstAttribute="trailing" secondItem="hXc-FD-Q3N" secondAttribute="trailing" constant="20" symbolic="YES" id="sAZ-Q4-hy3"/>
+                            <constraint firstItem="LTv-3J-1H4" firstAttribute="top" secondItem="uTv-sZ-q1z" secondAttribute="bottom" constant="8" symbolic="YES" id="tw0-j0-zIk"/>
+                            <constraint firstAttribute="trailing" secondItem="3Iq-dj-Ifl" secondAttribute="trailing" constant="20" symbolic="YES" id="w2K-X5-y05"/>
+                            <constraint firstItem="3Iq-dj-Ifl" firstAttribute="top" secondItem="KXg-wD-uX2" secondAttribute="bottom" constant="13" id="xTy-oQ-NWv"/>
+                            <constraint firstItem="hXc-FD-Q3N" firstAttribute="leading" secondItem="z2q-jD-gk5" secondAttribute="trailing" constant="8" symbolic="YES" id="xpk-tv-aCh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountInput" destination="LnY-TV-tsy" id="vFe-t3-hXW"/>
+                        <outlet property="compoundInput" destination="hXc-FD-Q3N" id="aq9-vK-vgc"/>
+                        <outlet property="errorFlash" destination="nIU-aO-8Eu" id="pZT-2c-UyQ"/>
+                        <outlet property="knownUnits" destination="3Iq-dj-Ifl" id="AJz-Gz-dml"/>
+                        <outlet property="resultField" destination="gB0-VN-vwe" id="WLs-Rk-jNY"/>
+                    </connections>
+                </viewController>
+                <customObject id="VmM-db-eOF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605" y="-1051"/>
+        </scene>
+        <!--Pot3D View Controller-->
+        <scene sceneID="oan-1o-41I">
+            <objects>
+                <viewController id="dVo-xd-k95" customClass="EPot3DViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="2bj-Bo-0S6">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="377"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BqN-dV-yGR">
+                                <rect key="frame" x="48" y="341" width="195" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Help for Stoichiometry Solver" id="ka2-Os-h9D">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3z-g5-wz8">
+                                <rect key="frame" x="90" y="37" width="110" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="©  2022 MDNich" id="32e-8l-fjO">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Is-hO-BlT">
+                                <rect key="frame" x="13" y="2" width="264" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Open Github Repository for More Info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="h01-xQ-9lw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openGithubWithSender:" target="dVo-xd-k95" id="edY-qE-vUi"/>
+                                </connections>
+                            </button>
+                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryV-bz-ajo">
+                                <rect key="frame" x="20" y="61" width="250" height="272"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" id="pmh-nM-Kdd">
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" findStyle="bar" smartInsertDelete="YES" id="qBE-tC-AXP">
+                                            <rect key="frame" x="0.0" y="0.0" width="235" height="560"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <size key="minSize" width="235" height="272"/>
+                                            <size key="maxSize" width="275" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <mutableString key="content">This calculator allows one to calculate the stoichiometric relationships of a given chemical equation, which is to be inputted in the topmost text input cell.
+Since one cannot input subscripts, please write the would-be subscript normally right after the element or compound in parentheses. An example equation is given in the placeholder text.
+Next, one should choose wether to solve for the products or reactants.
+In the second text field, input the quantities of the products or reactants (as chosen above) given, and if a quantity is not given and should be solved for, input a “?” without the quotes. Again, an example is provided in the placeholder text. Please ensure that the number of terms in the second text field matches the number  of products/reactants, whichever was chosen through the dropdown menu.
+The checkbox in the bottom left allows the user to choose whether to see more output or less output, with verbose signifying more output.
+To react your elements, click the “React!” button. The results will appear in the scrollable panel on the right hand side of the window.</mutableString>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="system"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="JNI-e0-Yll">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="LBb-eo-r6T">
+                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
                     </view>
                 </viewController>
-                <customObject id="T5p-2R-365" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="R5F-NN-1ki" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2512" y="-500"/>
+            <point key="canvasLocation" x="2510" y="231.5"/>
+        </scene>
+        <!--Pot3D View Controller-->
+        <scene sceneID="6Dh-bd-GYC">
+            <objects>
+                <viewController id="uES-tv-pi9" customClass="EPot3DViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="gcr-dy-bTE">
+                        <rect key="frame" x="0.0" y="0.0" width="290" height="377"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-oA-APH">
+                                <rect key="frame" x="90" y="37" width="110" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="©  2022 MDNich" id="Wxt-49-Csm">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJh-iz-fgf">
+                                <rect key="frame" x="13" y="2" width="264" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Open Github Repository for More Info" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="A9d-iB-U7g">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openGithubWithSender:" target="uES-tv-pi9" id="aoD-tz-xeF"/>
+                                </connections>
+                            </button>
+                            <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zv-yh-6Ti">
+                                <rect key="frame" x="20" y="61" width="250" height="272"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" id="x9B-9j-8YX">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="jQE-8m-9wj">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <size key="minSize" width="250" height="272"/>
+                                            <size key="maxSize" width="275" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="tbd">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="system"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops/>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="1Ev-i4-Cod">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
+                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jmx-2y-SrR">
+                                <rect key="frame" x="27" y="341" width="236" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Help for Stoichiometry Mass Solver" id="C56-gK-Evh">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="cTM-xa-cKd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2443" y="-1193"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="DO0-fd-6gZ">
+            <objects>
+                <windowController id="kDc-St-iL6" sceneMemberID="viewController">
+                    <window key="window" title="Help for Stoichiometry React" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="iqr-F4-89z" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="267" height="407"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="iDA-34-BsF">
+                            <rect key="frame" x="0.0" y="0.0" width="267" height="407"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="kDc-St-iL6" id="vKb-LY-ZCh"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="uES-tv-pi9" kind="relationship" relationship="window.shadowedContentViewController" id="Kr5-VU-6U7"/>
+                    </connections>
+                </windowController>
+                <customObject id="WZv-23-Hl0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081" y="-1160"/>
         </scene>
     </scenes>
     <resources>
