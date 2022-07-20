@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+PythonKit in PythonKit, no dependencies
+PythonKit in PythonKit, depends on:
+PythonKit in PythonKit (explicit)
+SciTool in SciTool, depends on:
+PythonKit in PythonKit (explicit)

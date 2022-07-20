@@ -1281,15 +1281,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kM8-Xl-Iw6">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="WDp-b9-Qjt">
-                                            <rect key="frame" x="0.0" y="-42603" width="278" height="796"/>
+                                            <rect key="frame" x="0.0" y="-42603" width="293" height="796"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-xM-7cr">
-                                                    <rect key="frame" x="8" y="748" width="262" height="48"/>
+                                                    <rect key="frame" x="8" y="748" width="277" height="48"/>
                                                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="This graphing calculator can draw equipotential lines for custom discrete charge distributions. " id="Gqi-3l-xG4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1450,7 +1450,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="33U-Ua-z94">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="OyW-Yd-7mm" name="value" keyPath="self.representedObject" id="6Pz-Rh-cOd">
@@ -2185,7 +2185,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="nD7-UB-2Bi">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="zxO-dE-0D9">
@@ -2354,7 +2354,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HSt-g3-DVy">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="D0G-gv-3At" name="value" keyPath="self.representedObject" id="Y62-wW-seU">
@@ -2397,7 +2397,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="yVN-un-flx">
-                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="QZC-h3-Dqf">
@@ -2566,7 +2566,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hME-J3-UZ8">
-                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
+                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="Md5-gl-NGH" name="value" keyPath="self.representedObject" id="Fnp-3e-6Ij">
@@ -3783,15 +3783,15 @@ DQ
                                 <rect key="frame" x="20" y="61" width="250" height="272"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="pmh-nM-Kdd">
-                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" smartInsertDelete="YES" id="qBE-tC-AXP">
-                                            <rect key="frame" x="0.0" y="-204" width="235" height="645"/>
+                                            <rect key="frame" x="0.0" y="-782" width="250" height="611"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="235" height="272"/>
+                                            <size key="minSize" width="250" height="272"/>
                                             <size key="maxSize" width="275" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -3820,12 +3820,12 @@ To react your elements, click the “React!” button. The results will appear i
                                     </subviews>
                                     <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="JNI-e0-Yll">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="JNI-e0-Yll">
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="LBb-eo-r6T">
-                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="LBb-eo-r6T">
+                                    <rect key="frame" x="234" y="0.0" width="16" height="272"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -3868,15 +3868,15 @@ To react your elements, click the “React!” button. The results will appear i
                                 <rect key="frame" x="20" y="61" width="250" height="272"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="x9B-9j-8YX">
-                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" spellingCorrection="YES" smartInsertDelete="YES" id="jQE-8m-9wj">
-                                            <rect key="frame" x="0.0" y="-51" width="235" height="492"/>
+                                            <rect key="frame" x="0.0" y="-170" width="250" height="458"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="235" height="272"/>
+                                            <size key="minSize" width="250" height="272"/>
                                             <size key="maxSize" width="275" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -3905,12 +3905,12 @@ Click the question mark button to open this popup.</mutableString>
                                     </subviews>
                                     <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="1Ev-i4-Cod">
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1Ev-i4-Cod">
                                     <rect key="frame" x="-100" y="-100" width="225" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
-                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
+                                    <rect key="frame" x="234" y="0.0" width="16" height="272"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

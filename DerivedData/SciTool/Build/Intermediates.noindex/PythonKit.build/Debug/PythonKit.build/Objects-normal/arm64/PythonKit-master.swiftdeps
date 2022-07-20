@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.113.202 clang-1400.0.16.2)"
+options: "d6a337b72311b32ac28c6f5e1aa2e40bce3f68c91bd669b1613f89d6651d456e"
+build_start_time: [1658356514, 982431888]
+build_end_time: [1658356520, 877405166]
+inputs:
+  ? "/Users/mdn/Library/Developer/Xcode/DerivedData/SciTool-dcsqulctinpcsxevegdurwespswv/SourcePackages/checkouts/PythonKit/PythonKit/NumpyConversion.swift"
+  : [1658356081, 912697315]
+  ? "/Users/mdn/Library/Developer/Xcode/DerivedData/SciTool-dcsqulctinpcsxevegdurwespswv/SourcePackages/checkouts/PythonKit/PythonKit/Python.swift"
+  : [1658356081, 912934303]
+  ? "/Users/mdn/Library/Developer/Xcode/DerivedData/SciTool-dcsqulctinpcsxevegdurwespswv/SourcePackages/checkouts/PythonKit/PythonKit/PythonLibrary+Symbols.swift"
+  : [1658356081, 913065910]
+  ? "/Users/mdn/Library/Developer/Xcode/DerivedData/SciTool-dcsqulctinpcsxevegdurwespswv/SourcePackages/checkouts/PythonKit/PythonKit/PythonLibrary.swift"
+  : [1658356081, 913166046]

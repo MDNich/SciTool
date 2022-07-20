@@ -1,0 +1,61 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "3ba703bcd60dcc379ff57fd32960ba7f392307237ce59651080e839b931e38b5"
+    }
+  ],
+  "containerPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/Build/Products",
+      "derivedDataPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

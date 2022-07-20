@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import ArgumentParser
+//import ArgumentParser
 
 class ReactCommand {
-	static var configuration = CommandConfiguration(commandName: "react")
+	//static var configuration = CommandConfiguration(commandName: "react")
 	
 	//@Argument(help: "The balanced chemical equation of the reaction") var equation: String
     var equation: String = ""
@@ -124,7 +124,7 @@ class ReactCommand {
         }
     }
     
-    struct Known: ExpressibleByArgument {
+    struct Known {//}: ExpressibleByArgument {
         init?(argument: String) {
             do {
                 try initThrowing(argument: argument)
@@ -169,7 +169,7 @@ class ReactCommand {
         }
     }
     
-    enum FormatUnit: ExpressibleByArgument {
+    enum FormatUnit{ //}: ExpressibleByArgument {
         case moles, grams, milligrams, liters, milliliters
         
         init?(argument: String) {
