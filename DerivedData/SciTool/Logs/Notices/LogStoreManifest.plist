@@ -34,6 +34,34 @@
 			<key>uniqueIdentifier</key>
 			<string>17511B88-20EC-4A9C-BB55-658171D81C7F</string>
 		</dict>
+		<key>332A69AD-364A-4CD0-AE75-29CA57BFA047</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>332A69AD-364A-4CD0-AE75-29CA57BFA047.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>/Users/mdn/Library/Developer/Xcode/DerivedData/SciTool-dcsqulctinpcsxevegdurwespswv/SourcePackages/checkouts/PythonKit|PythonKit</string>
+			<key>timeStartedRecording</key>
+			<real>680049531.33718705</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Archive SciTool</string>
+			<key>uniqueIdentifier</key>
+			<string>332A69AD-364A-4CD0-AE75-29CA57BFA047</string>
+		</dict>
 		<key>3F20FAF6-F3B5-4A2F-9126-B42D01CB011A</key>
 		<dict>
 			<key>className</key>
@@ -89,6 +117,34 @@
 			<string>Build SciTool</string>
 			<key>uniqueIdentifier</key>
 			<string>8A9098FC-63B0-4110-B187-30B870B995EE</string>
+		</dict>
+		<key>9EAA4CDC-B6B5-43D4-B4CA-7E55E9D16110</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9EAA4CDC-B6B5-43D4-B4CA-7E55E9D16110.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool.xcodeproj|58D9048B27B17A5C0051C600</string>
+			<key>timeStartedRecording</key>
+			<real>680049531.33718705</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Archive SciTool</string>
+			<key>uniqueIdentifier</key>
+			<string>9EAA4CDC-B6B5-43D4-B4CA-7E55E9D16110</string>
 		</dict>
 		<key>A29B1B6E-0F4F-4296-A234-533A4E9EC5AC</key>
 		<dict>
@@ -285,6 +341,34 @@
 			<string>Build SciTool</string>
 			<key>uniqueIdentifier</key>
 			<string>EB7E19C3-AAED-4484-9E77-0FCA003DE5E6</string>
+		</dict>
+		<key>F1EC17C8-C1D2-42F3-AF56-7095B12C10F4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F1EC17C8-C1D2-42F3-AF56-7095B12C10F4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>|Prepare build</string>
+			<key>timeStartedRecording</key>
+			<real>680049531.33718705</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Archive SciTool</string>
+			<key>uniqueIdentifier</key>
+			<string>F1EC17C8-C1D2-42F3-AF56-7095B12C10F4</string>
 		</dict>
 	</dict>
 </dict>

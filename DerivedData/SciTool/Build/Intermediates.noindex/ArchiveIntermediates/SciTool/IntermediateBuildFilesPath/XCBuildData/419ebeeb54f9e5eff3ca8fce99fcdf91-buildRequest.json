@@ -1,0 +1,74 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "3ba703bcd60dcc379ff57fd32960ba7f392307237ce59651080e839b931e38b5"
+    }
+  ],
+  "containerPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "install",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Products",
+      "derivedDataPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "install",
+          "ASSET_PACK_FOLDER_PATH" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/InstallationBuildProductsLocation/OnDemandResources",
+          "ASSETCATALOG_COMPILER_FLATTENED_APP_ICON_PATH" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath/ProductIcon.png",
+          "BITCODE_GENERATION_MODE" : "bitcode",
+          "DEPLOYMENT_LOCATION" : "YES",
+          "DEPLOYMENT_POSTPROCESSING" : "YES",
+          "DSTROOT" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/InstallationBuildProductsLocation",
+          "EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE" : "NO",
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ENABLE_DATA_STORE" : "NO",
+          "MESSAGES_APPLICATION_EXTENSION_SUPPORT_FOLDER_PATH" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath/MessagesApplicationExtensionSupport",
+          "MESSAGES_APPLICATION_SUPPORT_FOLDER_PATH" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath/MessagesApplicationSupport",
+          "OBJROOT" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/IntermediateBuildFilesPath",
+          "SHARED_PRECOMPS_DIR" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/PrecompiledHeaders",
+          "SWIFT_STDLIB_TOOL_UNSIGNED_DESTINATION_DIR" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath/SwiftSupport",
+          "SYMROOT" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath",
+          "WATCHKIT_2_SUPPORT_FOLDER_PATH" : "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/DerivedData/SciTool/Build/Intermediates.noindex/ArchiveIntermediates/SciTool/BuildProductsPath/WatchKitSupport2"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "archive",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

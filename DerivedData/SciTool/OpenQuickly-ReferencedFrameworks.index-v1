@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Foundation</string>
+	<string>CoreData</string>
+	<string>AppKit</string>
+	<string>Python</string>
+	<string>WebKit</string>
+	<string>PythonKit</string>
+	<string>Darwin</string>
+	<string>WinSDK</string>
+	<string>os</string>
+	<string>sys</string>
+	<string>CoreWLAN</string>
+	<string>CRT</string>
+	<string>SystemConfiguration</string>
+	<string>XCTest</string>
+	<string>Glibc</string>
+	<string>error</string>
+	<string>ArgumentParser</string>
+	<string>Cocoa</string>
+	<string>PackageDescription</string>
+</array>
+</plist>
