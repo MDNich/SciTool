@@ -1,0 +1,25 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.113.202 clang-1400.0.16.2)"
+options: "6279263a60e5b61ffb329a8450160533bc9bdd0c74635faab9da79071790b021"
+build_start_time: [1658356515, 681310176]
+build_end_time: [1658356515, 763429164]
+inputs:
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/AppDelegate.swift": !private [1656274395, 640946388]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/DependenciesViewController.swift": !private [1656257187, 587468624]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/LoadingViewController.swift": !private [1656180376, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/MasterViewController.swift": !private [1645048637, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Reachability.swift": !private [1656192959, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/SideBarController.swift": !private [1646086980, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/ConcentrationCommand.swift": !private [1658356162, 13794898]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Elements/Element+elements.swift": !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Elements/Element.swift": !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Equations/Compound.swift": !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Equations/Equation.swift": !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Equations/MeasuredEquation.swift": !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/MassCommand.swift": !private [1658356177, 994766712]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Parsing/EquationParser.swift": !private [1643819390, 0]
+  ? "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/Parsing/String+CharacterSets.swift"
+  : !private [1643819390, 0]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/React.swift": !private [1658356195, 15390396]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/StoicMassViewController.swift": !private [1656518401, 413937091]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/Stoichiometry/StoicViewController.swift": !private [1656434785, 211348295]
+  "/Users/mdn/Library/Mobile Documents/com~apple~CloudDocs/Developer/SciTool/SciTool/ViewController.swift": !private [1656433400, 0]
