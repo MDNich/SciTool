@@ -1,0 +1,16 @@
+.DS_Store
+test-output
+*.swp
+
+# Eclipse #
+.classpath
+.project
+.settings/
+
+# Maven #
+target/
+
+# IntelliJ #
+.idea/
+*.iml
+/.apt_generated/
