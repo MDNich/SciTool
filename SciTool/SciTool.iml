@@ -8,6 +8,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="java" level="project" />
-    <orderEntry type="library" name="jython-2.7.2" level="project" />
   </component>
 </module>
