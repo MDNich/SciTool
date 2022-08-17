@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class PythonRunner {
@@ -17,6 +18,28 @@ public class PythonRunner {
     {
         this.pathToPython = "/usr/local/bin/python3";
     }
+
+    public void attemptHelloWorld(){
+        System.out.println("Hi");
+        List<String> command = new LinkedList<String>();
+        command.add(System.getProperty("user.dir") + "/out/production/SciTool/com/astroDevEnterprises/SciTool/test/test");
+
+        ProcessBuilder builder = new ProcessBuilder(command);
+
+        Process process = null;
+        try {
+            process = builder.inheritIO().start();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            process.waitFor();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Exit code " + process.exitValue());
+    }
+
    public void runContourGivenInputs(Object[] inputs)
    {
        System.out.println(PythonRunner.class.getProtectionDomain().getCodeSource().getLocation());

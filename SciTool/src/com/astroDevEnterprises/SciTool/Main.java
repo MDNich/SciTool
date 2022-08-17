@@ -30,6 +30,7 @@ public class Main {
         app.setVisible(true);
         beginProgressBar();
         pyEngine = new PythonRunner();
+        pyEngine.attemptHelloWorld();
 
     }
     public static void beginProgressBar()
