@@ -82,7 +82,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             try version = safeShell("""
-python3 --version | cut -c 8-
+            /usr/local/bin/python3 --version | cut -c 8-
 """)
             if(version.contains("zsh")) {
                 throw InstallerErrror.PythonNotFound
@@ -103,7 +103,7 @@ python3 --version | cut -c 8-
         mplProgress.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("python3 -m pip install matplotlib --disable-pip-version")
+                try self.safeShell("/usr/local/bin/python3 -m pip install matplotlib --disable-pip-version")
             }
             catch {
                 print(error)
@@ -120,8 +120,8 @@ python3 --version | cut -c 8-
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("python3 -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
-            print(version)
+            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("Out: \(version)")
             if(version == "") {
                 version = "Matplotlib is not installed."
                 mplInstall.isEnabled = true
@@ -140,7 +140,7 @@ python3 --version | cut -c 8-
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("python3 -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
             print(version)
             if(version == "") {
                 version = "Numpy is not installed."
@@ -163,7 +163,7 @@ python3 --version | cut -c 8-
         numpyProgress.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("python3 -m pip install numpy --disable-pip-version")
+                try self.safeShell("/usr/local/bin/python3 -m pip install numpy --disable-pip-version")
             }
             catch {
                 print(error)
@@ -219,7 +219,7 @@ python3 --version | cut -c 8-
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("python3 -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
+            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
             print(version)
             if(version == "") {
                 version = "Plotly is not installed."
@@ -242,7 +242,7 @@ python3 --version | cut -c 8-
         plotlyProgressBar.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("python3 -m pip install plotly --disable-pip-version")
+                try self.safeShell("/usr/local/bin/python3 -m pip install plotly --disable-pip-version")
             }
             catch {
                 print(error)
@@ -260,7 +260,7 @@ python3 --version | cut -c 8-
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("pip3 list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 21-")
+            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 21-")
             print(version)
             if(version == "") {
                 version = "Pandas is not installed."
@@ -283,7 +283,7 @@ python3 --version | cut -c 8-
         pandasProgressBar.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 -m pip install pandas --disable-pip-version")
+                try self.safeShell("/usr/local/bin/python3 -m pip install pandas --disable-pip-version")
             }
             catch {
                 print(error)

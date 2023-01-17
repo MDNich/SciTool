@@ -1,4 +1,0 @@
-module PythonKit {
-header "PythonKit-Swift.h"
-export *
-}
