@@ -32,7 +32,7 @@
 		58DE307F2868F4DA00E55FEA /* String+CharacterSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30762868F4DA00E55FEA /* String+CharacterSets.swift */; };
 		58DE30802868F4DA00E55FEA /* EquationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30772868F4DA00E55FEA /* EquationParser.swift */; };
 		58DE30832868FB4100E55FEA /* StoicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE30822868FB4100E55FEA /* StoicViewController.swift */; };
-		58E92BC329771315007C9A23 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58E92BC229771315007C9A23 /* PythonKit */; };
+		58E988EE29784CA200283D45 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58E988ED29784CA200283D45 /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E92BC329771315007C9A23 /* PythonKit in Frameworks */,
+				58E988EE29784CA200283D45 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +85,7 @@
 				581FF3FD27E8F53600EC1D62 /* README.md */,
 				58D9048E27B17A5C0051C600 /* SciTool */,
 				58D9048D27B17A5C0051C600 /* Products */,
+				58E988EA29784C8D00283D45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +161,13 @@
 			path = Parsing;
 			sourceTree = "<group>";
 		};
+		58E988EA29784C8D00283D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,7 +186,7 @@
 			);
 			name = SciTool;
 			packageProductDependencies = (
-				58E92BC229771315007C9A23 /* PythonKit */,
+				58E988ED29784CA200283D45 /* PythonKit */,
 			);
 			productName = SciTool;
 			productReference = 58D9048C27B17A5C0051C600 /* SciTool.app */;
@@ -424,12 +432,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SciTool/SciTool.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 7Z4BQU4435;
+				DEVELOPMENT_TEAM = 7Z4BQU4435;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -445,7 +452,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiTouchFX.SciTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -458,12 +464,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SciTool/SciTool.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 7Z4BQU4435;
+				DEVELOPMENT_TEAM = 7Z4BQU4435;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -479,7 +484,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.multiTouchFX.SciTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -520,7 +524,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		58E92BC229771315007C9A23 /* PythonKit */ = {
+		58E988ED29784CA200283D45 /* PythonKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 58E92BC129771315007C9A23 /* XCRemoteSwiftPackageReference "PythonKit" */;
 			productName = PythonKit;

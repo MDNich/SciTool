@@ -1,3 +1,10 @@
+import pip
+pip.main(["install","matplotlib"])
+pip.main(["install","numpy"])
+pip.main(["install","plotly"])
+pip.main(["install","pandas"])
+
+
 import matplotlib.pyplot as plt
 import math
 import numpy as np
@@ -31,6 +38,10 @@ def potential(charges,point):
 
 def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
     #plt.ion()
+    #pathToSave = pathToSave.encode('ascii')
+    pathToSave = str(pathToSave.encode('ascii', 'ignore').decode('ascii'))
+    
+    print("Call to graph with parameters drawGraph(" + str(pathToSave) + "," + str(chargeXarr) + "," + str(chargeYarr) + "," + str(chargeQarr) + "," + str(windowLBoundX) + "," + str(windowLBoundY) + "," + str(windowUBoundX) + "," + str(windowUBoundY) + "," + str(steps) + "," + str(coulombCt)+")")
     charges = [chargeXarr,chargeYarr,chargeQarr]
     print(charges)
     fig, ax = plt.subplots()
@@ -75,8 +86,11 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     )])
 
     # tight layout
-    fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))    
-    fig.write_html(str(pathToSave) + "result.html") #Modifiy the html file
+    fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+    #pathToSave = (pathToSave[2:])
+    #pathToSave = pathToSave[:(len(pathToSave)-1)]
+    print("Saving to file: " + str(pathToSave) + "/result.html")
+    fig.write_html((pathToSave) + "/result.html") #Modifiy the html file
     #fig.show()
     # open test.html in browser.
 

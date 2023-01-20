@@ -239,9 +239,11 @@ class EPot3DViewController: NSViewController {
     {
         ErrorLabel.isHidden = true
         var dirPath = FileManager.default.temporaryDirectory.absoluteString
-        print(dirPath)
-        dirPath.removeFirst(7)
+        print("DIR:\(dirPath)")
         
+        dirPath.removeFirst(7)
+        print("DIR:\(dirPath)")
+
         do {
             try runPythonCode(dirPathSave: dirPath) }
         catch {
@@ -302,12 +304,16 @@ class EPot3DViewController: NSViewController {
         let ys = convertStringToArr(str: ChargeYList.stringValue)
         let qs = convertStringToArr(str: ChargeQList.stringValue)
         
+        // DIR:file:///var/folders/dl/t48fygys3vzbbm381q1cx2c00000gn/T/
+
+        
         let sys = Python.import("sys")
         sys.path.append(dirPath)
         let engine = Python.import("voltage3D")
         //drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
-        let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
-        try engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)
+        let arr = [PythonObject.StringLiteralType(dirPath),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
+        print("Calling")
+        try! engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)
     }
 }
 
@@ -460,9 +466,9 @@ class EquipotViewController: NSViewController {
         let xs = convertStringToArr(str: ChargeXList.stringValue)
         let ys = convertStringToArr(str: ChargeYList.stringValue)
         let qs = convertStringToArr(str: ChargeQList.stringValue)
-        
         let sys = Python.import("sys")
         sys.path.append(dirPath)
+        print(sys.executable)
         let engine = Python.import("voltage")
         let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(ScatterPtDensity.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!),PythonObject.FloatLiteralType(Double(DPI.stringValue)!)] as [PythonConvertible]
         try engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)

@@ -17,6 +17,10 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     var isFileDownloaded: Bool = false
     var downloadTask: URLSessionTask? = nil
     
+    var password: String = ""
+    
+    
+    var pythonPath: String = ""
     
     override func viewDidLoad() {
         if let _ = tabView {
@@ -30,6 +34,8 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
                 nextpage.title = "Finish"
                 nextpage.isEnabled = true
             }
+            let alert = NSAlert()
+            alert.messageText = "Please enter an administrator password"
         }
         nextpage.isEnabled = false
     }
@@ -81,10 +87,14 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     @IBAction func checkIfPythonExist(_ sender: Any) {
         var version: String = ""
         do {
+            try self.pythonPath = String(safeShell("type python3 | cut -c 12-").dropLast(1))
+            print(pythonPath)
+            print("\(self.pythonPath) --version | cut -c 8-")
             try version = safeShell("""
-            /usr/local/bin/python3 --version | cut -c 8-
+            \(self.pythonPath) --version | cut -c 8-
 """)
-            if(version.contains("zsh")) {
+            print()
+            if !(version.contains(".")) {
                 throw InstallerErrror.PythonNotFound
             }
             versionPrint.stringValue = version
@@ -103,7 +113,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         mplProgress.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("/usr/local/bin/python3 -m pip install matplotlib --disable-pip-version")
+                try print(self.safeShell("echo littleboy | sudo -S \(self.pythonPath) -m pip install matplotlib --disable-pip-version"))
             }
             catch {
                 print(error)
@@ -120,7 +130,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
             print("Out: \(version)")
             if(version == "") {
                 version = "Matplotlib is not installed."
@@ -140,7 +150,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
             print(version)
             if(version == "") {
                 version = "Numpy is not installed."
@@ -163,7 +173,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         numpyProgress.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("/usr/local/bin/python3 -m pip install numpy --disable-pip-version")
+                try self.safeShell("\(self.pythonPath) -m pip install numpy --disable-pip-version")
             }
             catch {
                 print(error)
@@ -219,7 +229,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
+            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
             print(version)
             if(version == "") {
                 version = "Plotly is not installed."
@@ -242,7 +252,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         plotlyProgressBar.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("/usr/local/bin/python3 -m pip install plotly --disable-pip-version")
+                try self.safeShell("\(self.pythonPath) -m pip install plotly --disable-pip-version")
             }
             catch {
                 print(error)
@@ -260,7 +270,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("/usr/local/bin/python3 -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 21-")
+            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 21-")
             print(version)
             if(version == "") {
                 version = "Pandas is not installed."
@@ -283,7 +293,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         pandasProgressBar.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try self.safeShell("/usr/local/bin/python3 -m pip install pandas --disable-pip-version")
+                try self.safeShell("\(self.pythonPath) -m pip install pandas --disable-pip-version")
             }
             catch {
                 print(error)

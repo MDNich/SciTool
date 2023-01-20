@@ -1,3 +1,7 @@
+import pip
+pip.main(["install","matplotlib"])
+pip.main(["install","numpy"])
+
 import matplotlib.pyplot as plt
 import math
 import numpy as np
@@ -63,8 +67,9 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     #print(volt2d)
     #ax.scatter3D(xs,ys,volt,c=volt)
     ax.scatter(ys,xs,c=volt)
-    cs = ax.contour(ylist,xlist,volt2d,levels=countourprec,cmap="hsv")
-    ax.clabel(cs,inline=1,fontsize=8,inline_spacing=2)
+    if(countourprec > 0):
+        cs = ax.contour(ylist,xlist,volt2d,levels=countourprec,cmap="hsv")
+        ax.clabel(cs,inline=1,fontsize=8,inline_spacing=2)
     #ax.scatter3D(charges[0],charges[1],0,c=charges[2],marker="X")
     if os.path.isfile(str(pathToSave) + "result.png"):
         print("removing")
