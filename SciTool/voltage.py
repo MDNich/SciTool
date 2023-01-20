@@ -33,7 +33,7 @@ def potential(charges,point):
 	return v;
 
 
-def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec,coulombCt,dpiInp):
+def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec,coulombCt,dpiInp,isLogScale):
     #plt.ion()
     charges = [chargeXarr,chargeYarr,chargeQarr]
     print(charges)

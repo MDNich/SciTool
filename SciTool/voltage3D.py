@@ -89,8 +89,10 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
     #pathToSave = (pathToSave[2:])
     #pathToSave = pathToSave[:(len(pathToSave)-1)]
-    print("Saving to file: " + str(pathToSave) + "/result.html")
-    fig.write_html((pathToSave) + "/result.html") #Modifiy the html file
+    #print("Saving to file: " + str(pathToSave) + "/result.html")
+    htmlString = fig.to_html(full_html=True)
+    return htmlString
+    #fig.write_html((pathToSave) + "/result.html") #Modifiy the html file
     #fig.show()
     # open test.html in browser.
 

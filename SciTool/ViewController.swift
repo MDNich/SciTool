@@ -204,9 +204,7 @@ class EPot3DViewController: NSViewController {
     
     
     @IBOutlet weak var helpButton: NSButton!
-    
-    
-    
+        
     @IBAction func saveImgAs(sender: Any?)
     {
         
@@ -225,14 +223,22 @@ class EPot3DViewController: NSViewController {
         print("response: \(response)")
         print("saveURL: \(saveURL)")
         var dirPath = FileManager.default.temporaryDirectory.absoluteString
-        let img = img.image
-        print(img)
-        if ((img?.pngWrite(to: saveURL)) != nil) {
-                    print("File saved")
-                }
+        print("DIR:\(dirPath)")
+        dirPath.removeFirst(7)
+        print("DIR:\(dirPath)")
+        let filename = URL(string: "file://\(dirPath)result.html")!
+        do {
+            try! FileManager().copyItem(at: filename,to: saveURL)
+            print("Save suceeded")
+        }
+        catch{
+            print("Save failed")
+        }
                
         
     }
+    
+    var savedDir: URL? = nil
     
     
     func doImgRender()
@@ -313,7 +319,18 @@ class EPot3DViewController: NSViewController {
         //drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
         let arr = [PythonObject.StringLiteralType(dirPath),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
         print("Calling")
-        try! engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)
+        var htmlResult = try! String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
+        htmlResult = "<!DOCTYPE html>\n\(htmlResult ?? "<html><body><h1>Document Save Failed</h1></body></html>")"
+        let filename = URL(fileURLWithPath: String(dirPath) + "/result.html")
+        do {
+            try! htmlResult!.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+            print("path: ")
+            let normalized = filename.absoluteString.filter({ $0.isASCII })
+        } catch {
+            print("Failed to Save")
+            // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
+        }
+
     }
 }
 
@@ -376,7 +393,7 @@ class EquipotViewController: NSViewController {
     
     @IBOutlet weak var helpButton: NSButton!
     
-    
+    @IBOutlet weak var logscale: NSButton!
     
     @IBAction func saveImgAs(sender: Any?)
     {
@@ -470,7 +487,7 @@ class EquipotViewController: NSViewController {
         sys.path.append(dirPath)
         print(sys.executable)
         let engine = Python.import("voltage")
-        let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(ScatterPtDensity.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!),PythonObject.FloatLiteralType(Double(DPI.stringValue)!)] as [PythonConvertible]
+        let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(ScatterPtDensity.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!),PythonObject.FloatLiteralType(Double(DPI.stringValue)!),PythonObject.BooleanLiteralType(false)] as [PythonConvertible]
         try engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)
     }
 
