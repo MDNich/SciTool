@@ -228,10 +228,18 @@ class EPot3DViewController: NSViewController {
         print("DIR:\(dirPath)")
         let filename = URL(string: "file://\(dirPath)result.html")!
         do {
-            try! FileManager().copyItem(at: filename,to: saveURL)
+            try FileManager().copyItem(at: filename,to: saveURL)
             print("Save suceeded")
         }
         catch{
+            do {
+                try FileManager().removeItem(at: saveURL)
+                try FileManager().copyItem(at: filename,to: saveURL)
+                print("Save suceeded")
+            }
+            catch {
+                
+            }
             print("Save failed")
         }
                
@@ -255,7 +263,7 @@ class EPot3DViewController: NSViewController {
         catch {
             print("FAILED")
             dirPath = Bundle.main.resourcePath!
-            img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
+            //img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
             ErrorLabel.isHidden = false
             //htmlView.isHidden = false
             savebutton.isEnabled = false
@@ -273,7 +281,7 @@ class EPot3DViewController: NSViewController {
     @IBAction func exec(_ sender: Any) {
         self.ProgressBar.doubleValue = 30
         if(!imgIsReset) {
-            img.image = NSImage(named: "Empty")
+            //img.image = NSImage(named: "Empty")
             self.imgIsReset = true
             DispatchQueue.main.async {
                 self.doImgRender()
@@ -319,11 +327,11 @@ class EPot3DViewController: NSViewController {
         //drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
         let arr = [PythonObject.StringLiteralType(dirPath),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
         print("Calling")
-        var htmlResult = try! String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
+        var htmlResult = try String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
         htmlResult = "<!DOCTYPE html>\n\(htmlResult ?? "<html><body><h1>Document Save Failed</h1></body></html>")"
         let filename = URL(fileURLWithPath: String(dirPath) + "/result.html")
         do {
-            try! htmlResult!.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+            try htmlResult!.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
             print("path: ")
             let normalized = filename.absoluteString.filter({ $0.isASCII })
         } catch {

@@ -34,10 +34,9 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
                 nextpage.title = "Finish"
                 nextpage.isEnabled = true
             }
-            let alert = NSAlert()
-            alert.messageText = "Please enter an administrator password"
         }
         nextpage.isEnabled = false
+        
     }
     
     func updateButtons()
@@ -66,6 +65,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     @IBOutlet weak var tabView: NSTabView!
     @IBOutlet weak var installbutton: NSButton!
     @IBOutlet weak var versionPrint: NSTextField!
+    @IBOutlet weak var pathPrint: NSTextField!
     @IBOutlet weak var nextpage: NSButton!
     @IBOutlet weak var prevPage: NSButton!
     @IBOutlet weak var mplversion: NSTextField!
@@ -84,11 +84,25 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     
     
     
+    @IBAction func changeDistro(_ sender: Any?) {
+        let alert = NSAlert()
+        alert.messageText = "Change Python Distribution"
+        alert.informativeText = "Enter the full path (from root) to your chosen python distribution."
+        let inputTextField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
+                inputTextField.placeholderString = ("Enter path from root")
+        alert.accessoryView = inputTextField
+        alert.runModal()
+        pythonPath = (inputTextField.stringValue)
+    }
+    
+    
     @IBAction func checkIfPythonExist(_ sender: Any) {
         var version: String = ""
         do {
-            try self.pythonPath = String(safeShell("type python3 | cut -c 12-").dropLast(1))
-            print(pythonPath)
+            if(self.pythonPath == "") {
+                try self.pythonPath = String(safeShell("type python3 | cut -c 12-").dropLast(1))
+            }
+            print("using path \(pythonPath)")
             print("\(self.pythonPath) --version | cut -c 8-")
             try version = safeShell("""
             \(self.pythonPath) --version | cut -c 8-
@@ -98,6 +112,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
                 throw InstallerErrror.PythonNotFound
             }
             versionPrint.stringValue = version
+            pathPrint.stringValue = pythonPath
             nextpage.isEnabled = true
         }
         catch {
@@ -113,7 +128,8 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         mplProgress.startAnimation(sender)
         DispatchQueue.main.async {
             do {
-                try print(self.safeShell("echo littleboy | sudo -S \(self.pythonPath) -m pip install matplotlib --disable-pip-version"))
+                self.reqPassword()
+                try print(self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install matplotlib --disable-pip-version"))
             }
             catch {
                 print(error)
@@ -121,9 +137,20 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.mplProgress.stopAnimation(sender)
             self.mplProgress.isIndeterminate = false
             self.mplProgress.doubleValue = 100
+            self.checkIfMPLexist("")
             self.nextpage.isEnabled = true
 
         }
+    }
+    func reqPassword() {
+        let alert = NSAlert()
+        alert.messageText = "Elevate to Admin Priveleges"
+        alert.informativeText = "Enter an administrator password to install packages."
+        let inputTextField = NSSecureTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
+                inputTextField.placeholderString = ("Enter your password")
+        alert.accessoryView = inputTextField
+        alert.runModal()
+        password = (inputTextField.stringValue)
     }
     @IBAction func checkIfMPLexist(_ sender: Any) {
         // pip3 list | grep matplotlib | cut -c 20-
@@ -152,6 +179,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             nextpage.isEnabled = true
             try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
             print(version)
+            version.removeAll(where: isSpace(_:))
             if(version == "") {
                 version = "Numpy is not installed."
                 numpyInstall.isEnabled = true
@@ -171,9 +199,13 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         numpyProgress.isHidden = false
         numpyProgress.isDisplayedWhenStopped = true
         numpyProgress.startAnimation(sender)
+        
+        if(password == "") {
+            reqPassword()
+        }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("\(self.pythonPath) -m pip install numpy --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install numpy --disable-pip-version")
             }
             catch {
                 print(error)
@@ -181,6 +213,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.numpyProgress.stopAnimation(sender)
             self.numpyProgress.isIndeterminate = false
             self.numpyProgress.doubleValue = 100
+            self.checkIfNumpyExist("")
             self.nextpage.isEnabled = true
 
         }
@@ -231,6 +264,9 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             nextpage.isEnabled = true
             try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
             print(version)
+            version.removeAll(where: isSpace(_:))
+
+            // safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check
             if(version == "") {
                 version = "Plotly is not installed."
                 plotlyInstall.isEnabled = true
@@ -250,9 +286,13 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         plotlyProgressBar.isHidden = false
         plotlyProgressBar.isDisplayedWhenStopped = true
         plotlyProgressBar.startAnimation(sender)
+        if(password == "") {
+            reqPassword()
+        }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("\(self.pythonPath) -m pip install plotly --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install plotly --disable-pip-version")
+                
             }
             catch {
                 print(error)
@@ -260,9 +300,17 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.plotlyProgressBar.stopAnimation(sender)
             self.plotlyProgressBar.isIndeterminate = false
             self.plotlyProgressBar.doubleValue = 100
+            self.checkIfPlotlyExist("")
             self.nextpage.isEnabled = true
 
         }
+    }
+    
+    func isSpace(_ char: Character) -> Bool {
+        if (char == Character(" ")) {
+            return true
+        }
+        else{ return false}
     }
     
     @IBAction func checkIfPandasExist(_ sender: Any) {
@@ -270,8 +318,9 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         var version: String = ""
         do {
             nextpage.isEnabled = true
-            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 21-")
+            try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 10-")
             print(version)
+            version.removeAll(where: isSpace(_:))
             if(version == "") {
                 version = "Pandas is not installed."
                 pandasInstall.isEnabled = true
@@ -291,9 +340,12 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         pandasProgressBar.isHidden = false
         pandasProgressBar.isDisplayedWhenStopped = true
         pandasProgressBar.startAnimation(sender)
+        if(password == "") {
+            reqPassword()
+        }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("\(self.pythonPath) -m pip install pandas --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install pandas --disable-pip-version")
             }
             catch {
                 print(error)
@@ -301,6 +353,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.pandasProgressBar.stopAnimation(sender)
             self.pandasProgressBar.isIndeterminate = false
             self.pandasProgressBar.doubleValue = 100
+            self.checkIfPandasExist("")
             self.nextpage.isEnabled = true
 
         }
