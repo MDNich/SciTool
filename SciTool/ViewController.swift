@@ -270,6 +270,7 @@ class EPot3DViewController: NSViewController {
         }
         print("file://\(dirPath)result.html")
         htmlView.load(URLRequest(url: URL(string: "file://\(dirPath)result.html")!))
+        //htmlView.load(URLRequest(url: URL(string: "http://127.0.0.1:65221")!))
         
         self.imgIsReset = false
         savebutton.isEnabled = true

@@ -93,6 +93,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         alert.accessoryView = inputTextField
         alert.runModal()
         pythonPath = (inputTextField.stringValue)
+        PythonLibrary.useLibrary(at: pythonPath)
     }
     
     
@@ -103,6 +104,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
                 try self.pythonPath = String(safeShell("type python3 | cut -c 12-").dropLast(1))
             }
             print("using path \(pythonPath)")
+            PythonLibrary.useLibrary(at: pythonPath)
             print("\(self.pythonPath) --version | cut -c 8-")
             try version = safeShell("""
             \(self.pythonPath) --version | cut -c 8-
