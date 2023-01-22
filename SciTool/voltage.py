@@ -1,6 +1,6 @@
 import pip
-pip.main(["install","matplotlib"])
-pip.main(["install","numpy"])
+#pip.main(["install","matplotlib"])
+#pip.main(["install","numpy"])
 
 import matplotlib.pyplot as plt
 import math

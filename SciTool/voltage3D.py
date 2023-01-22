@@ -1,8 +1,8 @@
 import pip
-pip.main(["install","matplotlib"])
-pip.main(["install","numpy"])
-pip.main(["install","plotly"])
-pip.main(["install","pandas"])
+#pip.main(["install","matplotlib"])
+#pip.main(["install","numpy"])
+#pip.main(["install","plotly"])
+#pip.main(["install","pandas"])
 
 
 import matplotlib.pyplot as plt
