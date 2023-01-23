@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
         if(!flag) {
-            if(NSApplication.shared.windows.count <= 1) {
+            if(NSApplication.shared.windows.count < 1) {
                 let storyboard = NSStoryboard(name: "Main", bundle: nil)
                 let windowController = storyboard.instantiateController(withIdentifier: "splashController") as! NSWindowController
                 windowController.showWindow(self)
@@ -39,7 +39,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     @IBAction func showSplasher(_ sender: Any) {
-        if(NSApplication.shared.windows.count <= 1) {
+        if(true) {
             let storyboard = NSStoryboard(name: "Main", bundle: nil)
             let windowController = storyboard.instantiateController(withIdentifier: "splashController") as! NSWindowController
             windowController.showWindow(self)

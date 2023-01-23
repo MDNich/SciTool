@@ -95,16 +95,14 @@
                                                 </items>
                                             </menu>
                                         </menuItem>
-                                        <menuItem title="Check for dependencies" id="JGC-RK-tso">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Check for dependencies" keyEquivalent="d" id="JGC-RK-tso">
                                             <connections>
                                                 <segue destination="fpv-gT-xv7" kind="show" id="ll4-iu-8Sm"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Show Splash Welcome Window" id="U6z-EP-oLU">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Show Splash Welcome Window" keyEquivalent="0" id="U6z-EP-oLU">
                                             <connections>
-                                                <action selector="showSplasher:" target="Voe-Tx-rLC" id="0Sv-aP-qaz"/>
+                                                <action selector="showSplasher:" target="Voe-Tx-rLC" id="t1S-3f-Jm6"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>

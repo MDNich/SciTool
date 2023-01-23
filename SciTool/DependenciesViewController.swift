@@ -116,6 +116,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             versionPrint.stringValue = version
             pathPrint.stringValue = pythonPath
             nextpage.isEnabled = true
+            PythonLibrary.useLibrary(at: pythonPath)
         }
         catch {
             //print("\(error)") //handle or silence the error here
