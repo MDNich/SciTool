@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SCIFIO">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="file://$PROJECT_DIR$/lib/scifio-master/src/main/java" />
-    </SOURCES>
-  </library>
-</component>

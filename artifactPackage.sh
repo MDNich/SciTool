@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -i -r /Users/mdn/Developer/SciTool/out/artifacts/SciTool
+
+/Users/mdn/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/bin/jlink --no-header-files --no-man-pages --compress=2 --strip-debug --module-path "/Users/mdn/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/jmods" --add-modules "jdk.management.jfr,java.rmi,jdk.jdi,jdk.charsets,java.xml,jdk.xml.dom,java.datatransfer,jdk.jstatd,jdk.httpserver,java.desktop,java.security.sasl,jdk.zipfs,java.base,jdk.crypto.ec,jdk.javadoc,jdk.management.agent,jdk.jshell,jdk.editpad,jdk.jsobject,jdk.sctp,java.sql.rowset,jdk.unsupported,jdk.jlink,java.smartcardio,java.security.jgss,java.compiler,jdk.nio.mapmode,jdk.dynalink,jdk.unsupported.desktop,jdk.accessibility,jdk.security.jgss,java.sql,jdk.incubator.vector,java.logging,java.transaction.xa,java.xml.crypto,jdk.jfr,jdk.crypto.cryptoki,jdk.net,jdk.random,java.naming,jdk.internal.ed,java.prefs,java.net.http,jdk.compiler,jdk.naming.rmi,jdk.internal.opt,jdk.jconsole,jdk.attach,jdk.incubator.concurrent,jdk.internal.le,java.management,jdk.jdwp.agent,jdk.internal.jvmstat,java.instrument,jdk.management,jdk.security.auth,java.scripting,jdk.jdeps,jdk.jartool,jdk.jpackage,java.management.rmi,jdk.naming.dns,jdk.localedata,javafx.controls,javafx.fxml,javafx.graphics" --include-locales=en --output "/Users/mdn//Developer/SciTool/out/artifacts/SciTool"
+
+
+
+/Users/mdn/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/bin/jpackage --verbose --input /Users/mdn/Developer/SciTool/out/artifacts/SciTool, --main-jar SciTool.jar --name SciTool --dest /Users/mdn/Developer/SciTool/out/artifacts/SciTool --app-version 1.0 --copyright MDNich --main-class org.scitool.SciTool --runtime-image "/Users/mdn/Developer/SciTool/out/artifacts/SciTool" --icon "/Users/mdn//Desktop/AppIcon.icns"  --mac-package-identifier org.scitool.app

@@ -1,0 +1,2 @@
+appdir/SciTool.app/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text
+appdir/SciTool_OLD/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text

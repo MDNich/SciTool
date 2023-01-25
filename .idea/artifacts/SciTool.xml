@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="SciTool">
+    <output-path>$PROJECT_DIR$/out/artifacts/SciTool</output-path>
+    <properties id="jpackage-properties">
+      <options>
+        <option name="version" value="1.0" />
+        <option name="copyright" value="MDNich" />
+        <option name="description" value="" />
+        <option name="vendor" value="" />
+        <option name="verbose" value="true" />
+        <option name="mainClass" value="org.scitool.SciTool" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="SciTool.jar">
+        <element id="module-output" name="SciTool" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="library" level="project" name="Maven: org.apiguardian:apiguardian-api:1.1.2" />
+        <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.1" />
+        <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-api:5.9.1" />
+        <element id="library" level="project" name="Maven: org.junit.jupiter:junit-jupiter-engine:5.9.1" />
+        <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-commons:1.9.1" />
+        <element id="library" level="project" name="Maven: org.junit.platform:junit-platform-engine:1.9.1" />
+        <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.1" />
+        <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.3.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-base:mac-aarch64:19" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:mac-aarch64:19" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:mac-aarch64:19" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:mac-aarch64:19" />
+        <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+      </element>
+    </root>
+  </artifact>
+</component>
