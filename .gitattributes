@@ -1,3 +1,7 @@
 appdir/SciTool.app/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text
 appdir/SciTool_OLD/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text
 appdir/SciTool.app.zip filter=lfs diff=lfs merge=lfs -text
+/Users/mdn/Developer/SciTool/appdir/SciTool_intel.app.zip filter=lfs diff=lfs merge=lfs -text
+/Users/mdn/Developer/SciTool/appdir/SciTool_intel.app/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text
+appdir/SciTool_intel.app.zip filter=lfs diff=lfs merge=lfs -text
+appdir/SciTool_intel.app/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text

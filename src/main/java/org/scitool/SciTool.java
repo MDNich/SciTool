@@ -3,6 +3,7 @@ package org.scitool;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -17,6 +18,7 @@ public class SciTool extends Application {
 
     public static File logFile = null;
 
+    Stage stageMain = null;
 
     public static LogWriter logger = null;
     @Override
@@ -50,7 +52,30 @@ public class SciTool extends Application {
         stage.initStyle(StageStyle.DECORATED);
         stage.setScene(scene);
         stage.show();
+        stageMain = stage;
         logger.log("Show scene succeeded.");
+    }
+
+    public void launchAboutModal() {
+        FXMLLoader fxmlLoader = new FXMLLoader(SciTool.class.getResource("about-view.fxml"));
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage newWindow = new Stage();
+        newWindow.setTitle("About");
+        newWindow.setScene(scene);
+
+        // Specifies the modality for new window.
+        newWindow.initModality(Modality.WINDOW_MODAL);
+
+    }
+
+    public void stop() throws Exception {
+        super.stop();
+        logger.log("End of app.");
     }
 
     public static void main(String[] args) {
