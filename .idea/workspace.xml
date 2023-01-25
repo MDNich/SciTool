@@ -14,6 +14,7 @@
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       </method>
     </configuration>
     <configuration name="Make and Run .app" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="cp $PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar $PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar; open $PROJECT_DIR$/appdir/SciTool.app/; ./tail" />
+      <option name="SCRIPT_TEXT" value="cp $PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar $PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar; cp $PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar $PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar; cp $PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar $PROJECT_DIR$/appdir/SciTool.jar; open $PROJECT_DIR$/appdir/SciTool.app/; ./tail" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
       <option name="SCRIPT_OPTIONS" value="" />
@@ -113,7 +114,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674566168639</updated>
       <workItem from="1674566169718" duration="9394000" />
-      <workItem from="1674657995037" duration="5204000" />
+      <workItem from="1674657995037" duration="6399000" />
     </task>
     <servers />
   </component>

@@ -51,6 +51,7 @@ public class SciTool extends Application {
         stage.setTitle("Welcome!");
         stage.initStyle(StageStyle.DECORATED);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
         stageMain = stage;
         logger.log("Show scene succeeded.");
