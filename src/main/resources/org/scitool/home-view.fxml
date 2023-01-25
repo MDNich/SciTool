@@ -23,7 +23,7 @@
             <Font name="SF Pro Rounded Regular" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="exploreTools" defaultButton="true" layoutX="88.0" layoutY="233.0" mnemonicParsing="false" onAction="#runExploreTools" stylesheets="@aquafx.css" text="Explore Installed SciTools">
+      <Button fx:id="exploreTools" layoutX="88.0" layoutY="233.0" mnemonicParsing="false" onAction="#runExploreTools" text="Explore Installed SciTools">
          <font>
             <Font name="SF Pro Rounded Regular" size="14.0" />
          </font>

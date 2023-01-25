@@ -292,15 +292,15 @@
 
 .button{
     -fx-skin: "com.aquafx_project.controls.skin.AquaButtonSkin";
-    -fx-aqua-start-color-1: rgb(107.0,107.0, 110.0);
-    -fx-aqua-start-color-2: rgb(107.0,107.0, 110.0);
-    -fx-aqua-start-color-3: rgb(107.0,107.0, 110.0);
-    -fx-aqua-start-color-4: rgb(107.0,107.0, 110.0);
-    -fx-aqua-end-color-1: rgb(107.0,107.0, 110.0);
-    -fx-aqua-end-color-2: rgb(107.0,107.0, 110.0);
-    -fx-aqua-end-color-3: rgb(107.0,107.0, 110.0);
-    -fx-aqua-end-color-4: rgb(107.0,107.0, 110.0);
-    -fx-aqua-armed-style:"-fx-background-color: linear-gradient(rgb(107.0,107.0, 110.0) 0%, rgb(107.0,107.0, 111.0) 100% ), linear-gradient(rgb(107.0,107.0, 110.0) 0%, rgb(107.0,107.0, 111.0) 50%, rgb(107.0,107.0, 112.0) 50%, rgb(107.0,107.0, 110.0) 75%, rgb(107.0,107.0, 111.0) 100%), radial-gradient(focus-angle 180deg, focus-distance 95%, center 1% 50%, radius 50%, #78b0ee, transparent), radial-gradient(focus-angle 0deg, focus-distance 95%, center 100% 50%, radius 50%, #78b0ee, transparent); -fx-background-insets: 0, 0, 1 1 1 2, 1 2 1 1; -fx-background-radius: 4, 4, 4, 4; -fx-border-color: rgb(100, 103, 124);";
+    -fx-aqua-start-color-1: rgb(183.0, 206.0, 238.0);
+    -fx-aqua-start-color-2: rgb(142.0, 188.0, 237.0);
+    -fx-aqua-start-color-3: rgb(114.0, 174.0, 236.0);
+    -fx-aqua-start-color-4: rgb(178, 218.0, 242.0);
+    -fx-aqua-end-color-1: rgb(203.0, 243.0, 254.0);
+    -fx-aqua-end-color-2: rgb(166.0, 211.0, 248.0);
+    -fx-aqua-end-color-3: rgb(137.0, 198.0, 248.0);
+    -fx-aqua-end-color-4: rgb(203.0, 243.0, 254.0);
+    -fx-aqua-armed-style:"-fx-background-color: linear-gradient(rgb(190, 214, 237) 0%, rgb(178, 213, 237) 100% ), linear-gradient(rgb(165, 193, 238) 0%, rgb(108, 161, 231) 50%, rgb(74, 138, 217) 50%, rgb(105, 167, 236) 75%, rgb(152, 201, 238) 100%), radial-gradient(focus-angle 180deg, focus-distance 95%, center 1% 50%, radius 50%, #78b0ee, transparent), radial-gradient(focus-angle 0deg, focus-distance 95%, center 100% 50%, radius 50%, #78b0ee, transparent); -fx-background-insets: 0, 0, 1 1 1 2, 1 2 1 1; -fx-background-radius: 4, 4, 4, 4; -fx-border-color: rgb(100, 103, 124);";
 }
 
 .toggle-button {
@@ -309,13 +309,13 @@
 
 .button, .toggle-button{
     /* gradients for glossy-aqua-effect */
-    -fx-background-color: rgb(255.0, 255.0, 255.0), rgb(255.0,255.0, 255.0);
-        /*linear-gradient(rgb(255.0, 255.0, 255.0) 25.0%, rgb(243.0, 243.0, 243.0) 50.0%, rgb(236.0, 236.0, 236.0) 50.0%, rgb(243.0, 243.0, 243.0) 100.0% );*/
+    -fx-background-color: rgb(255.0, 255.0, 255.0),
+        linear-gradient(rgb(255.0, 255.0, 255.0) 25.0%, rgb(243.0, 243.0, 243.0) 50.0%, rgb(236.0, 236.0, 236.0) 50.0%, rgb(243.0, 243.0, 243.0) 100.0% );
     -fx-background-insets:  0.0, 1.0;
-    -fx-background-radius: 5.0, 5.0;
-    -fx-border-radius: 5.0;
+    -fx-background-radius: 4.0, 4.0;
+    -fx-border-radius: 4.0;
     -fx-border-width: 0.5;
-    -fx-border-color: rgb(200.0, 200.0, 200.0) rgb(175.0, 175.0, 175.0) rgb(100.0, 100.0, 100.0) rgb(175.0, 175.0, 175.0);
+    -fx-border-color: rgb(147.0, 147.0, 147.0) rgb(129.0, 129.0, 129.0) rgb(129.0, 129.0, 129.0) rgb(129.0, 129.0, 129.0);
     -fx-padding: 0.08em 0.85em 0.09em 0.85em;
     
     -fx-text-fill: -fx-text-base-color;
@@ -327,10 +327,18 @@
 }
 
 .button:armed, .button:default:armed{
-    -fx-background-color: rgb(225.0, 225.0, 225.0);
-    -fx-background-insets:  0.0, 1.0;
-    -fx-background-radius: 5.0, 5.0, 5.0, 5.0;
-    -fx-border-color: rgb(200.0, 200.0, 200.0) rgb(175.0, 175.0, 175.0) rgb(100.0, 100.0, 100.0) rgb(175.0, 175.0, 175.0);
+    -fx-background-color:
+        linear-gradient(rgb(190.0, 214.0, 237.0) 0.0%, rgb(178.0, 213.0, 237.0) 100.0% ),
+        linear-gradient(rgb(165.0, 193.0, 238.0) 0.0%, rgb(108.0, 161.0, 231.0) 50.0%,
+        rgb(74.0, 138.0, 217.0) 50.0%, rgb(105.0, 167.0, 236.0) 75.0%, rgb(152.0, 201.0, 238.0) 100.0%
+        ),
+        radial-gradient(focus-angle 180.0deg, focus-distance 95.0%, center 1.0% 50.0%,
+        radius 50.0%, #78b0ee, transparent),
+        radial-gradient(focus-angle 0.0deg, focus-distance 95.0%, center 100.0% 50.0%,
+        radius 50.0%, #78b0ee, transparent);
+    -fx-background-insets: 0.0, 0.0, 1.0 1.0 1.0 2.0, 1.0 2.0 1.0 1.0;
+    -fx-background-radius: 4.0, 4.0, 4.0, 4.0;
+    -fx-border-color: rgb(100.0, 103.0, 124.0);
 }
 
 
