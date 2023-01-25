@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,8 +45,9 @@ public class SciTool extends Application {
         }
 
         FXMLLoader fxmlLoader = new FXMLLoader(SciTool.class.getResource("home-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());//, 320, 240);
+        stage.setTitle("Welcome!");
+        stage.initStyle(StageStyle.DECORATED);
         stage.setScene(scene);
         stage.show();
         logger.log("Show scene succeeded.");

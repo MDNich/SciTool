@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sleep 2
+
+tail -f /tmp/log_scitool.txt & 
+
+sleep 1
+
+killall tail
+
+tail -f /tmp/log_scitool.txt
+

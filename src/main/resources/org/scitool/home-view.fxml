@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" stylesheets="@aquafx.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.scitool.HomeController">
    <children>
-      <Label alignment="CENTER" layoutY="164.0" prefHeight="29.0" prefWidth="400.0" text="Welcome to SciTool!" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutY="164.0" prefHeight="29.0" prefWidth="350.0" text="Welcome to SciTool!" textAlignment="CENTER">
          <font>
-            <Font name="Lucida Grande" size="23.0" />
+            <Font name="SF Pro Rounded Bold" size="23.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@atom.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutY="193.0" prefHeight="29.0" prefWidth="350.0" text="Version 1.0 Beta" textAlignment="CENTER">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="exploreTools" defaultButton="true" layoutX="88.0" layoutY="233.0" mnemonicParsing="false" onAction="#runExploreTools" stylesheets="@aquafx.css" text="Explore Installed SciTools">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutButton" layoutX="46.0" layoutY="322.0" mnemonicParsing="false" onAction="#runAbout" text="About">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="creditsButton" layoutX="147.0" layoutY="322.0" mnemonicParsing="false" onAction="#runCredits" text="Credits">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="websiteButton" layoutX="254.0" layoutY="322.0" mnemonicParsing="false" onAction="#runWebsite" text="Website">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Equipot2D" layoutX="87.0" layoutY="271.0" mnemonicParsing="false" onAction="#runEquipot2D" text="Equipotential Lines Plotter">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="372.0" prefHeight="29.0" prefWidth="350.0" text="© MDNich" textAlignment="CENTER">
+         <font>
+            <Font name="SF Pro Rounded Regular" size="16.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
