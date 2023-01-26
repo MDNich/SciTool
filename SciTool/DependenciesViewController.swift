@@ -132,7 +132,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         DispatchQueue.main.async {
             do {
                 self.reqPassword()
-                try print(self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install matplotlib --disable-pip-version"))
+                try print(self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install --disable-pip-version-check matplotlib"))
             }
             catch {
                 print(error)
@@ -208,7 +208,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install numpy --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install --disable-pip-version-check numpy")
             }
             catch {
                 print(error)
@@ -294,7 +294,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install plotly --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install --disable-pip-version-check plotly")
                 
             }
             catch {
@@ -348,7 +348,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         }
         DispatchQueue.main.async {
             do {
-                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install pandas --disable-pip-version")
+                try self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install --disable-pip-version-check pandas")
             }
             catch {
                 print(error)
