@@ -45,7 +45,6 @@ public class SciTool extends Application {
 
             // Won't work on Windows or Linux.
         }
-
         FXMLLoader fxmlLoader = new FXMLLoader(SciTool.class.getResource("home-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());//, 320, 240);
         stage.setTitle("Welcome!");

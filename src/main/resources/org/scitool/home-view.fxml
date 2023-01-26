@@ -23,9 +23,9 @@
             <Font name="SF Pro Rounded Regular" size="16.0" />
          </font>
       </Label>
-      <Button fx:id="exploreTools" layoutX="88.0" layoutY="233.0" mnemonicParsing="false" onAction="#runExploreTools" text="Explore Installed SciTools">
+      <Button fx:id="exploreTools" layoutX="94.0" layoutY="233.0" mnemonicParsing="false" onAction="#runExploreTools" text="Explore Installed SciTools">
          <font>
-            <Font name="SF Pro Rounded Regular" size="14.0" />
+            <Font name="SF Pro Rounded Regular" size="13.0" />
          </font>
       </Button>
       <Button fx:id="aboutButton" layoutX="46.0" layoutY="322.0" mnemonicParsing="false" onAction="#runAbout" text="About">
@@ -43,9 +43,9 @@
             <Font name="SF Pro Rounded Regular" size="13.0" />
          </font>
       </Button>
-      <Button fx:id="Equipot2D" layoutX="87.0" layoutY="271.0" mnemonicParsing="false" onAction="#runEquipot2D" text="Equipotential Lines Plotter">
+      <Button fx:id="Equipot2D" layoutX="93.0" layoutY="272.0" mnemonicParsing="false" onAction="#runEquipot2D" text="Equipotential Lines Plotter">
          <font>
-            <Font name="SF Pro Rounded Regular" size="14.0" />
+            <Font name="SF Pro Rounded Regular" size="13.0" />
          </font>
       </Button>
       <Label alignment="CENTER" layoutY="372.0" prefHeight="29.0" prefWidth="350.0" text="© MDNich" textAlignment="CENTER">
