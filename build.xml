@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+
+<project name="SciTool" basedir=".">
+    <description>
+        SciTool Build File
+    </description>
+
+
+    <target name="makeapp">
+        <taskdef name="jarbundler"
+                 classname="com.ultramixer.jarbundler.JarBundler" />
+
+        <jarbundler dir="release"
+                    name="SciTool"
+                    mainclass="org.scitool.SciTool"
+                    jar="out/artifacts/SciTool_jar/SciTool.jar"
+                    icon="/Users/mdn/Desktop/AppIcon.icns"
+                    arguments="--module-path lib-mac-aarch64/ --add-modules javafx.controls,javafx.fxml,javafx.graphics"
+                    bundleid="org.scitool.app"
+                    highresolutioncapable="true"
+
+        />
+
+    </target>
+
+    <target name="simple" depends="jar, getJavaStub" description="Build an example application">
+        <taskdef name="jarbundler"
+                 classpath="${jarbundler.jar}"
+                 classname="com.ultramixer.jarbundler.JarBundler"/>
+
+        <!--
+            Set 'usejavaxkey' to 'true' and 'stubfile' to a modern JavaApplicationStub implementation if you want
+            to support Java 1.5 - 16 on all old and modern macOS systems. Otherwise Apple's default
+            JavaApplicationStub will be used which will not run on modern macOS systems.
+        -->
+        <jarbundler dir="${basedir}/build" verbose="true" showPlist="true"
+                    name="${ant.project.name}"
+                    mainclass="com.ultramixer.jarbundler.example.HelloWorld"
+                    jar="build/${ant.project.name}.jar"
+                    icon="icons/${ant.project.name}.icns"
+                    version="${version}"
+                    copyright="${copyright}"
+                    highresolutioncapable="true"
+                    usejavaxkey="true"
+                    stubfile="build/universalJavaApplicationStub"
+        />
+    </target>
+
+
+</project>

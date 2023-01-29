@@ -16,6 +16,8 @@
       <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:mac-aarch64:19" />
       <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:mac-aarch64:19" />
       <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
+      <element id="library" level="project" name="Maven: de.jangassen:nsmenufx:3.1.0" />
+      <element id="library" level="project" name="de.jangassen.jfa" />
     </root>
   </artifact>
 </component>

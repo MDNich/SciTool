@@ -10,18 +10,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-mac.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-mac.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-mac.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-mac.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-jpms.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SciTool_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SciTool_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/script" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-air.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-air.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-earth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-earth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-fire.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx-fire.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx_old.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx_old.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +86,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -71,6 +104,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.37356323&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -122,10 +156,15 @@
       <updated>1674566168639</updated>
       <workItem from="1674566169718" duration="9394000" />
       <workItem from="1674657995037" duration="10616000" />
+      <workItem from="1674830784411" duration="6855000" />
+      <workItem from="1674933689617" duration="285000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

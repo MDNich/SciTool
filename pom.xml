@@ -52,6 +52,12 @@
             <artifactId>javafx-graphics</artifactId>
             <version>19</version>
         </dependency>
+        <dependency>
+            <groupId>de.jangassen</groupId>
+            <artifactId>nsmenufx</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
