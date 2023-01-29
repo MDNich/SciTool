@@ -2,6 +2,8 @@ package org.scitool;
 
 import de.jangassen.MenuToolkit;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -13,6 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 //import de.jangassen.MenuToolkit;
 import javafx.scene.control.MenuItem;
+import org.controlsfx.control.action.Action;
 
 
 import javax.imageio.ImageIO;
@@ -87,6 +90,12 @@ public class SciTool extends Application {
 
         Menu menu = new Menu("SciTool");
         MenuItem item = new MenuItem("About SciTool");
+        item.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                logger.log("About Menu Called from Menu Bar");
+            }
+        });
 
         Menu help = new Menu("Help");
         menu.getItems().add(item);

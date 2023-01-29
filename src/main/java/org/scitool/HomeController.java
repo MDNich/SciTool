@@ -29,6 +29,7 @@ public class HomeController {
     @FXML
     protected void runAbout() {
         SciTool.logger.log("Home: About Called");
+
     }
     @FXML
     protected void runCredits() {
