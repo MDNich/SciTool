@@ -17,7 +17,8 @@
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@atom.png" />
-         </image></ImageView>
+         </image>
+      </ImageView>
       <Label alignment="CENTER" layoutY="193.0" prefHeight="29.0" prefWidth="350.0" text="Version 1.0 Beta" textAlignment="CENTER">
          <font>
             <Font name="SF Pro Rounded Regular" size="16.0" />

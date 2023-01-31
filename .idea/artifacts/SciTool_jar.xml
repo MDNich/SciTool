@@ -17,7 +17,19 @@
       <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:mac-aarch64:19" />
       <element id="library" level="project" name="Maven: org.opentest4j:opentest4j:1.2.0" />
       <element id="library" level="project" name="Maven: de.jangassen:nsmenufx:3.1.0" />
-      <element id="library" level="project" name="de.jangassen.jfa" />
+      <element id="library" level="project" name="Maven: com.github.oshi:oshi-core:5.2.5" />
+      <element id="library" level="project" name="Maven: net.java.dev.jna:jna-platform:5.6.0" />
+      <element id="library" level="project" name="Maven: net.java.dev.jna:jna:5.6.0" />
+      <element id="library" level="project" name="Maven: net.java.dev.jna:jna:jpms:5.7.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:19" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:19" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:19" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:19" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.21" />
+      <element id="library" level="project" name="Maven: org.snf4j:snf4j-core-slf4j:1.10.0" />
+      <element id="library" level="project" name="Maven: org.snf4j:snf4j-core:1.10.0" />
+      <element id="library" level="project" name="Maven: de.jangassen:jfa:1.2.0" />
     </root>
   </artifact>
 </component>

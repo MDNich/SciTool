@@ -29,6 +29,13 @@ public class LogWriter {
             //throw new RuntimeException(e);
         }
     }
+
+    public void debug(String text) {
+        log("[DBG] " + text);
+    }
+    public void error(String text) {
+        log("[ERR] " + text);
+    }
     public void log(String text) {
         Calendar c1 = Calendar.getInstance();
         Date dateOne = c1.getTime();

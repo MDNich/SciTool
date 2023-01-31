@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="164.0" maxWidth="272.0" minHeight="164.0" minWidth="272.0" prefHeight="164.0" prefWidth="272.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="113.0" layoutY="74.0" prefHeight="17.0" prefWidth="47.0" text="SciTool">
+         <font>
+            <Font name="SF Pro Display Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="92.0" layoutY="98.0" text="Version 1.0 Beta" textAlignment="CENTER">
+         <font>
+            <Font name="SF Pro Display Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="115.0" text="Copyright © 2023 MDNich." textAlignment="CENTER">
+         <font>
+            <Font name="SF Pro Display Regular" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="62.0" fitWidth="65.0" layoutX="103.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="86.0" layoutY="132.0" text="All rights reserved." textAlignment="CENTER">
+         <font>
+            <Font name="SF Pro Display Regular" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

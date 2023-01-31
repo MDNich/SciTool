@@ -181,7 +181,7 @@
     -fx-background-insets: 0.0;
     -fx-background-radius: 6.0;    
     -fx-border-color: rgb(193.0, 193.0, 193.0);
-    -fx-background-color: rgb(227.0, 227.0, 227.0),
+    -fx-background-color: rgb(51.0, 51.0, 50.0),
         linear-gradient(to right, rgb(168.0, 168.0, 168.0, 0.5) 0.0%, transparent 0.4%, transparent 99.6%, rgb(168.0, 168.0, 168.0, 0.5));
     -fx-effect: innershadow(one-pass-box, rgb(168.0, 168.0, 168.0, 0.6), 4.0, 0.6, 0.0, 2.0);
 }
@@ -3373,7 +3373,7 @@ TODO: effect-chaining!!!
 
 /* ====== AXIS ============================================================================ */
 .axis {
-    -fx-tick-label-font: 0.833333em System; /* 10 pix */
+    -fx-tick-label-font: 0.833333em "SF Pro Display"; /* 10 pix */
     -fx-tick-label-fill: -fx-text-base-color;
 }
 .axis:top {

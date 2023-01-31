@@ -10,46 +10,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-mac.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-base-11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-mac.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-controls-11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-mac.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-fxml-11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-mac.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javafx-graphics-11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jfa-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-jpms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jna-5.7.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nsmenufx-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/jfa-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/jna-5.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/libjnidispatch.jnilib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/annotations-13.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/annotations-13.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/annotations-13.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.1.10-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.1.10-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jfa-1.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.12.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.12.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.6.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.6.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-5.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-platform-5.12.1-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-platform-5.12.1-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jna-platform-5.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/oshi-core-6.4.0-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/oshi-core-6.4.0-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/oshi-core-6.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.32-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.32-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.32.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.36-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.36-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.36.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-2.0.5-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-2.0.5-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-2.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/about-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/credits-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oshi.architecture.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oshi.linux.filename.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oshi.macos.versions.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oshi.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/oshi.vmmacaddr.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SciTool_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SciTool_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/script" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/script" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/LogWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/LogWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/aquafx.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/home-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,33 +96,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mdn/Developer/SciTool/src/main/resources/org/scitool&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37356323&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/mdn/Developer/SciTool/src/main/resources/org/scitool",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24591236",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/org/scitool" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunManager" selected="Shell Script.Make and Run .app">
@@ -158,6 +176,9 @@
       <workItem from="1674657995037" duration="10616000" />
       <workItem from="1674830784411" duration="6855000" />
       <workItem from="1674933689617" duration="285000" />
+      <workItem from="1674959841468" duration="622000" />
+      <workItem from="1675005856787" duration="196000" />
+      <workItem from="1675170398028" duration="9581000" />
     </task>
     <servers />
   </component>
