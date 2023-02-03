@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="" />
+    <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/launcher-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +69,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24591236",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
@@ -125,7 +134,8 @@
       <workItem from="1674933689617" duration="285000" />
       <workItem from="1674959841468" duration="622000" />
       <workItem from="1675005856787" duration="196000" />
-      <workItem from="1675170398028" duration="11214000" />
+      <workItem from="1675170398028" duration="11814000" />
+      <workItem from="1675429588862" duration="2883000" />
     </task>
     <servers />
   </component>

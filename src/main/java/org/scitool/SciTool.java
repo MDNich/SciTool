@@ -1,5 +1,6 @@
 package org.scitool;
 
+import de.jangassen.MenuToolkit;
 import de.jangassen.jfa.appkit.NSAppearance;
 import de.jangassen.jfa.appkit.NSApplication;
 import de.jangassen.jfa.appkit.NSMenu;
@@ -43,7 +44,7 @@ public class SciTool extends Application {
 
     public JMenuBar menuBar = null;
 
-    Stage stageMain = null;
+    static Stage stageMain = null;
 
     public static LogWriter logger = null;
     @Override
@@ -103,7 +104,7 @@ public class SciTool extends Application {
             logger.log("Icon2 Failed.");
         }
         //MenuToolkit tk = MenuToolkit.toolkit(Locale.getDefault());
-        //tk.setApplicationMenu(tk.createDefaultApplicationMenu("test"));
+        //tk.setApplicationMenu(tk.createDefaultApplicationMenu("SciTool"));
 
 
 
@@ -171,6 +172,24 @@ public class SciTool extends Application {
         System.setProperty( "apple.awt.application.name", "SciTool" );
         logger.log("Show scene succeeded.");
 
+
+    }
+
+    public static void closeHomeAndExplore() {
+        stageMain.close();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(SciTool.class.getResource("launcher-view.fxml"));
+        Scene scene = null;
+        try {
+            scene = new Scene(fxmlLoader.load());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stage newWindow = new Stage();
+        newWindow.setTitle("SciTool Launcher");
+        newWindow.setScene(scene);
+        logger.log("Scene set");
+        newWindow.show();
 
     }
 

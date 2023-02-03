@@ -6,8 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
-import static org.scitool.SciTool.launchAboutModal;
-import static org.scitool.SciTool.launchCreditsModal;
+import static org.scitool.SciTool.*;
 
 public class HomeController {
 
@@ -28,8 +27,8 @@ public class HomeController {
 
     @FXML
     protected void runExploreTools() {
-
         SciTool.logger.log("Home: Explore Called");
+        closeHomeAndExplore();
     }
     @FXML
     protected void runEquipot2D() {
