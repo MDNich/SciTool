@@ -3,6 +3,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+appdir/Windows/JDK/jdk-19.0.2/bin/*
+
 DerivedData
 
 ### IntelliJ IDEA ###
@@ -38,3 +40,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+*.dll
