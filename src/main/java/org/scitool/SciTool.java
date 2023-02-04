@@ -4,6 +4,7 @@ import de.jangassen.MenuToolkit;
 import de.jangassen.jfa.appkit.NSAppearance;
 import de.jangassen.jfa.appkit.NSApplication;
 import de.jangassen.jfa.appkit.NSMenu;
+import de.jangassen.jfa.foundation.Foundation;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -29,6 +30,7 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
+import java.util.logging.Logger;
 
 
 public class SciTool extends Application {
@@ -126,40 +128,61 @@ public class SciTool extends Application {
 
 
 
-        MenuBar menuBar = new MenuBar();
-        menuBar.useSystemMenuBarProperty().set(true);
+        BorderPane border = new BorderPane();
+        String os = System.getProperty("os.name");
+        logger.log("Got OS " + os + " with version " + System.getProperty("os.version"));
+        logger.log("Mac OS ? " + os.equals("Mac OS X"));
+        if(os.equals("Mac OS X"))
+        {
+            MenuBar menuBar = new MenuBar();
+            menuBar.useSystemMenuBarProperty().set(true);
 
-        Menu main = new Menu("SciTool");
-        MenuItem about = new MenuItem("About SciTool");
-        MenuItem credits = new MenuItem("Credits");
-        about.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                logger.log("About Menu Called from Menu Bar");
-                launchAboutModal();
+            Menu main = new Menu("SciTool");
+            MenuItem about = new MenuItem("About SciTool");
+            MenuItem credits = new MenuItem("Credits");
+            about.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    logger.log("About Menu Called from Menu Bar");
+                    launchAboutModal();
+                }
+            });
+            credits.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    logger.log("Credits Menu Called from Menu Bar");
+                    launchCreditsModal();
+                }
+            });
+
+            Menu help = new Menu("Help");
+            main.getItems().add(about);
+            main.getItems().add(credits);
+            menuBar.getMenus().addAll(main, help);
+            border.setTop(menuBar);
+
+
+            String version = System.getProperty("os.version");
+            String[] pieces = version.split("\\.");
+            logger.log(pieces[0]);
+            logger.log(pieces[1]);
+            if (Integer.parseInt(pieces[0]) == 10) {
+                if(Integer.parseInt(pieces[1]) < 14) {
+                    logger.log("OS does not support dark mode, skipping.");
+                }
+                else {
+                    NSApplication.sharedApplication().setAppearance(NSAppearance.appearanceNamed(NSAppearance.NSAppearanceName.NSAppearanceNameAqua));
+                }
             }
-        });
-        credits.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                logger.log("Credits Menu Called from Menu Bar");
-                launchCreditsModal();
+            else {
+                NSApplication.sharedApplication().setAppearance(NSAppearance.appearanceNamed(NSAppearance.NSAppearanceName.NSAppearanceNameAqua));
             }
-        });
 
-        Menu help = new Menu("Help");
-        main.getItems().add(about);
-        main.getItems().add(credits);
-        menuBar.getMenus().addAll(main, help);
-
-
-        NSApplication.sharedApplication().setAppearance(NSAppearance.appearanceNamed(NSAppearance.NSAppearanceName.NSAppearanceNameAqua));
+        }
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(SciTool.class.getResource("home-view.fxml"));
         Node fxmlOut = fxmlLoader.load();
-        BorderPane border = new BorderPane();
-        border.setTop(menuBar);
         border.setCenter(fxmlOut);
         Scene scene = new Scene(border);//, 320, 240);
         stage.setTitle("Welcome!");

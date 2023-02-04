@@ -10,13 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/scitool/launcher-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,30 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/mdn/Developer/SciTool/src/main/resources/org/scitool",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.24591236",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mdn/Developer/SciTool/src/main/resources/org/scitool&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24591236&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/org/scitool" />
@@ -136,6 +134,7 @@
       <workItem from="1675005856787" duration="196000" />
       <workItem from="1675170398028" duration="11814000" />
       <workItem from="1675429588862" duration="2883000" />
+      <workItem from="1675534493835" duration="1511000" />
     </task>
     <servers />
   </component>
