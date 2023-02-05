@@ -10,516 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-console-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-console-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-datetime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-debug-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-errorhandling-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-file-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-file-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-file-l2-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-handle-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-interlocked-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-libraryloader-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-localization-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-memory-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-namedpipe-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-processenvironment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-processthreads-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-processthreads-l1-1-1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-profile-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-synch-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-synch-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-sysinfo-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-timezone-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-core-util-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-conio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-convert-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-environment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-filesystem-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-locale-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-math-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-multibyte-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-private-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-process-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-runtime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-stdio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-time-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/api-ms-win-crt-utility-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/attach.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/awt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/dt_shmem.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/dt_socket.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/extnet.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/fontmanager.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/freetype.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/instrument.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/j2gss.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/j2pcsc.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/j2pkcs11.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jaas.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jabswitch.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jaccessinspector.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jaccesswalker.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jar.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jarsigner.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/java.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/java.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javaaccessbridge.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javac.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javadoc.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.base.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.controls.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.fxml.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.graphics.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.media.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.swing.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javafx.web.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javajpeg.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javap.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/javaw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jawt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jcmd.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jconsole.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jdb.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jdeprscan.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jdeps.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jdwp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jfr.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jhsdb.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jimage.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jimage.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jinfo.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jli.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jlink.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jmap.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jmod.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jpackage.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jpackage.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jps.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jrunscript.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jshell.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jsound.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jstack.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jstat.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jstatd.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jsvml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/jwebserver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/keytool.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/kinit.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/klist.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/ktab.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/lcms.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/le.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/management.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/management_agent.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/management_ext.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/mlib_image.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/msvcp140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/net.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/nio.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/prefs.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/rmi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/rmiregistry.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/saproc.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/serialver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/server/classes.jsa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/server/classes_nocoops.jsa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/server/jvm.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/splashscreen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/sspi_bridge.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/sunmscapi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/syslookup.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/ucrtbase.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/vcruntime140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/vcruntime140_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/verify.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/w2k_lsa_auth.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/windowsaccessbridge-64.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/bin/zip.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/management/jmxremote.access" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/management/jmxremote.password.template" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/management/management.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/net.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/java.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/java.security" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/limited/default_US_export.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/limited/default_local.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/limited/exempt_local.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/unlimited/default_US_export.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/security/policy/unlimited/default_local.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/conf/sound.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/classfile_constants.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/jawt.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/jdwpTransport.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/jni.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/jvmti.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/jvmticmlr.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/win32/bridge/AccessBridgeCallbacks.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/win32/bridge/AccessBridgeCalls.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/win32/bridge/AccessBridgePackages.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/win32/jawt_md.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/include/win32/jni_md.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.base.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.compiler.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.datatransfer.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.desktop.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.instrument.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.logging.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.management.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.management.rmi.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.naming.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.net.http.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.prefs.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.rmi.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.scripting.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.se.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.security.jgss.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.security.sasl.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.smartcardio.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.sql.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.sql.rowset.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.transaction.xa.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.xml.crypto.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/java.xml.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.base.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.controls.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.fxml.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.graphics.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.media.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.swing.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/javafx.web.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.accessibility.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.attach.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.charsets.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.compiler.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.crypto.cryptoki.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.crypto.ec.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.crypto.mscapi.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.dynalink.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.editpad.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.hotspot.agent.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.httpserver.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.incubator.concurrent.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.incubator.vector.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.ed.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.jvmstat.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.le.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.opt.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.vm.ci.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.vm.compiler.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.internal.vm.compiler.management.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jartool.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.javadoc.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jcmd.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jconsole.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jdeps.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jdi.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jdwp.agent.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jfr.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jlink.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jpackage.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jshell.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jsobject.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.jstatd.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.localedata.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.management.agent.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.management.jfr.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.management.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.naming.dns.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.naming.rmi.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.net.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.nio.mapmode.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.random.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.sctp.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.security.auth.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.security.jgss.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.unsupported.desktop.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.unsupported.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.xml.dom.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/jmods/jdk.zipfs.jmod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/aes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/asm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/c-libutl.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/cldr.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/icu.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/public_suffix.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/unicode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/wepoll.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.base/zlib.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.compiler/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.compiler/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.datatransfer/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.datatransfer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/colorimaging.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/freetype.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/giflib.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/harfbuzz.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/jpeg.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/lcms.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/libpng.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.desktop/mesa3d.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.instrument/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.instrument/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.logging/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.logging/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.management.rmi/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.management.rmi/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.management/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.management/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.naming/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.naming/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.net.http/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.net.http/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.prefs/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.prefs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.rmi/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.rmi/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.scripting/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.scripting/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.se/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.se/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.security.jgss/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.security.jgss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.security.sasl/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.security.sasl/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.smartcardio/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.smartcardio/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.sql.rowset/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.sql.rowset/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.sql/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.sql/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.transaction.xa/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.transaction.xa/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml.crypto/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml.crypto/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml.crypto/santuario.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/bcel.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/dom.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/jcup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/xalan.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/java.xml/xerces.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.accessibility/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.accessibility/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.attach/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.attach/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.charsets/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.charsets/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.compiler/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.compiler/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.cryptoki/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.cryptoki/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.cryptoki/pkcs11cryptotoken.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.cryptoki/pkcs11wrapper.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.ec/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.ec/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.mscapi/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.crypto.mscapi/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.dynalink/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.dynalink/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.dynalink/dynalink.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.editpad/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.editpad/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.hotspot.agent/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.hotspot.agent/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.httpserver/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.httpserver/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.incubator.concurrent/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.incubator.concurrent/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.incubator.vector/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.incubator.vector/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.ed/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.ed/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.jvmstat/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.jvmstat/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.le/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.le/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.le/jline.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.opt/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.opt/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.opt/jopt-simple.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.ci/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.ci/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.compiler.management/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.compiler.management/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.compiler/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.internal.vm.compiler/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jartool/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jartool/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.javadoc/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.javadoc/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.javadoc/jquery.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.javadoc/jqueryUI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jcmd/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jcmd/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jconsole/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jconsole/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdeps/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdeps/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdi/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdi/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdwp.agent/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jdwp.agent/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jfr/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jfr/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jlink/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jlink/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jpackage/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jpackage/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jshell/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jshell/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jsobject/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jsobject/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jstatd/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.jstatd/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.localedata/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.localedata/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.localedata/cldr.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.localedata/thaidict.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management.agent/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management.agent/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management.jfr/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management.jfr/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.management/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.naming.dns/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.naming.dns/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.naming.rmi/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.naming.rmi/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.net/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.net/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.nio.mapmode/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.nio.mapmode/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.random/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.random/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.sctp/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.sctp/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.security.auth/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.security.auth/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.security.jgss/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.security.jgss/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.unsupported.desktop/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.unsupported.desktop/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.unsupported/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.unsupported/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.xml.dom/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.xml.dom/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.zipfs/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/legal/jdk.zipfs/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/classlist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/ct.sym" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/fontconfig.bfc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/fontconfig.properties.src" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jawt.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jfr/default.jfc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jfr/profile.jfc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jrt-fs.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jvm.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/jvm.lib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/modules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/psfont.properties.ja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/psfontj2d.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/security/blocked.certs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/security/cacerts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/security/default.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/security/public_suffix_list.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/tzdb.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/lib/tzmappings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/JDK/jdk-19.0.2/release" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/SciTool.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-console-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-console-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-datetime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-debug-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-errorhandling-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-file-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-file-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-file-l2-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-handle-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-interlocked-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-libraryloader-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-localization-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-memory-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-namedpipe-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-processenvironment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-processthreads-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-processthreads-l1-1-1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-profile-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-rtlsupport-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-synch-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-synch-l1-2-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-sysinfo-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-timezone-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-core-util-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-conio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-convert-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-environment-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-filesystem-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-heap-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-locale-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-math-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-multibyte-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-private-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-process-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-runtime-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-stdio-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-string-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-time-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/api-ms-win-crt-utility-l1-1-0.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/decora_sse.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/fxplugins.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/glass.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/glib-lite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/gstreamer-lite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx-swt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.base.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.controls.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.fxml.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.graphics.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.media.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx.web.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx_font.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/javafx_iio.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/jfa-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/jfxmedia.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/jfxwebkit.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/jna-5.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/msvcp140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/msvcp140_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/msvcp140_2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/prism_common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/prism_d3d.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/prism_sw.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/ucrtbase.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/vcruntime140.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/lib-windows-x86/vcruntime140_1.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appdir/Windows/script.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/hipparchus-core-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/jfreechart-1.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/org.jfree.chart.fx-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/org.jfree.fxgraphics2d-2.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/lib-mac-aarch64/xchart-3.8.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/Charge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/EquipotentialPlotterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/Plotter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/math/np.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/script" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/script" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -535,6 +44,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.3/jfreechart-1.5.3-sources.jar!/org/jfree/data/general/Series.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.3/jfreechart-1.5.3-sources.jar!/org/jfree/data/xy/DefaultXYDataset.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.3/jfreechart-1.5.3-sources.jar!/org/jfree/data/xy/XYSeries.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -554,30 +68,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;Y:/Developer/SciTool&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.24591236&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "Y:/Developer/SciTool",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24591236",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/org/scitool" />
@@ -588,8 +102,11 @@
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.scitool.equipotential" />
+    </key>
   </component>
-  <component name="RunManager" selected="Shell Script.Make and Run .app">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.scitool.SciTool" />
       <module name="SciTool" />
@@ -641,6 +158,9 @@
       <workItem from="1675534493835" duration="2245000" />
       <workItem from="1675538133370" duration="1097000" />
       <workItem from="1675540026496" duration="13000" />
+      <workItem from="1675543998034" duration="7826000" />
+      <workItem from="1675554520265" duration="621000" />
+      <workItem from="1675555152431" duration="608000" />
     </task>
     <servers />
   </component>

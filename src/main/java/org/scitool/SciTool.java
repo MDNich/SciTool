@@ -24,6 +24,8 @@ import javafx.stage.StageStyle;
 import javafx.scene.control.MenuItem;
 import javafx.stage.WindowEvent;
 import org.controlsfx.control.action.Action;
+import org.scitool.equipotential.Plotter;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -194,7 +196,6 @@ public class SciTool extends Application {
         stageMain = stage;
         System.setProperty( "apple.awt.application.name", "SciTool" );
         logger.log("Show scene succeeded.");
-
 
     }
 

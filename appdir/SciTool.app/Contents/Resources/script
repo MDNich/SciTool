@@ -1,3 +1,3 @@
 #!/bin/sh
 
-JDK/Contents/Home/bin/java --module-path lib-mac-aarch64/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,jfa -Djna.boot.library.path=lib-mac-aarch64/ -jar SciTool.jar
+JDK/Contents/Home/bin/java --module-path lib-mac-aarch64/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,jfa,org.jfree.jfreechart,org.jfree.chart.fx,org.jfree.fxgraphics2d,org.knowm.xchart,hipparchus.core -Djna.boot.library.path=lib-mac-aarch64/ -jar SciTool.jar
