@@ -29,4 +29,77 @@ public class np { // making fun of numpy lol
         System.out.println();
         return new double[][]{xnew, ynew};
     }
+
+    public static double max(double[] x) {
+        double xmax = 0;
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] > xmax) {
+                xmax = x[i];
+            }
+        }
+        return xmax;
+    }
+
+    public static double min(double[] x) {
+        double xmin = 0;
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] < xmin) {
+                xmin = x[i];
+            }
+        }
+        return xmin;
+    }
+
+    public static double[] normalize(double[] x) {
+        return normalize(x,1);
+    }
+
+
+    public static double[] removeNanInfs(double[] x) {
+        double[] xnew = new double[x.length];
+        int j = 0;
+        for (int i = 0; i < x.length; i++) {
+            if(((x[i]) == Double.POSITIVE_INFINITY) || (Double.isNaN(Math.abs(x[i])))) {
+                System.out.println("Skipping point due to positive infinity or NaN");
+                continue;
+            }
+            else if(x[i] == Double.NEGATIVE_INFINITY) {
+                System.out.println("Skipping point due to negative infinity");
+                continue;
+            }
+            else {
+                xnew[j] = x[i];
+                j++;
+            }
+        }
+        double[] xnew2 = new double[j];
+        for (int i = 0; i < j; i++) {
+            xnew2[i] = xnew[i];
+        }
+        return xnew2;
+    }
+
+    public static double[] normalize(double[] x, double max) {
+        //System.out.println("Normalizing array " + Arrays.toString(x));
+
+        double[] xnew = new double[x.length];
+        double xmax = np.max(removeNanInfs(x));
+        double xmin = np.min(removeNanInfs(x));
+        System.out.println("Normalizing array with max " + xmax + " min " + xmin + " to " + max);
+        for (int i = 0; i < x.length; i++) {
+            if(((x[i]) == Double.POSITIVE_INFINITY) || (Double.isNaN(Math.abs(x[i])))) {
+                System.out.println("Skipping point due to positive infinity or NaN");
+                xnew[i] = max;
+                continue;
+            }
+            else if(x[i] == Double.NEGATIVE_INFINITY) {
+                System.out.println("Skipping point due to negative infinity");
+                xnew[i] = 0;
+                continue;
+            }
+            xnew[i] = max*(x[i]-xmin)/(xmax-xmin);
+        }
+        return xnew;
+    }
+
 }

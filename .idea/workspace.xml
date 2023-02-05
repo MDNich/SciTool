@@ -10,13 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/colormaps/Colormap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/colormaps/RosySunset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/colormaps/YellowGreenBlue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/LogWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/LogWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/SciTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/EquipotentialPlotterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/EquipotentialPlotterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/util/math/np.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/math/np.java" afterDir="false" />
     </list>
@@ -29,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -88,6 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.scitool.util.colormaps" />
       <recent name="org.scitool.equipotential" />
     </key>
   </component>
@@ -147,6 +146,7 @@
       <workItem from="1675554520265" duration="621000" />
       <workItem from="1675555152431" duration="608000" />
       <workItem from="1675556024959" duration="1105000" />
+      <workItem from="1675558485350" duration="6881000" />
     </task>
     <servers />
   </component>

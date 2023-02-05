@@ -37,21 +37,23 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.block.BlockBorder;
 import org.jfree.chart.fx.ChartViewer;
 import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.xy.XYItemRenderer;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
-import org.jfree.chart.ui.HorizontalAlignment;
 import org.jfree.data.xy.DefaultXYDataset;
-import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.scitool.LogWriter;
+import org.scitool.util.colormaps.Colormap;
+import org.scitool.util.colormaps.RosySunset;
 import org.scitool.util.math.np;
-import static org.scitool.SciTool.logger;
+
+import javax.imageio.ImageIO;
+
 import java.awt.*;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
 import java.io.File;
-import java.util.Arrays;
+import java.io.IOException;
 
 /**
  * A demo showing the display of JFreeChart within a JavaFX application.
@@ -66,6 +68,53 @@ public class EquipotentialPlotterTest extends Application {
     public static File logFile = null;
     public static LogWriter logger = null;
 
+
+
+    public static final double COULOMB_CONSTANT = 9e9;
+
+    private static double[] getVoltage(double[][] xyqdata, double[] xpoints, double[] ypoints) {
+
+        double[] v = new double[xpoints.length];
+        for (int j = 0; j < xpoints.length; j++) {
+            double vtmp = 0;
+            for (int i = 0; i < xyqdata[0].length; i++) {
+                double xi = xyqdata[0][i];
+                double yi = xyqdata[1][i];
+                double qi = xyqdata[2][i];
+                double r = Math.sqrt(Math.pow(xi-xpoints[j],2)+Math.pow(yi-ypoints[j],2));
+                //System.out.println("r = " + r);
+                //System.out.println("Voltage due to (" + xi + "," + yi + ") with charge " + qi + " is " + COULOMB_CONSTANT*qi/r);
+
+                vtmp += COULOMB_CONSTANT*qi/r;
+            }
+            //System.out.println("Total voltage at (" + xpoints[j] + "," + ypoints[j] + ") is " + vtmp + " V");
+            v[j] = vtmp;
+        }
+        return v;
+    }
+
+
+
+
+
+    public static Color[] interpolateColorsFromArray(double[] data, Colormap colormap) {
+        Color[] colors = new Color[data.length];
+        double[] newdata = np.normalize(data);
+        System.out.println("Colormap: " + colormap.getName());
+        for (int i = 0; i < data.length; i++) {
+            //System.out.println("Color for index "+i+" and normalized input " + newdata[i] + " is [" + colormap.getRed(newdata[i]) + "," + colormap.getGreen(newdata[i]) + "," + colormap.getBlue(newdata[i]) + "]");
+            try {
+                colors[i] = new Color((float) colormap.getRed(newdata[i]), (float) colormap.getGreen(newdata[i]), (float) colormap.getBlue(newdata[i]));
+            }
+            catch(Exception e) {
+                colors[i] = new Color((float)  Math.min(255,colormap.getRed(newdata[i])), (float)  Math.min(colormap.getGreen(newdata[i]),255), (float)  Math.min(colormap.getBlue(newdata[i]),255));
+            }
+        }
+        return colors;
+    }
+
+
+
     /**
      * Creates a dataset, consisting of two series of monthly data.
      *
@@ -77,10 +126,10 @@ public class EquipotentialPlotterTest extends Application {
 
         XYSeries v1 = new XYSeries("Voltage");
 
-        double[] xcoords = np.linspace(-1,1,11);
-        double[] ycoords = np.linspace(-1,1,11);
+        double[] xcoords = np.linspace(-1,1,101);
+        double[] ycoords = np.linspace(-1,1,101);
         double[][] xymeshed = np.meshgrid2d(xcoords,ycoords);
-        logger.log(Arrays.deepToString(xymeshed));
+        //logger.log(Arrays.deepToString(xymeshed));
         //double[] xmeshed = xymeshed[0];
         //double[] ymeshed = xymeshed[1];
         //assert xmeshed.length == ymeshed.length;
@@ -88,36 +137,64 @@ public class EquipotentialPlotterTest extends Application {
         //    v1.add(xmeshed[i],ymeshed[i]);
         //}
 
+        double[] qArr = new double[]{1.0,-1.0};
+        double[] xArr = new double[]{-.5,0.5};
+        double[] yArr = new double[]{-.5,0.5};
+
+        double[] voltageMeshed = getVoltage(new double[][]{xArr,yArr,qArr},xymeshed[0],xymeshed[1]);
+
+        Color[] colors = interpolateColorsFromArray(voltageMeshed, new RosySunset());
+
+
+
+
+
 
         DefaultXYDataset dataset = new DefaultXYDataset();
         dataset.addSeries("Voltage",xymeshed);
 
 
         JFreeChart chart = ChartFactory.createScatterPlot(
-                "Equipotential Lines",
+                "",
                 null,
                 null,
                 dataset
         );
-
-        String fontName = "SF Pro Display";
+        chart.removeLegend();
+        String fontName = "Palatino";
         chart.getTitle().setFont(new Font(fontName, Font.BOLD, 18));
         //chart.addSubtitle(new TextTitle("Source: http://www.ico.org/historical/2010-19/PDF/HIST-PRICES.pdf",
         //         new Font(fontName, Font.PLAIN, 14)));
 
         XYPlot plot = (XYPlot) chart.getPlot();
-        plot.setDomainPannable(true);
-        plot.setRangePannable(true);
-        plot.setDomainCrosshairVisible(true);
-        plot.setRangeCrosshairVisible(true);
-        plot.getDomainAxis().setLowerMargin(0.0);
-        plot.getDomainAxis().setLabelFont(new Font(fontName, Font.BOLD, 14));
-        plot.getDomainAxis().setTickLabelFont(new Font(fontName, Font.PLAIN, 12));
-        plot.getRangeAxis().setLabelFont(new Font(fontName, Font.BOLD, 14));
-        plot.getRangeAxis().setTickLabelFont(new Font(fontName, Font.PLAIN, 12));
-        chart.getLegend().setItemFont(new Font(fontName, Font.PLAIN, 14));
-        chart.getLegend().setFrame(BlockBorder.NONE);
-        chart.getLegend().setHorizontalAlignment(HorizontalAlignment.CENTER);
+        //plot.setDomainPannable(true);
+        //plot.setRangePannable(true);
+        //plot.setDomainCrosshairVisible(true);
+        //plot.setRangeCrosshairVisible(true);
+        plot.getDomainAxis().setRange(-1,1);
+        plot.getRangeAxis().setRange(-1,1);
+        //plot.getDomainAxis().setLabelFont(new Font(fontName, Font.BOLD, 14));
+        //plot.getDomainAxis().setTickLabelFont(new Font(fontName, Font.PLAIN, 12));
+        //plot.getRangeAxis().setLabelFont(new Font(fontName, Font.BOLD, 14));
+        //plot.getRangeAxis().setTickLabelFont(new Font(fontName, Font.PLAIN, 12));
+        //chart.getLegend().setItemFont(new Font(fontName, Font.PLAIN, 14));
+        //chart.getLegend().setFrame(BlockBorder.NONE);
+        //chart.getLegend().setHorizontalAlignment(HorizontalAlignment.CENTER);
+        XYLineAndShapeRenderer customRenderer = new XYLineAndShapeRenderer(false, true) {
+
+            @Override
+            public Paint getItemPaint(int row, int column) {
+                //System.out.println("Setting color for row " + row + " and column " + column + " to " + colors[column].toString() + ".");
+                return colors[column];
+            }
+        };
+        double size = 20.0;
+        double delta = size / 2.0;
+        Shape shape = new Rectangle2D.Double(-delta, -delta, size, size);
+        customRenderer.setSeriesShape(0, shape);
+        plot.setRenderer(customRenderer);
+
+
         /*XYItemRenderer r = plot.getRenderer();
         if (r instanceof XYLineAndShapeRenderer) {
             XYLineAndShapeRenderer renderer = (XYLineAndShapeRenderer) r;
@@ -162,9 +239,32 @@ public class EquipotentialPlotterTest extends Application {
 
 
 
+
+        //viewer.getCanvas().setRangeZoomable(false);
+        //viewer.getCanvas().setDomainZoomable(false);
+        //viewer.getCanvas().removeMouseHandler(viewer.getCanvas().getMouseHandler("zoom"));
         JFreeChart chart = createDatasetAndChart();
         ChartViewer viewer = new ChartViewer(chart);
-        stage.setScene(new Scene(viewer)); 
+
+        BufferedImage img = chart.createBufferedImage(2048,2048);
+        try {
+            ImageIO.write(img, "png", new File("/tmp/chart.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        File file = new File("/tmp/chart.png");
+        Desktop desktop = Desktop.getDesktop();
+        if(file.exists()) {
+            try {
+                desktop.open(file);
+            } catch (IOException e) {
+                System.out.println("hi");
+            }
+        }
+
+
+
+        stage.setScene(new Scene(viewer));
         stage.setTitle("EquipotentialPlot2D");
         stage.setWidth(700);
         stage.setHeight(390);
@@ -175,7 +275,26 @@ public class EquipotentialPlotterTest extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
+        JFreeChart chart = createDatasetAndChart();
+
+        BufferedImage img = chart.createBufferedImage(4096,4096,512,512,null);
+        try {
+            ImageIO.write(img, "png", new File("/tmp/chart.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        File file = new File("/tmp/chart.png");
+        Desktop desktop = Desktop.getDesktop();
+        if(file.exists()) {
+            try {
+                desktop.open(file);
+            } catch (IOException e) {
+                System.out.println("hi");
+            }
+        }
+        System.exit(0);
+
+        //launch(args);
     }
   
 }
