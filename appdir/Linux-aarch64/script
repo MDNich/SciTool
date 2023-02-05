@@ -1,0 +1,3 @@
+#!/bin/sh
+
+JDK/bin/java  --module-path lib-linux-aarch64/ --add-modules javafx.controls,javafx.fxml,javafx.graphics,jfa -Djna.boot.library.path=lib-linux-aarch64/ -jar SciTool.jar

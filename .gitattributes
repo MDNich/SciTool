@@ -7,3 +7,5 @@ appdir/SciTool_intel.app.zip filter=lfs diff=lfs merge=lfs -text
 appdir/SciTool_intel.app/Contents/Resources/JDK/Contents/Home/lib/modules filter=lfs diff=lfs merge=lfs -text
 /Users/mdn/Developer/SciTool/appdir/Windows/JDK/jdk-19.0.2/lib/modules filter=lfs diff=lfs merge=lfs -text
 appdir/Windows/JDK/jdk-19.0.2/lib/modules filter=lfs diff=lfs merge=lfs -text
+appdir/Linux-aarch64/JDK/lib/modules filter=lfs diff=lfs merge=lfs -text
+appdir/Linux-intel/JDK/lib/modules filter=lfs diff=lfs merge=lfs -text
