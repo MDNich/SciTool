@@ -21,7 +21,7 @@ public class LogWriter {
         try {
             writer = new FileWriter(logfile);
             System.out.println("Fetched logfile internal.");
-            writer.write("Log init.");
+            writer.write("Log init.\n");
             System.out.println("Wrote init.");
             writer.close();
         } catch (IOException e) {

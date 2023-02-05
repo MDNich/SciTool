@@ -44,12 +44,14 @@ public class SciTool extends Application {
     public static boolean isAboutWindowShowing = false;
     public static boolean isCreditWindowShowing = false;
 
-    public static File logFile = null;
+
 
     public JMenuBar menuBar = null;
 
     static Stage stageMain = null;
 
+
+    public static File logFile = null;
     public static LogWriter logger = null;
     @Override
     public void start(Stage stage) throws IOException {

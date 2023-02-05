@@ -46,18 +46,25 @@ import org.jfree.chart.ui.HorizontalAlignment;
 import org.jfree.data.xy.DefaultXYDataset;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
+import org.scitool.LogWriter;
 import org.scitool.util.math.np;
-
+import static org.scitool.SciTool.logger;
 import java.awt.*;
+import java.io.File;
+import java.util.Arrays;
 
 /**
  * A demo showing the display of JFreeChart within a JavaFX application.
- * 
+ *
  * The ChartCanvas code is based on: 
- * http://dlemmermann.wordpress.com/2014/04/10/javafx-tip-1-resizable-canvas/
- * 
+ * <a href="http://dlemmermann.wordpress.com/2014/04/10/javafx-tip-1-resizable-canvas/">http://dlemmermann.wordpress.com/2014/04/10/javafx-tip-1-resizable-canvas/</a>
+ *
  */
 public class EquipotentialPlotterTest extends Application {
+
+
+    public static File logFile = null;
+    public static LogWriter logger = null;
 
     /**
      * Creates a dataset, consisting of two series of monthly data.
@@ -70,9 +77,10 @@ public class EquipotentialPlotterTest extends Application {
 
         XYSeries v1 = new XYSeries("Voltage");
 
-        double[] xcoords = np.linspace(-1,1,100);
-        double[] ycoords = np.linspace(-1,1,100);
+        double[] xcoords = np.linspace(-1,1,11);
+        double[] ycoords = np.linspace(-1,1,11);
         double[][] xymeshed = np.meshgrid2d(xcoords,ycoords);
+        logger.log(Arrays.deepToString(xymeshed));
         //double[] xmeshed = xymeshed[0];
         //double[] ymeshed = xymeshed[1];
         //assert xmeshed.length == ymeshed.length;
@@ -92,7 +100,7 @@ public class EquipotentialPlotterTest extends Application {
                 dataset
         );
 
-        String fontName = "Palatino";
+        String fontName = "SF Pro Display";
         chart.getTitle().setFont(new Font(fontName, Font.BOLD, 18));
         //chart.addSubtitle(new TextTitle("Source: http://www.ico.org/historical/2010-19/PDF/HIST-PRICES.pdf",
         //         new Font(fontName, Font.PLAIN, 14)));
@@ -110,7 +118,7 @@ public class EquipotentialPlotterTest extends Application {
         chart.getLegend().setItemFont(new Font(fontName, Font.PLAIN, 14));
         chart.getLegend().setFrame(BlockBorder.NONE);
         chart.getLegend().setHorizontalAlignment(HorizontalAlignment.CENTER);
-        XYItemRenderer r = plot.getRenderer();
+        /*XYItemRenderer r = plot.getRenderer();
         if (r instanceof XYLineAndShapeRenderer) {
             XYLineAndShapeRenderer renderer = (XYLineAndShapeRenderer) r;
             renderer.setDefaultShapesVisible(false);
@@ -119,7 +127,7 @@ public class EquipotentialPlotterTest extends Application {
             renderer.setAutoPopulateSeriesStroke(false);
             renderer.setDefaultStroke(new BasicStroke(3.0f));
             renderer.setSeriesPaint(0, new Color(1,0,0));
-        }
+        }*/
 
         return chart;
 
@@ -128,6 +136,32 @@ public class EquipotentialPlotterTest extends Application {
 
     @Override 
     public void start(Stage stage) {
+
+        try {
+
+            File newFile = new File("/tmp/log_scitool.txt"); // create, or fetch if previously created.
+            if (newFile.delete()) {
+                System.out.println("Deleted the old log file: " + newFile.getName());
+            } else {
+                System.out.println("Failed to delete the old log file.");
+            }
+            newFile = new File("/tmp/log_scitool.txt"); // create again
+            System.out.println("Fetched resources.");
+            logFile = newFile;
+            logger = new LogWriter(logFile);
+            System.out.println("Fetched logfile.");
+            logger.log("Running Start Method.");
+            //com.apple.eawt.Application.getApplication().setDockIconImage(image);
+
+        } catch (Exception e) {
+            System.out.println("Icon failed");
+            logger.log("Start failed.");
+
+            // Won't work on Windows or Linux.
+        }
+
+
+
         JFreeChart chart = createDatasetAndChart();
         ChartViewer viewer = new ChartViewer(chart);
         stage.setScene(new Scene(viewer)); 
