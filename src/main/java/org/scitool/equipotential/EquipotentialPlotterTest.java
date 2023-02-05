@@ -43,13 +43,17 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.DefaultXYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.scitool.LogWriter;
+import org.scitool.MarchingSquares;
 import org.scitool.util.colormaps.Colormap;
 import org.scitool.util.colormaps.RosySunset;
+import org.scitool.util.colormaps.YellowGreenBlue;
 import org.scitool.util.math.np;
 
 import javax.imageio.ImageIO;
 
 import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -126,8 +130,10 @@ public class EquipotentialPlotterTest extends Application {
 
         XYSeries v1 = new XYSeries("Voltage");
 
-        double[] xcoords = np.linspace(-1,1,101);
-        double[] ycoords = np.linspace(-1,1,101);
+        int size = 1001;
+
+        double[] xcoords = np.linspace(-1,1,size);
+        double[] ycoords = np.linspace(-1,1,size);
         double[][] xymeshed = np.meshgrid2d(xcoords,ycoords);
         //logger.log(Arrays.deepToString(xymeshed));
         //double[] xmeshed = xymeshed[0];
@@ -143,7 +149,71 @@ public class EquipotentialPlotterTest extends Application {
 
         double[] voltageMeshed = getVoltage(new double[][]{xArr,yArr,qArr},xymeshed[0],xymeshed[1]);
 
+        //double[] voltageBlurred = np.gaussBlur_1(voltageMeshed, xcoords.length, ycoords.length,10);
+
         Color[] colors = interpolateColorsFromArray(voltageMeshed, new RosySunset());
+        //Color[] colors = interpolateColorsFromArray(voltageBlurred, new RosySunset());
+
+        double[][] normalizedNonMeshedData = new double[xcoords.length][ycoords.length];
+
+        int xLength = xcoords.length;
+        int yLength = ycoords.length;
+        BufferedImage b = new BufferedImage(xLength, yLength, 3);
+
+
+
+        for(int x = 0; x < xLength; x++) {
+            for(int y = 0; y < yLength; y++) {
+                b.setRGB(x, y, colors[x*yLength+y].getRGB());
+                normalizedNonMeshedData[x][y] = RosySunset.getIfromRed(colors[x*yLength+y].getRed());
+            }
+        }
+
+        System.out.println("Init marching squares.");
+
+        MarchingSquares counterer = new MarchingSquares();
+
+        double[] thresholds = new double[]{-1,-2,-3,0,1,2,3};
+        // colorsNonMeshed
+
+        GeneralPath[] isolines = counterer.mkIsos(normalizedNonMeshedData,thresholds);
+        System.out.println("Isolines done.");
+
+        AffineTransform xf = new AffineTransform();
+        xf.translate(0, 0);
+        xf.scale(1,1);
+        xf.translate(-1, -1); // Because MxN data was padded to (M+2)x(N+2).
+        Graphics2D g2 = b.createGraphics();
+        System.out.println("graphics created done.");
+
+        Colormap cmap2 = new YellowGreenBlue();
+        for (int i = 0; i < isolines.length; i++) {
+            isolines[i].transform(xf); // Permanent mapping to world coords.
+            Shape iso = xf.createTransformedShape(isolines[i]); // Remapped every pan & zoom.
+            g2.setColor(new Color(cmap2.getRed(((float) i )/(isolines.length-1)),cmap2.getGreen(((float) i )/(isolines.length-1)),cmap2.getBlue(((float) i )/(isolines.length-1))));
+            g2.draw(iso); // Outline iso.
+        }
+
+        System.out.println("writing image to file");
+
+        try {
+            ImageIO.write(b, "png", new File("/tmp/imgtmp.png"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        File file = new File("/tmp/imgtmp.png");
+        Desktop desktop = Desktop.getDesktop();
+        if(file.exists()) {
+            try {
+                desktop.open(file);
+            } catch (IOException e) {
+                System.out.println("hi");
+            }
+        }
+        System.exit(0);
+
+
+
 
 
 
@@ -188,9 +258,9 @@ public class EquipotentialPlotterTest extends Application {
                 return colors[column];
             }
         };
-        double size = 20.0;
-        double delta = size / 2.0;
-        Shape shape = new Rectangle2D.Double(-delta, -delta, size, size);
+        double sizer = 4.0;
+        double delta = sizer / 2.0;
+        Shape shape = new Rectangle2D.Double(-delta, -delta, sizer, sizer);
         customRenderer.setSeriesShape(0, shape);
         plot.setRenderer(customRenderer);
 

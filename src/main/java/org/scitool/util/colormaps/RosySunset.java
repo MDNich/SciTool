@@ -14,6 +14,12 @@ public class RosySunset extends Colormap {
         return (float) Math.min((-i+1),1);
     }
 
+    public static double getIfromRed(float red) {
+        // red = -i + 1
+        // i = -red + 1
+        return -red + 1;
+    }
+
     @Override
     public float getGreen(double i) {
         float i2 = (float) i;

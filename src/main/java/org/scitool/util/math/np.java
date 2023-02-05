@@ -11,8 +11,8 @@ public class np { // making fun of numpy lol
         for (int i = 0; i < points; i++){
             d[i] = min + i * dx;
         }
-        System.out.println("Resulting array:");
-        System.out.println(Arrays.toString(d));
+        //System.out.println("Resulting array:");
+        //System.out.println(Arrays.toString(d));
         return d;
     }
 
@@ -100,6 +100,29 @@ public class np { // making fun of numpy lol
             xnew[i] = max*(x[i]-xmin)/(xmax-xmin);
         }
         return xnew;
+    }
+
+
+
+
+    public static double[] gaussBlur_1 (double[] source, int w, int h, double r) {
+        double[] result = new double[source.length];
+        var rs = (int) Math.ceil(r * 2.57);     // significant radius
+        for(var i=0; i<h; i++) {
+            for(var j=0; j<w; j++) {
+                double val = 0, wsum = 0;
+                for(int iy = i-rs; iy<i+rs+1; iy++)
+                    for(int ix = j-rs; ix<j+rs+1; ix++) {
+                        int x = Math.min(w-1, Math.max(0, ix));
+                        int y = Math.min(h-1, Math.max(0, iy));
+                        double dsq = (ix-j)*(ix-j)+(iy-i)*(iy-i);
+                        double wght = Math.exp( -dsq / (2*r*r) ) / (Math.PI*2*r*r);
+                        val += source[y*w+x] * wght;  wsum += wght;
+                    }
+                result[i*w+j] = Math.round(val/wsum);
+            }
+        }
+        return result;
     }
 
 }
