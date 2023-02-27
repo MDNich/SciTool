@@ -10,20 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dc9fc1a-cecd-4732-99f7-fbd5e81ce63e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/geometry/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/geometry/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/geometry/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/geometry/Transformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scitool/util/geometry/Translation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/Linux-aarch64/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/Linux-aarch64/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/Linux-intel/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/Linux-intel/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.app/Contents/Resources/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/SciTool_intel.app/Contents/Resources/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appdir/Windows/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/appdir/Windows/SciTool.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SciTool_jar/SciTool.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/EquipotentialPlotterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scitool/equipotential/EquipotentialPlotterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +146,7 @@
       <workItem from="1675614458336" duration="2410000" />
       <workItem from="1676572700245" duration="326000" />
       <workItem from="1676573079870" duration="502000" />
-      <workItem from="1677526552703" duration="3437000" />
+      <workItem from="1677526552703" duration="3695000" />
     </task>
     <servers />
   </component>

@@ -58,6 +58,9 @@ import java.awt.*;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
+import java.awt.image.ConvolveOp;
+import java.awt.image.Kernel;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -172,6 +175,29 @@ public class EquipotentialPlotterTest extends Application {
                 normalizedNonMeshedData[x][y] = RosySunset.getIfromRed(colors[x*yLength+y].getRed());
             }
         }
+
+        System.out.println("Gaussian Blur init");
+        float[] matrix = {
+                0.111f, 0.111f, 0.111f,
+                0.111f, 0.111f, 0.111f,
+                0.111f, 0.111f, 0.111f,
+        };
+        BufferedImageOp op = new ConvolveOp( new Kernel(3, 3, matrix) );
+        BufferedImage b1 = new BufferedImage(xLength,yLength,3);
+        BufferedImage b2 = new BufferedImage(xLength,yLength,3);
+        BufferedImage b3 = new BufferedImage(xLength,yLength,3);
+        BufferedImage b4 = new BufferedImage(xLength,yLength,3);
+        op.filter(b, b1);
+        op.filter(b1, b2);
+        op.filter(b2, b3);
+        op.filter(b3, b4);
+
+        // 4 filters hehe
+
+        b = b4;
+
+
+
 
         Graphics g2d = b.getGraphics();
         Point a = new Point(-10,-10).applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
