@@ -47,17 +47,21 @@ import org.scitool.MarchingSquares;
 import org.scitool.util.colormaps.Colormap;
 import org.scitool.util.colormaps.RosySunset;
 import org.scitool.util.colormaps.YellowGreenBlue;
+import org.scitool.util.geometry.Circle;
+import org.scitool.util.geometry.Point;
+import org.scitool.util.geometry.Translation;
 import org.scitool.util.math.np;
 
 import javax.imageio.ImageIO;
 
 import java.awt.*;
-import java.awt.geom.AffineTransform;
 import java.awt.geom.GeneralPath;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A demo showing the display of JFreeChart within a JavaFX application.
@@ -144,8 +148,8 @@ public class EquipotentialPlotterTest extends Application {
         //}
 
         double[] qArr = new double[]{1.0,-1.0};
-        double[] xArr = new double[]{-.5,0.5};
-        double[] yArr = new double[]{-.5,0.5};
+        double[] xArr = new double[]{-.5,.5};
+        double[] yArr = new double[]{-.5,.5};
 
         double[] voltageMeshed = getVoltage(new double[][]{xArr,yArr,qArr},xymeshed[0],xymeshed[1]);
 
@@ -169,9 +173,65 @@ public class EquipotentialPlotterTest extends Application {
             }
         }
 
+        Graphics g2d = b.getGraphics();
+        Point a = new Point(-10,-10).applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
+        Point c = new Point(10,10).applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
+        g2d.drawLine(a.getCoordinates()[0],a.getCoordinates()[1],c.getCoordinates()[0],c.getCoordinates()[1]);
+        //g2d.drawOval(b.getWidth()/2-50,b.getHeight()/2-25,100,50);
+
+
+        Point[] d = new Circle(0,0,100).getOutline(1);
+        g2d.setColor(new Color(0,0,0));
+        for(int i = 0; i < d.length; i++) {
+            d[i].applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
+        }
+
+        //
+        for(int i = 0; i < d.length-2; i++) {
+            System.out.println(d[i].x()+ " "+ d[i].y());
+            System.out.println(d[i+2].x()+ " "+ d[i+2].y());
+            g2d.drawLine(d[i].x(),d[i].y(),d[i+2].x(),d[i+2].y());
+        }
+
+        /*for(Point e : new Circle(0,0,10).getOutline(3)) {
+            System.out.println("Drawing point at coordinates " + Arrays.toString(e.getCoordinates()));
+            e.applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
+            System.out.println(e.getCoordinates());
+            b.setRGB(e.getCoordinates()[0],e.getCoordinates()[1],new Color(0,0,0).getRGB());
+        }*/
+
+
+
+
+
+
+
+
+
         System.out.println("Init marching squares.");
 
-        MarchingSquares counterer = new MarchingSquares();
+
+
+        System.out.println("writing image to file");
+
+        try {
+            ImageIO.write(b, "png", new File("/tmp/imgtmp.png"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        File file = new File("/tmp/imgtmp.png");
+        Desktop desktop = Desktop.getDesktop();
+        if(file.exists()) {
+            try {
+                desktop.open(file);
+            } catch (IOException e) {
+                System.out.println("hi");
+            }
+        }
+        System.exit(0);
+
+
+        /*MarchingSquares counterer = new MarchingSquares();
 
         double[] thresholds = new double[]{-1,-2,-3,0,1,2,3};
         // colorsNonMeshed
@@ -193,26 +253,7 @@ public class EquipotentialPlotterTest extends Application {
             g2.setColor(new Color(cmap2.getRed(((float) i )/(isolines.length-1)),cmap2.getGreen(((float) i )/(isolines.length-1)),cmap2.getBlue(((float) i )/(isolines.length-1))));
             g2.draw(iso); // Outline iso.
         }
-
-        System.out.println("writing image to file");
-
-        try {
-            ImageIO.write(b, "png", new File("/tmp/imgtmp.png"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        File file = new File("/tmp/imgtmp.png");
-        Desktop desktop = Desktop.getDesktop();
-        if(file.exists()) {
-            try {
-                desktop.open(file);
-            } catch (IOException e) {
-                System.out.println("hi");
-            }
-        }
-        System.exit(0);
-
-
+        */
 
 
 
