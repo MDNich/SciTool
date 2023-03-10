@@ -10,6 +10,7 @@
 		5804211327D799BE00126EC3 /* voltage3D.py in Resources */ = {isa = PBXBuildFile; fileRef = 5804211227D799BE00126EC3 /* voltage3D.py */; };
 		581FF3FE27E8F53600EC1D62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581FF3FD27E8F53600EC1D62 /* README.md */; };
 		581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */; };
+		584F97A629BB63F100AE4798 /* AstroViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F97A529BB63F100AE4798 /* AstroViewControllers.swift */; };
 		585C059428677E5F00153102 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585C059328677E5F00153102 /* LoadingViewController.swift */; };
 		586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FA286A1DD5002C4AF6 /* MassCommand.swift */; };
 		586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */; };
@@ -39,6 +40,7 @@
 		5804211227D799BE00126EC3 /* voltage3D.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = voltage3D.py; sourceTree = "<group>"; };
 		581FF3FD27E8F53600EC1D62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesViewController.swift; sourceTree = "<group>"; };
+		584F97A529BB63F100AE4798 /* AstroViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroViewControllers.swift; sourceTree = "<group>"; };
 		585C059328677E5F00153102 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		586454FA286A1DD5002C4AF6 /* MassCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassCommand.swift; sourceTree = "<group>"; };
 		586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcentrationCommand.swift; path = SciTool/Stoichiometry/ConcentrationCommand.swift; sourceTree = SOURCE_ROOT; };
@@ -106,6 +108,7 @@
 				589EE55F27BDA78900D38DF2 /* SideBarController.swift */,
 				581FF3FF27E8FB5E00EC1D62 /* DependenciesViewController.swift */,
 				58D9049127B17A5C0051C600 /* ViewController.swift */,
+				584F97A529BB63F100AE4798 /* AstroViewControllers.swift */,
 				58DE306C2868F4DA00E55FEA /* Stoichiometry */,
 				58D9049327B17A5D0051C600 /* Assets.xcassets */,
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
@@ -274,6 +277,7 @@
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
 				58DE307A2868F4DA00E55FEA /* Equation.swift in Sources */,
 				58774D21286B547D00E48244 /* StoicMassViewController.swift in Sources */,
+				584F97A629BB63F100AE4798 /* AstroViewControllers.swift in Sources */,
 				58AB347C27F102F80082AA54 /* Reachability.swift in Sources */,
 				581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */,
 				58DE30832868FB4100E55FEA /* StoicViewController.swift in Sources */,

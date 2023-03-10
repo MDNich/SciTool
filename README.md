@@ -12,7 +12,11 @@ Current SciTools:
 3. Circuit Simulator
 4. Stoichiometry Reaction Solver
 5. Stoichiometry Mass Solver
+6. Stellar Properties Solver
+7. Binary System Solver
+8. RR Lyrae Variable Calculator
 (credit for 4,5 goes to @thegail for his Swift 5 command line project [Stoichiometry](https://github.com/thegail/Stoichiometry))
+(6,7,8 can also be found in the [StarCalc](https://github.com/mdnich/starcalc) project)
 
 Current Dependencies: Must have Python3 installed and must have the following packages:
 1. numpy
