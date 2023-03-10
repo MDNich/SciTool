@@ -199,7 +199,7 @@ public class EquipotentialPlotterTest extends Application {
 
 
 
-        Graphics g2d = b.getGraphics();
+        /*Graphics g2d = b.getGraphics();
         Point a = new Point(-10,-10).applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
         Point c = new Point(10,10).applyTransformation(new Translation(b.getWidth()/2, b.getHeight()/2));
         g2d.drawLine(a.getCoordinates()[0],a.getCoordinates()[1],c.getCoordinates()[0],c.getCoordinates()[1]);
@@ -217,7 +217,7 @@ public class EquipotentialPlotterTest extends Application {
             System.out.println(d[i].x()+ " "+ d[i].y());
             System.out.println(d[i+2].x()+ " "+ d[i+2].y());
             g2d.drawLine(d[i].x(),d[i].y(),d[i+2].x(),d[i+2].y());
-        }
+        }*/
 
         /*for(Point e : new Circle(0,0,10).getOutline(3)) {
             System.out.println("Drawing point at coordinates " + Arrays.toString(e.getCoordinates()));
