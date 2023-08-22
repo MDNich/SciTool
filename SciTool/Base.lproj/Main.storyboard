@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="LgQ-mN-jD8">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="21701"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -68,7 +68,7 @@
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <menu key="submenu" title="New" id="hcx-1P-M5W">
                                                 <items>
-                                                    <menuItem title="Equipotential Lines Grapher" state="on" keyEquivalent="1" id="gdk-e4-3yx">
+                                                    <menuItem title="Equipotential Lines Grapher" keyEquivalent="1" id="gdk-e4-3yx">
                                                         <connections>
                                                             <segue destination="B8D-0N-5wS" kind="show" id="bar-4M-mJT"/>
                                                         </connections>
@@ -1297,15 +1297,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="kM8-Xl-Iw6">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="WDp-b9-Qjt">
-                                            <rect key="frame" x="0.0" y="-42603" width="293" height="796"/>
+                                            <rect key="frame" x="0.0" y="-42603" width="278" height="796"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-xM-7cr">
-                                                    <rect key="frame" x="8" y="748" width="277" height="48"/>
+                                                    <rect key="frame" x="8" y="748" width="262" height="48"/>
                                                     <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="This graphing calculator can draw equipotential lines for custom discrete charge distributions. " id="Gqi-3l-xG4">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1466,7 +1466,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="33U-Ua-z94">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="OyW-Yd-7mm" name="value" keyPath="self.representedObject" id="6Pz-Rh-cOd">
@@ -2201,7 +2201,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="nD7-UB-2Bi">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="zxO-dE-0D9">
@@ -2370,7 +2370,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="HSt-g3-DVy">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="D0G-gv-3At" name="value" keyPath="self.representedObject" id="Y62-wW-seU">
@@ -2413,7 +2413,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="yVN-un-flx">
-                                    <rect key="frame" x="0.0" y="0.0" width="293" height="343"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="278" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view id="QZC-h3-Dqf">
@@ -2582,7 +2582,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="hME-J3-UZ8">
-                                    <rect key="frame" x="277" y="0.0" width="16" height="343"/>
+                                    <rect key="frame" x="278" y="0.0" width="15" height="343"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <connections>
                                         <binding destination="Md5-gl-NGH" name="value" keyPath="self.representedObject" id="Fnp-3e-6Ij">
@@ -3824,15 +3824,15 @@ DQ
                                 <rect key="frame" x="20" y="61" width="250" height="272"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="pmh-nM-Kdd">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" smartInsertDelete="YES" id="qBE-tC-AXP">
-                                            <rect key="frame" x="0.0" y="-952" width="250" height="611"/>
+                                            <rect key="frame" x="0.0" y="-952" width="235" height="645"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="250" height="272"/>
+                                            <size key="minSize" width="235" height="272"/>
                                             <size key="maxSize" width="275" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -3866,7 +3866,7 @@ To react your elements, click the “React!” button. The results will appear i
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="LBb-eo-r6T">
-                                    <rect key="frame" x="234" y="0.0" width="16" height="272"/>
+                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -3909,15 +3909,15 @@ To react your elements, click the “React!” button. The results will appear i
                                 <rect key="frame" x="20" y="61" width="250" height="272"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="x9B-9j-8YX">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="272"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="235" height="272"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" baseWritingDirection="leftToRight" spellingCorrection="YES" smartInsertDelete="YES" id="jQE-8m-9wj">
-                                            <rect key="frame" x="0.0" y="-187" width="250" height="458"/>
+                                            <rect key="frame" x="0.0" y="-187" width="235" height="492"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <size key="minSize" width="250" height="272"/>
+                                            <size key="minSize" width="235" height="272"/>
                                             <size key="maxSize" width="275" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -3951,7 +3951,7 @@ Click the question mark button to open this popup.</mutableString>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="wSd-S2-kut">
-                                    <rect key="frame" x="234" y="0.0" width="16" height="272"/>
+                                    <rect key="frame" x="235" y="0.0" width="15" height="272"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -3999,7 +3999,7 @@ Click the question mark button to open this popup.</mutableString>
         <!--Lum Mag View Controller-->
         <scene sceneID="6O5-Zi-TkO">
             <objects>
-                <viewController id="aDG-Yd-DYO" customClass="LumMagViewController" customModule="StarCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aDG-Yd-DYO" customClass="LumMagViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="8o7-1Z-KIK">
                         <rect key="frame" x="0.0" y="0.0" width="647" height="316"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -4173,7 +4173,7 @@ DQ
         <!--Bin Sys View Controller-->
         <scene sceneID="4KJ-DE-OUS">
             <objects>
-                <viewController id="KM4-qc-VFW" customClass="BinSysViewController" customModule="StarCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KM4-qc-VFW" customClass="BinSysViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="8g7-hv-qQv">
                         <rect key="frame" x="0.0" y="0.0" width="647" height="246"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -4353,7 +4353,7 @@ DQ
         <!--Lyrae View Controller-->
         <scene sceneID="0L8-5A-A1p">
             <objects>
-                <viewController id="HLq-Pe-2hz" customClass="RRLyraeViewController" customModule="StarCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HLq-Pe-2hz" customClass="RRLyraeViewController" customModule="SciTool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="cYh-mW-n9v">
                         <rect key="frame" x="0.0" y="0.0" width="521" height="165"/>
                         <autoresizingMask key="autoresizingMask"/>
