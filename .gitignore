@@ -4,3 +4,4 @@ SciTool.xcodeproj/project.xcworkspace/xcuserdata/mdn.xcuserdatad/UserInterfaceSt
 *.xcuserstate
 Target/
 .idea/
+*DS_Store

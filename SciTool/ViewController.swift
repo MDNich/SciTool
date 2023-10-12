@@ -268,8 +268,9 @@ class EPot3DViewController: NSViewController {
             //htmlView.isHidden = false
             savebutton.isEnabled = false
         }
+        dirPath = "/tmp/"
         print("file://\(dirPath)result.html")
-        htmlView.load(URLRequest(url: URL(string: "file://\(dirPath)result.html")!))
+        htmlView.load(URLRequest(url: URL(string: "file:///tmp/result.html")!))
         //htmlView.load(URLRequest(url: URL(string: "http://127.0.0.1:65221")!))
         
         self.imgIsReset = false
@@ -328,17 +329,7 @@ class EPot3DViewController: NSViewController {
         //drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
         let arr = [PythonObject.StringLiteralType(dirPath),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
         print("Calling")
-        var htmlResult = try String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
-        htmlResult = "<!DOCTYPE html>\n\(htmlResult ?? "<html><body><h1>Document Save Failed</h1></body></html>")"
-        let filename = URL(fileURLWithPath: String(dirPath) + "/result.html")
-        do {
-            try htmlResult!.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
-            print("path: ")
-            let normalized = filename.absoluteString.filter({ $0.isASCII })
-        } catch {
-            print("Failed to Save")
-            // failed to write file – bad permissions, bad filename, missing permissions, or more likely it can't be converted to the encoding
-        }
+        var pathResult = try String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
 
     }
 }
