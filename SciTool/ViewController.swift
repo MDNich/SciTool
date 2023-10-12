@@ -45,6 +45,37 @@ class SplashViewController: NSViewController {
         let windowController = storyboard.instantiateController(withIdentifier: "stoichReact") as! NSWindowController
         windowController.showWindow(self)
     }
+    
+    @IBAction func openStellarProps(sender: Any?)
+    {
+        print(" yo110 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "LumMag") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    @IBAction func openBinaryStars(sender: Any?)
+    {
+        print(" yo110 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "BinStars") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    @IBAction func openRRLyrae(sender: Any?)
+    {
+        print(" yo110 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "RRL") as! NSWindowController
+        windowController.showWindow(self)
+    }
     @IBAction func openStoichMass(sender: Any?)
     {
         print(" yo101 ")
