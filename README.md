@@ -30,7 +30,8 @@ There is a GUI that aids with installing these packages and Python3.
 
 # Star History
 
-[![Star History Chart](https://star-history.com/#MDNich/SciTool&Date)](https://star-history.com/#MDNich/SciTool&Date)
+
+[![Star History Chart](https://star-history.com/embed?secret=Z2hwXzJUQkpJMGN5UkQwVHBXeWNOZnBkQlppS2VPd0txNDAxOFlTcQ==#MDNich/SciTool&Date)](https://star-history.com/embed?secret=Z2hwXzJUQkpJMGN5UkQwVHBXeWNOZnBkQlppS2VPd0txNDAxOFlTcQ==#MDNich/SciTool&Date)
 
 
 
