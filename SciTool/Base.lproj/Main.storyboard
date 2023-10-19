@@ -5233,7 +5233,7 @@ DQ
                                         </textFieldCell>
                                     </textField>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNH-xs-PPj">
-                                        <rect key="frame" x="24" y="226" width="48" height="54"/>
+                                        <rect key="frame" x="24" y="202" width="48" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" id="kfZ-WU-fA4">
                                             <imageReference key="image" image="circle.inset.filled" catalog="system" symbolScale="default" renderingMode="hierarchical">
