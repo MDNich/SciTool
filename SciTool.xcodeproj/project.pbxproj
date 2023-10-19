@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
 		58AB347C27F102F80082AA54 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB347B27F102F80082AA54 /* Reachability.swift */; };
+		58ACC25F2AE13E680068C6BC /* ProjectileViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58ACC25E2AE13E680068C6BC /* ProjectileViewControllers.swift */; };
 		58D9049027B17A5C0051C600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9048F27B17A5C0051C600 /* AppDelegate.swift */; };
 		58D9049227B17A5C0051C600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D9049127B17A5C0051C600 /* ViewController.swift */; };
 		58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D9049327B17A5D0051C600 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
 		58AB347B27F102F80082AA54 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		58ACC25E2AE13E680068C6BC /* ProjectileViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileViewControllers.swift; sourceTree = "<group>"; };
 		58D9048C27B17A5C0051C600 /* SciTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9048F27B17A5C0051C600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D9049127B17A5C0051C600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				589EE55C27BD316300D38DF2 /* blank.png */,
 				5804211227D799BE00126EC3 /* voltage3D.py */,
 				58AB347B27F102F80082AA54 /* Reachability.swift */,
+				58ACC25E2AE13E680068C6BC /* ProjectileViewControllers.swift */,
 			);
 			path = SciTool;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				58D9049227B17A5C0051C600 /* ViewController.swift in Sources */,
 				58DE307A2868F4DA00E55FEA /* Equation.swift in Sources */,
 				58774D21286B547D00E48244 /* StoicMassViewController.swift in Sources */,
+				58ACC25F2AE13E680068C6BC /* ProjectileViewControllers.swift in Sources */,
 				584F97A629BB63F100AE4798 /* AstroViewControllers.swift in Sources */,
 				58AB347C27F102F80082AA54 /* Reachability.swift in Sources */,
 				581FF40027E8FB5E00EC1D62 /* DependenciesViewController.swift in Sources */,
