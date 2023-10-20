@@ -46,6 +46,17 @@ class SplashViewController: NSViewController {
         windowController.showWindow(self)
     }
     
+    @IBAction func openProjectileMotion(_ sender: Any?) {
+        // projectilesCalc
+        print(" yo129 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "projectilesCalc") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    
     @IBAction func openStellarProps(sender: Any?)
     {
         print(" yo110 ")
