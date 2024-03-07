@@ -10,6 +10,7 @@ import os
 import Cocoa
 import WebKit
 import CoreWLAN
+import PDFKit
 
 class SplashViewController: NSViewController {
     override func viewDidLoad() {
@@ -54,6 +55,17 @@ class SplashViewController: NSViewController {
         self.view.window?.sheetParent?.endSheet((self.view.window)!)
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: "projectilesCalc") as! NSWindowController
+        windowController.showWindow(self)
+    }
+    
+    @IBAction func openRCcalc(_ sender: Any?) {
+        // projectilesCalc
+        print(" yo131 ")
+        self.view.window?.close()
+        self.view.window?.sheetParent?.close()
+        self.view.window?.sheetParent?.endSheet((self.view.window)!)
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "RCcalc") as! NSWindowController
         windowController.showWindow(self)
     }
     
@@ -617,6 +629,44 @@ class CircuitSimViewController: NSViewController, WKUIDelegate,CWEventDelegate
         
         return output
     }
+}
+
+
+
+class RCcircuitViewController: NSViewController {
+
+    @IBOutlet weak var pdfView: PDFView!
+    
+    @IBOutlet weak var resistanceVal: NSTextField!
+    
+    @IBOutlet weak var resistanceUnit: NSPopUpButton!
+    
+    @IBOutlet weak var capacitanceVal: NSTextField!
+    
+    @IBOutlet weak var capacitanceUnit: NSPopUpButton!
+    
+    @IBOutlet weak var voltageVal: NSTextField!
+    
+    @IBOutlet weak var voltageUnit: NSPopUpButton!
+    
+    @IBOutlet weak var timeIntervalVal: NSTextField!
+    
+    @IBOutlet weak var timeIntervalUnit: NSPopUpButton!
+    
+    @IBOutlet weak var timeConstantOutput: NSTextField!
+    
+    @IBOutlet weak var maxCurrentOutput: NSTextField!
+    
+    @IBOutlet weak var maxChargeOutput: NSTextField!
+    
+    
+    @IBAction func doGraphing(_ sender: Any) {
+    }
+    
+    
+    
+    
+    
 }
 
 
