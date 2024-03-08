@@ -661,6 +661,21 @@ class RCcircuitViewController: NSViewController {
     
     
     @IBAction func doGraphing(_ sender: Any) {
+        // Check architecture to be arm64 to use binary, otherwise call python program.
+
+        let r = Double(resistanceVal.stringValue)
+        let c = Double(capacitanceVal.stringValue)
+        let e = Double(voltageVal.stringValue)
+
+        // multiply r,c,e with their units derived from the NSPopUpButton.
+        
+        let tMax = Double(timeIntervalVal.stringValue)
+
+        timeConstantOutput.stringValue = "\(round(1000 * r * c) / 1000)"
+        maxCurrentOutput.stringValue = "\(round(1000 * e / r) / 1000)"
+        maxChargeOutput.stringValue = "\(round(1000 * c * e) / 1000)"
+
+        
     }
     
     
