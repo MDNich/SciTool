@@ -165,7 +165,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             nextpage.isEnabled = true
             try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
             print("Out: \(version)")
-            if(version == "") {
+            if((version == "" ) || (!(version.isNumeric))) {
                 version = "Matplotlib is not installed."
                 mplInstall.isEnabled = true
                 nextpage.isEnabled = false
@@ -186,7 +186,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
             print(version)
             version.removeAll(where: isSpace(_:))
-            if(version == "") {
+            if((version == "" ) || (!(version.isNumeric))) {
                 version = "Numpy is not installed."
                 numpyInstall.isEnabled = true
                 nextpage.isEnabled = false
@@ -274,7 +274,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             version.removeAll(where: isSpace(_:))
 
             // safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check
-            if(version == "") {
+            if((version == "" ) || (!(version.isNumeric))) {
                 version = "Plotly is not installed."
                 plotlyInstall.isEnabled = true
                 nextpage.isEnabled = false
@@ -329,7 +329,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             try version = safeShell("\(self.pythonPath) -m pip list --disable-pip-version-check 2>/dev/null | grep pandas | grep pandas | cut -c 10-")
             print(version)
             version.removeAll(where: isSpace(_:))
-            if(version == "") {
+            if((version == "" ) || (!(version.isNumeric))) {
                 version = "Pandas is not installed."
                 pandasInstall.isEnabled = true
                 nextpage.isEnabled = false
@@ -414,4 +414,15 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     }
 
     
+}
+
+
+import Foundation
+
+extension String {
+    var isNumeric: Bool {
+        guard self.count > 0 else { return false }
+        let nums: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"," "]
+        return Set(self).isSubset(of: nums)
+    }
 }

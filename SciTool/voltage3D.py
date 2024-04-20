@@ -11,8 +11,30 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 
+import argparse
+import ast
+print("[voltage3D.py] STARTING PYTHON")
+parser = argparse.ArgumentParser()
+parser.add_argument("pathToSave",type=str)
+parser.add_argument("chargeXarr",type=str)
+parser.add_argument("chargeYarr",type=str)
+parser.add_argument("chargeQarr",type=str)
+parser.add_argument("windowLBoundX",type=float)
+parser.add_argument("windowLBoundY",type=float)
+parser.add_argument("windowUBoundX",type=float)
+parser.add_argument("windowUBoundY",type=float)
+parser.add_argument("steps",type=int)
+parser.add_argument("coulombCt",type=float)
+args = parser.parse_args()
+
+pathToSave_parsed = args.pathToSave.strip()
+chargeXarr_parsed = ast.literal_eval(args.chargeXarr)
+chargeYarr_parsed = ast.literal_eval(args.chargeYarr)
+chargeQarr_parsed = ast.literal_eval(args.chargeQarr)
 
 
+print("[voltage3D.py] ARGUMENTS PARSED SUCCESSFULLY.")
+print("[voltage3D.py] STARTING GRAPH DRAWING...")
 
 def calculateDist(x1,x2,y1,y2):
     deltaX = x2-x1
@@ -106,3 +128,8 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     volt2d = [[]]
 
 
+drawGraph(pathToSave_parsed,chargeXarr_parsed,chargeYarr_parsed,chargeQarr_parsed,args.windowLBoundX,args.windowLBoundY,args.windowUBoundX,args.windowUBoundY,args.steps,args.coulombCt)
+
+
+print("[voltage3D.py] END.")
+exit(0)

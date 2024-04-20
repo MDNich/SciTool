@@ -258,7 +258,13 @@ class EPot3DViewController: NSViewController {
     
     
     @IBOutlet weak var helpButton: NSButton!
+    
+    
+    @IBOutlet weak var PythonNotIniti_textLabel: NSTextField!
+    
+    @IBOutlet weak var initPyButton: NSButtonCell!
         
+    @IBOutlet weak var plotButton: NSButton!
     @IBAction func saveImgAs(sender: Any?)
     {
         
@@ -374,16 +380,65 @@ class EPot3DViewController: NSViewController {
         let ys = convertStringToArr(str: ChargeYList.stringValue)
         let qs = convertStringToArr(str: ChargeQList.stringValue)
         
+        let args = "\(dirPathSave.dropFirst()) \"\(ys)\" \"\(xs)\" \"\(qs)\" \(Double(WindowLowerX.stringValue)!) \(Double(WindowLowerY.stringValue)!) \(Double(WindowUpperX.stringValue)!) \(Double(WindowUpperY.stringValue)!) \(Int(ScatterPtDensity.stringValue)!) \(Double(CoulombConstant.stringValue)!)"
+        
         // DIR:file:///var/folders/dl/t48fygys3vzbbm381q1cx2c00000gn/T/
 
+        do {
+            print("trying mpl")
+            var pythonPath = ""
+            try pythonPath = String(DependenciesViewController.safeShellExt("type python3 | cut -c 12-").dropLast(1))
+            PythonLibrary.useLibrary(at: pythonPath)
+            var version = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("> \(version)")
+            if(version == "") {
+                print("Matplotlib is not installed.")
+                throw NSError()
+            }
+            var version2 = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("> \(version2)")
+            if(version2 == "") {
+                print("Numpy is not installed.")
+                throw NSError()
+            }
+            
+            var version3 = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep plotly | cut -c 17-")
+            print("> \(version3)")
+            if(version2 == "") {
+                print("Plotly is not installed.")
+                throw NSError()
+            }
+            
+            
+            print("success")
+        }
+        catch {
+            print("MPL/Numpy/Plotly not found")
+            PythonNotIniti_textLabel.isHidden = false
+            initPyButton.controlView?.isHidden = false
+            initPyButton.isEnabled = true
+            plotButton.isEnabled = false
+            print("failed")
+            throw NSError()
+            return
+            
+        }
         
-        let sys = Python.import("sys")
+        
+        
+        try DependenciesViewController.safeShellExt("python3 \(dirPath)/voltage3D.py \(args)")
+        
+        
+        /*let sys = Python.import("sys")
         sys.path.append(dirPath)
         let engine = Python.import("voltage3D")
         //drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,coulombCt):
         let arr = [PythonObject.StringLiteralType(dirPath),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!)] as [PythonConvertible]
         print("Calling")
-        var pathResult = try String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))
+        var pathResult = try String(engine.drawGraph.throwing.dynamicallyCall(withArguments: arr))*/
 
     }
 }
@@ -453,6 +508,9 @@ class EquipotViewController: NSViewController {
     @IBOutlet weak var PythonNotIniti_textLabel: NSTextField!
     
     @IBOutlet weak var initPyButton: NSButtonCell!
+    
+    @IBOutlet weak var plotButton: NSButton!
+
     
     @IBAction func initPython(_ sender: Any) {
         self.view.window?.close()
@@ -555,9 +613,14 @@ class EquipotViewController: NSViewController {
         let xs = convertStringToArr(str: ChargeXList.stringValue)
         let ys = convertStringToArr(str: ChargeYList.stringValue)
         let qs = convertStringToArr(str: ChargeQList.stringValue)
-        let sys = Python.import("sys")
-        sys.path.append(dirPath)
-        print(sys.executable)
+        
+        let args = "\(dirPathSave.dropFirst()) \"\(ys)\" \"\(xs)\" \"\(qs)\" \(Double(WindowLowerX.stringValue)!) \(Double(WindowLowerY.stringValue)!) \(Double(WindowUpperX.stringValue)!) \(Double(WindowUpperY.stringValue)!) \(Int(ScatterPtDensity.stringValue)!) \(Int(CounterNumber.stringValue)!) \(Double(CoulombConstant.stringValue)!) \(Double(DPI.stringValue)!)"
+        
+        
+        
+        //let sys = Python.import("sys")
+        //sys.path.append(dirPath)
+        //print(sys.executable)
         do {
             print("trying mpl")
             var pythonPath = ""
@@ -584,13 +647,17 @@ class EquipotViewController: NSViewController {
             PythonNotIniti_textLabel.isHidden = false
             initPyButton.controlView?.isHidden = false
             initPyButton.isEnabled = true
+            plotButton.isEnabled = false
             print("failed")
+            throw NSError()
             return
             
         }
-        let engine = Python.import("voltage")
-        let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(ScatterPtDensity.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!),PythonObject.FloatLiteralType(Double(DPI.stringValue)!),PythonObject.BooleanLiteralType(false)] as [PythonConvertible]
-        try engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)
+        
+        
+        
+        try DependenciesViewController.safeShellExt("python3 \(dirPath)/voltage.py \(args)")
+    
     }
 
 

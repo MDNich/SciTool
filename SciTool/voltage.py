@@ -1,6 +1,6 @@
 import pip
-pip.main(["install","matplotlib"])
-pip.main(["install","numpy"])
+#pip.main(["install","matplotlib"])
+#pip.main(["install","numpy"])
 
 import matplotlib.pyplot as plt
 import math
@@ -8,6 +8,42 @@ import numpy as np
 import os
 
 coulombCt1 = 9E9
+
+
+# exemplu
+# /var/folders/dl/t48fygys3vzbbm381q1cx2c00000gn/T/ [-5, 0, 0] [1, 0, 0] [1, -2, 3] -2.0 -2.0 2.0 2.0 200 200 9000000000.0 200.0
+
+import argparse
+import ast
+print("[voltage.py] STARTING PYTHON")
+parser = argparse.ArgumentParser()
+parser.add_argument("pathToSave",type=str)
+parser.add_argument("chargeXarr",type=str)
+parser.add_argument("chargeYarr",type=str)
+parser.add_argument("chargeQarr",type=str)
+parser.add_argument("windowLBoundX",type=float)
+parser.add_argument("windowLBoundY",type=float)
+parser.add_argument("windowUBoundX",type=float)
+parser.add_argument("windowUBoundY",type=float)
+parser.add_argument("steps",type=int)
+parser.add_argument("countourprec",type=int)
+parser.add_argument("coulombCt",type=float)
+parser.add_argument("dpiInp",type=float)
+args = parser.parse_args()
+
+pathToSave_parsed = args.pathToSave.strip()
+chargeXarr_parsed = ast.literal_eval(args.chargeXarr)
+#chargeXarr_parsed = [n.strip() for n in chargeXarr_parsed0]
+chargeYarr_parsed = ast.literal_eval(args.chargeYarr)
+#chargeYarr_parsed = [n.strip() for n in chargeYarr_parsed0]
+chargeQarr_parsed = ast.literal_eval(args.chargeQarr)
+#chargeQarr_parsed = [n.strip() for n in chargeQarr_parsed0]
+
+
+print("[voltage.py] ARGUMENTS PARSED SUCCESSFULLY.")
+print("[voltage.py] STARTING GRAPH DRAWING...")
+
+
 
 
 
@@ -84,3 +120,8 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     y2s = []
     volt2d = [[]]
 
+drawGraph(pathToSave_parsed,chargeXarr_parsed,chargeYarr_parsed,chargeQarr_parsed,args.windowLBoundX,args.windowLBoundY,args.windowUBoundX,args.windowUBoundY,args.steps,args.countourprec,args.coulombCt,args.dpiInp,False)
+
+
+print("[voltage.py] END.")
+exit(0)
