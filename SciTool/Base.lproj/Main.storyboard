@@ -988,6 +988,27 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField hidden="YES" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hu7-ab-Lfd">
+                                <rect key="frame" x="10" y="29" width="200" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="ERROR: Python Not Initialized" id="u9J-UA-IjN">
+                                    <font key="font" metaFont="systemBold"/>
+                                    <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWr-1M-iu1">
+                                <rect key="frame" x="16" y="-3" width="188" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Initialize Python..." bezelStyle="rounded" alignment="center" scrollable="YES" lineBreakMode="clipping" truncatesLastVisibleLine="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jcf-20-xQe">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="initPython:" target="XfG-lQ-9wD" id="a7N-9j-Xee"/>
+                                    </connections>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="JSh-Bg-4cE" firstAttribute="top" secondItem="cJO-7Y-ctR" secondAttribute="bottom" constant="5" id="2eG-y0-1aq"/>
@@ -1018,6 +1039,7 @@
                         <outlet property="DPI" destination="dgN-jf-JUV" id="IcU-1d-7A1"/>
                         <outlet property="ErrorLabel" destination="i7n-VU-rE4" id="ORa-CM-BGe"/>
                         <outlet property="ProgressBar" destination="20G-mH-mOi" id="nAa-4r-Wu7"/>
+                        <outlet property="PythonNotIniti_textLabel" destination="Hu7-ab-Lfd" id="Cbc-fm-TNq"/>
                         <outlet property="ScatterPtDensity" destination="lWX-uN-NIh" id="b9T-Ee-aEF"/>
                         <outlet property="WindowLowerX" destination="p9b-EC-ZUK" id="tgo-cr-tFd"/>
                         <outlet property="WindowLowerY" destination="k61-JS-CzD" id="a84-5F-ZrN"/>
@@ -1025,6 +1047,7 @@
                         <outlet property="WindowUpperY" destination="C3z-YS-OqA" id="XQt-0N-hUE"/>
                         <outlet property="helpButton" destination="mvx-1N-To0" id="ndy-Hh-eE9"/>
                         <outlet property="img" destination="cJO-7Y-ctR" id="bIq-CE-pHF"/>
+                        <outlet property="initPyButton" destination="Jcf-20-xQe" id="hJa-E9-kQp"/>
                         <outlet property="savebutton" destination="JSh-Bg-4cE" id="7eR-Yv-LkG"/>
                     </connections>
                 </viewController>

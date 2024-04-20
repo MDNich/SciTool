@@ -449,6 +449,23 @@ class EquipotViewController: NSViewController {
     
     @IBOutlet weak var logscale: NSButton!
     
+    
+    @IBOutlet weak var PythonNotIniti_textLabel: NSTextField!
+    
+    @IBOutlet weak var initPyButton: NSButtonCell!
+    
+    @IBAction func initPython(_ sender: Any) {
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "checker") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+        //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+    }
+    
+    var pythonpath: String = ""
+    
+    
     @IBAction func saveImgAs(sender: Any?)
     {
         
@@ -530,6 +547,7 @@ class EquipotViewController: NSViewController {
         return tmp2
         
     }
+    
     func runPythonCode(dirPathSave: String) throws {
        // var mainBundle = resourcePath
         let dirPath = Bundle.main.resourcePath!
@@ -540,6 +558,36 @@ class EquipotViewController: NSViewController {
         let sys = Python.import("sys")
         sys.path.append(dirPath)
         print(sys.executable)
+        do {
+            print("trying mpl")
+            var pythonPath = ""
+            try pythonPath = String(DependenciesViewController.safeShellExt("type python3 | cut -c 12-").dropLast(1))
+            PythonLibrary.useLibrary(at: pythonPath)
+            var version = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("> \(version)")
+            if(version == "") {
+                print("Matplotlib is not installed.")
+                throw NSError()
+            }
+            var version2 = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("> \(version)")
+            if(version2 == "") {
+                print("Numpy is not installed.")
+                throw NSError()
+            }
+            print("success")
+        }
+        catch {
+            print("MPL/Numpy not found")
+            PythonNotIniti_textLabel.isHidden = false
+            initPyButton.controlView?.isHidden = false
+            initPyButton.isEnabled = true
+            print("failed")
+            return
+            
+        }
         let engine = Python.import("voltage")
         let arr = [PythonObject.StringLiteralType(dirPathSave),PythonObject.ArrayLiteralElement(ys),PythonObject.ArrayLiteralElement(xs),PythonObject.ArrayLiteralElement(qs),PythonObject.FloatLiteralType(Double(WindowLowerX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowLowerY.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperX.stringValue)!),PythonObject.FloatLiteralType(Double(WindowUpperY.stringValue)!),PythonObject.IntegerLiteralType(Int(ScatterPtDensity.stringValue)!),PythonObject.IntegerLiteralType(Int(CounterNumber.stringValue)!),PythonObject.FloatLiteralType(Double(CoulombConstant.stringValue)!),PythonObject.FloatLiteralType(Double(DPI.stringValue)!),PythonObject.BooleanLiteralType(false)] as [PythonConvertible]
         try engine.drawGraph.throwing.dynamicallyCall(withArguments: arr)

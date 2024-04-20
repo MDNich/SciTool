@@ -129,9 +129,11 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         mplProgress.isHidden = false
         mplProgress.isDisplayedWhenStopped = true
         mplProgress.startAnimation(sender)
+        if(self.password == "") {
+            self.reqPassword()
+        }
         DispatchQueue.main.async {
             do {
-                self.reqPassword()
                 try print(self.safeShell("echo \(self.password) | sudo -S \(self.pythonPath) -m pip install --disable-pip-version-check matplotlib"))
             }
             catch {
@@ -140,6 +142,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.mplProgress.stopAnimation(sender)
             self.mplProgress.isIndeterminate = false
             self.mplProgress.doubleValue = 100
+            self.mplInstall.isEnabled = false
             self.checkIfMPLexist("")
             self.nextpage.isEnabled = true
 
@@ -203,8 +206,8 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         numpyProgress.isDisplayedWhenStopped = true
         numpyProgress.startAnimation(sender)
         
-        if(password == "") {
-            reqPassword()
+        if(self.password == "") {
+            self.reqPassword()
         }
         DispatchQueue.main.async {
             do {
@@ -216,6 +219,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.numpyProgress.stopAnimation(sender)
             self.numpyProgress.isIndeterminate = false
             self.numpyProgress.doubleValue = 100
+            self.numpyInstall.isEnabled = false
             self.checkIfNumpyExist("")
             self.nextpage.isEnabled = true
 
@@ -289,8 +293,8 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         plotlyProgressBar.isHidden = false
         plotlyProgressBar.isDisplayedWhenStopped = true
         plotlyProgressBar.startAnimation(sender)
-        if(password == "") {
-            reqPassword()
+        if(self.password == "") {
+            self.reqPassword()
         }
         DispatchQueue.main.async {
             do {
@@ -303,6 +307,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.plotlyProgressBar.stopAnimation(sender)
             self.plotlyProgressBar.isIndeterminate = false
             self.plotlyProgressBar.doubleValue = 100
+            self.plotlyInstall.isEnabled = false
             self.checkIfPlotlyExist("")
             self.nextpage.isEnabled = true
 
@@ -343,8 +348,8 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
         pandasProgressBar.isHidden = false
         pandasProgressBar.isDisplayedWhenStopped = true
         pandasProgressBar.startAnimation(sender)
-        if(password == "") {
-            reqPassword()
+        if(self.password == "") {
+            self.reqPassword()
         }
         DispatchQueue.main.async {
             do {
@@ -356,6 +361,7 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
             self.pandasProgressBar.stopAnimation(sender)
             self.pandasProgressBar.isIndeterminate = false
             self.pandasProgressBar.doubleValue = 100
+            self.pandasInstall.isEnabled = false
             self.checkIfPandasExist("")
             self.nextpage.isEnabled = true
 
@@ -366,6 +372,24 @@ class DependenciesViewController: NSViewController, NSTabViewDelegate
     
     // MARK: Misc Helper Methods
     func safeShell(_ command: String) throws -> String {
+        let task = Process()
+        let pipe = Pipe()
+        
+        task.standardOutput = pipe
+        task.standardError = pipe
+        task.arguments = ["-c", command]
+        task.executableURL = URL(fileURLWithPath: "/bin/zsh") //<--updated
+
+        try task.run() //<--updated
+        
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8)!
+        
+        return output
+    }
+    
+    
+    static func safeShellExt(_ command: String) throws -> String {
         let task = Process()
         let pipe = Pipe()
         
