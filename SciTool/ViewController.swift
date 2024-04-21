@@ -282,25 +282,27 @@ class EPot3DViewController: NSViewController {
         guard response == .OK, let saveURL = savePanel.url else { return }
         print("response: \(response)")
         print("saveURL: \(saveURL)")
-        var dirPath = FileManager.default.temporaryDirectory.absoluteString
-        print("DIR:\(dirPath)")
-        dirPath.removeFirst(7)
-        print("DIR:\(dirPath)")
-        let filename = URL(string: "file://\(dirPath)result.html")!
+        let filenameSTR = "file:///tmp/result.html"
+        let filename = URL(string: filenameSTR)!
+        print(filename)
         do {
             try FileManager().copyItem(at: filename,to: saveURL)
             print("Save suceeded")
         }
-        catch{
+        catch {
             do {
                 try FileManager().removeItem(at: saveURL)
                 try FileManager().copyItem(at: filename,to: saveURL)
                 print("Save suceeded")
             }
             catch {
-                
+                print("Save failed")
+                let alert = NSAlert()
+                alert.addButton(withTitle: "OK")
+                alert.alertStyle = NSAlert.Style.critical
+                alert.messageText = "Save to HTML file failed :("
+                alert.runModal()
             }
-            print("Save failed")
         }
                
         
@@ -380,7 +382,7 @@ class EPot3DViewController: NSViewController {
         let ys = convertStringToArr(str: ChargeYList.stringValue)
         let qs = convertStringToArr(str: ChargeQList.stringValue)
         
-        let args = "\(dirPathSave.dropFirst()) \"\(ys)\" \"\(xs)\" \"\(qs)\" \(Double(WindowLowerX.stringValue)!) \(Double(WindowLowerY.stringValue)!) \(Double(WindowUpperX.stringValue)!) \(Double(WindowUpperY.stringValue)!) \(Int(ScatterPtDensity.stringValue)!) \(Double(CoulombConstant.stringValue)!)"
+        let args = "\(dirPathSave.dropFirst()) \"\(xs)\" \"\(ys)\" \"\(qs)\" \(Double(WindowLowerX.stringValue)!) \(Double(WindowLowerY.stringValue)!) \(Double(WindowUpperX.stringValue)!) \(Double(WindowUpperY.stringValue)!) \(Int(ScatterPtDensity.stringValue)!) \(Double(CoulombConstant.stringValue)!)"
         
         // DIR:file:///var/folders/dl/t48fygys3vzbbm381q1cx2c00000gn/T/
 
@@ -745,6 +747,232 @@ class CircuitSimViewController: NSViewController, WKUIDelegate,CWEventDelegate
         return output
     }
 }
+
+
+
+class EfieldViewController: NSViewController {
+
+    @IBAction func openGithub(sender: Any?)
+    {
+        let url = URL(string: "https://github.com/MDNich/SciTool")!
+        if NSWorkspace.shared.open(url) {
+            print("Browser Successfully opened")
+        }
+    }
+    
+    @IBOutlet weak var scrollViewHelp: NSScrollView!
+    
+    var imgIsReset: Bool = false
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        print("ok cool we're in business")
+        if let _ = scrollViewHelp {
+            print("ok cool we really are in business")
+            print(representedObject)
+        }
+        // Do any additional setup after loading the view.
+    }
+    @IBOutlet weak var img: NSImageView!
+    
+    @IBOutlet weak var ChargeXList_e: NSTextField!
+    
+    @IBOutlet weak var ChargeYList_e: NSTextField!
+    
+    @IBOutlet weak var ChargeQList_e: NSTextField!
+    
+    @IBOutlet weak var CoulombConstant_e: NSTextField!
+    
+    @IBOutlet weak var WindowLowerX_e: NSTextField!
+    
+    @IBOutlet weak var WindowUpperX_e: NSTextField!
+    
+    @IBOutlet weak var WindowLowerY_e: NSTextField!
+    
+    @IBOutlet weak var WindowUpperY_e: NSTextField!
+    
+    @IBOutlet weak var CounterNumber_e: NSTextField!
+    
+    @IBOutlet weak var ScatterPtDensity_e: NSTextField!
+    
+    @IBOutlet weak var DPI_e: NSTextField!
+    
+    @IBOutlet weak var ErrorLabel: NSTextField!
+    
+    //pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLBoundY,windowUBoundX,windowUBoundY,steps,countourprec
+    @IBOutlet weak var ProgressBar: NSProgressIndicator!
+    
+    @IBOutlet weak var savebutton: NSButton!
+    
+    
+    @IBOutlet weak var helpButton: NSButton!
+    
+    @IBOutlet weak var logscale: NSButton!
+    
+    
+    @IBOutlet weak var PythonNotIniti_textLabel: NSTextField!
+    
+    @IBOutlet weak var initPyButton: NSButtonCell!
+    
+    @IBOutlet weak var plotButton: NSButton!
+
+    
+    @IBAction func initPython(_ sender: Any) {
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "checker") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+        //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+    }
+    
+    var pythonpath: String = ""
+    
+    
+    @IBAction func saveImgAs(sender: Any?)
+    {
+        
+        let savePanel = NSSavePanel()
+        savePanel.allowedFileTypes = ["png"]
+        savePanel.canCreateDirectories = true
+        savePanel.isExtensionHidden = false
+        savePanel.title = "Save generated image"
+        savePanel.message = "Choose a folder and a name to store the image."
+        savePanel.prompt = "Save"
+        savePanel.nameFieldLabel = "File name:"
+        savePanel.nameFieldStringValue = "ElectricField"
+        guard let window = self.view.window else { return }
+        let response = savePanel.runModal()
+        guard response == .OK, let saveURL = savePanel.url else { return }
+        print("response: \(response)")
+        print("saveURL: \(saveURL)")
+        var dirPath = FileManager.default.temporaryDirectory.absoluteString
+        let img = img.image
+        print(img)
+        if ((img?.pngWrite(to: saveURL)) != nil) {
+                    print("File saved")
+                }
+               
+        
+    }
+    
+    
+    func doImgRender()
+    {
+        ErrorLabel.isHidden = true
+        var dirPath = FileManager.default.temporaryDirectory.absoluteString
+        print(dirPath)
+        dirPath.removeFirst(6)
+        do {
+            try runPythonCode(dirPathSave: dirPath) }
+        catch {
+            print("FAILED")
+            dirPath = Bundle.main.resourcePath!
+            img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
+            ErrorLabel.isHidden = false
+            savebutton.isEnabled = false
+        }
+        img.image = NSImage(contentsOfFile: "/tmp/resultEfield.png")
+        self.imgIsReset = false
+        savebutton.isEnabled = true
+
+    }
+    
+    @IBAction func exec(_ sender: Any) {
+        self.ProgressBar.doubleValue = 30
+        if(!imgIsReset) {
+            img.image = NSImage(named: "Empty")
+            self.imgIsReset = true
+            DispatchQueue.main.async {
+                self.doImgRender()
+                self.ProgressBar.doubleValue = 100
+            }
+            
+            return
+        }
+        else {
+            doImgRender()
+        }
+        
+    }
+    override var representedObject: Any? {
+        didSet {
+        // Update the view, if already loaded.
+        }
+    }
+    func convertStringToArr(str: String) -> Array<Int>
+    {
+        let tmp = str.split(separator: Character(","))
+        var tmp2 = Array<Int>()
+        for str in tmp {
+            tmp2.append(Int(str) ?? 0)
+        }
+        return tmp2
+        
+    }
+    
+    func runPythonCode(dirPathSave: String) throws {
+       // var mainBundle = resourcePath
+        let dirPath = Bundle.main.resourcePath!
+        print(dirPath)
+        let xs = convertStringToArr(str: ChargeXList_e.stringValue)
+        let ys = convertStringToArr(str: ChargeYList_e.stringValue)
+        let qs = convertStringToArr(str: ChargeQList_e.stringValue)
+        
+        let args = "/tmp/ \"\(xs)\" \"\(ys)\" \"\(qs)\" \(Double(WindowLowerX_e.stringValue)!) \(Double(WindowLowerY_e.stringValue)!) \(Double(WindowUpperX_e.stringValue)!) \(Double(WindowUpperY_e.stringValue)!) \(Int(ScatterPtDensity_e.stringValue)!)  \(Double(CoulombConstant_e.stringValue)!) \(Double(DPI_e.stringValue)!)"
+        
+        
+        
+        //let sys = Python.import("sys")
+        //sys.path.append(dirPath)
+        //print(sys.executable)
+        do {
+            print("trying mpl")
+            var pythonPath = ""
+            try pythonPath = String(DependenciesViewController.safeShellExt("type python3 | cut -c 12-").dropLast(1))
+            PythonLibrary.useLibrary(at: pythonPath)
+            var version = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("> \(version)")
+            if(version == "") {
+                print("Matplotlib is not installed.")
+                throw NSError()
+            }
+            var version2 = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("> \(version)")
+            if(version2 == "") {
+                print("Numpy is not installed.")
+                throw NSError()
+            }
+            print("success")
+        }
+        catch {
+            print("MPL/Numpy not found")
+            PythonNotIniti_textLabel.isHidden = false
+            initPyButton.controlView?.isHidden = false
+            initPyButton.isEnabled = true
+            plotButton.isEnabled = false
+            print("failed")
+            throw NSError()
+            return
+            
+        }
+        
+        print("running with args")
+        try? DependenciesViewController.safeShellExt("echo \"hi\" ; python3 \(dirPath)/efield.py \(args)")
+        print(args)
+        
+        
+        
+    
+    }
+
+
+}
+
+
+
 
 
 extension NSImage {
