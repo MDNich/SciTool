@@ -749,8 +749,206 @@ class CircuitSimViewController: NSViewController, WKUIDelegate,CWEventDelegate
 }
 
 
-
 class EfieldViewController: NSViewController {
+    
+    var pythonpath = ""
+    
+    @IBOutlet weak var chargeXlist: NSTextField!
+    
+    @IBOutlet weak var chargeYlist: NSTextField!
+
+    @IBOutlet weak var chargeQlist: NSTextField!
+
+    @IBOutlet weak var CoulombCtField: NSTextField!
+
+    @IBOutlet weak var LowerXboundField: NSTextField!
+
+    @IBOutlet weak var UpperXboundField: NSTextField!
+
+    @IBOutlet weak var LowerYboundField: NSTextField!
+
+    @IBOutlet weak var UpperYboundField: NSTextField!
+    
+    @IBOutlet weak var GridDensityField: NSTextField!
+
+    @IBOutlet weak var DPIfield: NSTextField!
+
+    @IBOutlet weak var pythonExecFailLabel: NSTextField!
+
+    @IBOutlet weak var pythonNotFoundLabel: NSTextField!
+
+    @IBOutlet weak var pythonInitializerButton: NSButton!
+    
+    @IBOutlet weak var saveImageButton: NSButton!
+    
+    @IBOutlet weak var img: NSImageView!
+    
+    @IBOutlet weak var ProgressBar: NSProgressIndicator!
+
+    @IBOutlet weak var pythonExecButton: NSButton!
+    
+    
+    @IBAction func initPython(_ sender: Any) {
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "checker") as! NSWindowController
+        //self.view.window?.contentView = windowController.window?.contentView
+        //self.view.window?.beginSheet(windowController.window!)
+        windowController.showWindow(self)
+    }
+    
+    var imgIsReset = false
+    
+    @IBAction func exec(_ sender: Any) {
+        self.ProgressBar.doubleValue = 30
+        if(!imgIsReset) {
+            img.image = NSImage(named: "Empty")
+            self.imgIsReset = true
+            DispatchQueue.main.async {
+                self.doImgRender()
+                self.ProgressBar.doubleValue = 100
+            }
+            
+            return
+        }
+        else {
+            doImgRender()
+        }
+        
+    }
+    
+    
+    func doImgRender()
+    {
+        pythonExecFailLabel.isHidden = true
+        var dirPath = FileManager.default.temporaryDirectory.absoluteString
+        print(dirPath)
+        dirPath.removeFirst(6)
+        do {
+            try runPythonCode(dirPathSave: dirPath) }
+        catch {
+            print("FAILED")
+            dirPath = Bundle.main.resourcePath!
+            img.image = NSImage(contentsOfFile: "\(dirPath)/blank.png")
+            pythonExecFailLabel.isHidden = false
+            saveImageButton.isEnabled = false
+        }
+        img.image = NSImage(contentsOfFile: "/tmp/resultEfield.png")
+        self.imgIsReset = false
+        saveImageButton.isEnabled = true
+
+    }
+    
+    func convertStringToArr(str: String) -> Array<Int>
+    {
+        let tmp = str.split(separator: Character(","))
+        var tmp2 = Array<Int>()
+        for str in tmp {
+            tmp2.append(Int(str) ?? 0)
+        }
+        return tmp2
+        
+    }
+    
+    func runPythonCode(dirPathSave: String) throws {
+       // var mainBundle = resourcePath
+        let dirPath = Bundle.main.resourcePath!
+        print(dirPath)
+        let xs = convertStringToArr(str: chargeXlist.stringValue)
+        let ys = convertStringToArr(str: chargeYlist.stringValue)
+        let qs = convertStringToArr(str: chargeQlist.stringValue)
+        
+        let args = "/tmp/ \"\(xs)\" \"\(ys)\" \"\(qs)\" \(Double(LowerXboundField.stringValue)!) \(Double(LowerYboundField.stringValue)!) \(Double(UpperXboundField.stringValue)!) \(Double(UpperYboundField.stringValue)!) \(Int(GridDensityField.stringValue)!)  \(Double(CoulombCtField.stringValue)!) \(Double(DPIfield.stringValue)!)"
+        
+        print("Ready with args \n$ python3 efield.py \(args)")
+        
+        
+        
+        //let sys = Python.import("sys")
+        //sys.path.append(dirPath)
+        //print(sys.executable)
+        do {
+            print("trying mpl")
+            var pythonPath = ""
+            try pythonPath = String(DependenciesViewController.safeShellExt("type python3 | cut -c 12-").dropLast(1))
+            var version = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep matplotlib | cut -c 17-")
+            print("> \(version)")
+            if(version == "") {
+                print("Matplotlib is not installed.")
+                throw NSError()
+            }
+            var version2 = try DependenciesViewController.safeShellExt("\(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("$ \(pythonPath) -m pip list --disable-pip-version-check | grep numpy | cut -c 17-")
+            print("> \(version)")
+            if(version2 == "") {
+                print("Numpy is not installed.")
+                throw NSError()
+            }
+            print("success")
+        }
+        catch {
+            print("MPL/Numpy not found")
+            pythonNotFoundLabel.isHidden = false
+            pythonInitializerButton.isHidden = false
+            pythonInitializerButton.isEnabled = true
+            pythonExecButton.isEnabled = false
+            print("failed")
+            throw NSError()
+        }
+        do {
+            print("running with args")
+            let pythonPath = try String(DependenciesViewController.safeShellExt("type python3 | cut -c 12-").dropLast(1))
+            print("\(pythonPath)  \(dirPath)/efield.py \(args)")
+            try DependenciesViewController.safeShellExt("echo \"ruinning program now\" && \(pythonPath)  \(dirPath)/efield.py \(args)")
+            print("finished")
+        }
+        catch {
+            print("tf bro")
+        }
+        
+        
+        
+        
+    
+    }
+    
+    
+    @IBAction func saveImgAs(sender: Any?)
+    {
+        
+        let savePanel = NSSavePanel()
+        savePanel.allowedFileTypes = ["png"]
+        savePanel.canCreateDirectories = true
+        savePanel.isExtensionHidden = false
+        savePanel.title = "Save generated image"
+        savePanel.message = "Choose a folder and a name to store the image."
+        savePanel.prompt = "Save"
+        savePanel.nameFieldLabel = "File name:"
+        savePanel.nameFieldStringValue = "ElectricField"
+        guard let window = self.view.window else { return }
+        let response = savePanel.runModal()
+        guard response == .OK, let saveURL = savePanel.url else { return }
+        print("response: \(response)")
+        print("saveURL: \(saveURL)")
+        var dirPath = FileManager.default.temporaryDirectory.absoluteString
+        let img = img.image
+        print(img)
+        if ((img?.pngWrite(to: saveURL)) != nil) {
+                    print("File saved")
+                }
+               
+        
+    }
+
+    
+    
+    
+}
+
+
+
+class EfieldViewController_OLD: NSViewController {
 
     @IBAction func openGithub(sender: Any?)
     {

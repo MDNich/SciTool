@@ -1,54 +1,92 @@
 
 /* Class = "NSTextFieldCell"; title = "Equipotential Lines Grapher"; ObjectID = "01f-Fi-JMZ"; */
-"01f-Fi-JMZ.title" = "Grapheur de Lignes Equipotentielles";
+"01f-Fi-JMZ.title" = "Desenator de Linii Echipotențiale";
 /* Class = "NSTextFieldCell"; title = "Window Lower Y Bound:"; ObjectID = "08k-cZ-UJD"; */
-"08k-cZ-UJD.title" = "Limite inf. Y:";
+"08k-cZ-UJD.title" = "Limita inf. Y:";
+/* Class = "NSWindow"; title = "Binary Star Systems"; ObjectID = "0G8-cv-Mu3"; */
+"0G8-cv-Mu3.title" = "Sisteme Binare de Stele";
 /* Class = "NSTextFieldCell"; title = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates."; ObjectID = "0GQ-Jb-8Rn"; */
 "0GQ-Jb-8Rn.title" = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates.";
-/* Class = "NSTextFieldCell"; placeholderString = "-5,1.1,-7.1"; ObjectID = "18D-li-id0"; */
-"18D-li-id0.placeholderString" = "-5,1.1,-7.1";
-/* Class = "NSTextFieldCell"; title = "-5,1.1,-7.1"; ObjectID = "18D-li-id0"; */
-"18D-li-id0.title" = "-5,1.1,-7.1";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "0hu-Ts-5cX"; */
+"0hu-Ts-5cX.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "Charges Y List:"; ObjectID = "0oW-L2-Mu2"; */
+"0oW-L2-Mu2.title" = "Coord. Y Sarcinilor:";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "0vH-3h-SBG"; */
+"0vH-3h-SBG.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSMenuItem"; title = "ly"; ObjectID = "0yn-vX-5pk"; */
+"0yn-vX-5pk.title" = "ly";
+/* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "18D-li-id0"; */
+"18D-li-id0.placeholderString" = "1,-1";
+/* Class = "NSTextFieldCell"; title = "1,-1"; ObjectID = "18D-li-id0"; */
+"18D-li-id0.title" = "1,-1";
+/* Class = "NSButtonCell"; title = "Continue..."; ObjectID = "19j-ti-Bj2"; */
+"19j-ti-Bj2.title" = "Continuă...";
 /* Class = "NSButtonCell"; title = "Download Python 3..."; ObjectID = "1FU-cn-5yO"; */
-"1FU-cn-5yO.title" = "Téléchargez Python 3...";
+"1FU-cn-5yO.title" = "Descărcați Python 3...";
+/* Class = "NSTextFieldCell"; title = "Coulomb Constant:"; ObjectID = "1Gj-bJ-PWp"; */
+"1Gj-bJ-PWp.title" = "Constanta Coulomb:";
 /* Class = "NSButtonCell"; title = "Open Github Repository for More Info"; ObjectID = "1Sv-Rz-r8o"; */
-"1Sv-Rz-r8o.title" = "Ouvrez le Répositoire Github pour plus d'Info.";
+"1Sv-Rz-r8o.title" = "Deschide Repozitoriul Github pentru mai multe info.";
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
 "1UK-8n-QPP.title" = "Customize Toolbar…";
 /* Class = "NSMenuItem"; title = "SciTool"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "SciTool";
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
-"1b7-l0-nxx.title" = "Chercher";
+"1b7-l0-nxx.title" = "Găsire";
+/* Class = "NSTextFieldCell"; title = "Grid Density:"; ObjectID = "1eq-Yr-ifT"; */
+"1eq-Yr-ifT.title" = "Densitatea Săjeților:";
+/* Class = "NSTextFieldCell"; title = "ERROR: Drawing Failed"; ObjectID = "1f9-cw-pYh"; */
+"1f9-cw-pYh.title" = "EROARE: Desenarea Eșuată";
 /* Class = "NSTextFieldCell"; title = "The third field requires an array of charge amounts of the form"; ObjectID = "1fd-Hf-BCX"; */
 "1fd-Hf-BCX.title" = "The third field requires an array of charge amounts of the form";
+/* Class = "NSTextFieldCell"; title = "ERROR: Please check your inputs!"; ObjectID = "1lk-OT-nHb"; */
+"1lk-OT-nHb.title" = "EROARE: Verificați valoarele !";
 /* Class = "NSMenuItem"; title = "Lower"; ObjectID = "1tx-W0-xDw"; */
 "1tx-W0-xDw.title" = "Lower";
 /* Class = "NSTextFieldCell"; title = "Q1,Q2,Q3..."; ObjectID = "21h-Qz-Gql"; */
 "21h-Qz-Gql.title" = "Q1,Q2,Q3...";
+/* Class = "NSMenuItem"; title = "°"; ObjectID = "2Ct-ck-Fdo"; */
+"2Ct-ck-Fdo.title" = "°";
 /* Class = "NSBox"; title = "Box"; ObjectID = "2dP-8z-Rrw"; */
 "2dP-8z-Rrw.title" = "Box";
+/* Class = "NSTextFieldCell"; title = "ERROR: Python Not Initialized"; ObjectID = "2e9-Zc-eAt"; */
+"2e9-Zc-eAt.title" = "EROARE: Python Ne-inițializat";
 /* Class = "NSMenuItem"; title = "Raise"; ObjectID = "2h7-ER-AoG"; */
 "2h7-ER-AoG.title" = "Raise";
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
-"2oI-Rn-ZJC.title" = "Transformations";
+"2oI-Rn-ZJC.title" = "Transformări";
 /* Class = "NSTextFieldCell"; title = "Graph Equipotential lines formed from specified charges"; ObjectID = "32N-BX-gWI"; */
 "32N-BX-gWI.title" = "Graph Equipotential lines formed from specified charges";
+/* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "32e-8l-fjO"; */
+"32e-8l-fjO.title" = "©  2022 MDNich";
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
 "3IN-sU-3Bg.title" = "Spelling";
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "3Om-Ey-2VK"; */
 "3Om-Ey-2VK.title" = "Use Default";
+/* Class = "NSTextFieldCell"; title = "0,0"; ObjectID = "3X5-AU-gmk"; */
+"3X5-AU-gmk.title" = "0,0";
+/* Class = "NSMenuItem"; title = "m"; ObjectID = "3hS-va-ibQ"; */
+"3hS-va-ibQ.title" = "m";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "3hV-WX-gq4"; */
+"3hV-WX-gq4.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSMenu"; title = "Speech"; ObjectID = "3rS-ZA-NoH"; */
 "3rS-ZA-NoH.title" = "Speech";
 /* Class = "NSTextFieldCell"; title = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. "; ObjectID = "42i-Wv-d1H"; */
 "42i-Wv-d1H.title" = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. ";
+/* Class = "NSMenuItem"; title = "grams"; ObjectID = "44E-B2-iTW"; */
+"44E-B2-iTW.title" = "grame";
 /* Class = "NSMenuItem"; title = "Tighten"; ObjectID = "46P-cB-AYj"; */
 "46P-cB-AYj.title" = "Tighten";
+/* Class = "NSTextFieldCell"; title = "Given:"; ObjectID = "4Bl-oO-J5C"; */
+"4Bl-oO-J5C.title" = "Dat:";
 /* Class = "NSMenuItem"; title = "Find"; ObjectID = "4EN-yA-p0u"; */
-"4EN-yA-p0u.title" = "Trouve";
+"4EN-yA-p0u.title" = "Găsire";
 /* Class = "NSTextFieldCell"; title = "3: Circuit Simulator"; ObjectID = "4IF-a9-dxM"; */
-"4IF-a9-dxM.title" = "3: Simulateur de Circuit";
+"4IF-a9-dxM.title" = "3: Simulator Circuit";
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
 "4J7-dP-txa.title" = "Enter Full Screen";
+/* Class = "NSButtonCell"; title = "Calculate!"; ObjectID = "4VK-t9-3n8"; */
+"4VK-t9-3n8.title" = "Calculează !";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "4k8-pr-d27"; */
 "4k8-pr-d27.title" = "200";
 /* Class = "NSMenuItem"; title = "Quit SciTool"; ObjectID = "4sb-4s-VLi"; */
@@ -57,82 +95,160 @@
 "5AP-8n-Nt3.label" = "View";
 /* Class = "NSTextFieldCell"; title = "X1,X2,X3..."; ObjectID = "5CM-fh-Fs8"; */
 "5CM-fh-Fs8.title" = "X1,X2,X3...";
+/* Class = "NSButtonCell"; title = "Save Image As..."; ObjectID = "5Fj-S0-hJB"; */
+"5Fj-S0-hJB.title" = "Save Image As...";
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "Edit";
 /* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
 "5Vv-lz-BsD.title" = "Copy Style";
+/* Class = "NSMenuItem"; title = "km"; ObjectID = "5k8-6F-2T5"; */
+"5k8-6F-2T5.title" = "km";
 /* Class = "NSMenuItem"; title = "About SciTool"; ObjectID = "5kV-Vb-QxS"; */
 "5kV-Vb-QxS.title" = "About SciTool";
+/* Class = "NSMenuItem"; title = "rad"; ObjectID = "5yB-uC-gjV"; */
+"5yB-uC-gjV.title" = "rad";
 /* Class = "NSTextFieldCell"; title = "4: Check for Package Plotly"; ObjectID = "6Ac-CI-AWP"; */
 "6Ac-CI-AWP.title" = "4: Check for Package Plotly";
+/* Class = "NSMenuItem"; title = "parallax (mas)"; ObjectID = "6Bm-Hv-1QV"; */
+"6Bm-Hv-1QV.title" = "parallax (mas)";
+/* Class = "NSTextFieldCell"; title = "25"; ObjectID = "6O3-wK-qbu"; */
+"6O3-wK-qbu.title" = "25";
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Redo";
 /* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "6fS-Nu-xP8"; */
 "6fS-Nu-xP8.title" = "©  2022 MDNich";
+/* Class = "NSTextFieldCell"; title = "DPI:"; ObjectID = "6lJ-pQ-P3U"; */
+"6lJ-pQ-P3U.title" = "DPI:";
+/* Class = "NSTextFieldCell"; placeholderString = "Na2(CO3) + CaCl2 -> Ca(CO3) + 2NaCl"; ObjectID = "6p1-0l-uvB"; */
+"6p1-0l-uvB.placeholderString" = "Na2(CO3) + CaCl2 -> Ca(CO3) + 2NaCl";
+/* Class = "NSTextFieldCell"; title = "ERROR: Please check your inputs!"; ObjectID = "6zZ-kQ-Cju"; */
+"6zZ-kQ-Cju.title" = "ERROR: Please check your inputs!";
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
 "78Y-hA-62v.title" = "Correct Spelling Automatically";
 /* Class = "NSTextFieldCell"; title = "See the full list of all SciTool's available Simulators and Calculators"; ObjectID = "79o-Lq-7az"; */
 "79o-Lq-7az.title" = "See the full list of all SciTool's available Simulators and Calculators";
+/* Class = "NSTextFieldCell"; title = "-1,1"; ObjectID = "7Cg-od-Jly"; */
+"7Cg-od-Jly.title" = "-1,1";
+/* Class = "NSTextFieldCell"; title = "Path:"; ObjectID = "7EN-xc-AQr"; */
+"7EN-xc-AQr.title" = "Path:";
+/* Class = "NSTextFieldCell"; title = "RR Lyrae Period/Luminosity Calculator"; ObjectID = "7Tj-u6-e5E"; */
+"7Tj-u6-e5E.title" = "RR Lyrae Period/Luminosity Calculator";
 /* Class = "NSButtonCell"; title = "Check Matplotlib Version"; ObjectID = "7l1-hL-39E"; */
 "7l1-hL-39E.title" = "Check Matplotlib Version";
+/* Class = "NSMenuItem"; title = "Magnitude (Abs)"; ObjectID = "7qr-Jd-pOb"; */
+"7qr-Jd-pOb.title" = "Magnitude (Abs)";
 /* Class = "NSTextFieldCell"; title = "The third field requires an array of charge amounts of the form"; ObjectID = "7uL-si-uaf"; */
 "7uL-si-uaf.title" = "The third field requires an array of charge amounts of the form";
 /* Class = "NSTextFieldCell"; title = "Coulomb Constant:"; ObjectID = "826-bn-cfc"; */
 "826-bn-cfc.title" = "Coulomb Constant:";
+/* Class = "NSMenuItem"; title = "Magnitude (App)"; ObjectID = "8CR-NX-4FH"; */
+"8CR-NX-4FH.title" = "Magnitude (App)";
+/* Class = "NSMenuItem"; title = "pc"; ObjectID = "8Db-HE-DmO"; */
+"8Db-HE-DmO.title" = "pc";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "8LU-qW-Tgp"; */
 "8LU-qW-Tgp.title" = "200";
+/* Class = "NSMenuItem"; title = "RR Lyrae Variable Calculator"; ObjectID = "8QL-6Q-s5R"; */
+"8QL-6Q-s5R.title" = "RR Lyrae Variable Calculator";
+/* Class = "NSWindow"; title = "Stoichiometry Solver"; ObjectID = "8UY-oK-cqv"; */
+"8UY-oK-cqv.title" = "Stoichiometry Solver";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "8bU-tj-Hlb"; */
 "8bU-tj-Hlb.title" = "Result: ";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "8gu-fC-oWO"; */
 "8gu-fC-oWO.title" = "Result: ";
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
 "8mr-sm-Yjd.title" = "Writing Direction";
-/* Class = "NSTextFieldCell"; placeholderString = "-5,1.1,-7.1"; ObjectID = "8q2-c9-R4D"; */
-"8q2-c9-R4D.placeholderString" = "-5,1.1,-7.1";
-/* Class = "NSTextFieldCell"; title = "-5,1.1,-7.1"; ObjectID = "8q2-c9-R4D"; */
-"8q2-c9-R4D.title" = "-5,1.1,-7.1";
+/* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "8q2-c9-R4D"; */
+"8q2-c9-R4D.placeholderString" = "1,-1";
+/* Class = "NSTextFieldCell"; title = "1,-1"; ObjectID = "8q2-c9-R4D"; */
+"8q2-c9-R4D.title" = "1,-1";
 /* Class = "NSTabViewItem"; label = "Tab"; ObjectID = "8zP-ZP-GwS"; */
 "8zP-ZP-GwS.label" = "Tab";
 /* Class = "NSToolbarItem"; label = "Collapse Sidebar"; ObjectID = "8zS-eB-8H2"; */
 "8zS-eB-8H2.label" = "Collapse Sidebar";
 /* Class = "NSToolbarItem"; paletteLabel = "Collapse Sidebar"; ObjectID = "8zS-eB-8H2"; */
 "8zS-eB-8H2.paletteLabel" = "Collapse Sidebar";
+/* Class = "NSButtonCell"; title = "Solve!"; ObjectID = "98H-yQ-vrR"; */
+"98H-yQ-vrR.title" = "Solve!";
+/* Class = "NSTextFieldCell"; title = "View Upper X Bound:"; ObjectID = "9M6-Yj-3PQ"; */
+"9M6-Yj-3PQ.title" = "View Upper X Bound:";
 /* Class = "NSTextFieldCell"; title = "Equipotential Lines Grapher"; ObjectID = "9N1-IW-RO1"; */
 "9N1-IW-RO1.title" = "Equipotential Lines Grapher";
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
 "9ic-FL-obx.title" = "Substitutions";
+/* Class = "NSWindow"; title = "Electric Field Plotter"; ObjectID = "9ou-FR-lGy"; */
+"9ou-FR-lGy.title" = "Electric Field Plotter";
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
 "9yt-4B-nSM.title" = "Smart Copy/Paste";
+/* Class = "NSTextFieldCell"; title = "45"; ObjectID = "A0d-XL-wo4"; */
+"A0d-XL-wo4.title" = "45";
+/* Class = "NSButtonCell"; title = "Open Github Repository for More Info"; ObjectID = "A9d-iB-U7g"; */
+"A9d-iB-U7g.title" = "Open Github Repository for More Info";
+/* Class = "NSTextFieldCell"; title = "Impact velocity:"; ObjectID = "AVy-gk-PWL"; */
+"AVy-gk-PWL.title" = "Impact velocity:";
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Main Menu";
+/* Class = "NSTextFieldCell"; title = "View Upper Y Bound:"; ObjectID = "Ab7-76-9wE"; */
+"Ab7-76-9wE.title" = "View Upper Y Bound:";
 /* Class = "NSWindow"; title = "Electric Potential 3D Grapher"; ObjectID = "Act-2m-uhJ"; */
 "Act-2m-uhJ.title" = "Electric Potential 3D Grapher";
+/* Class = "NSMenuItem"; title = "Stellar Properties Solver"; ObjectID = "Atu-VR-YoB"; */
+"Atu-VR-YoB.title" = "Stellar Properties Solver";
 /* Class = "NSTextFieldCell"; title = "Charges Q list (nC):"; ObjectID = "B55-OJ-NsQ"; */
 "B55-OJ-NsQ.title" = "Charges Q list (nC):";
 /* Class = "NSTextFieldCell"; title = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. "; ObjectID = "BGh-Mr-DVx"; */
 "BGh-Mr-DVx.title" = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. ";
 /* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
 "BOF-NM-1cW.title" = "Preferences…";
+/* Class = "NSMenuItem"; title = "Binary Star System Solver"; ObjectID = "BQc-c9-Iw4"; */
+"BQc-c9-Iw4.title" = "Binary Star System Solver";
 /* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "BgM-ve-c93"; */
 "BgM-ve-c93.title" = "	Left to Right";
+/* Class = "NSMenuItem"; title = "gradian"; ObjectID = "BjT-fO-NQo"; */
+"BjT-fO-NQo.title" = "gradian";
+/* Class = "NSTextFieldCell"; title = "Help for Stoichiometry Mass Solver"; ObjectID = "C56-gK-Evh"; */
+"C56-gK-Evh.title" = "Help for Stoichiometry Mass Solver";
+/* Class = "NSButtonCell"; title = "Calculate!"; ObjectID = "C8O-pG-luC"; */
+"C8O-pG-luC.title" = "Calculate!";
+/* Class = "NSTextFieldCell"; title = "________"; ObjectID = "CMF-02-KUR"; */
+"CMF-02-KUR.title" = "________";
+/* Class = "NSTextFieldCell"; title = "s"; ObjectID = "Cb9-tm-bJA"; */
+"Cb9-tm-bJA.title" = "s";
 /* Class = "NSButtonCell"; title = "Go Back"; ObjectID = "CkO-Pa-ErH"; */
 "CkO-Pa-ErH.title" = "Go Back";
+/* Class = "NSMenuItem"; title = "Luminosity (W)"; ObjectID = "Cq9-rF-BMa"; */
+"Cq9-rF-BMa.title" = "Luminosity (W)";
 /* Class = "NSWindow"; title = "SciTool"; ObjectID = "DCg-dJ-bQ3"; */
 "DCg-dJ-bQ3.title" = "SciTool";
+/* Class = "NSTextFieldCell"; title = "Charges Q List:"; ObjectID = "DEr-h4-O4d"; */
+"DEr-h4-O4d.title" = "Charges Q List:";
+/* Class = "NSTextFieldCell"; title = "Range:"; ObjectID = "DTk-IS-2Pc"; */
+"DTk-IS-2Pc.title" = "Range:";
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
 "DVo-aG-piG.title" = "Close";
 /* Class = "NSButtonCell"; title = "Install Plotly"; ObjectID = "Dal-eM-PtM"; */
 "Dal-eM-PtM.title" = "Install Plotly";
-/* Class = "NSTextFieldCell"; placeholderString = "1,4.5,-2.1"; ObjectID = "DbS-Pq-U9x"; */
-"DbS-Pq-U9x.placeholderString" = "1,4.5,-2.1";
-/* Class = "NSTextFieldCell"; title = "1,4.5,-2.1"; ObjectID = "DbS-Pq-U9x"; */
-"DbS-Pq-U9x.title" = "1,4.5,-2.1";
+/* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "DbS-Pq-U9x"; */
+"DbS-Pq-U9x.placeholderString" = "1,-1";
+/* Class = "NSTextFieldCell"; title = "1,-1"; ObjectID = "DbS-Pq-U9x"; */
+"DbS-Pq-U9x.title" = "1,-1";
 /* Class = "NSTextFieldCell"; title = "Charges X list:"; ObjectID = "Dbx-Uk-CuL"; */
 "Dbx-Uk-CuL.title" = "Charges X list:";
+/* Class = "NSTextFieldCell"; title = "Electric Field Plotter"; ObjectID = "Dod-aB-ygl"; */
+"Dod-aB-ygl.title" = "Electric Field Plotter";
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
 "Dv1-io-Yv7.title" = "Spelling and Grammar";
+/* Class = "NSMenuItem"; title = "ly"; ObjectID = "E7y-VR-l2C"; */
+"E7y-VR-l2C.title" = "ly";
+/* Class = "NSTextFieldCell"; title = "200"; ObjectID = "EA6-a5-gDE"; */
+"EA6-a5-gDE.title" = "200";
 /* Class = "NSButtonCell"; title = "Check Python Version"; ObjectID = "EAx-g2-nWa"; */
 "EAx-g2-nWa.title" = "Check Python Version";
+/* Class = "NSTextFieldCell"; title = "Mag/Lum:"; ObjectID = "EH2-9w-4XV"; */
+"EH2-9w-4XV.title" = "Mag/Lum:";
+/* Class = "NSTextFieldCell"; title = "Projectile Motion Calculator"; ObjectID = "EZP-0j-Rpw"; */
+"EZP-0j-Rpw.title" = "Projectile Motion Calculator";
+/* Class = "NSMenuItem"; title = "m/s"; ObjectID = "EmW-Iz-S8Y"; */
+"EmW-Iz-S8Y.title" = "m/s";
 /* Class = "NSTabViewItem"; label = "TwoFingerTap"; ObjectID = "Ewt-kq-qf6"; */
 "Ewt-kq-qf6.label" = "TwoFingerTap";
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
@@ -141,18 +257,24 @@
 "FKE-Sm-Kum.title" = "SciTool Help";
 /* Class = "NSTextFieldCell"; title = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. "; ObjectID = "FLV-LC-vUA"; */
 "FLV-LC-vUA.title" = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. ";
+/* Class = "NSTabViewItem"; label = "View"; ObjectID = "FPg-ZJ-4eh"; */
+"FPg-ZJ-4eh.label" = "View";
 /* Class = "NSButtonCell"; title = "Install Numpy"; ObjectID = "FRM-Nv-DXb"; */
 "FRM-Nv-DXb.title" = "Install Numpy";
 /* Class = "NSTextFieldCell"; placeholderString = "9E9"; ObjectID = "FUo-cm-MG5"; */
 "FUo-cm-MG5.placeholderString" = "9E9";
 /* Class = "NSTextFieldCell"; title = "9E9"; ObjectID = "FUo-cm-MG5"; */
 "FUo-cm-MG5.title" = "9E9";
+/* Class = "NSTextFieldCell"; title = "5: Check for Package Pandas"; ObjectID = "FYl-9q-Ajl"; */
+"FYl-9q-Ajl.title" = "5: Check for Package Pandas";
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "Fal-I4-PZk"; */
 "Fal-I4-PZk.title" = "Text";
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
 "FeM-D8-WVr.title" = "Substitutions";
 /* Class = "NSTextFieldCell"; title = "Scatter Points Per Axis:"; ObjectID = "Foi-XM-cB5"; */
 "Foi-XM-cB5.title" = "Scatter Points Per Axis:";
+/* Class = "NSTextFieldCell"; title = "Known units:"; ObjectID = "FsH-I5-j3y"; */
+"FsH-I5-j3y.title" = "Known units:";
 /* Class = "NSTextFieldCell"; title = "Number of Countours:"; ObjectID = "G09-Zz-zQC"; */
 "G09-Zz-zQC.title" = "Number of Countours:";
 /* Class = "NSTextFieldCell"; title = "Electric Potential 3D Grapher"; ObjectID = "G7L-yk-Bvc"; */
@@ -161,12 +283,16 @@
 "GB9-OM-e27.title" = "Bold";
 /* Class = "NSMenu"; title = "Format"; ObjectID = "GEO-Iw-cKr"; */
 "GEO-Iw-cKr.title" = "Format";
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "GRZ-D5-7Ma"; */
+"GRZ-D5-7Ma.title" = "0";
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "GUa-eO-cwY"; */
 "GUa-eO-cwY.title" = "Use Default";
 /* Class = "NSMenuItem"; title = "Font"; ObjectID = "Gi5-1S-RQB"; */
 "Gi5-1S-RQB.title" = "Font";
 /* Class = "NSWindow"; title = "Help"; ObjectID = "Gja-Bg-r7T"; */
 "Gja-Bg-r7T.title" = "Help";
+/* Class = "NSTextFieldCell"; title = "Initial velocity:"; ObjectID = "GoB-Xa-TvL"; */
+"GoB-Xa-TvL.title" = "Initial velocity:";
 /* Class = "NSTextFieldCell"; title = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. "; ObjectID = "Gqi-3l-xG4"; */
 "Gqi-3l-xG4.title" = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. ";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "H0Y-df-jKE"; */
@@ -179,16 +305,26 @@
 "HFQ-gK-NFA.title" = "Text Replacement";
 /* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "HFo-cy-zxI"; */
 "HFo-cy-zxI.title" = "Show Spelling and Grammar";
+/* Class = "NSTextFieldCell"; title = "Impact velocity:"; ObjectID = "HKZ-7X-fla"; */
+"HKZ-7X-fla.title" = "Impact velocity:";
 /* Class = "NSTextFieldCell"; title = "All Packages Installed! Click Finish to choose a calculator to run."; ObjectID = "HWM-QI-KmO"; */
 "HWM-QI-KmO.title" = "All Packages Installed! Click Finish to choose a calculator to run.";
 /* Class = "NSTextFieldCell"; title = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. "; ObjectID = "HZR-Rp-xxP"; */
 "HZR-Rp-xxP.title" = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. ";
+/* Class = "NSMenuItem"; title = "day"; ObjectID = "HhC-rk-2tS"; */
+"HhC-rk-2tS.title" = "day";
+/* Class = "NSButtonCell"; title = "Use different Python install..."; ObjectID = "Hid-y9-edu"; */
+"Hid-y9-edu.title" = "Use different Python install...";
 /* Class = "NSButtonCell"; title = "Draw 2D Equipotential Lines"; ObjectID = "HpL-b1-f9m"; */
 "HpL-b1-f9m.title" = "Draw 2D Equipotential Lines";
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "View";
+/* Class = "NSTextFieldCell"; title = "45"; ObjectID = "Hye-Qu-3cr"; */
+"Hye-Qu-3cr.title" = "45";
 /* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
 "I0S-gh-46l.title" = "Subscript";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "IDe-pn-1K1"; */
+"IDe-pn-1K1.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail."; ObjectID = "IQp-IN-np4"; */
 "IQp-IN-np4.title" = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail.";
 /* Class = "NSWindow"; title = "Equipotential Lines Grapher"; ObjectID = "IQv-IB-iLA"; */
@@ -205,6 +341,8 @@
 "J7i-Ax-gg0.label" = "View";
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "J7y-lM-qPV"; */
 "J7y-lM-qPV.title" = "Use None";
+/* Class = "NSButtonCell"; title = "Initialize Python..."; ObjectID = "JDH-QH-qhb"; */
+"JDH-QH-qhb.title" = "Initialize Python...";
 /* Class = "NSMenuItem"; title = "Check for dependencies"; ObjectID = "JGC-RK-tso"; */
 "JGC-RK-tso.title" = "Check for dependencies";
 /* Class = "NSTextFieldCell"; title = "Window Upper X Bound:"; ObjectID = "JLk-5m-qK3"; */
@@ -213,6 +351,8 @@
 "JOe-KA-8r8.title" = "List of SciTools";
 /* Class = "NSTextFieldCell"; title = "Check for Dependencies (Recommended)"; ObjectID = "JXI-nh-Gdz"; */
 "JXI-nh-Gdz.title" = "Check for Dependencies (Recommended)";
+/* Class = "NSButtonCell"; title = "Initialize Python..."; ObjectID = "Jcf-20-xQe"; */
+"Jcf-20-xQe.title" = "Initialize Python...";
 /* Class = "NSTextFieldCell"; title = "3: Check for Package Numpy"; ObjectID = "Jit-BA-83L"; */
 "Jit-BA-83L.title" = "3: Check for Package Numpy";
 /* Class = "NSTextFieldCell"; title = "Placeholder1"; ObjectID = "K7P-BQ-fDj"; */
@@ -221,36 +361,64 @@
 "KU6-fh-GIS.title" = "The number of contours is a parameter that indirectly specifies the potential difference between each line.";
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
+/* Class = "NSTextFieldCell"; title = "Luminosity and Magnitude Calculator"; ObjectID = "Kd5-V2-rmb"; */
+"Kd5-V2-rmb.title" = "Luminosity and Magnitude Calculator";
+/* Class = "NSTextFieldCell"; title = "Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol, mL/ml, L/l):"; ObjectID = "Kkc-GY-mhM"; */
+"Kkc-GY-mhM.title" = "Amounts of products/reactants, separated by commas (use ? to denote what to solve for), add units after a number (g, mg, mol, mL/ml, L/l):";
 /* Class = "NSTextFieldCell"; title = "Window Upper Y Bound:"; ObjectID = "L04-FA-NGI"; */
 "L04-FA-NGI.title" = "Window Upper Y Bound:";
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
 "LE2-aR-0XJ.title" = "Bring All to Front";
+/* Class = "NSTextFieldCell"; title = "Total time spent:"; ObjectID = "LRc-8f-ds9"; */
+"LRc-8f-ds9.title" = "Total time spent:";
 /* Class = "NSTextFieldCell"; title = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. "; ObjectID = "LTv-y2-ZIg"; */
 "LTv-y2-ZIg.title" = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. ";
+/* Class = "NSMenuItem"; title = "cm"; ObjectID = "LUl-zd-9WY"; */
+"LUl-zd-9WY.title" = "cm";
 /* Class = "NSMenuItem"; title = "Paste Ruler"; ObjectID = "LVM-kO-fVI"; */
 "LVM-kO-fVI.title" = "Paste Ruler";
 /* Class = "NSTextFieldCell"; title = "View Other Simulators/Calculators"; ObjectID = "LZz-i5-Yz1"; */
 "LZz-i5-Yz1.title" = "View Other Simulators/Calculators";
 /* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "Lbh-J2-qVU"; */
 "Lbh-J2-qVU.title" = "	Left to Right";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "LiF-yX-3qE"; */
+"LiF-yX-3qE.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "Equation:"; ObjectID = "Lk8-kj-Lra"; */
+"Lk8-kj-Lra.title" = "Equation:";
 /* Class = "NSButtonCell"; title = "Install Matplotlib"; ObjectID = "Lq2-IL-XBK"; */
 "Lq2-IL-XBK.title" = "Install Matplotlib";
 /* Class = "NSTextFieldCell"; title = "Help for Equipotential Lines Grapher"; ObjectID = "M0t-Aj-g5y"; */
 "M0t-Aj-g5y.title" = "Help for Equipotential Lines Grapher";
+/* Class = "NSWindow"; title = "Projectile Motion Calculator"; ObjectID = "M4s-Dy-u9U"; */
+"M4s-Dy-u9U.title" = "Projectile Motion Calculator";
+/* Class = "NSTextFieldCell"; title = "m/s"; ObjectID = "M5e-hD-VSR"; */
+"M5e-hD-VSR.title" = "m/s";
+/* Class = "NSButtonCell"; title = "Calculate!"; ObjectID = "MA2-XZ-4Om"; */
+"MA2-XZ-4Om.title" = "Calculate!";
 /* Class = "NSTextFieldCell"; title = "Y1,Y2,Y3..."; ObjectID = "MB1-ys-29l"; */
 "MB1-ys-29l.title" = "Y1,Y2,Y3...";
 /* Class = "NSMenuItem"; title = "Copy Ruler"; ObjectID = "MkV-Pr-PK5"; */
 "MkV-Pr-PK5.title" = "Copy Ruler";
+/* Class = "NSButtonCell"; title = "Initialize Python..."; ObjectID = "Mkb-9Z-SnL"; */
+"Mkb-9Z-SnL.title" = "Initialize Python...";
+/* Class = "NSTextFieldCell"; title = "Height delta:"; ObjectID = "Mzn-c7-TpZ"; */
+"Mzn-c7-TpZ.title" = "Height delta:";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "N1f-0W-T2Z"; */
 "N1f-0W-T2Z.title" = "Result: ";
+/* Class = "NSTextFieldCell"; title = "Brightness:"; ObjectID = "NBx-sX-j3R"; */
+"NBx-sX-j3R.title" = "Brightness:";
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "Services";
+/* Class = "NSButtonCell"; title = "Main Sequence?"; ObjectID = "Nek-uE-o43"; */
+"Nek-uE-o43.title" = "Main Sequence?";
 /* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "Nop-cj-93Q"; */
 "Nop-cj-93Q.title" = "	Default";
 /* Class = "NSTextFieldCell"; title = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates."; ObjectID = "Ntq-9x-XVP"; */
 "Ntq-9x-XVP.title" = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates.";
 /* Class = "NSTextFieldCell"; title = "Charges Y list:"; ObjectID = "O37-1j-2nE"; */
 "O37-1j-2nE.title" = "Charges Y list:";
+/* Class = "NSTextFieldCell"; title = "8: RR Lyrae Variable Calculator"; ObjectID = "OCh-QU-Cz9"; */
+"OCh-QU-Cz9.title" = "8: RR Lyrae Variable Calculator";
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
 "OY7-WF-poV.title" = "Minimize";
 /* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
@@ -261,12 +429,16 @@
 "Ojy-Ig-Jh5.title" = "The second field requires an array of Y coordinates for the charges, of the (same) form";
 /* Class = "NSMenuItem"; title = "Hide SciTool"; ObjectID = "Olw-nP-bQN"; */
 "Olw-nP-bQN.title" = "Hide SciTool";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "Olx-I4-Ld7"; */
+"Olx-I4-Ld7.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSButtonCell"; title = "Check Numpy Version"; ObjectID = "Oot-il-Snh"; */
 "Oot-il-Snh.title" = "Check Numpy Version";
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "Find Previous";
 /* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
 "Oyz-dy-DGm.title" = "Stop Speaking";
+/* Class = "NSTextFieldCell"; title = "View Lower X Bound:"; ObjectID = "P6i-bJ-OOa"; */
+"P6i-bJ-OOa.title" = "View Lower X Bound:";
 /* Class = "NSTextFieldCell"; title = "The number of contours is a parameter that indirectly specifies the potential difference between each line."; ObjectID = "PVY-5H-8kJ"; */
 "PVY-5H-8kJ.title" = "The number of contours is a parameter that indirectly specifies the potential difference between each line.";
 /* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "PXQ-H6-EFc"; */
@@ -277,18 +449,26 @@
 "Q2I-4c-on9.title" = "Placeholder2";
 /* Class = "NSMenuItem"; title = "Show Fonts"; ObjectID = "Q5e-8K-NDq"; */
 "Q5e-8K-NDq.title" = "Show Fonts";
+/* Class = "NSMenuItem"; title = "Magnitude (App)"; ObjectID = "QUb-1b-b0J"; */
+"QUb-1b-b0J.title" = "Magnitude (App)";
 /* Class = "NSTextFieldCell"; title = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail."; ObjectID = "Qaw-bp-dRi"; */
 "Qaw-bp-dRi.title" = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail.";
 /* Class = "NSTextFieldCell"; title = "Window Lower X Bound:"; ObjectID = "QfM-93-2r1"; */
 "QfM-93-2r1.title" = "Window Lower X Bound:";
+/* Class = "NSButtonCell"; title = "Calculate Period"; ObjectID = "QpQ-7Y-0dU"; */
+"QpQ-7Y-0dU.title" = "Calculate Period";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "Qu2-wh-yhS"; */
+"Qu2-wh-yhS.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "1: Equipotential Lines Grapher"; ObjectID = "R4f-5A-tYz"; */
 "R4f-5A-tYz.title" = "1: Equipotential Lines Grapher";
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
 "RB4-Sm-HuC.title" = "	Right to Left";
-/* Class = "NSTextFieldCell"; title = "Version 1.0 Beta"; ObjectID = "RB9-ae-Isv"; */
-"RB9-ae-Isv.title" = "Version 1.0 Beta";
+/* Class = "NSTextFieldCell"; title = "Version 1.0 (Beta 5)"; ObjectID = "RB9-ae-Isv"; */
+"RB9-ae-Isv.title" = "Version 1.0 (Beta 5)";
+/* Class = "NSButtonCell"; title = "Calculate!"; ObjectID = "RGS-Yr-0Ss"; */
+"RGS-Yr-0Ss.title" = "Calculate!";
 /* Class = "NSTextFieldCell"; title = "Window Upper X Bound:"; ObjectID = "RK1-dh-4lH"; */
 "RK1-dh-4lH.title" = "Window Upper X Bound:";
 /* Class = "NSMenuItem"; title = "Superscript"; ObjectID = "Rqc-34-cIF"; */
@@ -299,12 +479,24 @@
 "S0p-oC-mLd.title" = "Jump to Selection";
 /* Class = "NSTextFieldCell"; title = "(Internet Required)"; ObjectID = "S3B-cI-QmU"; */
 "S3B-cI-QmU.title" = "(Internet Required)";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "S8P-qC-p7N"; */
+"S8P-qC-p7N.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSButtonCell"; title = "Open Github Repository for More Info"; ObjectID = "SDg-39-9qZ"; */
 "SDg-39-9qZ.title" = "Open Github Repository for More Info";
 /* Class = "NSTextFieldCell"; title = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail."; ObjectID = "SdI-bv-nZT"; */
 "SdI-bv-nZT.title" = "Note that the length of the three aforementioned arrays must be the same, or  the grapher will fail.";
+/* Class = "NSMenuItem"; title = "pc"; ObjectID = "Sk2-A7-x9M"; */
+"Sk2-A7-x9M.title" = "pc";
+/* Class = "NSWindow"; title = "Help for Stoichiometry React"; ObjectID = "Su5-gY-PZR"; */
+"Su5-gY-PZR.title" = "Help for Stoichiometry React";
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "SxD-ha-Hy6"; */
+"SxD-ha-Hy6.title" = "10";
 /* Class = "NSTextFieldCell"; title = "Nothing"; ObjectID = "Syy-J0-iHd"; */
 "Syy-J0-iHd.title" = "Nothing";
+/* Class = "NSMenuItem"; title = "parallax (mas)"; ObjectID = "T1e-89-QQr"; */
+"T1e-89-QQr.title" = "parallax (mas)";
+/* Class = "NSWindow"; title = "Luminosity and Magnitude"; ObjectID = "TQx-fc-9UY"; */
+"TQx-fc-9UY.title" = "Luminosity and Magnitude";
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
 "Td7-aD-5lo.title" = "Window";
 /* Class = "NSTextFieldCell"; title = "Number of Countours:"; ObjectID = "TvH-gk-2M9"; */
@@ -313,6 +505,16 @@
 "U6z-EP-oLU.title" = "Show Splash Welcome Window";
 /* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "UEZ-Bs-lqG"; */
 "UEZ-Bs-lqG.title" = "Capitalize";
+/* Class = "NSTextFieldCell"; title = "0"; ObjectID = "UQ4-x8-ewt"; */
+"UQ4-x8-ewt.title" = "0";
+/* Class = "NSTextFieldCell"; title = "Period:"; ObjectID = "UQd-1H-Qp8"; */
+"UQd-1H-Qp8.title" = "Period:";
+/* Class = "NSTextFieldCell"; title = "ERROR: Python Not Initialized"; ObjectID = "UWE-sE-R9N"; */
+"UWE-sE-R9N.title" = "ERROR: Python Not Initialized";
+/* Class = "NSTextFieldCell"; title = "5: Stoichiometry Mass Calculator"; ObjectID = "Uf0-dd-nAc"; */
+"Uf0-dd-nAc.title" = "5: Stoichiometry Mass Calculator";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "UkY-le-OYn"; */
+"UkY-le-OYn.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "VCt-5C-J2b"; */
 "VCt-5C-J2b.title" = "Text Cell";
 /* Class = "NSMenuItem"; title = "Center"; ObjectID = "VIY-Ag-zcb"; */
@@ -327,28 +529,52 @@
 "Vjx-xi-njq.title" = "Italic";
 /* Class = "NSTextFieldCell"; title = "V "; ObjectID = "Vkg-gN-wfn"; */
 "Vkg-gN-wfn.title" = "V ";
+/* Class = "NSButtonCell"; title = "React!"; ObjectID = "W0b-DQ-vlt"; */
+"W0b-DQ-vlt.title" = "React!";
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
 "W48-6f-4Dl.title" = "Edit";
 /* Class = "NSMenuItem"; title = "New"; ObjectID = "W7L-1i-0rw"; */
 "W7L-1i-0rw.title" = "New";
+/* Class = "NSTextFieldCell"; title = "Loading..."; ObjectID = "WDr-Zv-nMt"; */
+"WDr-Zv-nMt.title" = "Loading...";
+/* Class = "NSTextFieldCell"; title = "Max height:"; ObjectID = "WDz-Zz-40J"; */
+"WDz-Zz-40J.title" = "Max height:";
 /* Class = "NSTextFieldCell"; title = "Check that Python 3 and all packages required are installed"; ObjectID = "WOp-tg-egs"; */
 "WOp-tg-egs.title" = "Check that Python 3 and all packages required are installed";
 /* Class = "NSTextFieldCell"; title = "2: 3D Potential Graph"; ObjectID = "WR3-EV-IZp"; */
 "WR3-EV-IZp.title" = "2: 3D Potential Graph";
 /* Class = "NSMenuItem"; title = "Underline"; ObjectID = "WRG-CD-K1S"; */
 "WRG-CD-K1S.title" = "Underline";
+/* Class = "NSMenuItem"; title = "Magnitude (Abs)"; ObjectID = "WVI-oq-smd"; */
+"WVI-oq-smd.title" = "Magnitude (Abs)";
 /* Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "WeT-3V-zwk"; */
 "WeT-3V-zwk.title" = "Paste and Match Style";
+/* Class = "NSTextFieldCell"; title = "4: Stoichiometry Reaction Calculator"; ObjectID = "Whv-wS-qRe"; */
+"Whv-wS-qRe.title" = "4: Stoichiometry Reaction Calculator";
+/* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "Wxt-49-Csm"; */
+"Wxt-49-Csm.title" = "©  2022 MDNich";
+/* Class = "NSButtonCell"; title = "Run Animation"; ObjectID = "X2F-mN-kRs"; */
+"X2F-mN-kRs.title" = "Run Animation";
+/* Class = "NSMenuItem"; title = "yr"; ObjectID = "XQt-T2-2qK"; */
+"XQt-T2-2qK.title" = "yr";
+/* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "XVf-Ux-QW5"; */
+"XVf-Ux-QW5.title" = "Result: ";
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
 "Xz5-n4-O0W.title" = "Find…";
 /* Class = "NSTextFieldCell"; title = "The second field requires an array of Y coordinates for the charges, of the (same) form"; ObjectID = "Y34-15-4J4"; */
 "Y34-15-4J4.title" = "The second field requires an array of Y coordinates for the charges, of the (same) form";
+/* Class = "NSMenuItem"; title = "Reactants"; ObjectID = "YAe-6F-RQe"; */
+"YAe-6F-RQe.title" = "Reactants";
 /* Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "YEy-JH-Tfz"; */
 "YEy-JH-Tfz.title" = "Find and Replace…";
 /* Class = "NSButtonCell"; title = "Save 3D Plot As..."; ObjectID = "YFD-5R-ICv"; */
 "YFD-5R-ICv.title" = "Save 3D Plot As...";
 /* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "YGs-j5-SAR"; */
 "YGs-j5-SAR.title" = "	Default";
+/* Class = "NSMenuItem"; title = "Luminosity (Lsun)"; ObjectID = "YRG-oz-5fH"; */
+"YRG-oz-5fH.title" = "Luminosity (Lsun)";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "YTu-m7-6a7"; */
+"YTu-m7-6a7.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTabViewItem"; label = "View"; ObjectID = "YZp-NW-amQ"; */
 "YZp-NW-amQ.label" = "View";
 /* Class = "NSTextFieldCell"; title = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates."; ObjectID = "Yhi-Ic-Hre"; */
@@ -357,18 +583,28 @@
 "Ym4-Wv-aW1.title" = "Window Upper Y Bound:";
 /* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Ynk-f8-cLZ"; */
 "Ynk-f8-cLZ.title" = "Start Speaking";
+/* Class = "NSMenuItem"; title = "gradian"; ObjectID = "YsD-UA-PAH"; */
+"YsD-UA-PAH.title" = "gradian";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "Z0S-iL-vaL"; */
+"Z0S-iL-vaL.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; placeholderString = "9E9"; ObjectID = "Z72-Gm-Jrl"; */
 "Z72-Gm-Jrl.placeholderString" = "9E9";
 /* Class = "NSTextFieldCell"; title = "9E9"; ObjectID = "Z72-Gm-Jrl"; */
 "Z72-Gm-Jrl.title" = "9E9";
 /* Class = "NSMenuItem"; title = "Align Left"; ObjectID = "ZM1-6Q-yy1"; */
 "ZM1-6Q-yy1.title" = "Align Left";
+/* Class = "NSButtonCell"; title = "Draw Electric Field"; ObjectID = "ZlH-gA-Uzn"; */
+"ZlH-gA-Uzn.title" = "Draw Electric Field";
 /* Class = "NSTextFieldCell"; title = "X1,X2,X3..."; ObjectID = "Zoe-V9-Oea"; */
 "Zoe-V9-Oea.title" = "X1,X2,X3...";
 /* Class = "NSMenuItem"; title = "Paragraph"; ObjectID = "ZvO-Gk-QUH"; */
 "ZvO-Gk-QUH.title" = "Paragraph";
+/* Class = "NSMenuItem"; title = "Stoichiometry Mass Solver"; ObjectID = "aM8-7b-sYl"; */
+"aM8-7b-sYl.title" = "Stoichiometry Mass Solver";
 /* Class = "NSWindow"; title = "Install Dependencies"; ObjectID = "aNt-uh-D3H"; */
 "aNt-uh-D3H.title" = "Install Dependencies";
+/* Class = "NSTextFieldCell"; title = "Separation:"; ObjectID = "aPz-bc-bKJ"; */
+"aPz-bc-bKJ.title" = "Separation:";
 /* Class = "NSMenuItem"; title = "Print…"; ObjectID = "aTl-1u-JFS"; */
 "aTl-1u-JFS.title" = "Print…";
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
@@ -377,26 +613,48 @@
 "aXa-aM-Jaq.title" = "Font";
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "agt-UL-0e3"; */
 "agt-UL-0e3.title" = "Use Default";
-/* Class = "NSTextFieldCell"; placeholderString = "1,-2,3"; ObjectID = "bK7-cc-XEq"; */
-"bK7-cc-XEq.placeholderString" = "1,-2,3";
-/* Class = "NSTextFieldCell"; title = "1,-2,3"; ObjectID = "bK7-cc-XEq"; */
-"bK7-cc-XEq.title" = "1,-2,3";
+/* Class = "NSWindow"; title = "RR Lyrae Calculator"; ObjectID = "ajK-Jh-S3e"; */
+"ajK-Jh-S3e.title" = "RR Lyrae Calculator";
+/* Class = "NSTextFieldCell"; title = "Result:"; ObjectID = "bC9-rp-0TO"; */
+"bC9-rp-0TO.title" = "Result:";
+/* Class = "NSTextFieldCell"; placeholderString = "2,-2"; ObjectID = "bK7-cc-XEq"; */
+"bK7-cc-XEq.placeholderString" = "2,-2";
+/* Class = "NSTextFieldCell"; title = "2,-2"; ObjectID = "bK7-cc-XEq"; */
+"bK7-cc-XEq.title" = "2,-2";
+/* Class = "NSMenuItem"; title = "rad"; ObjectID = "bWU-Wk-wfi"; */
+"bWU-Wk-wfi.title" = "rad";
 /* Class = "NSMenuItem"; title = "Show Colors"; ObjectID = "bgn-CT-cEk"; */
 "bgn-CT-cEk.title" = "Show Colors";
 /* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
 "bib-Uj-vzu.title" = "File";
 /* Class = "NSTextFieldCell"; title = "Use the \"Draw 2D Equipotential Lines\" button to calculate and draw the position of the lines on the image well to the right."; ObjectID = "bk2-xK-ZMd"; */
 "bk2-xK-ZMd.title" = "Use the \"Draw 2D Equipotential Lines\" button to calculate and draw the position of the lines on the image well to the right.";
+/* Class = "NSTextFieldCell"; title = "Initial angle:"; ObjectID = "bpU-8i-Du9"; */
+"bpU-8i-Du9.title" = "Initial angle:";
+/* Class = "NSMenuItem"; title = "sec"; ObjectID = "bqz-c7-aDB"; */
+"bqz-c7-aDB.title" = "sec";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "bs3-uI-Ikj"; */
+"bs3-uI-Ikj.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "buJ-ug-pKt"; */
 "buJ-ug-pKt.title" = "Use Selection for Find";
 /* Class = "NSWindow"; title = "Circuit Simulator"; ObjectID = "byG-d6-0NY"; */
 "byG-d6-0NY.title" = "Circuit Simulator";
+/* Class = "NSTextFieldCell"; title = "s"; ObjectID = "c2A-Mx-myB"; */
+"c2A-Mx-myB.title" = "s";
+/* Class = "NSMenuItem"; title = "km"; ObjectID = "c2I-Vt-yHp"; */
+"c2I-Vt-yHp.title" = "km";
+/* Class = "NSMenuItem"; title = "Products"; ObjectID = "c4R-1r-ryH"; */
+"c4R-1r-ryH.title" = "Products";
 /* Class = "NSMenu"; title = "Transformations"; ObjectID = "c8a-y6-VQd"; */
 "c8a-y6-VQd.title" = "Transformations";
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "cDB-IK-hbR"; */
 "cDB-IK-hbR.title" = "Use None";
 /* Class = "NSButtonCell"; title = "Suffer"; ObjectID = "cFC-bL-AFx"; */
 "cFC-bL-AFx.title" = "Suffer";
+/* Class = "NSTextFieldCell"; title = "Projectile Motion Calculator"; ObjectID = "cNw-aL-Hel"; */
+"cNw-aL-Hel.title" = "Projectile Motion Calculator";
+/* Class = "NSTextFieldCell"; title = "Amount of compound:"; ObjectID = "cOJ-hH-g5x"; */
+"cOJ-hH-g5x.title" = "Amount of compound:";
 /* Class = "NSTextFieldCell"; title = "ERROR: Drawing Failed."; ObjectID = "ckS-I7-xnN"; */
 "ckS-I7-xnN.title" = "ERROR: Drawing Failed.";
 /* Class = "NSMenuItem"; title = "Selection"; ObjectID = "cqv-fj-IhA"; */
@@ -407,10 +665,20 @@
 "d9M-CD-aMd.title" = "Make Lower Case";
 /* Class = "NSMenu"; title = "Text"; ObjectID = "d9c-me-L2H"; */
 "d9c-me-L2H.title" = "Text";
+/* Class = "NSTextFieldCell"; title = "-1,1"; ObjectID = "dDZ-ED-Sr0"; */
+"dDZ-ED-Sr0.title" = "-1,1";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "dFI-4c-Jxy"; */
+"dFI-4c-Jxy.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "9E9"; ObjectID = "dII-dX-6Xg"; */
+"dII-dX-6Xg.title" = "9E9";
 /* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
 "dMs-cI-mzQ.title" = "File";
 /* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
 "dRJ-4n-Yzg.title" = "Undo";
+/* Class = "NSButtonCell"; title = "Calculate Distance"; ObjectID = "ddy-PI-HsA"; */
+"ddy-PI-HsA.title" = "Calculate Distance";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "dgK-AH-bks"; */
+"dgK-AH-bks.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "Window Lower X Bound:"; ObjectID = "dgi-Ov-UEx"; */
 "dgi-Ov-UEx.title" = "Window Lower X Bound:";
 /* Class = "NSTextFieldCell"; title = "Nothin1"; ObjectID = "dhF-MP-hG2"; */
@@ -421,30 +689,52 @@
 "eNk-D9-Fdu.title" = "Charges Y list:";
 /* Class = "NSTextFieldCell"; title = "Welcome to SciTool!"; ObjectID = "eP1-CJ-yff"; */
 "eP1-CJ-yff.title" = "Welcome to SciTool!";
+/* Class = "NSMenuItem"; title = "yr"; ObjectID = "eRK-SM-WgB"; */
+"eRK-SM-WgB.title" = "yr";
+/* Class = "NSMenuItem"; title = "°"; ObjectID = "eSk-sZ-ToR"; */
+"eSk-sZ-ToR.title" = "°";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "ecK-Tt-haH"; */
+"ecK-Tt-haH.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "Q1,Q2,Q3..."; ObjectID = "erv-Ez-ehE"; */
 "erv-Ez-ehE.title" = "Q1,Q2,Q3...";
+/* Class = "NSButtonCell"; title = "Calculate Brightness"; ObjectID = "exK-kI-loz"; */
+"exK-kI-loz.title" = "Calculate Brightness";
+/* Class = "NSTextFieldCell"; title = "Compound:"; ObjectID = "fBu-xq-emF"; */
+"fBu-xq-emF.title" = "Compound:";
 /* Class = "NSTextFieldCell"; title = "Help for Equipotential Lines Grapher"; ObjectID = "fHP-G5-28l"; */
 "fHP-G5-28l.title" = "Help for Equipotential Lines Grapher";
 /* Class = "NSTextFieldCell"; title = "Coulomb Constant:"; ObjectID = "fSv-3c-pej"; */
 "fSv-3c-pej.title" = "Coulomb Constant:";
 /* Class = "NSTextFieldCell"; title = "Equipotential Lines"; ObjectID = "fjf-GM-bb2"; */
 "fjf-GM-bb2.title" = "Equipotential Lines";
+/* Class = "NSTextFieldCell"; title = "SciTool"; ObjectID = "fmc-3N-aMb"; */
+"fmc-3N-aMb.title" = "SciTool";
 /* Class = "NSTextFieldCell"; title = "Scatter Points Per Axis:"; ObjectID = "fuz-RC-LDQ"; */
 "fuz-RC-LDQ.title" = "Scatter Points Per Axis:";
-/* Class = "NSTextFieldCell"; placeholderString = "1,-2,3"; ObjectID = "g2g-Lb-idr"; */
-"g2g-Lb-idr.placeholderString" = "1,-2,3";
-/* Class = "NSTextFieldCell"; title = "1,-2,3"; ObjectID = "g2g-Lb-idr"; */
-"g2g-Lb-idr.title" = "1,-2,3";
+/* Class = "NSTextFieldCell"; placeholderString = "2,-2"; ObjectID = "g2g-Lb-idr"; */
+"g2g-Lb-idr.placeholderString" = "2,-2";
+/* Class = "NSTextFieldCell"; title = "2,-2"; ObjectID = "g2g-Lb-idr"; */
+"g2g-Lb-idr.title" = "2,-2";
 /* Class = "NSWindow"; title = "Welcome to SciTool"; ObjectID = "gQD-eg-wl6"; */
 "gQD-eg-wl6.title" = "Welcome to SciTool";
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Paste";
+/* Class = "NSTextFieldCell"; title = "Orbital Period:"; ObjectID = "gW3-CE-vQD"; */
+"gW3-CE-vQD.title" = "Orbital Period:";
 /* Class = "NSTextFieldCell"; title = "2: Check for Package Matplotlib"; ObjectID = "gZI-qD-4QH"; */
 "gZI-qD-4QH.title" = "2: Check for Package Matplotlib";
 /* Class = "NSMenuItem"; title = "Equipotential Lines Grapher"; ObjectID = "gdk-e4-3yx"; */
 "gdk-e4-3yx.title" = "Equipotential Lines Grapher";
 /* Class = "NSTextFieldCell"; title = "2"; ObjectID = "gsf-h7-BuQ"; */
 "gsf-h7-BuQ.title" = "2";
+/* Class = "NSTextFieldCell"; title = "2"; ObjectID = "guf-cS-u9A"; */
+"guf-cS-u9A.title" = "2";
+/* Class = "NSButtonCell"; title = "Open Github Repository for More Info"; ObjectID = "h01-xQ-9lw"; */
+"h01-xQ-9lw.title" = "Open Github Repository for More Info";
+/* Class = "NSMenuItem"; title = "Luminosity (W)"; ObjectID = "hA2-LY-bzt"; */
+"hA2-LY-bzt.title" = "Luminosity (W)";
+/* Class = "NSTextFieldCell"; title = "Results:"; ObjectID = "hG4-H2-wOL"; */
+"hG4-H2-wOL.title" = "Results:";
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
 "hQb-2v-fYv.title" = "Smart Quotes";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "hUd-Rp-8Nk"; */
@@ -453,6 +743,10 @@
 "hcx-1P-M5W.title" = "New";
 /* Class = "NSTabViewItem"; label = "View"; ObjectID = "hhD-CI-4FG"; */
 "hhD-CI-4FG.label" = "View";
+/* Class = "NSMenuItem"; title = "moles"; ObjectID = "hhH-4J-kgC"; */
+"hhH-4J-kgC.title" = "moles";
+/* Class = "NSTextFieldCell"; title = "2"; ObjectID = "hlw-bq-oZw"; */
+"hlw-bq-oZw.title" = "2";
 /* Class = "NSTextFieldCell"; title = "Y1,Y2,Y3..."; ObjectID = "hsF-1O-R3e"; */
 "hsF-1O-R3e.title" = "Y1,Y2,Y3...";
 /* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
@@ -461,22 +755,34 @@
 "hz9-B4-Xy5.title" = "Services";
 /* Class = "NSMenuItem"; title = "Smaller"; ObjectID = "i1d-Er-qST"; */
 "i1d-Er-qST.title" = "Smaller";
+/* Class = "NSTextFieldCell"; title = "Made with ❤️ by astroKid"; ObjectID = "i9t-JQ-szr"; */
+"i9t-JQ-szr.title" = "Made with ❤️ by astroKid";
 /* Class = "NSTabViewItem"; label = "TwoFingerTap"; ObjectID = "iEg-nD-bwy"; */
 "iEg-nD-bwy.label" = "TwoFingerTap";
+/* Class = "NSTextFieldCell"; title = "Initial velocity:"; ObjectID = "iWS-JM-ptg"; */
+"iWS-JM-ptg.title" = "Initial velocity:";
 /* Class = "NSMenu"; title = "Baseline"; ObjectID = "ijk-EB-dga"; */
 "ijk-EB-dga.title" = "Baseline";
+/* Class = "NSWindow"; title = "Help for Stoichiometry React"; ObjectID = "iqr-F4-89z"; */
+"iqr-F4-89z.title" = "Help for Stoichiometry React";
 /* Class = "NSButtonCell"; title = "Continue"; ObjectID = "j5F-F1-g62"; */
 "j5F-F1-g62.title" = "Continue";
 /* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
 "jBQ-r6-VK2.title" = "Kern";
+/* Class = "NSTextFieldCell"; title = "10"; ObjectID = "jE5-v8-5Yr"; */
+"jE5-v8-5Yr.title" = "10";
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "jFq-tB-4Kx"; */
 "jFq-tB-4Kx.title" = "	Right to Left";
+/* Class = "NSWindow"; title = "Stoichiometry Mass Solver"; ObjectID = "jQY-ZA-mSe"; */
+"jQY-ZA-mSe.title" = "Stoichiometry Mass Solver";
+/* Class = "NSTextFieldCell"; title = "Total time spent:"; ObjectID = "jbw-kU-IUG"; */
+"jbw-kU-IUG.title" = "Total time spent:";
 /* Class = "NSTextFieldCell"; title = "DPI:"; ObjectID = "jeh-jJ-HD7"; */
 "jeh-jJ-HD7.title" = "DPI:";
-/* Class = "NSTextFieldCell"; placeholderString = "1,4.5,-2.1"; ObjectID = "jiG-i3-PPj"; */
-"jiG-i3-PPj.placeholderString" = "1,4.5,-2.1";
-/* Class = "NSTextFieldCell"; title = "1,4.5,-2.1"; ObjectID = "jiG-i3-PPj"; */
-"jiG-i3-PPj.title" = "1,4.5,-2.1";
+/* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "jiG-i3-PPj"; */
+"jiG-i3-PPj.placeholderString" = "1,-1";
+/* Class = "NSTextFieldCell"; title = "1,-1"; ObjectID = "jiG-i3-PPj"; */
+"jiG-i3-PPj.title" = "1,-1";
 /* Class = "NSTextFieldCell"; title = "2"; ObjectID = "jjR-dY-b8s"; */
 "jjR-dY-b8s.title" = "2";
 /* Class = "NSTextFieldCell"; title = "Q1,Q2,Q3..."; ObjectID = "jwt-38-gq9"; */
@@ -485,66 +791,130 @@
 "jxT-CU-nIS.title" = "Format";
 /* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "kC8-2d-Kye"; */
 "kC8-2d-Kye.title" = "-2";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "kEi-pL-elR"; */
+"kEi-pL-elR.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSButtonCell"; title = "Plot 3D Potential Graph"; ObjectID = "kHQ-s9-ZIv"; */
 "kHQ-s9-ZIv.title" = "Plot 3D Potential Graph";
 /* Class = "NSMenuItem"; title = "Show Sidebar"; ObjectID = "kIP-vf-haE"; */
 "kIP-vf-haE.title" = "Show Sidebar";
+/* Class = "NSWindow"; title = "Splash"; ObjectID = "kIi-fO-hBa"; */
+"kIi-fO-hBa.title" = "Splash";
+/* Class = "NSTextFieldCell"; title = "Help for Stoichiometry Solver"; ObjectID = "ka2-Os-h9D"; */
+"ka2-Os-h9D.title" = "Help for Stoichiometry Solver";
 /* Class = "NSTextFieldCell"; title = "The number of contours is a parameter that indirectly specifies the potential difference between each line."; ObjectID = "kbS-dQ-dTv"; */
 "kbS-dQ-dTv.title" = "The number of contours is a parameter that indirectly specifies the potential difference between each line.";
+/* Class = "NSTextFieldCell"; title = "Mass Solver"; ObjectID = "kbv-CU-GpT"; */
+"kbv-CU-GpT.title" = "Mass Solver";
+/* Class = "NSMenuItem"; title = "m/s"; ObjectID = "key-uW-sW1"; */
+"key-uW-sW1.title" = "m/s";
 /* Class = "NSMenuItem"; title = "Electric Potential 3D Grapher"; ObjectID = "kwW-ey-rYE"; */
 "kwW-ey-rYE.title" = "Electric Potential 3D Grapher";
 /* Class = "NSTextFieldCell"; title = "Help for Equipotential Lines Grapher"; ObjectID = "kyb-AC-Hfw"; */
 "kyb-AC-Hfw.title" = "Help for Equipotential Lines Grapher";
 /* Class = "NSTabViewItem"; label = "TwoFingerDrag"; ObjectID = "l7I-3D-xfM"; */
 "l7I-3D-xfM.label" = "TwoFingerDrag";
+/* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "l7l-vQ-q5K"; */
+"l7l-vQ-q5K.title" = "Result: ";
 /* Class = "NSTextFieldCell"; title = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form"; ObjectID = "lJL-xt-k8o"; */
 "lJL-xt-k8o.title" = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form";
 /* Class = "NSTextFieldCell"; title = "Equipotential Lines"; ObjectID = "lNv-Ox-Q4a"; */
 "lNv-Ox-Q4a.title" = "Equipotential Lines";
+/* Class = "NSMenuItem"; title = "m"; ObjectID = "lR0-cC-Uio"; */
+"lR0-cC-Uio.title" = "m";
+/* Class = "NSMenuItem"; title = "Luminosity (Lsun)"; ObjectID = "lTT-26-PUo"; */
+"lTT-26-PUo.title" = "Luminosity (Lsun)";
 /* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "m4k-MM-Pk9"; */
 "m4k-MM-Pk9.title" = "-2";
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
+/* Class = "NSTextFieldCell"; title = "m"; ObjectID = "mOM-J0-JZe"; */
+"mOM-J0-JZe.title" = "m";
 /* Class = "NSTextFieldCell"; title = "X1,X2,X3..."; ObjectID = "mcu-SX-VLg"; */
 "mcu-SX-VLg.title" = "X1,X2,X3...";
 /* Class = "NSTextFieldCell"; title = "Y1,Y2,Y3..."; ObjectID = "mkD-RC-eTK"; */
 "mkD-RC-eTK.title" = "Y1,Y2,Y3...";
+/* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "mup-H1-asz"; */
+"mup-H1-asz.title" = "-2";
+/* Class = "NSButtonCell"; title = "Install Pandas"; ObjectID = "mvX-74-Vyu"; */
+"mvX-74-Vyu.title" = "Install Pandas";
+/* Class = "NSTextFieldCell"; title = "Max height:"; ObjectID = "mwk-VN-MHa"; */
+"mwk-VN-MHa.title" = "Max height:";
+/* Class = "NSTextFieldCell"; title = "6: Stellar Properties Solver"; ObjectID = "naJ-HL-ba4"; */
+"naJ-HL-ba4.title" = "6: Stellar Properties Solver";
+/* Class = "NSTextFieldCell"; title = "What is known:"; ObjectID = "neG-de-uiD"; */
+"neG-de-uiD.title" = "What is known:";
 /* Class = "NSTextFieldCell"; title = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number."; ObjectID = "nfP-0K-OVi"; */
 "nfP-0K-OVi.title" = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number.";
+/* Class = "NSTextFieldCell"; title = "Dist:"; ObjectID = "nro-R2-00q"; */
+"nro-R2-00q.title" = "Dist:";
 /* Class = "NSMenuItem"; title = "Ligatures"; ObjectID = "o6e-r0-MWq"; */
 "o6e-r0-MWq.title" = "Ligatures";
+/* Class = "NSTextFieldCell"; title = "Air resistance ?"; ObjectID = "oIi-nB-kul"; */
+"oIi-nB-kul.title" = "Air resistance ?";
 /* Class = "NSTextFieldCell"; title = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form"; ObjectID = "oUW-qZ-Hfb"; */
 "oUW-qZ-Hfb.title" = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form";
 /* Class = "NSMenuItem"; title = "Loosen"; ObjectID = "ogc-rX-tC1"; */
 "ogc-rX-tC1.title" = "Loosen";
+/* Class = "NSTextFieldCell"; placeholderString = "C"; ObjectID = "omb-ZV-yW7"; */
+"omb-ZV-yW7.placeholderString" = "C";
 /* Class = "NSTextFieldCell"; title = "Install Dependencies"; ObjectID = "ork-UH-wTB"; */
 "ork-UH-wTB.title" = "Install Dependencies";
+/* Class = "NSTextFieldCell"; title = "Results"; ObjectID = "p8T-xY-nBG"; */
+"p8T-xY-nBG.title" = "Results";
+/* Class = "NSTextFieldCell"; title = "Range:"; ObjectID = "pNi-k8-mO4"; */
+"pNi-k8-mO4.title" = "Range:";
 /* Class = "NSTextFieldCell"; title = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. "; ObjectID = "pYf-pH-N4D"; */
 "pYf-pH-N4D.title" = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. ";
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
 "pa3-QI-u2k.title" = "Delete";
+/* Class = "NSTextFieldCell"; title = "Height delta:"; ObjectID = "peL-FC-g8Y"; */
+"peL-FC-g8Y.title" = "Height delta:";
+/* Class = "NSTextFieldCell"; title = "Stoichiometry Solver"; ObjectID = "phd-Gy-6Tg"; */
+"phd-Gy-6Tg.title" = "Stoichiometry Solver";
+/* Class = "NSMenuItem"; title = "day"; ObjectID = "pi1-uP-IqI"; */
+"pi1-uP-IqI.title" = "day";
 /* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
 "q09-fT-Sye.title" = "Find Next";
 /* Class = "NSMenuItem"; title = "Page Setup…"; ObjectID = "qIS-W8-SiK"; */
 "qIS-W8-SiK.title" = "Page Setup…";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "qK2-dW-HOk"; */
+"qK2-dW-HOk.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "m"; ObjectID = "qKN-6k-amH"; */
+"qKN-6k-amH.title" = "m";
 /* Class = "NSTextFieldCell"; title = "Simulations"; ObjectID = "r2W-M1-Uon"; */
 "r2W-M1-Uon.title" = "Simulations";
 /* Class = "NSTextFieldCell"; title = "Use the \"Draw 2D Equipotential Lines\" button to calculate and draw the position of the lines on the image well to the right."; ObjectID = "r6n-Ch-7PW"; */
 "r6n-Ch-7PW.title" = "Use the \"Draw 2D Equipotential Lines\" button to calculate and draw the position of the lines on the image well to the right.";
+/* Class = "NSTextFieldCell"; title = "View Lower Y Bound:"; ObjectID = "rFL-LA-pdY"; */
+"rFL-LA-pdY.title" = "View Lower Y Bound:";
+/* Class = "NSButtonCell"; title = "Check Pandas Version"; ObjectID = "rPe-4Z-nsw"; */
+"rPe-4Z-nsw.title" = "Check Pandas Version";
+/* Class = "NSButtonCell"; title = "Verbose output"; ObjectID = "rR6-KN-jIu"; */
+"rR6-KN-jIu.title" = "Verbose output";
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "Check Spelling While Typing";
 /* Class = "NSTextFieldCell"; title = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number."; ObjectID = "rfW-HQ-nwL"; */
 "rfW-HQ-nwL.title" = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number.";
 /* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "rgM-f4-ycn"; */
 "rgM-f4-ycn.title" = "Smart Dashes";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "rho-pe-SR9"; */
+"rho-pe-SR9.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "m"; ObjectID = "rjl-hl-sgM"; */
+"rjl-hl-sgM.title" = "m";
 /* Class = "NSTextFieldCell"; title = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form"; ObjectID = "rvU-pQ-qcM"; */
 "rvU-pQ-qcM.title" = "The first three fields are where you should input your charge configuration. The first field requires an array of X coordinates for the charges, of the form";
+/* Class = "NSTextFieldCell"; placeholderString = "2g,?"; ObjectID = "sKn-2Y-kQX"; */
+"sKn-2Y-kQX.placeholderString" = "2g,?";
 /* Class = "NSMenuItem"; title = "Circuit Simulator"; ObjectID = "sa7-kv-Jfq"; */
 "sa7-kv-Jfq.title" = "Circuit Simulator";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "snE-sz-PfJ"; */
 "snE-sz-PfJ.title" = "200";
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
 "snW-S8-Cw5.title" = "Show Toolbar";
+/* Class = "NSTextFieldCell"; title = "Air resistance ?"; ObjectID = "t2e-hA-oET"; */
+"t2e-hA-oET.title" = "Air resistance ?";
+/* Class = "NSMenuItem"; title = "cm"; ObjectID = "t3N-lc-2i1"; */
+"t3N-lc-2i1.title" = "cm";
 /* Class = "NSTextFieldCell"; title = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. "; ObjectID = "t4h-jE-mg8"; */
 "t4h-jE-mg8.title" = "This graphing calculator can draw equipotential lines for custom discrete charge distributions. ";
 /* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "tBd-Zq-dWh"; */
@@ -553,38 +923,66 @@
 "tEJ-bo-g2e.title" = "Open Github Repository for More Info";
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "Data Detectors";
+/* Class = "NSMenuItem"; title = "hours"; ObjectID = "tcX-rW-yGR"; */
+"tcX-rW-yGR.title" = "hours";
 /* Class = "NSMenu"; title = "Kern"; ObjectID = "tlD-Oa-oAM"; */
 "tlD-Oa-oAM.title" = "Kern";
+/* Class = "NSMenuItem"; title = "ly"; ObjectID = "u2V-gI-Rb3"; */
+"u2V-gI-Rb3.title" = "ly";
+/* Class = "NSTextFieldCell"; title = "ERROR: Python Not Initialized"; ObjectID = "u9J-UA-IjN"; */
+"u9J-UA-IjN.title" = "ERROR: Python Not Initialized";
+/* Class = "NSTextFieldCell"; title = "Initial angle:"; ObjectID = "uFb-rg-unJ"; */
+"uFb-rg-unJ.title" = "Initial angle:";
+/* Class = "NSTextFieldCell"; title = "Result:"; ObjectID = "uL1-QG-n1p"; */
+"uL1-QG-n1p.title" = "Result:";
 /* Class = "NSMenu"; title = "SciTool"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "SciTool";
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "Cut";
+/* Class = "NSTextFieldCell"; title = "m/s"; ObjectID = "uSn-GJ-cG8"; */
+"uSn-GJ-cG8.title" = "m/s";
 /* Class = "NSTextFieldCell"; title = "2"; ObjectID = "uTU-Cu-VmO"; */
 "uTU-Cu-VmO.title" = "2";
 /* Class = "NSButtonCell"; title = "Save Image As..."; ObjectID = "uk7-Sd-iWh"; */
 "uk7-Sd-iWh.title" = "Save Image As...";
+/* Class = "NSTextFieldCell"; title = "Binary Star Systems Calculator"; ObjectID = "vBe-wm-PG2"; */
+"vBe-wm-PG2.title" = "Binary Star Systems Calculator";
 /* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
 "vKC-jM-MkH.title" = "Paste Style";
 /* Class = "NSMenuItem"; title = "Show Ruler"; ObjectID = "vLm-3I-IUL"; */
 "vLm-3I-IUL.title" = "Show Ruler";
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Make Upper Case";
+/* Class = "NSTextFieldCell"; placeholderString = "12.01"; ObjectID = "vr3-hj-qy5"; */
+"vr3-hj-qy5.placeholderString" = "12.01";
 /* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
 "w0m-vy-SC9.title" = "Ligatures";
 /* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "w2W-aO-FfG"; */
 "w2W-aO-FfG.title" = "-2";
+/* Class = "NSMenuItem"; title = "AU"; ObjectID = "w3G-A2-wS2"; */
+"w3G-A2-wS2.title" = "AU";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "w6d-yO-LO0"; */
+"w6d-yO-LO0.ibShadowedToolTip" = "Difference in height between initial and landing points ";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "wNo-9f-wyb"; */
 "wNo-9f-wyb.title" = "200";
+/* Class = "NSTextFieldCell"; title = "Charges X List:"; ObjectID = "wSa-24-16r"; */
+"wSa-24-16r.title" = "Charges X List:";
 /* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "wVc-6E-Vkt"; */
 "wVc-6E-Vkt.title" = "-2";
+/* Class = "NSTextFieldCell"; title = "7: Binary Star System Solver"; ObjectID = "wYl-fg-9vU"; */
+"wYl-fg-9vU.title" = "7: Binary Star System Solver";
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
 "wb2-vD-lq4.title" = "Align Right";
+/* Class = "NSMenuItem"; title = "parallax (mas)"; ObjectID = "wmd-Dk-vRb"; */
+"wmd-Dk-vRb.title" = "parallax (mas)";
 /* Class = "NSTextFieldCell"; title = "Charges X list:"; ObjectID = "woj-b0-G79"; */
 "woj-b0-G79.title" = "Charges X list:";
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Help";
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
 "x3v-GG-iWU.title" = "Copy";
+/* Class = "NSTextFieldCell"; title = "Results"; ObjectID = "xEK-3R-NAf"; */
+"xEK-3R-NAf.title" = "Results";
 /* Class = "NSWindow"; title = "List of SciTools"; ObjectID = "xLa-C0-JOB"; */
 "xLa-C0-JOB.title" = "List of SciTools";
 /* Class = "NSTextFieldCell"; title = "ERROR: Plot Failed."; ObjectID = "xLp-xb-5TO"; */
@@ -593,33 +991,29 @@
 "xQD-1f-W4t.title" = "Use All";
 /* Class = "NSTextFieldCell"; title = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number."; ObjectID = "xVe-s0-tPM"; */
 "xVe-s0-tPM.title" = "Below, you can also change the Coulomb Constant from its real value of 9E9 to one of your choosing, formatted as a floating-point number.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "xc9-kz-S0j"; */
+"xc9-kz-S0j.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+/* Class = "NSTextFieldCell"; title = "-2"; ObjectID = "xgl-I8-HMX"; */
+"xgl-I8-HMX.title" = "-2";
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "Speech";
 /* Class = "NSTextFieldCell"; title = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. "; ObjectID = "xyN-R3-lU2"; */
 "xyN-R3-lU2.title" = "Use the \"Save Image As...\" button to save the displayed image to a location of your choosing on a disk or cloud location. ";
+/* Class = "NSMenuItem"; title = "Stoichiometry Calculator"; ObjectID = "yOe-pU-Qi2"; */
+"yOe-pU-Qi2.title" = "Stoichiometry Calculator";
 /* Class = "NSTextFieldCell"; title = "The third field requires an array of charge amounts of the form"; ObjectID = "yeD-Xk-eh8"; */
 "yeD-Xk-eh8.title" = "The third field requires an array of charge amounts of the form";
+/* Class = "NSTextFieldCell"; title = "m"; ObjectID = "yoC-Na-u9k"; */
+"yoC-Na-u9k.title" = "m";
 /* Class = "NSWindow"; title = "Help"; ObjectID = "yyR-IQ-5E8"; */
 "yyR-IQ-5E8.title" = "Help";
+/* Class = "NSMenuItem"; title = "Electric Field Grapher"; ObjectID = "z27-NV-oJQ"; */
+"z27-NV-oJQ.title" = "Electric Field Grapher";
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
-"0G8-cv-Mu3.title" = "Systèmes Binaires d'Étoiles";
-"0hu-Ts-5cX.ibShadowedToolTip" = "Difference in height between initial and landing points ";
-"0oW-L2-Mu2.title" = "Coord. Y de Charges:";
-"0yn-vX-5pk.title" = "ly";
-"0vH-3h-SBG.ibShadowedToolTip" = "Difference in height between initial and landing points ";
-"19j-ti-Bj2.title" = "Continue....";
-"1Gj-bJ-PWp.title" = "Constante de Coulomb:";
-"1eq-Yr-ifT.title" = "Densité de la Grille:";
-"1f9-cw-pYh.title" = "ERREUR: Dessin Échoué";
-"1lk-OT-nHb.title" = "ERREUR: Veuillez vérifier les valeurs donnés !";
-"2Ct-ck-Fdo.title" = "°";
-"2e9-Zc-eAt.title" = "ERREUR: Python Non-initialisé";
-"32e-8l-fjO.title" = "©  2022 MDNich";
-"3X5-AU-gmk.title" = "0,0";
-"3hS-va-ibQ.title" = "m";
-"3hV-WX-gq4.ibShadowedToolTip" = "Difference in height between initial and landing points ";
-"44E-B2-iTW.title" = "grammes";
-"4Bl-oO-J5C.title" = "Donné:";
-"4VK-t9-3n8.title" = "Calculez !";
-"5Fj-S0-hJB.title" = "Save Image As...";
+/* Class = "NSTextFieldCell"; title = "Distance:"; ObjectID = "zM7-x6-e3H"; */
+"zM7-x6-e3H.title" = "Distance:";
+/* Class = "NSTextFieldCell"; title = "________"; ObjectID = "zQj-V0-i5K"; */
+"zQj-V0-i5K.title" = "________";
+/* Class = "NSMenuItem"; title = "sec"; ObjectID = "zve-xu-Wg0"; */
+"zve-xu-Wg0.title" = "sec";

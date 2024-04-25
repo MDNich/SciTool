@@ -15,6 +15,7 @@
 		586454FC286A1DD5002C4AF6 /* MassCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FA286A1DD5002C4AF6 /* MassCommand.swift */; };
 		586454FE286A1E37002C4AF6 /* ConcentrationCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */; };
 		58774D21286B547D00E48244 /* StoicMassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58774D20286B547D00E48244 /* StoicMassViewController.swift */; };
+		588F60512BDAA5A000D90FE4 /* efield.py in Resources */ = {isa = PBXBuildFile; fileRef = 588F60502BDAA5A000D90FE4 /* efield.py */; };
 		589EE55D27BD316300D38DF2 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 589EE55C27BD316300D38DF2 /* blank.png */; };
 		589EE56027BDA78900D38DF2 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55E27BDA78900D38DF2 /* MasterViewController.swift */; };
 		589EE56127BDA78900D38DF2 /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589EE55F27BDA78900D38DF2 /* SideBarController.swift */; };
@@ -46,11 +47,13 @@
 		586454FA286A1DD5002C4AF6 /* MassCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MassCommand.swift; sourceTree = "<group>"; };
 		586454FD286A1E37002C4AF6 /* ConcentrationCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConcentrationCommand.swift; path = SciTool/Stoichiometry/ConcentrationCommand.swift; sourceTree = SOURCE_ROOT; };
 		58774D20286B547D00E48244 /* StoicMassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoicMassViewController.swift; sourceTree = "<group>"; };
+		588F60502BDAA5A000D90FE4 /* efield.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = efield.py; sourceTree = "<group>"; };
 		589EE55C27BD316300D38DF2 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
 		589EE55E27BDA78900D38DF2 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		589EE55F27BDA78900D38DF2 /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
 		58AB347B27F102F80082AA54 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		58ACC25E2AE13E680068C6BC /* ProjectileViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileViewControllers.swift; sourceTree = "<group>"; };
+		58CB0DC62BDAA8520024CC30 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Main.strings; sourceTree = "<group>"; };
 		58D9048C27B17A5C0051C600 /* SciTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D9048F27B17A5C0051C600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D9049127B17A5C0051C600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 				58D9049527B17A5D0051C600 /* Main.storyboard */,
 				58D9049827B17A5D0051C600 /* SciTool.entitlements */,
 				58D904A327B17FB80051C600 /* voltage.py */,
+				588F60502BDAA5A000D90FE4 /* efield.py */,
 				589EE55C27BD316300D38DF2 /* blank.png */,
 				5804211227D799BE00126EC3 /* voltage3D.py */,
 				58AB347B27F102F80082AA54 /* Reachability.swift */,
@@ -221,6 +225,7 @@
 				en,
 				Base,
 				fr,
+				ro,
 			);
 			mainGroup = 58D9048327B17A5C0051C600;
 			packageReferences = (
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581FF3FE27E8F53600EC1D62 /* README.md in Resources */,
+				588F60512BDAA5A000D90FE4 /* efield.py in Resources */,
 				58D9049427B17A5D0051C600 /* Assets.xcassets in Resources */,
 				5804211327D799BE00126EC3 /* voltage3D.py in Resources */,
 				58D9049727B17A5D0051C600 /* Main.storyboard in Resources */,
@@ -309,6 +315,7 @@
 				58D9049627B17A5D0051C600 /* Base */,
 				7215B092285CDD080089AF0F /* en */,
 				7215B093285CDD160089AF0F /* fr */,
+				58CB0DC62BDAA8520024CC30 /* ro */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
