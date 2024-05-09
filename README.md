@@ -39,6 +39,6 @@ There is a GUI that aids with installing these packages and Python3.
 Thanks!
 Releases with new SciTools are posted regularly.
 Feel free to fork, pull request, etc.
-© MDNich 2022
+© MDNich 2024
 
 
