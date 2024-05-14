@@ -1,5 +1,5 @@
 # SciTool
-Welcome to SciTool!
+Welcome to SciTool !
 This app is designed to help users graph, calculate, and simulate otherwise tedious tasks.
 
 The list of available SciTools is below, and this list is always growing!
