@@ -6,13 +6,13 @@
 /* Class = "NSWindow"; title = "Binary Star Systems"; ObjectID = "0G8-cv-Mu3"; */
 "0G8-cv-Mu3.title" = "Sisteme Binare de Stele";
 /* Class = "NSTextFieldCell"; title = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates."; ObjectID = "0GQ-Jb-8Rn"; */
-"0GQ-Jb-8Rn.title" = "The next four parameters provide the window bounds, which tell the grapher on what area of space you want to draw equipotential lines, in the same coordinate system as the charges' coordinates.";
+"0GQ-Jb-8Rn.title" = "Cele 4 parametrii calific limitele ferestrei, care specific suprafața pe care liniile echipotențiale vor fi desenate, în același sistem de coordonate sarcinilor.";
 /* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "0hu-Ts-5cX"; */
-"0hu-Ts-5cX.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+"0hu-Ts-5cX.ibShadowedToolTip" = "Diferența de înălțime între punctul lansării și aterizării";
 /* Class = "NSTextFieldCell"; title = "Charges Y List:"; ObjectID = "0oW-L2-Mu2"; */
 "0oW-L2-Mu2.title" = "Coord. Y Sarcinilor:";
 /* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "0vH-3h-SBG"; */
-"0vH-3h-SBG.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+"0vH-3h-SBG.ibShadowedToolTip" = "Diferența de înălțime între punctul lansării și aterizării";
 /* Class = "NSMenuItem"; title = "ly"; ObjectID = "0yn-vX-5pk"; */
 "0yn-vX-5pk.title" = "ly";
 /* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "18D-li-id0"; */
@@ -38,11 +38,11 @@
 /* Class = "NSTextFieldCell"; title = "ERROR: Drawing Failed"; ObjectID = "1f9-cw-pYh"; */
 "1f9-cw-pYh.title" = "EROARE: Desenarea Eșuată";
 /* Class = "NSTextFieldCell"; title = "The third field requires an array of charge amounts of the form"; ObjectID = "1fd-Hf-BCX"; */
-"1fd-Hf-BCX.title" = "The third field requires an array of charge amounts of the form";
+"1fd-Hf-BCX.title" = "Al treila câmp necesită o listă de cantități de sarcină de forma";
 /* Class = "NSTextFieldCell"; title = "ERROR: Please check your inputs!"; ObjectID = "1lk-OT-nHb"; */
 "1lk-OT-nHb.title" = "EROARE: Verificați valoarele !";
 /* Class = "NSMenuItem"; title = "Lower"; ObjectID = "1tx-W0-xDw"; */
-"1tx-W0-xDw.title" = "Lower";
+"1tx-W0-xDw.title" = "Mai jos";
 /* Class = "NSTextFieldCell"; title = "Q1,Q2,Q3..."; ObjectID = "21h-Qz-Gql"; */
 "21h-Qz-Gql.title" = "Q1,Q2,Q3...";
 /* Class = "NSMenuItem"; title = "°"; ObjectID = "2Ct-ck-Fdo"; */
@@ -50,33 +50,33 @@
 /* Class = "NSBox"; title = "Box"; ObjectID = "2dP-8z-Rrw"; */
 "2dP-8z-Rrw.title" = "Box";
 /* Class = "NSTextFieldCell"; title = "ERROR: Python Not Initialized"; ObjectID = "2e9-Zc-eAt"; */
-"2e9-Zc-eAt.title" = "EROARE: Python Ne-inițializat";
+"2e9-Zc-eAt.title" = "EROARE: Python Neinițializat";
 /* Class = "NSMenuItem"; title = "Raise"; ObjectID = "2h7-ER-AoG"; */
 "2h7-ER-AoG.title" = "Raise";
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
 "2oI-Rn-ZJC.title" = "Transformări";
 /* Class = "NSTextFieldCell"; title = "Graph Equipotential lines formed from specified charges"; ObjectID = "32N-BX-gWI"; */
-"32N-BX-gWI.title" = "Graph Equipotential lines formed from specified charges";
+"32N-BX-gWI.title" = "Plotează linii Echipotențiale fiind dat sarcini specificate";
 /* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "32e-8l-fjO"; */
-"32e-8l-fjO.title" = "©  2022 MDNich";
+"32e-8l-fjO.title" = "© 2022 MDNich";
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
-"3IN-sU-3Bg.title" = "Spelling";
+"3IN-sU-3Bg.title" = "Scris";
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "3Om-Ey-2VK"; */
-"3Om-Ey-2VK.title" = "Use Default";
+"3Om-Ey-2VK.title" = "Folosiți Default";
 /* Class = "NSTextFieldCell"; title = "0,0"; ObjectID = "3X5-AU-gmk"; */
 "3X5-AU-gmk.title" = "0,0";
 /* Class = "NSMenuItem"; title = "m"; ObjectID = "3hS-va-ibQ"; */
 "3hS-va-ibQ.title" = "m";
 /* Class = "NSTextField"; ibShadowedToolTip = "Difference in height between initial and landing points "; ObjectID = "3hV-WX-gq4"; */
-"3hV-WX-gq4.ibShadowedToolTip" = "Difference in height between initial and landing points ";
+"3hV-WX-gq4.ibShadowedToolTip" = "Diferența de înălțime între punctul lansării și aterizării";
 /* Class = "NSMenu"; title = "Speech"; ObjectID = "3rS-ZA-NoH"; */
-"3rS-ZA-NoH.title" = "Speech";
+"3rS-ZA-NoH.title" = "Vorbire";
 /* Class = "NSTextFieldCell"; title = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. "; ObjectID = "42i-Wv-d1H"; */
-"42i-Wv-d1H.title" = "The DPI parameter is a parameter to adjust image resolution, and it will not affect the way the equipotential lines are calculated. ";
+"42i-Wv-d1H.title" = "Parametrul DPI ajustează rezoluția imaginei, și nu va afecta felul în care liniile echipotențiale vor fi desenate.";
 /* Class = "NSMenuItem"; title = "grams"; ObjectID = "44E-B2-iTW"; */
 "44E-B2-iTW.title" = "grame";
 /* Class = "NSMenuItem"; title = "Tighten"; ObjectID = "46P-cB-AYj"; */
-"46P-cB-AYj.title" = "Tighten";
+"46P-cB-AYj.title" = "Strânge";
 /* Class = "NSTextFieldCell"; title = "Given:"; ObjectID = "4Bl-oO-J5C"; */
 "4Bl-oO-J5C.title" = "Dat:";
 /* Class = "NSMenuItem"; title = "Find"; ObjectID = "4EN-yA-p0u"; */
@@ -84,79 +84,79 @@
 /* Class = "NSTextFieldCell"; title = "3: Circuit Simulator"; ObjectID = "4IF-a9-dxM"; */
 "4IF-a9-dxM.title" = "3: Simulator Circuit";
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
-"4J7-dP-txa.title" = "Enter Full Screen";
+"4J7-dP-txa.title" = "Întră în ecran complet";
 /* Class = "NSButtonCell"; title = "Calculate!"; ObjectID = "4VK-t9-3n8"; */
 "4VK-t9-3n8.title" = "Calculează !";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "4k8-pr-d27"; */
 "4k8-pr-d27.title" = "200";
 /* Class = "NSMenuItem"; title = "Quit SciTool"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Quit SciTool";
+"4sb-4s-VLi.title" = "Ieșire SciTool";
 /* Class = "NSTabViewItem"; label = "View"; ObjectID = "5AP-8n-Nt3"; */
-"5AP-8n-Nt3.label" = "View";
+"5AP-8n-Nt3.label" = "Vederea";
 /* Class = "NSTextFieldCell"; title = "X1,X2,X3..."; ObjectID = "5CM-fh-Fs8"; */
 "5CM-fh-Fs8.title" = "X1,X2,X3...";
 /* Class = "NSButtonCell"; title = "Save Image As..."; ObjectID = "5Fj-S0-hJB"; */
-"5Fj-S0-hJB.title" = "Save Image As...";
+"5Fj-S0-hJB.title" = "Salvează imagina...";
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
-"5QF-Oa-p0T.title" = "Edit";
+"5QF-Oa-p0T.title" = "Editează";
 /* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
-"5Vv-lz-BsD.title" = "Copy Style";
+"5Vv-lz-BsD.title" = "Copiază Stilul";
 /* Class = "NSMenuItem"; title = "km"; ObjectID = "5k8-6F-2T5"; */
 "5k8-6F-2T5.title" = "km";
 /* Class = "NSMenuItem"; title = "About SciTool"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "About SciTool";
+"5kV-Vb-QxS.title" = "Despre SciTool";
 /* Class = "NSMenuItem"; title = "rad"; ObjectID = "5yB-uC-gjV"; */
 "5yB-uC-gjV.title" = "rad";
 /* Class = "NSTextFieldCell"; title = "4: Check for Package Plotly"; ObjectID = "6Ac-CI-AWP"; */
-"6Ac-CI-AWP.title" = "4: Check for Package Plotly";
+"6Ac-CI-AWP.title" = "4: Verificare Pachet Plotly";
 /* Class = "NSMenuItem"; title = "parallax (mas)"; ObjectID = "6Bm-Hv-1QV"; */
-"6Bm-Hv-1QV.title" = "parallax (mas)";
+"6Bm-Hv-1QV.title" = "paralaxă (mas)";
 /* Class = "NSTextFieldCell"; title = "25"; ObjectID = "6O3-wK-qbu"; */
 "6O3-wK-qbu.title" = "25";
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
-"6dh-zS-Vam.title" = "Redo";
+"6dh-zS-Vam.title" = "Refă";
 /* Class = "NSTextFieldCell"; title = "©  2022 MDNich"; ObjectID = "6fS-Nu-xP8"; */
-"6fS-Nu-xP8.title" = "©  2022 MDNich";
+"6fS-Nu-xP8.title" = "© 2022 MDNich";
 /* Class = "NSTextFieldCell"; title = "DPI:"; ObjectID = "6lJ-pQ-P3U"; */
 "6lJ-pQ-P3U.title" = "DPI:";
 /* Class = "NSTextFieldCell"; placeholderString = "Na2(CO3) + CaCl2 -> Ca(CO3) + 2NaCl"; ObjectID = "6p1-0l-uvB"; */
 "6p1-0l-uvB.placeholderString" = "Na2(CO3) + CaCl2 -> Ca(CO3) + 2NaCl";
 /* Class = "NSTextFieldCell"; title = "ERROR: Please check your inputs!"; ObjectID = "6zZ-kQ-Cju"; */
-"6zZ-kQ-Cju.title" = "ERROR: Please check your inputs!";
+"6zZ-kQ-Cju.title" = "EROARE: Verificați datele intrate !";
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
-"78Y-hA-62v.title" = "Correct Spelling Automatically";
+"78Y-hA-62v.title" = "Corectează Scrisul Automat";
 /* Class = "NSTextFieldCell"; title = "See the full list of all SciTool's available Simulators and Calculators"; ObjectID = "79o-Lq-7az"; */
-"79o-Lq-7az.title" = "See the full list of all SciTool's available Simulators and Calculators";
+"79o-Lq-7az.title" = "Arată lista completă de simulatori și utilități SciTool";
 /* Class = "NSTextFieldCell"; title = "-1,1"; ObjectID = "7Cg-od-Jly"; */
 "7Cg-od-Jly.title" = "-1,1";
 /* Class = "NSTextFieldCell"; title = "Path:"; ObjectID = "7EN-xc-AQr"; */
-"7EN-xc-AQr.title" = "Path:";
+"7EN-xc-AQr.title" = "Traseu:";
 /* Class = "NSTextFieldCell"; title = "RR Lyrae Period/Luminosity Calculator"; ObjectID = "7Tj-u6-e5E"; */
-"7Tj-u6-e5E.title" = "RR Lyrae Period/Luminosity Calculator";
+"7Tj-u6-e5E.title" = "Calculator Perioada RR Lyrae/Luminozitate";
 /* Class = "NSButtonCell"; title = "Check Matplotlib Version"; ObjectID = "7l1-hL-39E"; */
-"7l1-hL-39E.title" = "Check Matplotlib Version";
+"7l1-hL-39E.title" = "Verifică Versiunea Matplotlib";
 /* Class = "NSMenuItem"; title = "Magnitude (Abs)"; ObjectID = "7qr-Jd-pOb"; */
-"7qr-Jd-pOb.title" = "Magnitude (Abs)";
+"7qr-Jd-pOb.title" = "Magnitudina (Abs)";
 /* Class = "NSTextFieldCell"; title = "The third field requires an array of charge amounts of the form"; ObjectID = "7uL-si-uaf"; */
-"7uL-si-uaf.title" = "The third field requires an array of charge amounts of the form";
+"7uL-si-uaf.title" = "Al treila câmp necesită o listă de sarcine cu forma ";
 /* Class = "NSTextFieldCell"; title = "Coulomb Constant:"; ObjectID = "826-bn-cfc"; */
-"826-bn-cfc.title" = "Coulomb Constant:";
+"826-bn-cfc.title" = "Constanta Coulomb:";
 /* Class = "NSMenuItem"; title = "Magnitude (App)"; ObjectID = "8CR-NX-4FH"; */
-"8CR-NX-4FH.title" = "Magnitude (App)";
+"8CR-NX-4FH.title" = "Magnitudina (App)";
 /* Class = "NSMenuItem"; title = "pc"; ObjectID = "8Db-HE-DmO"; */
 "8Db-HE-DmO.title" = "pc";
 /* Class = "NSTextFieldCell"; title = "200"; ObjectID = "8LU-qW-Tgp"; */
 "8LU-qW-Tgp.title" = "200";
 /* Class = "NSMenuItem"; title = "RR Lyrae Variable Calculator"; ObjectID = "8QL-6Q-s5R"; */
-"8QL-6Q-s5R.title" = "RR Lyrae Variable Calculator";
+"8QL-6Q-s5R.title" = "Calculator Stea Variabilă RR Lyrae";
 /* Class = "NSWindow"; title = "Stoichiometry Solver"; ObjectID = "8UY-oK-cqv"; */
-"8UY-oK-cqv.title" = "Stoichiometry Solver";
+"8UY-oK-cqv.title" = "Rezolvăr Stoechiometrie";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "8bU-tj-Hlb"; */
-"8bU-tj-Hlb.title" = "Result: ";
+"8bU-tj-Hlb.title" = "Rezultat: ";
 /* Class = "NSTextFieldCell"; title = "Result: "; ObjectID = "8gu-fC-oWO"; */
-"8gu-fC-oWO.title" = "Result: ";
+"8gu-fC-oWO.title" = "Rezultat: ";
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
-"8mr-sm-Yjd.title" = "Writing Direction";
+"8mr-sm-Yjd.title" = "Direcția de scris: ";
 /* Class = "NSTextFieldCell"; placeholderString = "1,-1"; ObjectID = "8q2-c9-R4D"; */
 "8q2-c9-R4D.placeholderString" = "1,-1";
 /* Class = "NSTextFieldCell"; title = "1,-1"; ObjectID = "8q2-c9-R4D"; */
@@ -164,17 +164,17 @@
 /* Class = "NSTabViewItem"; label = "Tab"; ObjectID = "8zP-ZP-GwS"; */
 "8zP-ZP-GwS.label" = "Tab";
 /* Class = "NSToolbarItem"; label = "Collapse Sidebar"; ObjectID = "8zS-eB-8H2"; */
-"8zS-eB-8H2.label" = "Collapse Sidebar";
+"8zS-eB-8H2.label" = "Închide Sidebar";
 /* Class = "NSToolbarItem"; paletteLabel = "Collapse Sidebar"; ObjectID = "8zS-eB-8H2"; */
-"8zS-eB-8H2.paletteLabel" = "Collapse Sidebar";
+"8zS-eB-8H2.paletteLabel" = "Închide Sidebar";
 /* Class = "NSButtonCell"; title = "Solve!"; ObjectID = "98H-yQ-vrR"; */
-"98H-yQ-vrR.title" = "Solve!";
+"98H-yQ-vrR.title" = "Rezolvă !";
 /* Class = "NSTextFieldCell"; title = "View Upper X Bound:"; ObjectID = "9M6-Yj-3PQ"; */
-"9M6-Yj-3PQ.title" = "View Upper X Bound:";
+"9M6-Yj-3PQ.title" = "Limita sup. X:";
 /* Class = "NSTextFieldCell"; title = "Equipotential Lines Grapher"; ObjectID = "9N1-IW-RO1"; */
-"9N1-IW-RO1.title" = "Equipotential Lines Grapher";
+"9N1-IW-RO1.title" = "Simulator Linii Echipotențiale";
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
-"9ic-FL-obx.title" = "Substitutions";
+"9ic-FL-obx.title" = "Substituări";
 /* Class = "NSWindow"; title = "Electric Field Plotter"; ObjectID = "9ou-FR-lGy"; */
 "9ou-FR-lGy.title" = "Electric Field Plotter";
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */

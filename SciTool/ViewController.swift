@@ -139,6 +139,15 @@ class SplashViewController: NSViewController {
         let windowController = storyboard.instantiateController(withIdentifier: "EquipotGrapher") as! NSWindowController
         windowController.showWindow(self)
     }
+    
+    @IBAction func openElectricFieldGrapher(sender: Any?)
+    {
+        print(" yo4312 ")
+        self.view.window?.close()
+        let storyboard = NSStoryboard(name: "Main", bundle: nil)
+        let windowController = storyboard.instantiateController(withIdentifier: "efield") as! NSWindowController
+        windowController.showWindow(self)
+    }
     @IBAction func viewListOfCalculators(sender: Any?)
     {
         /*self.view.window?.close()

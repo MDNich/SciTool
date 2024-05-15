@@ -103,6 +103,12 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     ey2d.remove(ey2d[len(ey2d)-1])
     #print(volt2d)
     #ax.scatter3D(xs,ys,volt,c=volt)
+    xs = np.array(xs)
+    ys = np.array(ys)
+    #efieldX = xs*xs
+    #efieldY = ys*ys*ys
+    #efieldMag = np.sqrt(efieldX*efieldX+efieldY+efieldY)
+    # ,efieldMag/efieldMag)#
     ax.quiver(xs,ys,np.divide(efieldX,efieldMag),np.divide(efieldY,efieldMag),np.log(np.sqrt(np.power(efieldX,2)+np.power(efieldY,2))))
     chargeXarr = np.array(chargeXarr)
     chargeYarr = np.array(chargeYarr)
@@ -122,7 +128,7 @@ def drawGraph(pathToSave,chargeXarr,chargeYarr,chargeQarr,windowLBoundX,windowLB
     fig.savefig(str(pathToSave) + "resultEfield.png",dpi=dpiInp)
     #plt.close(fig)
     
-    efieldX = []
+    efieldX = [] 
     efieldY = []
     xs = []
     x2s = []
